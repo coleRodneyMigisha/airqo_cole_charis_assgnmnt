@@ -1,0 +1,2087 @@
+device_name,site_name,date,predicted_pm25_ug_m3,aqi_category
+ag_588c8125eca4,Kyebando,2026-08-01 00:00:00+00:00,48.92360079575517,Unhealthy for Sensitive Groups
+ag_588c8125eca4,Kyebando,2026-08-02 00:00:00+00:00,49.195292698036916,Unhealthy for Sensitive Groups
+ag_588c8125eca4,Kyebando,2026-08-03 00:00:00+00:00,49.23777587842713,Unhealthy for Sensitive Groups
+ag_588c8125eca4,Kyebando,2026-08-04 00:00:00+00:00,49.16861081379269,Unhealthy for Sensitive Groups
+ag_588c8125eca4,Kyebando,2026-08-05 00:00:00+00:00,48.91260486637205,Unhealthy for Sensitive Groups
+ag_588c8125eca4,Kyebando,2026-08-06 00:00:00+00:00,48.6651778980279,Unhealthy for Sensitive Groups
+ag_588c8125eca4,Kyebando,2026-08-07 00:00:00+00:00,48.74574245986653,Unhealthy for Sensitive Groups
+ag_588c8125eca4,Kyebando,2026-08-08 00:00:00+00:00,48.92360079575517,Unhealthy for Sensitive Groups
+ag_588c8125eca4,Kyebando,2026-08-09 00:00:00+00:00,49.195292698036916,Unhealthy for Sensitive Groups
+ag_588c8125eca4,Kyebando,2026-08-10 00:00:00+00:00,49.23777587842713,Unhealthy for Sensitive Groups
+ag_588c8125eca4,Kyebando,2026-08-11 00:00:00+00:00,49.16861081379269,Unhealthy for Sensitive Groups
+ag_588c8125eca4,Kyebando,2026-08-12 00:00:00+00:00,48.91260486637205,Unhealthy for Sensitive Groups
+ag_588c8125eca4,Kyebando,2026-08-13 00:00:00+00:00,48.6651778980279,Unhealthy for Sensitive Groups
+ag_588c8125eca4,Kyebando,2026-08-14 00:00:00+00:00,48.74574245986653,Unhealthy for Sensitive Groups
+ag_588c8125ef30,Sir Apollo Kagwa Road,2026-08-01 00:00:00+00:00,64.89191447593494,Unhealthy
+ag_588c8125ef30,Sir Apollo Kagwa Road,2026-08-02 00:00:00+00:00,65.09827878645082,Unhealthy
+ag_588c8125ef30,Sir Apollo Kagwa Road,2026-08-03 00:00:00+00:00,65.12875095320767,Unhealthy
+ag_588c8125ef30,Sir Apollo Kagwa Road,2026-08-04 00:00:00+00:00,65.00113073247356,Unhealthy
+ag_588c8125ef30,Sir Apollo Kagwa Road,2026-08-05 00:00:00+00:00,64.81485919477514,Unhealthy
+ag_588c8125ef30,Sir Apollo Kagwa Road,2026-08-06 00:00:00+00:00,64.2479528039322,Unhealthy
+ag_588c8125ef30,Sir Apollo Kagwa Road,2026-08-07 00:00:00+00:00,64.45014696571369,Unhealthy
+ag_588c8125ef30,Sir Apollo Kagwa Road,2026-08-08 00:00:00+00:00,64.89191447593494,Unhealthy
+ag_588c8125ef30,Sir Apollo Kagwa Road,2026-08-09 00:00:00+00:00,65.09827878645082,Unhealthy
+ag_588c8125ef30,Sir Apollo Kagwa Road,2026-08-10 00:00:00+00:00,65.12875095320767,Unhealthy
+ag_588c8125ef30,Sir Apollo Kagwa Road,2026-08-11 00:00:00+00:00,65.00113073247356,Unhealthy
+ag_588c8125ef30,Sir Apollo Kagwa Road,2026-08-12 00:00:00+00:00,64.81485919477514,Unhealthy
+ag_588c8125ef30,Sir Apollo Kagwa Road,2026-08-13 00:00:00+00:00,64.2479528039322,Unhealthy
+ag_588c8125ef30,Sir Apollo Kagwa Road,2026-08-14 00:00:00+00:00,64.45014696571369,Unhealthy
+ag_588c81266ad0,Mpelerwe Trading Center,2026-08-01 00:00:00+00:00,51.180764919357266,Unhealthy for Sensitive Groups
+ag_588c81266ad0,Mpelerwe Trading Center,2026-08-02 00:00:00+00:00,51.430841209039805,Unhealthy for Sensitive Groups
+ag_588c81266ad0,Mpelerwe Trading Center,2026-08-03 00:00:00+00:00,51.58250168440356,Unhealthy for Sensitive Groups
+ag_588c81266ad0,Mpelerwe Trading Center,2026-08-04 00:00:00+00:00,51.5534318762025,Unhealthy for Sensitive Groups
+ag_588c81266ad0,Mpelerwe Trading Center,2026-08-05 00:00:00+00:00,51.32579968870251,Unhealthy for Sensitive Groups
+ag_588c81266ad0,Mpelerwe Trading Center,2026-08-06 00:00:00+00:00,50.915088457717054,Unhealthy for Sensitive Groups
+ag_588c81266ad0,Mpelerwe Trading Center,2026-08-07 00:00:00+00:00,50.85750544928451,Unhealthy for Sensitive Groups
+ag_588c81266ad0,Mpelerwe Trading Center,2026-08-08 00:00:00+00:00,51.180764919357266,Unhealthy for Sensitive Groups
+ag_588c81266ad0,Mpelerwe Trading Center,2026-08-09 00:00:00+00:00,51.430841209039805,Unhealthy for Sensitive Groups
+ag_588c81266ad0,Mpelerwe Trading Center,2026-08-10 00:00:00+00:00,51.58250168440356,Unhealthy for Sensitive Groups
+ag_588c81266ad0,Mpelerwe Trading Center,2026-08-11 00:00:00+00:00,51.5534318762025,Unhealthy for Sensitive Groups
+ag_588c81266ad0,Mpelerwe Trading Center,2026-08-12 00:00:00+00:00,51.32579968870251,Unhealthy for Sensitive Groups
+ag_588c81266ad0,Mpelerwe Trading Center,2026-08-13 00:00:00+00:00,50.915088457717054,Unhealthy for Sensitive Groups
+ag_588c81266ad0,Mpelerwe Trading Center,2026-08-14 00:00:00+00:00,50.85750544928451,Unhealthy for Sensitive Groups
+ag_588c81266dc8,"Nansana east ward, Wakiso",2026-08-01 00:00:00+00:00,109.85763182953046,Unhealthy
+ag_588c81266dc8,"Nansana east ward, Wakiso",2026-08-02 00:00:00+00:00,112.06717717179237,Unhealthy
+ag_588c81266dc8,"Nansana east ward, Wakiso",2026-08-03 00:00:00+00:00,112.12370792824078,Unhealthy
+ag_588c81266dc8,"Nansana east ward, Wakiso",2026-08-04 00:00:00+00:00,110.85994876833819,Unhealthy
+ag_588c81266dc8,"Nansana east ward, Wakiso",2026-08-05 00:00:00+00:00,108.6468612732985,Unhealthy
+ag_588c81266dc8,"Nansana east ward, Wakiso",2026-08-06 00:00:00+00:00,108.23203370370373,Unhealthy
+ag_588c81266dc8,"Nansana east ward, Wakiso",2026-08-07 00:00:00+00:00,109.01936596808865,Unhealthy
+ag_588c81266dc8,"Nansana east ward, Wakiso",2026-08-08 00:00:00+00:00,109.85763182953046,Unhealthy
+ag_588c81266dc8,"Nansana east ward, Wakiso",2026-08-09 00:00:00+00:00,112.06717717179237,Unhealthy
+ag_588c81266dc8,"Nansana east ward, Wakiso",2026-08-10 00:00:00+00:00,112.12370792824078,Unhealthy
+ag_588c81266dc8,"Nansana east ward, Wakiso",2026-08-11 00:00:00+00:00,110.85994876833819,Unhealthy
+ag_588c81266dc8,"Nansana east ward, Wakiso",2026-08-12 00:00:00+00:00,108.6468612732985,Unhealthy
+ag_588c81266dc8,"Nansana east ward, Wakiso",2026-08-13 00:00:00+00:00,108.23203370370373,Unhealthy
+ag_588c81266dc8,"Nansana east ward, Wakiso",2026-08-14 00:00:00+00:00,109.01936596808865,Unhealthy
+ag_588c81267534,Salama Road,2026-08-01 00:00:00+00:00,66.49084173145143,Unhealthy
+ag_588c81267534,Salama Road,2026-08-02 00:00:00+00:00,66.64328312530063,Unhealthy
+ag_588c81267534,Salama Road,2026-08-03 00:00:00+00:00,66.72004201997656,Unhealthy
+ag_588c81267534,Salama Road,2026-08-04 00:00:00+00:00,66.6182733177355,Unhealthy
+ag_588c81267534,Salama Road,2026-08-05 00:00:00+00:00,66.44915800771567,Unhealthy
+ag_588c81267534,Salama Road,2026-08-06 00:00:00+00:00,66.389275657878,Unhealthy
+ag_588c81267534,Salama Road,2026-08-07 00:00:00+00:00,66.40608582671958,Unhealthy
+ag_588c81267534,Salama Road,2026-08-08 00:00:00+00:00,66.49084173145143,Unhealthy
+ag_588c81267534,Salama Road,2026-08-09 00:00:00+00:00,66.64328312530063,Unhealthy
+ag_588c81267534,Salama Road,2026-08-10 00:00:00+00:00,66.72004201997656,Unhealthy
+ag_588c81267534,Salama Road,2026-08-11 00:00:00+00:00,66.6182733177355,Unhealthy
+ag_588c81267534,Salama Road,2026-08-12 00:00:00+00:00,66.44915800771567,Unhealthy
+ag_588c81267534,Salama Road,2026-08-13 00:00:00+00:00,66.389275657878,Unhealthy
+ag_588c81267534,Salama Road,2026-08-14 00:00:00+00:00,66.40608582671958,Unhealthy
+ag_a085e3d92f54,Makerere University Weather Station,2026-08-01 00:00:00+00:00,33.73200455146705,Moderate
+ag_a085e3d92f54,Makerere University Weather Station,2026-08-02 00:00:00+00:00,33.83226125037578,Moderate
+ag_a085e3d92f54,Makerere University Weather Station,2026-08-03 00:00:00+00:00,33.907165407121816,Moderate
+ag_a085e3d92f54,Makerere University Weather Station,2026-08-04 00:00:00+00:00,33.84078188777657,Moderate
+ag_a085e3d92f54,Makerere University Weather Station,2026-08-05 00:00:00+00:00,33.752717123391655,Moderate
+ag_a085e3d92f54,Makerere University Weather Station,2026-08-06 00:00:00+00:00,33.72514436793531,Moderate
+ag_a085e3d92f54,Makerere University Weather Station,2026-08-07 00:00:00+00:00,33.67730515414562,Moderate
+ag_a085e3d92f54,Makerere University Weather Station,2026-08-08 00:00:00+00:00,33.73200455146705,Moderate
+ag_a085e3d92f54,Makerere University Weather Station,2026-08-09 00:00:00+00:00,33.83226125037578,Moderate
+ag_a085e3d92f54,Makerere University Weather Station,2026-08-10 00:00:00+00:00,33.907165407121816,Moderate
+ag_a085e3d92f54,Makerere University Weather Station,2026-08-11 00:00:00+00:00,33.84078188777657,Moderate
+ag_a085e3d92f54,Makerere University Weather Station,2026-08-12 00:00:00+00:00,33.752717123391655,Moderate
+ag_a085e3d92f54,Makerere University Weather Station,2026-08-13 00:00:00+00:00,33.72514436793531,Moderate
+ag_a085e3d92f54,Makerere University Weather Station,2026-08-14 00:00:00+00:00,33.67730515414562,Moderate
+airqo-g5168,Mbarara Central,2026-08-01 00:00:00+00:00,27.952526655092594,Moderate
+airqo-g5168,Mbarara Central,2026-08-02 00:00:00+00:00,28.068470650628303,Moderate
+airqo-g5168,Mbarara Central,2026-08-03 00:00:00+00:00,28.10961155671296,Moderate
+airqo-g5168,Mbarara Central,2026-08-04 00:00:00+00:00,27.872170356316136,Moderate
+airqo-g5168,Mbarara Central,2026-08-05 00:00:00+00:00,27.749135219907405,Moderate
+airqo-g5168,Mbarara Central,2026-08-06 00:00:00+00:00,28.059507218238934,Moderate
+airqo-g5168,Mbarara Central,2026-08-07 00:00:00+00:00,28.029843053075396,Moderate
+airqo-g5168,Mbarara Central,2026-08-08 00:00:00+00:00,27.952526655092594,Moderate
+airqo-g5168,Mbarara Central,2026-08-09 00:00:00+00:00,28.068470650628303,Moderate
+airqo-g5168,Mbarara Central,2026-08-10 00:00:00+00:00,28.10961155671296,Moderate
+airqo-g5168,Mbarara Central,2026-08-11 00:00:00+00:00,27.872170356316136,Moderate
+airqo-g5168,Mbarara Central,2026-08-12 00:00:00+00:00,27.749135219907405,Moderate
+airqo-g5168,Mbarara Central,2026-08-13 00:00:00+00:00,28.059507218238934,Moderate
+airqo-g5168,Mbarara Central,2026-08-14 00:00:00+00:00,28.029843053075396,Moderate
+airqo-g5181,Rakai Health Sciences Program Facility,2026-08-01 00:00:00+00:00,19.167928886842322,Moderate
+airqo-g5181,Rakai Health Sciences Program Facility,2026-08-02 00:00:00+00:00,19.145645002405,Moderate
+airqo-g5181,Rakai Health Sciences Program Facility,2026-08-03 00:00:00+00:00,19.120564277371933,Moderate
+airqo-g5181,Rakai Health Sciences Program Facility,2026-08-04 00:00:00+00:00,18.92270134920635,Moderate
+airqo-g5181,Rakai Health Sciences Program Facility,2026-08-05 00:00:00+00:00,18.946014244887056,Moderate
+airqo-g5181,Rakai Health Sciences Program Facility,2026-08-06 00:00:00+00:00,19.219440820539415,Moderate
+airqo-g5181,Rakai Health Sciences Program Facility,2026-08-07 00:00:00+00:00,19.25685743512275,Moderate
+airqo-g5181,Rakai Health Sciences Program Facility,2026-08-08 00:00:00+00:00,19.167928886842322,Moderate
+airqo-g5181,Rakai Health Sciences Program Facility,2026-08-09 00:00:00+00:00,19.145645002405,Moderate
+airqo-g5181,Rakai Health Sciences Program Facility,2026-08-10 00:00:00+00:00,19.120564277371933,Moderate
+airqo-g5181,Rakai Health Sciences Program Facility,2026-08-11 00:00:00+00:00,18.92270134920635,Moderate
+airqo-g5181,Rakai Health Sciences Program Facility,2026-08-12 00:00:00+00:00,18.946014244887056,Moderate
+airqo-g5181,Rakai Health Sciences Program Facility,2026-08-13 00:00:00+00:00,19.219440820539415,Moderate
+airqo-g5181,Rakai Health Sciences Program Facility,2026-08-14 00:00:00+00:00,19.25685743512275,Moderate
+airqo-g5184,"Mbarara University, Mbarara",2026-08-01 00:00:00+00:00,27.092720953207674,Moderate
+airqo-g5184,"Mbarara University, Mbarara",2026-08-02 00:00:00+00:00,27.1709390203373,Moderate
+airqo-g5184,"Mbarara University, Mbarara",2026-08-03 00:00:00+00:00,27.280889083844396,Moderate
+airqo-g5184,"Mbarara University, Mbarara",2026-08-04 00:00:00+00:00,27.15484616635101,Moderate
+airqo-g5184,"Mbarara University, Mbarara",2026-08-05 00:00:00+00:00,27.095539925444925,Moderate
+airqo-g5184,"Mbarara University, Mbarara",2026-08-06 00:00:00+00:00,27.177779913044134,Moderate
+airqo-g5184,"Mbarara University, Mbarara",2026-08-07 00:00:00+00:00,27.061371979166665,Moderate
+airqo-g5184,"Mbarara University, Mbarara",2026-08-08 00:00:00+00:00,27.092720953207674,Moderate
+airqo-g5184,"Mbarara University, Mbarara",2026-08-09 00:00:00+00:00,27.1709390203373,Moderate
+airqo-g5184,"Mbarara University, Mbarara",2026-08-10 00:00:00+00:00,27.280889083844396,Moderate
+airqo-g5184,"Mbarara University, Mbarara",2026-08-11 00:00:00+00:00,27.15484616635101,Moderate
+airqo-g5184,"Mbarara University, Mbarara",2026-08-12 00:00:00+00:00,27.095539925444925,Moderate
+airqo-g5184,"Mbarara University, Mbarara",2026-08-13 00:00:00+00:00,27.177779913044134,Moderate
+airqo-g5184,"Mbarara University, Mbarara",2026-08-14 00:00:00+00:00,27.061371979166665,Moderate
+airqo-g5186,Kawanda 2,2026-08-01 00:00:00+00:00,24.98164394089707,Moderate
+airqo-g5186,Kawanda 2,2026-08-02 00:00:00+00:00,25.009285662127226,Moderate
+airqo-g5186,Kawanda 2,2026-08-03 00:00:00+00:00,24.967338825983045,Moderate
+airqo-g5186,Kawanda 2,2026-08-04 00:00:00+00:00,24.704958491311928,Moderate
+airqo-g5186,Kawanda 2,2026-08-05 00:00:00+00:00,24.68018505381193,Moderate
+airqo-g5186,Kawanda 2,2026-08-06 00:00:00+00:00,24.911713591194687,Moderate
+airqo-g5186,Kawanda 2,2026-08-07 00:00:00+00:00,25.012381699660295,Moderate
+airqo-g5186,Kawanda 2,2026-08-08 00:00:00+00:00,24.98164394089707,Moderate
+airqo-g5186,Kawanda 2,2026-08-09 00:00:00+00:00,25.009285662127226,Moderate
+airqo-g5186,Kawanda 2,2026-08-10 00:00:00+00:00,24.967338825983045,Moderate
+airqo-g5186,Kawanda 2,2026-08-11 00:00:00+00:00,24.704958491311928,Moderate
+airqo-g5186,Kawanda 2,2026-08-12 00:00:00+00:00,24.68018505381193,Moderate
+airqo-g5186,Kawanda 2,2026-08-13 00:00:00+00:00,24.911713591194687,Moderate
+airqo-g5186,Kawanda 2,2026-08-14 00:00:00+00:00,25.012381699660295,Moderate
+airqo-g5187,Gulu Main Market,2026-08-01 00:00:00+00:00,22.03376871362434,Moderate
+airqo-g5187,Gulu Main Market,2026-08-02 00:00:00+00:00,22.082112972056876,Moderate
+airqo-g5187,Gulu Main Market,2026-08-03 00:00:00+00:00,22.0755064864418,Moderate
+airqo-g5187,Gulu Main Market,2026-08-04 00:00:00+00:00,21.95139023478836,Moderate
+airqo-g5187,Gulu Main Market,2026-08-05 00:00:00+00:00,21.913424200562172,Moderate
+airqo-g5187,Gulu Main Market,2026-08-06 00:00:00+00:00,21.961379990906085,Moderate
+airqo-g5187,Gulu Main Market,2026-08-07 00:00:00+00:00,22.02938084077381,Moderate
+airqo-g5187,Gulu Main Market,2026-08-08 00:00:00+00:00,22.03376871362434,Moderate
+airqo-g5187,Gulu Main Market,2026-08-09 00:00:00+00:00,22.082112972056876,Moderate
+airqo-g5187,Gulu Main Market,2026-08-10 00:00:00+00:00,22.0755064864418,Moderate
+airqo-g5187,Gulu Main Market,2026-08-11 00:00:00+00:00,21.95139023478836,Moderate
+airqo-g5187,Gulu Main Market,2026-08-12 00:00:00+00:00,21.913424200562172,Moderate
+airqo-g5187,Gulu Main Market,2026-08-13 00:00:00+00:00,21.961379990906085,Moderate
+airqo-g5187,Gulu Main Market,2026-08-14 00:00:00+00:00,22.02938084077381,Moderate
+airqo_g5204,kawempe moslem p/s,2026-08-01 00:00:00+00:00,37.91988548766049,Unhealthy for Sensitive Groups
+airqo_g5204,kawempe moslem p/s,2026-08-02 00:00:00+00:00,38.05958784133112,Unhealthy for Sensitive Groups
+airqo_g5204,kawempe moslem p/s,2026-08-03 00:00:00+00:00,38.069127855385354,Unhealthy for Sensitive Groups
+airqo_g5204,kawempe moslem p/s,2026-08-04 00:00:00+00:00,37.47492556397306,Unhealthy for Sensitive Groups
+airqo_g5204,kawempe moslem p/s,2026-08-05 00:00:00+00:00,37.33338883530243,Unhealthy for Sensitive Groups
+airqo_g5204,kawempe moslem p/s,2026-08-06 00:00:00+00:00,37.57398560763889,Unhealthy for Sensitive Groups
+airqo_g5204,kawempe moslem p/s,2026-08-07 00:00:00+00:00,37.784629713024245,Unhealthy for Sensitive Groups
+airqo_g5204,kawempe moslem p/s,2026-08-08 00:00:00+00:00,37.91988548766049,Unhealthy for Sensitive Groups
+airqo_g5204,kawempe moslem p/s,2026-08-09 00:00:00+00:00,38.05958784133112,Unhealthy for Sensitive Groups
+airqo_g5204,kawempe moslem p/s,2026-08-10 00:00:00+00:00,38.069127855385354,Unhealthy for Sensitive Groups
+airqo_g5204,kawempe moslem p/s,2026-08-11 00:00:00+00:00,37.47492556397306,Unhealthy for Sensitive Groups
+airqo_g5204,kawempe moslem p/s,2026-08-12 00:00:00+00:00,37.33338883530243,Unhealthy for Sensitive Groups
+airqo_g5204,kawempe moslem p/s,2026-08-13 00:00:00+00:00,37.57398560763889,Unhealthy for Sensitive Groups
+airqo_g5204,kawempe moslem p/s,2026-08-14 00:00:00+00:00,37.784629713024245,Unhealthy for Sensitive Groups
+airqo_g5206,"Civic Centre, Kampala Central",2026-08-01 00:00:00+00:00,18.008734365680613,Moderate
+airqo_g5206,"Civic Centre, Kampala Central",2026-08-02 00:00:00+00:00,17.984911461414743,Moderate
+airqo_g5206,"Civic Centre, Kampala Central",2026-08-03 00:00:00+00:00,17.90811304706289,Moderate
+airqo_g5206,"Civic Centre, Kampala Central",2026-08-04 00:00:00+00:00,17.94728702140452,Moderate
+airqo_g5206,"Civic Centre, Kampala Central",2026-08-05 00:00:00+00:00,17.978910277852933,Moderate
+airqo_g5206,"Civic Centre, Kampala Central",2026-08-06 00:00:00+00:00,17.960512276034148,Moderate
+airqo_g5206,"Civic Centre, Kampala Central",2026-08-07 00:00:00+00:00,18.015933638167386,Moderate
+airqo_g5206,"Civic Centre, Kampala Central",2026-08-08 00:00:00+00:00,18.008734365680613,Moderate
+airqo_g5206,"Civic Centre, Kampala Central",2026-08-09 00:00:00+00:00,17.984911461414743,Moderate
+airqo_g5206,"Civic Centre, Kampala Central",2026-08-10 00:00:00+00:00,17.90811304706289,Moderate
+airqo_g5206,"Civic Centre, Kampala Central",2026-08-11 00:00:00+00:00,17.94728702140452,Moderate
+airqo_g5206,"Civic Centre, Kampala Central",2026-08-12 00:00:00+00:00,17.978910277852933,Moderate
+airqo_g5206,"Civic Centre, Kampala Central",2026-08-13 00:00:00+00:00,17.960512276034148,Moderate
+airqo_g5206,"Civic Centre, Kampala Central",2026-08-14 00:00:00+00:00,18.015933638167386,Moderate
+airqo_g5247,"Nsasa, Kira Municipality",2026-08-01 00:00:00+00:00,19.22285507936508,Moderate
+airqo_g5247,"Nsasa, Kira Municipality",2026-08-02 00:00:00+00:00,19.29361986359127,Moderate
+airqo_g5247,"Nsasa, Kira Municipality",2026-08-03 00:00:00+00:00,19.28487308080808,Moderate
+airqo_g5247,"Nsasa, Kira Municipality",2026-08-04 00:00:00+00:00,19.153717359157046,Moderate
+airqo_g5247,"Nsasa, Kira Municipality",2026-08-05 00:00:00+00:00,19.078228514911014,Moderate
+airqo_g5247,"Nsasa, Kira Municipality",2026-08-06 00:00:00+00:00,19.260730136032947,Moderate
+airqo_g5247,"Nsasa, Kira Municipality",2026-08-07 00:00:00+00:00,19.281128799603174,Moderate
+airqo_g5247,"Nsasa, Kira Municipality",2026-08-08 00:00:00+00:00,19.22285507936508,Moderate
+airqo_g5247,"Nsasa, Kira Municipality",2026-08-09 00:00:00+00:00,19.29361986359127,Moderate
+airqo_g5247,"Nsasa, Kira Municipality",2026-08-10 00:00:00+00:00,19.28487308080808,Moderate
+airqo_g5247,"Nsasa, Kira Municipality",2026-08-11 00:00:00+00:00,19.153717359157046,Moderate
+airqo_g5247,"Nsasa, Kira Municipality",2026-08-12 00:00:00+00:00,19.078228514911014,Moderate
+airqo_g5247,"Nsasa, Kira Municipality",2026-08-13 00:00:00+00:00,19.260730136032947,Moderate
+airqo_g5247,"Nsasa, Kira Municipality",2026-08-14 00:00:00+00:00,19.281128799603174,Moderate
+airqo_g5271,"Embassy of France, Lumumba avenue",2026-08-01 00:00:00+00:00,20.648243098394662,Moderate
+airqo_g5271,"Embassy of France, Lumumba avenue",2026-08-02 00:00:00+00:00,20.66493518751503,Moderate
+airqo_g5271,"Embassy of France, Lumumba avenue",2026-08-03 00:00:00+00:00,20.872051300279583,Moderate
+airqo_g5271,"Embassy of France, Lumumba avenue",2026-08-04 00:00:00+00:00,20.902099182224024,Moderate
+airqo_g5271,"Embassy of France, Lumumba avenue",2026-08-05 00:00:00+00:00,20.888381549948893,Moderate
+airqo_g5271,"Embassy of France, Lumumba avenue",2026-08-06 00:00:00+00:00,20.89590284789863,Moderate
+airqo_g5271,"Embassy of France, Lumumba avenue",2026-08-07 00:00:00+00:00,20.646212532918472,Moderate
+airqo_g5271,"Embassy of France, Lumumba avenue",2026-08-08 00:00:00+00:00,20.648243098394662,Moderate
+airqo_g5271,"Embassy of France, Lumumba avenue",2026-08-09 00:00:00+00:00,20.66493518751503,Moderate
+airqo_g5271,"Embassy of France, Lumumba avenue",2026-08-10 00:00:00+00:00,20.872051300279583,Moderate
+airqo_g5271,"Embassy of France, Lumumba avenue",2026-08-11 00:00:00+00:00,20.902099182224024,Moderate
+airqo_g5271,"Embassy of France, Lumumba avenue",2026-08-12 00:00:00+00:00,20.888381549948893,Moderate
+airqo_g5271,"Embassy of France, Lumumba avenue",2026-08-13 00:00:00+00:00,20.89590284789863,Moderate
+airqo_g5271,"Embassy of France, Lumumba avenue",2026-08-14 00:00:00+00:00,20.646212532918472,Moderate
+airqo_g5279,"Bugolobi, Nakawa",2026-08-01 00:00:00+00:00,17.683425185243,Moderate
+airqo_g5279,"Bugolobi, Nakawa",2026-08-02 00:00:00+00:00,17.68830939852393,Moderate
+airqo_g5279,"Bugolobi, Nakawa",2026-08-03 00:00:00+00:00,17.743792026665464,Moderate
+airqo_g5279,"Bugolobi, Nakawa",2026-08-04 00:00:00+00:00,17.730260250045095,Moderate
+airqo_g5279,"Bugolobi, Nakawa",2026-08-05 00:00:00+00:00,17.7242097123594,Moderate
+airqo_g5279,"Bugolobi, Nakawa",2026-08-06 00:00:00+00:00,17.749669704092202,Moderate
+airqo_g5279,"Bugolobi, Nakawa",2026-08-07 00:00:00+00:00,17.6962999025049,Moderate
+airqo_g5279,"Bugolobi, Nakawa",2026-08-08 00:00:00+00:00,17.683425185243,Moderate
+airqo_g5279,"Bugolobi, Nakawa",2026-08-09 00:00:00+00:00,17.68830939852393,Moderate
+airqo_g5279,"Bugolobi, Nakawa",2026-08-10 00:00:00+00:00,17.743792026665464,Moderate
+airqo_g5279,"Bugolobi, Nakawa",2026-08-11 00:00:00+00:00,17.730260250045095,Moderate
+airqo_g5279,"Bugolobi, Nakawa",2026-08-12 00:00:00+00:00,17.7242097123594,Moderate
+airqo_g5279,"Bugolobi, Nakawa",2026-08-13 00:00:00+00:00,17.749669704092202,Moderate
+airqo_g5279,"Bugolobi, Nakawa",2026-08-14 00:00:00+00:00,17.6962999025049,Moderate
+airqo_g5281,Kisenyi Health Centre 4 (KCCA),2026-08-01 00:00:00+00:00,35.1307896875,Moderate
+airqo_g5281,Kisenyi Health Centre 4 (KCCA),2026-08-02 00:00:00+00:00,35.227784661871695,Moderate
+airqo_g5281,Kisenyi Health Centre 4 (KCCA),2026-08-03 00:00:00+00:00,35.24039069609788,Moderate
+airqo_g5281,Kisenyi Health Centre 4 (KCCA),2026-08-04 00:00:00+00:00,35.31828618138228,Moderate
+airqo_g5281,Kisenyi Health Centre 4 (KCCA),2026-08-05 00:00:00+00:00,35.2301980026455,Moderate
+airqo_g5281,Kisenyi Health Centre 4 (KCCA),2026-08-06 00:00:00+00:00,34.87930113673942,Moderate
+airqo_g5281,Kisenyi Health Centre 4 (KCCA),2026-08-07 00:00:00+00:00,34.86332358548281,Moderate
+airqo_g5281,Kisenyi Health Centre 4 (KCCA),2026-08-08 00:00:00+00:00,35.1307896875,Moderate
+airqo_g5281,Kisenyi Health Centre 4 (KCCA),2026-08-09 00:00:00+00:00,35.227784661871695,Moderate
+airqo_g5281,Kisenyi Health Centre 4 (KCCA),2026-08-10 00:00:00+00:00,35.24039069609788,Moderate
+airqo_g5281,Kisenyi Health Centre 4 (KCCA),2026-08-11 00:00:00+00:00,35.31828618138228,Moderate
+airqo_g5281,Kisenyi Health Centre 4 (KCCA),2026-08-12 00:00:00+00:00,35.2301980026455,Moderate
+airqo_g5281,Kisenyi Health Centre 4 (KCCA),2026-08-13 00:00:00+00:00,34.87930113673942,Moderate
+airqo_g5281,Kisenyi Health Centre 4 (KCCA),2026-08-14 00:00:00+00:00,34.86332358548281,Moderate
+airqo_g5282,"Lorry Park, Fort Portal",2026-08-01 00:00:00+00:00,21.66923493588587,Moderate
+airqo_g5282,"Lorry Park, Fort Portal",2026-08-02 00:00:00+00:00,21.702039891243018,Moderate
+airqo_g5282,"Lorry Park, Fort Portal",2026-08-03 00:00:00+00:00,21.66704548144564,Moderate
+airqo_g5282,"Lorry Park, Fort Portal",2026-08-04 00:00:00+00:00,21.661837577856176,Moderate
+airqo_g5282,"Lorry Park, Fort Portal",2026-08-05 00:00:00+00:00,21.62896978519744,Moderate
+airqo_g5282,"Lorry Park, Fort Portal",2026-08-06 00:00:00+00:00,21.575907359076112,Moderate
+airqo_g5282,"Lorry Park, Fort Portal",2026-08-07 00:00:00+00:00,21.58406635288323,Moderate
+airqo_g5282,"Lorry Park, Fort Portal",2026-08-08 00:00:00+00:00,21.66923493588587,Moderate
+airqo_g5282,"Lorry Park, Fort Portal",2026-08-09 00:00:00+00:00,21.702039891243018,Moderate
+airqo_g5282,"Lorry Park, Fort Portal",2026-08-10 00:00:00+00:00,21.66704548144564,Moderate
+airqo_g5282,"Lorry Park, Fort Portal",2026-08-11 00:00:00+00:00,21.661837577856176,Moderate
+airqo_g5282,"Lorry Park, Fort Portal",2026-08-12 00:00:00+00:00,21.62896978519744,Moderate
+airqo_g5282,"Lorry Park, Fort Portal",2026-08-13 00:00:00+00:00,21.575907359076112,Moderate
+airqo_g5282,"Lorry Park, Fort Portal",2026-08-14 00:00:00+00:00,21.58406635288323,Moderate
+airqo_g5292,Kawaala Health Centre,2026-08-01 00:00:00+00:00,34.843152451449015,Moderate
+airqo_g5292,Kawaala Health Centre,2026-08-02 00:00:00+00:00,34.98501971425565,Moderate
+airqo_g5292,Kawaala Health Centre,2026-08-03 00:00:00+00:00,34.997902447390565,Moderate
+airqo_g5292,Kawaala Health Centre,2026-08-04 00:00:00+00:00,34.92758343005952,Moderate
+airqo_g5292,Kawaala Health Centre,2026-08-05 00:00:00+00:00,34.78231370039683,Moderate
+airqo_g5292,Kawaala Health Centre,2026-08-06 00:00:00+00:00,34.73048588902417,Moderate
+airqo_g5292,Kawaala Health Centre,2026-08-07 00:00:00+00:00,34.75042330049002,Moderate
+airqo_g5292,Kawaala Health Centre,2026-08-08 00:00:00+00:00,34.843152451449015,Moderate
+airqo_g5292,Kawaala Health Centre,2026-08-09 00:00:00+00:00,34.98501971425565,Moderate
+airqo_g5292,Kawaala Health Centre,2026-08-10 00:00:00+00:00,34.997902447390565,Moderate
+airqo_g5292,Kawaala Health Centre,2026-08-11 00:00:00+00:00,34.92758343005952,Moderate
+airqo_g5292,Kawaala Health Centre,2026-08-12 00:00:00+00:00,34.78231370039683,Moderate
+airqo_g5292,Kawaala Health Centre,2026-08-13 00:00:00+00:00,34.73048588902417,Moderate
+airqo_g5292,Kawaala Health Centre,2026-08-14 00:00:00+00:00,34.75042330049002,Moderate
+airqo_g5293,Buganda Road P.S,2026-08-01 00:00:00+00:00,18.540862267986643,Moderate
+airqo_g5293,Buganda Road P.S,2026-08-02 00:00:00+00:00,18.590094645632146,Moderate
+airqo_g5293,Buganda Road P.S,2026-08-03 00:00:00+00:00,18.64370475475913,Moderate
+airqo_g5293,Buganda Road P.S,2026-08-04 00:00:00+00:00,18.604718401424964,Moderate
+airqo_g5293,Buganda Road P.S,2026-08-05 00:00:00+00:00,18.563575631914382,Moderate
+airqo_g5293,Buganda Road P.S,2026-08-06 00:00:00+00:00,18.45285400876323,Moderate
+airqo_g5293,Buganda Road P.S,2026-08-07 00:00:00+00:00,18.40027136107527,Moderate
+airqo_g5293,Buganda Road P.S,2026-08-08 00:00:00+00:00,18.540862267986643,Moderate
+airqo_g5293,Buganda Road P.S,2026-08-09 00:00:00+00:00,18.590094645632146,Moderate
+airqo_g5293,Buganda Road P.S,2026-08-10 00:00:00+00:00,18.64370475475913,Moderate
+airqo_g5293,Buganda Road P.S,2026-08-11 00:00:00+00:00,18.604718401424964,Moderate
+airqo_g5293,Buganda Road P.S,2026-08-12 00:00:00+00:00,18.563575631914382,Moderate
+airqo_g5293,Buganda Road P.S,2026-08-13 00:00:00+00:00,18.45285400876323,Moderate
+airqo_g5293,Buganda Road P.S,2026-08-14 00:00:00+00:00,18.40027136107527,Moderate
+airqo_g5305,"Nile avenue, Kampla, Uganda",2026-08-01 00:00:00+00:00,13.44440692573052,Moderate
+airqo_g5305,"Nile avenue, Kampla, Uganda",2026-08-02 00:00:00+00:00,13.427443543620733,Moderate
+airqo_g5305,"Nile avenue, Kampla, Uganda",2026-08-03 00:00:00+00:00,13.373682539156448,Moderate
+airqo_g5305,"Nile avenue, Kampla, Uganda",2026-08-04 00:00:00+00:00,13.212271162668356,Moderate
+airqo_g5305,"Nile avenue, Kampla, Uganda",2026-08-05 00:00:00+00:00,13.2235169753337,Moderate
+airqo_g5305,"Nile avenue, Kampla, Uganda",2026-08-06 00:00:00+00:00,13.45062976633899,Moderate
+airqo_g5305,"Nile avenue, Kampla, Uganda",2026-08-07 00:00:00+00:00,13.559937112569145,Moderate
+airqo_g5305,"Nile avenue, Kampla, Uganda",2026-08-08 00:00:00+00:00,13.44440692573052,Moderate
+airqo_g5305,"Nile avenue, Kampla, Uganda",2026-08-09 00:00:00+00:00,13.427443543620733,Moderate
+airqo_g5305,"Nile avenue, Kampla, Uganda",2026-08-10 00:00:00+00:00,13.373682539156448,Moderate
+airqo_g5305,"Nile avenue, Kampla, Uganda",2026-08-11 00:00:00+00:00,13.212271162668356,Moderate
+airqo_g5305,"Nile avenue, Kampla, Uganda",2026-08-12 00:00:00+00:00,13.2235169753337,Moderate
+airqo_g5305,"Nile avenue, Kampla, Uganda",2026-08-13 00:00:00+00:00,13.45062976633899,Moderate
+airqo_g5305,"Nile avenue, Kampla, Uganda",2026-08-14 00:00:00+00:00,13.559937112569145,Moderate
+airqo_g5328,Kiswa Health Centre,2026-08-01 00:00:00+00:00,34.27535119460979,Moderate
+airqo_g5328,Kiswa Health Centre,2026-08-02 00:00:00+00:00,34.39007168154762,Moderate
+airqo_g5328,Kiswa Health Centre,2026-08-03 00:00:00+00:00,34.42880953373016,Moderate
+airqo_g5328,Kiswa Health Centre,2026-08-04 00:00:00+00:00,34.041186531084655,Moderate
+airqo_g5328,Kiswa Health Centre,2026-08-05 00:00:00+00:00,33.92264107886905,Moderate
+airqo_g5328,Kiswa Health Centre,2026-08-06 00:00:00+00:00,34.219048646584895,Moderate
+airqo_g5328,Kiswa Health Centre,2026-08-07 00:00:00+00:00,34.261475771254204,Moderate
+airqo_g5328,Kiswa Health Centre,2026-08-08 00:00:00+00:00,34.27535119460979,Moderate
+airqo_g5328,Kiswa Health Centre,2026-08-09 00:00:00+00:00,34.39007168154762,Moderate
+airqo_g5328,Kiswa Health Centre,2026-08-10 00:00:00+00:00,34.42880953373016,Moderate
+airqo_g5328,Kiswa Health Centre,2026-08-11 00:00:00+00:00,34.041186531084655,Moderate
+airqo_g5328,Kiswa Health Centre,2026-08-12 00:00:00+00:00,33.92264107886905,Moderate
+airqo_g5328,Kiswa Health Centre,2026-08-13 00:00:00+00:00,34.219048646584895,Moderate
+airqo_g5328,Kiswa Health Centre,2026-08-14 00:00:00+00:00,34.261475771254204,Moderate
+airqo_g5330,Komamboga Health Centre,2026-08-01 00:00:00+00:00,37.68763908549784,Unhealthy for Sensitive Groups
+airqo_g5330,Komamboga Health Centre,2026-08-02 00:00:00+00:00,37.84509914998196,Unhealthy for Sensitive Groups
+airqo_g5330,Komamboga Health Centre,2026-08-03 00:00:00+00:00,37.94097602084837,Unhealthy for Sensitive Groups
+airqo_g5330,Komamboga Health Centre,2026-08-04 00:00:00+00:00,37.680496659902595,Unhealthy for Sensitive Groups
+airqo_g5330,Komamboga Health Centre,2026-08-05 00:00:00+00:00,37.5369091599026,Unhealthy for Sensitive Groups
+airqo_g5330,Komamboga Health Centre,2026-08-06 00:00:00+00:00,37.435103214962126,Unhealthy for Sensitive Groups
+airqo_g5330,Komamboga Health Centre,2026-08-07 00:00:00+00:00,37.475565061853665,Unhealthy for Sensitive Groups
+airqo_g5330,Komamboga Health Centre,2026-08-08 00:00:00+00:00,37.68763908549784,Unhealthy for Sensitive Groups
+airqo_g5330,Komamboga Health Centre,2026-08-09 00:00:00+00:00,37.84509914998196,Unhealthy for Sensitive Groups
+airqo_g5330,Komamboga Health Centre,2026-08-10 00:00:00+00:00,37.94097602084837,Unhealthy for Sensitive Groups
+airqo_g5330,Komamboga Health Centre,2026-08-11 00:00:00+00:00,37.680496659902595,Unhealthy for Sensitive Groups
+airqo_g5330,Komamboga Health Centre,2026-08-12 00:00:00+00:00,37.5369091599026,Unhealthy for Sensitive Groups
+airqo_g5330,Komamboga Health Centre,2026-08-13 00:00:00+00:00,37.435103214962126,Unhealthy for Sensitive Groups
+airqo_g5330,Komamboga Health Centre,2026-08-14 00:00:00+00:00,37.475565061853665,Unhealthy for Sensitive Groups
+airqo_g5331,Agricultural Resource Centre Kyanja,2026-08-01 00:00:00+00:00,23.58045543079606,Moderate
+airqo_g5331,Agricultural Resource Centre Kyanja,2026-08-02 00:00:00+00:00,23.693002933276215,Moderate
+airqo_g5331,Agricultural Resource Centre Kyanja,2026-08-03 00:00:00+00:00,23.782947878712722,Moderate
+airqo_g5331,Agricultural Resource Centre Kyanja,2026-08-04 00:00:00+00:00,23.648783288915947,Moderate
+airqo_g5331,Agricultural Resource Centre Kyanja,2026-08-05 00:00:00+00:00,23.550775424332613,Moderate
+airqo_g5331,Agricultural Resource Centre Kyanja,2026-08-06 00:00:00+00:00,23.690319594306157,Moderate
+airqo_g5331,Agricultural Resource Centre Kyanja,2026-08-07 00:00:00+00:00,23.594747317370132,Moderate
+airqo_g5331,Agricultural Resource Centre Kyanja,2026-08-08 00:00:00+00:00,23.58045543079606,Moderate
+airqo_g5331,Agricultural Resource Centre Kyanja,2026-08-09 00:00:00+00:00,23.693002933276215,Moderate
+airqo_g5331,Agricultural Resource Centre Kyanja,2026-08-10 00:00:00+00:00,23.782947878712722,Moderate
+airqo_g5331,Agricultural Resource Centre Kyanja,2026-08-11 00:00:00+00:00,23.648783288915947,Moderate
+airqo_g5331,Agricultural Resource Centre Kyanja,2026-08-12 00:00:00+00:00,23.550775424332613,Moderate
+airqo_g5331,Agricultural Resource Centre Kyanja,2026-08-13 00:00:00+00:00,23.690319594306157,Moderate
+airqo_g5331,Agricultural Resource Centre Kyanja,2026-08-14 00:00:00+00:00,23.594747317370132,Moderate
+airqo_g5335,Kamwokya Primary School,2026-08-01 00:00:00+00:00,34.68282619273088,Moderate
+airqo_g5335,Kamwokya Primary School,2026-08-02 00:00:00+00:00,34.8062959011995,Moderate
+airqo_g5335,Kamwokya Primary School,2026-08-03 00:00:00+00:00,34.769072427323835,Moderate
+airqo_g5335,Kamwokya Primary School,2026-08-04 00:00:00+00:00,34.444812566889134,Moderate
+airqo_g5335,Kamwokya Primary School,2026-08-05 00:00:00+00:00,34.321860847011784,Moderate
+airqo_g5335,Kamwokya Primary School,2026-08-06 00:00:00+00:00,34.44506483443062,Moderate
+airqo_g5335,Kamwokya Primary School,2026-08-07 00:00:00+00:00,34.63229932021104,Moderate
+airqo_g5335,Kamwokya Primary School,2026-08-08 00:00:00+00:00,34.68282619273088,Moderate
+airqo_g5335,Kamwokya Primary School,2026-08-09 00:00:00+00:00,34.8062959011995,Moderate
+airqo_g5335,Kamwokya Primary School,2026-08-10 00:00:00+00:00,34.769072427323835,Moderate
+airqo_g5335,Kamwokya Primary School,2026-08-11 00:00:00+00:00,34.444812566889134,Moderate
+airqo_g5335,Kamwokya Primary School,2026-08-12 00:00:00+00:00,34.321860847011784,Moderate
+airqo_g5335,Kamwokya Primary School,2026-08-13 00:00:00+00:00,34.44506483443062,Moderate
+airqo_g5335,Kamwokya Primary School,2026-08-14 00:00:00+00:00,34.63229932021104,Moderate
+airqo_g5336,Kawempe Division,2026-08-01 00:00:00+00:00,36.40246498075998,Unhealthy for Sensitive Groups
+airqo_g5336,Kawempe Division,2026-08-02 00:00:00+00:00,36.56582350010522,Unhealthy for Sensitive Groups
+airqo_g5336,Kawempe Division,2026-08-03 00:00:00+00:00,36.732127784992784,Unhealthy for Sensitive Groups
+airqo_g5336,Kawempe Division,2026-08-04 00:00:00+00:00,36.548053185651156,Unhealthy for Sensitive Groups
+airqo_g5336,Kawempe Division,2026-08-05 00:00:00+00:00,36.38440457950036,Unhealthy for Sensitive Groups
+airqo_g5336,Kawempe Division,2026-08-06 00:00:00+00:00,36.280019817896225,Unhealthy for Sensitive Groups
+airqo_g5336,Kawempe Division,2026-08-07 00:00:00+00:00,36.26695980714887,Unhealthy for Sensitive Groups
+airqo_g5336,Kawempe Division,2026-08-08 00:00:00+00:00,36.40246498075998,Unhealthy for Sensitive Groups
+airqo_g5336,Kawempe Division,2026-08-09 00:00:00+00:00,36.56582350010522,Unhealthy for Sensitive Groups
+airqo_g5336,Kawempe Division,2026-08-10 00:00:00+00:00,36.732127784992784,Unhealthy for Sensitive Groups
+airqo_g5336,Kawempe Division,2026-08-11 00:00:00+00:00,36.548053185651156,Unhealthy for Sensitive Groups
+airqo_g5336,Kawempe Division,2026-08-12 00:00:00+00:00,36.38440457950036,Unhealthy for Sensitive Groups
+airqo_g5336,Kawempe Division,2026-08-13 00:00:00+00:00,36.280019817896225,Unhealthy for Sensitive Groups
+airqo_g5336,Kawempe Division,2026-08-14 00:00:00+00:00,36.26695980714887,Unhealthy for Sensitive Groups
+airqo_g5337,Kololo AirStrip,2026-08-01 00:00:00+00:00,30.320803905047498,Moderate
+airqo_g5337,Kololo AirStrip,2026-08-02 00:00:00+00:00,30.367335137686386,Moderate
+airqo_g5337,Kololo AirStrip,2026-08-03 00:00:00+00:00,30.503347410338502,Moderate
+airqo_g5337,Kololo AirStrip,2026-08-04 00:00:00+00:00,30.365969466390087,Moderate
+airqo_g5337,Kololo AirStrip,2026-08-05 00:00:00+00:00,30.31059219208454,Moderate
+airqo_g5337,Kololo AirStrip,2026-08-06 00:00:00+00:00,30.31269432832792,Moderate
+airqo_g5337,Kololo AirStrip,2026-08-07 00:00:00+00:00,30.214790272441675,Moderate
+airqo_g5337,Kololo AirStrip,2026-08-08 00:00:00+00:00,30.320803905047498,Moderate
+airqo_g5337,Kololo AirStrip,2026-08-09 00:00:00+00:00,30.367335137686386,Moderate
+airqo_g5337,Kololo AirStrip,2026-08-10 00:00:00+00:00,30.503347410338502,Moderate
+airqo_g5337,Kololo AirStrip,2026-08-11 00:00:00+00:00,30.365969466390087,Moderate
+airqo_g5337,Kololo AirStrip,2026-08-12 00:00:00+00:00,30.31059219208454,Moderate
+airqo_g5337,Kololo AirStrip,2026-08-13 00:00:00+00:00,30.31269432832792,Moderate
+airqo_g5337,Kololo AirStrip,2026-08-14 00:00:00+00:00,30.214790272441675,Moderate
+airqo_g5339,Makerere University Weather Station 94,2026-08-01 00:00:00+00:00,30.667453290494226,Moderate
+airqo_g5339,Makerere University Weather Station 94,2026-08-02 00:00:00+00:00,30.769569720794255,Moderate
+airqo_g5339,Makerere University Weather Station 94,2026-08-03 00:00:00+00:00,30.852725108525732,Moderate
+airqo_g5339,Makerere University Weather Station 94,2026-08-04 00:00:00+00:00,30.81975136761965,Moderate
+airqo_g5339,Makerere University Weather Station 94,2026-08-05 00:00:00+00:00,30.71164188762626,Moderate
+airqo_g5339,Makerere University Weather Station 94,2026-08-06 00:00:00+00:00,30.566718505516477,Moderate
+airqo_g5339,Makerere University Weather Station 94,2026-08-07 00:00:00+00:00,30.524873848529946,Moderate
+airqo_g5339,Makerere University Weather Station 94,2026-08-08 00:00:00+00:00,30.667453290494226,Moderate
+airqo_g5339,Makerere University Weather Station 94,2026-08-09 00:00:00+00:00,30.769569720794255,Moderate
+airqo_g5339,Makerere University Weather Station 94,2026-08-10 00:00:00+00:00,30.852725108525732,Moderate
+airqo_g5339,Makerere University Weather Station 94,2026-08-11 00:00:00+00:00,30.81975136761965,Moderate
+airqo_g5339,Makerere University Weather Station 94,2026-08-12 00:00:00+00:00,30.71164188762626,Moderate
+airqo_g5339,Makerere University Weather Station 94,2026-08-13 00:00:00+00:00,30.566718505516477,Moderate
+airqo_g5339,Makerere University Weather Station 94,2026-08-14 00:00:00+00:00,30.524873848529946,Moderate
+airqo_g5341,Makerere University Weather Station 94,2026-08-01 00:00:00+00:00,33.06815728174603,Moderate
+airqo_g5341,Makerere University Weather Station 94,2026-08-02 00:00:00+00:00,33.123229027777775,Moderate
+airqo_g5341,Makerere University Weather Station 94,2026-08-03 00:00:00+00:00,33.416018660714286,Moderate
+airqo_g5341,Makerere University Weather Station 94,2026-08-04 00:00:00+00:00,33.26410536191239,Moderate
+airqo_g5341,Makerere University Weather Station 94,2026-08-05 00:00:00+00:00,33.209212331158426,Moderate
+airqo_g5341,Makerere University Weather Station 94,2026-08-06 00:00:00+00:00,33.16535926320208,Moderate
+airqo_g5341,Makerere University Weather Station 94,2026-08-07 00:00:00+00:00,32.94497445601852,Moderate
+airqo_g5341,Makerere University Weather Station 94,2026-08-08 00:00:00+00:00,33.06815728174603,Moderate
+airqo_g5341,Makerere University Weather Station 94,2026-08-09 00:00:00+00:00,33.123229027777775,Moderate
+airqo_g5341,Makerere University Weather Station 94,2026-08-10 00:00:00+00:00,33.416018660714286,Moderate
+airqo_g5341,Makerere University Weather Station 94,2026-08-11 00:00:00+00:00,33.26410536191239,Moderate
+airqo_g5341,Makerere University Weather Station 94,2026-08-12 00:00:00+00:00,33.209212331158426,Moderate
+airqo_g5341,Makerere University Weather Station 94,2026-08-13 00:00:00+00:00,33.16535926320208,Moderate
+airqo_g5341,Makerere University Weather Station 94,2026-08-14 00:00:00+00:00,32.94497445601852,Moderate
+airqo_g5342,Nakawa Division KCCA,2026-08-01 00:00:00+00:00,32.37304680262446,Moderate
+airqo_g5342,Nakawa Division KCCA,2026-08-02 00:00:00+00:00,32.548288471771286,Moderate
+airqo_g5342,Nakawa Division KCCA,2026-08-03 00:00:00+00:00,32.677091762115204,Moderate
+airqo_g5342,Nakawa Division KCCA,2026-08-04 00:00:00+00:00,32.460664869603775,Moderate
+airqo_g5342,Nakawa Division KCCA,2026-08-05 00:00:00+00:00,32.27682377916066,Moderate
+airqo_g5342,Nakawa Division KCCA,2026-08-06 00:00:00+00:00,32.16654978790885,Moderate
+airqo_g5342,Nakawa Division KCCA,2026-08-07 00:00:00+00:00,32.1906633626443,Moderate
+airqo_g5342,Nakawa Division KCCA,2026-08-08 00:00:00+00:00,32.37304680262446,Moderate
+airqo_g5342,Nakawa Division KCCA,2026-08-09 00:00:00+00:00,32.548288471771286,Moderate
+airqo_g5342,Nakawa Division KCCA,2026-08-10 00:00:00+00:00,32.677091762115204,Moderate
+airqo_g5342,Nakawa Division KCCA,2026-08-11 00:00:00+00:00,32.460664869603775,Moderate
+airqo_g5342,Nakawa Division KCCA,2026-08-12 00:00:00+00:00,32.27682377916066,Moderate
+airqo_g5342,Nakawa Division KCCA,2026-08-13 00:00:00+00:00,32.16654978790885,Moderate
+airqo_g5342,Nakawa Division KCCA,2026-08-14 00:00:00+00:00,32.1906633626443,Moderate
+airqo_g5343,"KCCA Hall,Parliamentary Avenue",2026-08-01 00:00:00+00:00,29.619123195872415,Moderate
+airqo_g5343,"KCCA Hall,Parliamentary Avenue",2026-08-02 00:00:00+00:00,29.69918588436448,Moderate
+airqo_g5343,"KCCA Hall,Parliamentary Avenue",2026-08-03 00:00:00+00:00,30.003699323743387,Moderate
+airqo_g5343,"KCCA Hall,Parliamentary Avenue",2026-08-04 00:00:00+00:00,29.858067614162454,Moderate
+airqo_g5343,"KCCA Hall,Parliamentary Avenue",2026-08-05 00:00:00+00:00,29.771566195511664,Moderate
+airqo_g5343,"KCCA Hall,Parliamentary Avenue",2026-08-06 00:00:00+00:00,29.911392037788602,Moderate
+airqo_g5343,"KCCA Hall,Parliamentary Avenue",2026-08-07 00:00:00+00:00,29.611270031114717,Moderate
+airqo_g5343,"KCCA Hall,Parliamentary Avenue",2026-08-08 00:00:00+00:00,29.619123195872415,Moderate
+airqo_g5343,"KCCA Hall,Parliamentary Avenue",2026-08-09 00:00:00+00:00,29.69918588436448,Moderate
+airqo_g5343,"KCCA Hall,Parliamentary Avenue",2026-08-10 00:00:00+00:00,30.003699323743387,Moderate
+airqo_g5343,"KCCA Hall,Parliamentary Avenue",2026-08-11 00:00:00+00:00,29.858067614162454,Moderate
+airqo_g5343,"KCCA Hall,Parliamentary Avenue",2026-08-12 00:00:00+00:00,29.771566195511664,Moderate
+airqo_g5343,"KCCA Hall,Parliamentary Avenue",2026-08-13 00:00:00+00:00,29.911392037788602,Moderate
+airqo_g5343,"KCCA Hall,Parliamentary Avenue",2026-08-14 00:00:00+00:00,29.611270031114717,Moderate
+airqo_g5345,"St Paul Demonstration School,Ggaba",2026-08-01 00:00:00+00:00,31.5570290297145,Moderate
+airqo_g5345,"St Paul Demonstration School,Ggaba",2026-08-02 00:00:00+00:00,31.649481015812892,Moderate
+airqo_g5345,"St Paul Demonstration School,Ggaba",2026-08-03 00:00:00+00:00,31.89425525049603,Moderate
+airqo_g5345,"St Paul Demonstration School,Ggaba",2026-08-04 00:00:00+00:00,31.769770233707266,Moderate
+airqo_g5345,"St Paul Demonstration School,Ggaba",2026-08-05 00:00:00+00:00,31.684843480743794,Moderate
+airqo_g5345,"St Paul Demonstration School,Ggaba",2026-08-06 00:00:00+00:00,31.727489723303318,Moderate
+airqo_g5345,"St Paul Demonstration School,Ggaba",2026-08-07 00:00:00+00:00,31.48560065421847,Moderate
+airqo_g5345,"St Paul Demonstration School,Ggaba",2026-08-08 00:00:00+00:00,31.5570290297145,Moderate
+airqo_g5345,"St Paul Demonstration School,Ggaba",2026-08-09 00:00:00+00:00,31.649481015812892,Moderate
+airqo_g5345,"St Paul Demonstration School,Ggaba",2026-08-10 00:00:00+00:00,31.89425525049603,Moderate
+airqo_g5345,"St Paul Demonstration School,Ggaba",2026-08-11 00:00:00+00:00,31.769770233707266,Moderate
+airqo_g5345,"St Paul Demonstration School,Ggaba",2026-08-12 00:00:00+00:00,31.684843480743794,Moderate
+airqo_g5345,"St Paul Demonstration School,Ggaba",2026-08-13 00:00:00+00:00,31.727489723303318,Moderate
+airqo_g5345,"St Paul Demonstration School,Ggaba",2026-08-14 00:00:00+00:00,31.48560065421847,Moderate
+airqo_g5346,Kololo Mabua Stores,2026-08-01 00:00:00+00:00,30.476437173890925,Moderate
+airqo_g5346,Kololo Mabua Stores,2026-08-02 00:00:00+00:00,30.569125044261295,Moderate
+airqo_g5346,Kololo Mabua Stores,2026-08-03 00:00:00+00:00,30.586206073527165,Moderate
+airqo_g5346,Kololo Mabua Stores,2026-08-04 00:00:00+00:00,30.554845697751322,Moderate
+airqo_g5346,Kololo Mabua Stores,2026-08-05 00:00:00+00:00,30.45041303902116,Moderate
+airqo_g5346,Kololo Mabua Stores,2026-08-06 00:00:00+00:00,30.277201164021164,Moderate
+airqo_g5346,Kololo Mabua Stores,2026-08-07 00:00:00+00:00,30.309919279545685,Moderate
+airqo_g5346,Kololo Mabua Stores,2026-08-08 00:00:00+00:00,30.476437173890925,Moderate
+airqo_g5346,Kololo Mabua Stores,2026-08-09 00:00:00+00:00,30.569125044261295,Moderate
+airqo_g5346,Kololo Mabua Stores,2026-08-10 00:00:00+00:00,30.586206073527165,Moderate
+airqo_g5346,Kololo Mabua Stores,2026-08-11 00:00:00+00:00,30.554845697751322,Moderate
+airqo_g5346,Kololo Mabua Stores,2026-08-12 00:00:00+00:00,30.45041303902116,Moderate
+airqo_g5346,Kololo Mabua Stores,2026-08-13 00:00:00+00:00,30.277201164021164,Moderate
+airqo_g5346,Kololo Mabua Stores,2026-08-14 00:00:00+00:00,30.309919279545685,Moderate
+airqo_g5356,"Kitebi Health Centre 3,Kabusu road",2026-08-01 00:00:00+00:00,43.52552490718194,Unhealthy for Sensitive Groups
+airqo_g5356,"Kitebi Health Centre 3,Kabusu road",2026-08-02 00:00:00+00:00,43.65291569421897,Unhealthy for Sensitive Groups
+airqo_g5356,"Kitebi Health Centre 3,Kabusu road",2026-08-03 00:00:00+00:00,43.884032470839344,Unhealthy for Sensitive Groups
+airqo_g5356,"Kitebi Health Centre 3,Kabusu road",2026-08-04 00:00:00+00:00,43.83236405483405,Unhealthy for Sensitive Groups
+airqo_g5356,"Kitebi Health Centre 3,Kabusu road",2026-08-05 00:00:00+00:00,43.69643757583273,Unhealthy for Sensitive Groups
+airqo_g5356,"Kitebi Health Centre 3,Kabusu road",2026-08-06 00:00:00+00:00,43.56926312146766,Unhealthy for Sensitive Groups
+airqo_g5356,"Kitebi Health Centre 3,Kabusu road",2026-08-07 00:00:00+00:00,43.40268892338565,Unhealthy for Sensitive Groups
+airqo_g5356,"Kitebi Health Centre 3,Kabusu road",2026-08-08 00:00:00+00:00,43.52552490718194,Unhealthy for Sensitive Groups
+airqo_g5356,"Kitebi Health Centre 3,Kabusu road",2026-08-09 00:00:00+00:00,43.65291569421897,Unhealthy for Sensitive Groups
+airqo_g5356,"Kitebi Health Centre 3,Kabusu road",2026-08-10 00:00:00+00:00,43.884032470839344,Unhealthy for Sensitive Groups
+airqo_g5356,"Kitebi Health Centre 3,Kabusu road",2026-08-11 00:00:00+00:00,43.83236405483405,Unhealthy for Sensitive Groups
+airqo_g5356,"Kitebi Health Centre 3,Kabusu road",2026-08-12 00:00:00+00:00,43.69643757583273,Unhealthy for Sensitive Groups
+airqo_g5356,"Kitebi Health Centre 3,Kabusu road",2026-08-13 00:00:00+00:00,43.56926312146766,Unhealthy for Sensitive Groups
+airqo_g5356,"Kitebi Health Centre 3,Kabusu road",2026-08-14 00:00:00+00:00,43.40268892338565,Unhealthy for Sensitive Groups
+airqo_g5359,KCCA Division Kisungu,2026-08-01 00:00:00+00:00,28.829836474867722,Moderate
+airqo_g5359,KCCA Division Kisungu,2026-08-02 00:00:00+00:00,28.883485108300263,Moderate
+airqo_g5359,KCCA Division Kisungu,2026-08-03 00:00:00+00:00,29.021292118055555,Moderate
+airqo_g5359,KCCA Division Kisungu,2026-08-04 00:00:00+00:00,28.834248507580384,Moderate
+airqo_g5359,KCCA Division Kisungu,2026-08-05 00:00:00+00:00,28.78359563803673,Moderate
+airqo_g5359,KCCA Division Kisungu,2026-08-06 00:00:00+00:00,28.809947235258957,Moderate
+airqo_g5359,KCCA Division Kisungu,2026-08-07 00:00:00+00:00,28.749843446593914,Moderate
+airqo_g5359,KCCA Division Kisungu,2026-08-08 00:00:00+00:00,28.829836474867722,Moderate
+airqo_g5359,KCCA Division Kisungu,2026-08-09 00:00:00+00:00,28.883485108300263,Moderate
+airqo_g5359,KCCA Division Kisungu,2026-08-10 00:00:00+00:00,29.021292118055555,Moderate
+airqo_g5359,KCCA Division Kisungu,2026-08-11 00:00:00+00:00,28.834248507580384,Moderate
+airqo_g5359,KCCA Division Kisungu,2026-08-12 00:00:00+00:00,28.78359563803673,Moderate
+airqo_g5359,KCCA Division Kisungu,2026-08-13 00:00:00+00:00,28.809947235258957,Moderate
+airqo_g5359,KCCA Division Kisungu,2026-08-14 00:00:00+00:00,28.749843446593914,Moderate
+airqo_g5361,KCCA Stadium Lugogo,2026-08-01 00:00:00+00:00,36.246519651951054,Unhealthy for Sensitive Groups
+airqo_g5361,KCCA Stadium Lugogo,2026-08-02 00:00:00+00:00,36.408897093329124,Unhealthy for Sensitive Groups
+airqo_g5361,KCCA Stadium Lugogo,2026-08-03 00:00:00+00:00,36.49626235397126,Unhealthy for Sensitive Groups
+airqo_g5361,KCCA Stadium Lugogo,2026-08-04 00:00:00+00:00,36.36458122549904,Unhealthy for Sensitive Groups
+airqo_g5361,KCCA Stadium Lugogo,2026-08-05 00:00:00+00:00,36.22357946541306,Unhealthy for Sensitive Groups
+airqo_g5361,KCCA Stadium Lugogo,2026-08-06 00:00:00+00:00,36.226612793786074,Unhealthy for Sensitive Groups
+airqo_g5361,KCCA Stadium Lugogo,2026-08-07 00:00:00+00:00,36.13153372271825,Unhealthy for Sensitive Groups
+airqo_g5361,KCCA Stadium Lugogo,2026-08-08 00:00:00+00:00,36.246519651951054,Unhealthy for Sensitive Groups
+airqo_g5361,KCCA Stadium Lugogo,2026-08-09 00:00:00+00:00,36.408897093329124,Unhealthy for Sensitive Groups
+airqo_g5361,KCCA Stadium Lugogo,2026-08-10 00:00:00+00:00,36.49626235397126,Unhealthy for Sensitive Groups
+airqo_g5361,KCCA Stadium Lugogo,2026-08-11 00:00:00+00:00,36.36458122549904,Unhealthy for Sensitive Groups
+airqo_g5361,KCCA Stadium Lugogo,2026-08-12 00:00:00+00:00,36.22357946541306,Unhealthy for Sensitive Groups
+airqo_g5361,KCCA Stadium Lugogo,2026-08-13 00:00:00+00:00,36.226612793786074,Unhealthy for Sensitive Groups
+airqo_g5361,KCCA Stadium Lugogo,2026-08-14 00:00:00+00:00,36.13153372271825,Unhealthy for Sensitive Groups
+airqo_g5365,Namungona Primary school,2026-08-01 00:00:00+00:00,40.377248497093184,Unhealthy for Sensitive Groups
+airqo_g5365,Namungona Primary school,2026-08-02 00:00:00+00:00,40.52624355413683,Unhealthy for Sensitive Groups
+airqo_g5365,Namungona Primary school,2026-08-03 00:00:00+00:00,40.66000946435509,Unhealthy for Sensitive Groups
+airqo_g5365,Namungona Primary school,2026-08-04 00:00:00+00:00,40.44318271520725,Unhealthy for Sensitive Groups
+airqo_g5365,Namungona Primary school,2026-08-05 00:00:00+00:00,40.29576289956571,Unhealthy for Sensitive Groups
+airqo_g5365,Namungona Primary school,2026-08-06 00:00:00+00:00,40.21951762261465,Unhealthy for Sensitive Groups
+airqo_g5365,Namungona Primary school,2026-08-07 00:00:00+00:00,40.232588770737365,Unhealthy for Sensitive Groups
+airqo_g5365,Namungona Primary school,2026-08-08 00:00:00+00:00,40.377248497093184,Unhealthy for Sensitive Groups
+airqo_g5365,Namungona Primary school,2026-08-09 00:00:00+00:00,40.52624355413683,Unhealthy for Sensitive Groups
+airqo_g5365,Namungona Primary school,2026-08-10 00:00:00+00:00,40.66000946435509,Unhealthy for Sensitive Groups
+airqo_g5365,Namungona Primary school,2026-08-11 00:00:00+00:00,40.44318271520725,Unhealthy for Sensitive Groups
+airqo_g5365,Namungona Primary school,2026-08-12 00:00:00+00:00,40.29576289956571,Unhealthy for Sensitive Groups
+airqo_g5365,Namungona Primary school,2026-08-13 00:00:00+00:00,40.21951762261465,Unhealthy for Sensitive Groups
+airqo_g5365,Namungona Primary school,2026-08-14 00:00:00+00:00,40.232588770737365,Unhealthy for Sensitive Groups
+airqo_g5366,"Kira Road Police, Kira road, Kampala Uganda",2026-08-01 00:00:00+00:00,33.16220546694625,Moderate
+airqo_g5366,"Kira Road Police, Kira road, Kampala Uganda",2026-08-02 00:00:00+00:00,33.301952780257935,Moderate
+airqo_g5366,"Kira Road Police, Kira road, Kampala Uganda",2026-08-03 00:00:00+00:00,33.551251822089945,Moderate
+airqo_g5366,"Kira Road Police, Kira road, Kampala Uganda",2026-08-04 00:00:00+00:00,33.36164254546958,Moderate
+airqo_g5366,"Kira Road Police, Kira road, Kampala Uganda",2026-08-05 00:00:00+00:00,33.22818540261243,Moderate
+airqo_g5366,"Kira Road Police, Kira road, Kampala Uganda",2026-08-06 00:00:00+00:00,33.30791727926587,Moderate
+airqo_g5366,"Kira Road Police, Kira road, Kampala Uganda",2026-08-07 00:00:00+00:00,33.12443100348725,Moderate
+airqo_g5366,"Kira Road Police, Kira road, Kampala Uganda",2026-08-08 00:00:00+00:00,33.16220546694625,Moderate
+airqo_g5366,"Kira Road Police, Kira road, Kampala Uganda",2026-08-09 00:00:00+00:00,33.301952780257935,Moderate
+airqo_g5366,"Kira Road Police, Kira road, Kampala Uganda",2026-08-10 00:00:00+00:00,33.551251822089945,Moderate
+airqo_g5366,"Kira Road Police, Kira road, Kampala Uganda",2026-08-11 00:00:00+00:00,33.36164254546958,Moderate
+airqo_g5366,"Kira Road Police, Kira road, Kampala Uganda",2026-08-12 00:00:00+00:00,33.22818540261243,Moderate
+airqo_g5366,"Kira Road Police, Kira road, Kampala Uganda",2026-08-13 00:00:00+00:00,33.30791727926587,Moderate
+airqo_g5366,"Kira Road Police, Kira road, Kampala Uganda",2026-08-14 00:00:00+00:00,33.12443100348725,Moderate
+airqo_g5367,"Bakuli, Kampala, Uganda",2026-08-01 00:00:00+00:00,44.46976544575217,Unhealthy for Sensitive Groups
+airqo_g5367,"Bakuli, Kampala, Uganda",2026-08-02 00:00:00+00:00,44.620028841089464,Unhealthy for Sensitive Groups
+airqo_g5367,"Bakuli, Kampala, Uganda",2026-08-03 00:00:00+00:00,44.74833251089766,Unhealthy for Sensitive Groups
+airqo_g5367,"Bakuli, Kampala, Uganda",2026-08-04 00:00:00+00:00,44.65471119558682,Unhealthy for Sensitive Groups
+airqo_g5367,"Bakuli, Kampala, Uganda",2026-08-05 00:00:00+00:00,44.5191804093765,Unhealthy for Sensitive Groups
+airqo_g5367,"Bakuli, Kampala, Uganda",2026-08-06 00:00:00+00:00,44.263061521314334,Unhealthy for Sensitive Groups
+airqo_g5367,"Bakuli, Kampala, Uganda",2026-08-07 00:00:00+00:00,44.19318478933682,Unhealthy for Sensitive Groups
+airqo_g5367,"Bakuli, Kampala, Uganda",2026-08-08 00:00:00+00:00,44.46976544575217,Unhealthy for Sensitive Groups
+airqo_g5367,"Bakuli, Kampala, Uganda",2026-08-09 00:00:00+00:00,44.620028841089464,Unhealthy for Sensitive Groups
+airqo_g5367,"Bakuli, Kampala, Uganda",2026-08-10 00:00:00+00:00,44.74833251089766,Unhealthy for Sensitive Groups
+airqo_g5367,"Bakuli, Kampala, Uganda",2026-08-11 00:00:00+00:00,44.65471119558682,Unhealthy for Sensitive Groups
+airqo_g5367,"Bakuli, Kampala, Uganda",2026-08-12 00:00:00+00:00,44.5191804093765,Unhealthy for Sensitive Groups
+airqo_g5367,"Bakuli, Kampala, Uganda",2026-08-13 00:00:00+00:00,44.263061521314334,Unhealthy for Sensitive Groups
+airqo_g5367,"Bakuli, Kampala, Uganda",2026-08-14 00:00:00+00:00,44.19318478933682,Unhealthy for Sensitive Groups
+airqo_g5368,Ministry Of Health 2,2026-08-01 00:00:00+00:00,18.91114906911376,Moderate
+airqo_g5368,Ministry Of Health 2,2026-08-02 00:00:00+00:00,18.92908233052249,Moderate
+airqo_g5368,Ministry Of Health 2,2026-08-03 00:00:00+00:00,19.013209977678574,Moderate
+airqo_g5368,Ministry Of Health 2,2026-08-04 00:00:00+00:00,19.0010552483165,Moderate
+airqo_g5368,Ministry Of Health 2,2026-08-05 00:00:00+00:00,18.97915481924904,Moderate
+airqo_g5368,Ministry Of Health 2,2026-08-06 00:00:00+00:00,18.983352002314813,Moderate
+airqo_g5368,Ministry Of Health 2,2026-08-07 00:00:00+00:00,18.895700364583337,Moderate
+airqo_g5368,Ministry Of Health 2,2026-08-08 00:00:00+00:00,18.91114906911376,Moderate
+airqo_g5368,Ministry Of Health 2,2026-08-09 00:00:00+00:00,18.92908233052249,Moderate
+airqo_g5368,Ministry Of Health 2,2026-08-10 00:00:00+00:00,19.013209977678574,Moderate
+airqo_g5368,Ministry Of Health 2,2026-08-11 00:00:00+00:00,19.0010552483165,Moderate
+airqo_g5368,Ministry Of Health 2,2026-08-12 00:00:00+00:00,18.97915481924904,Moderate
+airqo_g5368,Ministry Of Health 2,2026-08-13 00:00:00+00:00,18.983352002314813,Moderate
+airqo_g5368,Ministry Of Health 2,2026-08-14 00:00:00+00:00,18.895700364583337,Moderate
+airqo_g5375,Nakivubo Blue Primary School,2026-08-01 00:00:00+00:00,27.322175516063798,Moderate
+airqo_g5375,Nakivubo Blue Primary School,2026-08-02 00:00:00+00:00,27.324512470238094,Moderate
+airqo_g5375,Nakivubo Blue Primary School,2026-08-03 00:00:00+00:00,27.510104512235454,Moderate
+airqo_g5375,Nakivubo Blue Primary School,2026-08-04 00:00:00+00:00,27.35658778025794,Moderate
+airqo_g5375,Nakivubo Blue Primary School,2026-08-05 00:00:00+00:00,27.355668603861417,Moderate
+airqo_g5375,Nakivubo Blue Primary School,2026-08-06 00:00:00+00:00,27.585158297975173,Moderate
+airqo_g5375,Nakivubo Blue Primary School,2026-08-07 00:00:00+00:00,27.43934209344475,Moderate
+airqo_g5375,Nakivubo Blue Primary School,2026-08-08 00:00:00+00:00,27.322175516063798,Moderate
+airqo_g5375,Nakivubo Blue Primary School,2026-08-09 00:00:00+00:00,27.324512470238094,Moderate
+airqo_g5375,Nakivubo Blue Primary School,2026-08-10 00:00:00+00:00,27.510104512235454,Moderate
+airqo_g5375,Nakivubo Blue Primary School,2026-08-11 00:00:00+00:00,27.35658778025794,Moderate
+airqo_g5375,Nakivubo Blue Primary School,2026-08-12 00:00:00+00:00,27.355668603861417,Moderate
+airqo_g5375,Nakivubo Blue Primary School,2026-08-13 00:00:00+00:00,27.585158297975173,Moderate
+airqo_g5375,Nakivubo Blue Primary School,2026-08-14 00:00:00+00:00,27.43934209344475,Moderate
+airqo_g5433,Buziga Islamic,2026-08-01 00:00:00+00:00,19.331057209295338,Moderate
+airqo_g5433,Buziga Islamic,2026-08-02 00:00:00+00:00,19.341374640677614,Moderate
+airqo_g5433,Buziga Islamic,2026-08-03 00:00:00+00:00,19.256559588594282,Moderate
+airqo_g5433,Buziga Islamic,2026-08-04 00:00:00+00:00,19.16453810132576,Moderate
+airqo_g5433,Buziga Islamic,2026-08-05 00:00:00+00:00,19.15069624616703,Moderate
+airqo_g5433,Buziga Islamic,2026-08-06 00:00:00+00:00,19.30685591382576,Moderate
+airqo_g5433,Buziga Islamic,2026-08-07 00:00:00+00:00,19.38947386025433,Moderate
+airqo_g5433,Buziga Islamic,2026-08-08 00:00:00+00:00,19.331057209295338,Moderate
+airqo_g5433,Buziga Islamic,2026-08-09 00:00:00+00:00,19.341374640677614,Moderate
+airqo_g5433,Buziga Islamic,2026-08-10 00:00:00+00:00,19.256559588594282,Moderate
+airqo_g5433,Buziga Islamic,2026-08-11 00:00:00+00:00,19.16453810132576,Moderate
+airqo_g5433,Buziga Islamic,2026-08-12 00:00:00+00:00,19.15069624616703,Moderate
+airqo_g5433,Buziga Islamic,2026-08-13 00:00:00+00:00,19.30685591382576,Moderate
+airqo_g5433,Buziga Islamic,2026-08-14 00:00:00+00:00,19.38947386025433,Moderate
+airqo_g5437,Rwebikona,2026-08-01 00:00:00+00:00,34.20898178323413,Moderate
+airqo_g5437,Rwebikona,2026-08-02 00:00:00+00:00,34.27334095486111,Moderate
+airqo_g5437,Rwebikona,2026-08-03 00:00:00+00:00,34.3125105448082,Moderate
+airqo_g5437,Rwebikona,2026-08-04 00:00:00+00:00,34.241870718419314,Moderate
+airqo_g5437,Rwebikona,2026-08-05 00:00:00+00:00,34.17413356977513,Moderate
+airqo_g5437,Rwebikona,2026-08-06 00:00:00+00:00,34.23004787037037,Moderate
+airqo_g5437,Rwebikona,2026-08-07 00:00:00+00:00,34.17434437582672,Moderate
+airqo_g5437,Rwebikona,2026-08-08 00:00:00+00:00,34.20898178323413,Moderate
+airqo_g5437,Rwebikona,2026-08-09 00:00:00+00:00,34.27334095486111,Moderate
+airqo_g5437,Rwebikona,2026-08-10 00:00:00+00:00,34.3125105448082,Moderate
+airqo_g5437,Rwebikona,2026-08-11 00:00:00+00:00,34.241870718419314,Moderate
+airqo_g5437,Rwebikona,2026-08-12 00:00:00+00:00,34.17413356977513,Moderate
+airqo_g5437,Rwebikona,2026-08-13 00:00:00+00:00,34.23004787037037,Moderate
+airqo_g5437,Rwebikona,2026-08-14 00:00:00+00:00,34.17434437582672,Moderate
+airqo_g5438,"St.Ponsiano primary school, makindye",2026-08-01 00:00:00+00:00,22.171735834160057,Moderate
+airqo_g5438,"St.Ponsiano primary school, makindye",2026-08-02 00:00:00+00:00,22.23525834656085,Moderate
+airqo_g5438,"St.Ponsiano primary school, makindye",2026-08-03 00:00:00+00:00,22.182363140707675,Moderate
+airqo_g5438,"St.Ponsiano primary school, makindye",2026-08-04 00:00:00+00:00,22.190942832867364,Moderate
+airqo_g5438,"St.Ponsiano primary school, makindye",2026-08-05 00:00:00+00:00,22.12500436643218,Moderate
+airqo_g5438,"St.Ponsiano primary school, makindye",2026-08-06 00:00:00+00:00,22.062899468118687,Moderate
+airqo_g5438,"St.Ponsiano primary school, makindye",2026-08-07 00:00:00+00:00,22.128061570767198,Moderate
+airqo_g5438,"St.Ponsiano primary school, makindye",2026-08-08 00:00:00+00:00,22.171735834160057,Moderate
+airqo_g5438,"St.Ponsiano primary school, makindye",2026-08-09 00:00:00+00:00,22.23525834656085,Moderate
+airqo_g5438,"St.Ponsiano primary school, makindye",2026-08-10 00:00:00+00:00,22.182363140707675,Moderate
+airqo_g5438,"St.Ponsiano primary school, makindye",2026-08-11 00:00:00+00:00,22.190942832867364,Moderate
+airqo_g5438,"St.Ponsiano primary school, makindye",2026-08-12 00:00:00+00:00,22.12500436643218,Moderate
+airqo_g5438,"St.Ponsiano primary school, makindye",2026-08-13 00:00:00+00:00,22.062899468118687,Moderate
+airqo_g5438,"St.Ponsiano primary school, makindye",2026-08-14 00:00:00+00:00,22.128061570767198,Moderate
+airqo_g5446,Kitintale_Ntensibe,2026-08-01 00:00:00+00:00,31.642509459851485,Moderate
+airqo_g5446,Kitintale_Ntensibe,2026-08-02 00:00:00+00:00,31.758844841795934,Moderate
+airqo_g5446,Kitintale_Ntensibe,2026-08-03 00:00:00+00:00,31.664513868746994,Moderate
+airqo_g5446,Kitintale_Ntensibe,2026-08-04 00:00:00+00:00,31.455135203899108,Moderate
+airqo_g5446,Kitintale_Ntensibe,2026-08-05 00:00:00+00:00,31.355291540704666,Moderate
+airqo_g5446,Kitintale_Ntensibe,2026-08-06 00:00:00+00:00,31.500512201253603,Moderate
+airqo_g5446,Kitintale_Ntensibe,2026-08-07 00:00:00+00:00,31.61283597936207,Moderate
+airqo_g5446,Kitintale_Ntensibe,2026-08-08 00:00:00+00:00,31.642509459851485,Moderate
+airqo_g5446,Kitintale_Ntensibe,2026-08-09 00:00:00+00:00,31.758844841795934,Moderate
+airqo_g5446,Kitintale_Ntensibe,2026-08-10 00:00:00+00:00,31.664513868746994,Moderate
+airqo_g5446,Kitintale_Ntensibe,2026-08-11 00:00:00+00:00,31.455135203899108,Moderate
+airqo_g5446,Kitintale_Ntensibe,2026-08-12 00:00:00+00:00,31.355291540704666,Moderate
+airqo_g5446,Kitintale_Ntensibe,2026-08-13 00:00:00+00:00,31.500512201253603,Moderate
+airqo_g5446,Kitintale_Ntensibe,2026-08-14 00:00:00+00:00,31.61283597936207,Moderate
+airqo_g5448,Mbarara Central Market,2026-08-01 00:00:00+00:00,40.20240786308021,Unhealthy for Sensitive Groups
+airqo_g5448,Mbarara Central Market,2026-08-02 00:00:00+00:00,40.251387714270685,Unhealthy for Sensitive Groups
+airqo_g5448,Mbarara Central Market,2026-08-03 00:00:00+00:00,40.21428019923942,Unhealthy for Sensitive Groups
+airqo_g5448,Mbarara Central Market,2026-08-04 00:00:00+00:00,40.15725399884259,Unhealthy for Sensitive Groups
+airqo_g5448,Mbarara Central Market,2026-08-05 00:00:00+00:00,40.102799594080686,Unhealthy for Sensitive Groups
+airqo_g5448,Mbarara Central Market,2026-08-06 00:00:00+00:00,39.776267105805076,Unhealthy for Sensitive Groups
+airqo_g5448,Mbarara Central Market,2026-08-07 00:00:00+00:00,39.91007098905724,Unhealthy for Sensitive Groups
+airqo_g5448,Mbarara Central Market,2026-08-08 00:00:00+00:00,40.20240786308021,Unhealthy for Sensitive Groups
+airqo_g5448,Mbarara Central Market,2026-08-09 00:00:00+00:00,40.251387714270685,Unhealthy for Sensitive Groups
+airqo_g5448,Mbarara Central Market,2026-08-10 00:00:00+00:00,40.21428019923942,Unhealthy for Sensitive Groups
+airqo_g5448,Mbarara Central Market,2026-08-11 00:00:00+00:00,40.15725399884259,Unhealthy for Sensitive Groups
+airqo_g5448,Mbarara Central Market,2026-08-12 00:00:00+00:00,40.102799594080686,Unhealthy for Sensitive Groups
+airqo_g5448,Mbarara Central Market,2026-08-13 00:00:00+00:00,39.776267105805076,Unhealthy for Sensitive Groups
+airqo_g5448,Mbarara Central Market,2026-08-14 00:00:00+00:00,39.91007098905724,Unhealthy for Sensitive Groups
+airqo_g5455,Nyamityobora,2026-08-01 00:00:00+00:00,19.513272863155365,Moderate
+airqo_g5455,Nyamityobora,2026-08-02 00:00:00+00:00,19.540032303240743,Moderate
+airqo_g5455,Nyamityobora,2026-08-03 00:00:00+00:00,19.55688478753307,Moderate
+airqo_g5455,Nyamityobora,2026-08-04 00:00:00+00:00,19.495904558531745,Moderate
+airqo_g5455,Nyamityobora,2026-08-05 00:00:00+00:00,19.472859804894178,Moderate
+airqo_g5455,Nyamityobora,2026-08-06 00:00:00+00:00,19.355571293214886,Moderate
+airqo_g5455,Nyamityobora,2026-08-07 00:00:00+00:00,19.443561541230764,Moderate
+airqo_g5455,Nyamityobora,2026-08-08 00:00:00+00:00,19.513272863155365,Moderate
+airqo_g5455,Nyamityobora,2026-08-09 00:00:00+00:00,19.540032303240743,Moderate
+airqo_g5455,Nyamityobora,2026-08-10 00:00:00+00:00,19.55688478753307,Moderate
+airqo_g5455,Nyamityobora,2026-08-11 00:00:00+00:00,19.495904558531745,Moderate
+airqo_g5455,Nyamityobora,2026-08-12 00:00:00+00:00,19.472859804894178,Moderate
+airqo_g5455,Nyamityobora,2026-08-13 00:00:00+00:00,19.355571293214886,Moderate
+airqo_g5455,Nyamityobora,2026-08-14 00:00:00+00:00,19.443561541230764,Moderate
+airqo_g5463,Kenkombe,2026-08-01 00:00:00+00:00,15.952188842592593,Moderate
+airqo_g5463,Kenkombe,2026-08-02 00:00:00+00:00,15.974308082010582,Moderate
+airqo_g5463,Kenkombe,2026-08-03 00:00:00+00:00,16.05781059937169,Moderate
+airqo_g5463,Kenkombe,2026-08-04 00:00:00+00:00,15.894345720899471,Moderate
+airqo_g5463,Kenkombe,2026-08-05 00:00:00+00:00,15.87006318121693,Moderate
+airqo_g5463,Kenkombe,2026-08-06 00:00:00+00:00,16.00449045484608,Moderate
+airqo_g5463,Kenkombe,2026-08-07 00:00:00+00:00,15.978304488260584,Moderate
+airqo_g5463,Kenkombe,2026-08-08 00:00:00+00:00,15.952188842592593,Moderate
+airqo_g5463,Kenkombe,2026-08-09 00:00:00+00:00,15.974308082010582,Moderate
+airqo_g5463,Kenkombe,2026-08-10 00:00:00+00:00,16.05781059937169,Moderate
+airqo_g5463,Kenkombe,2026-08-11 00:00:00+00:00,15.894345720899471,Moderate
+airqo_g5463,Kenkombe,2026-08-12 00:00:00+00:00,15.87006318121693,Moderate
+airqo_g5463,Kenkombe,2026-08-13 00:00:00+00:00,16.00449045484608,Moderate
+airqo_g5463,Kenkombe,2026-08-14 00:00:00+00:00,15.978304488260584,Moderate
+airqo_g5477,Katukuru,2026-08-01 00:00:00+00:00,26.28889041973073,Moderate
+airqo_g5477,Katukuru,2026-08-02 00:00:00+00:00,26.342120467171714,Moderate
+airqo_g5477,Katukuru,2026-08-03 00:00:00+00:00,26.418202524801586,Moderate
+airqo_g5477,Katukuru,2026-08-04 00:00:00+00:00,26.257846218584657,Moderate
+airqo_g5477,Katukuru,2026-08-05 00:00:00+00:00,26.184510934701873,Moderate
+airqo_g5477,Katukuru,2026-08-06 00:00:00+00:00,26.313446512578853,Moderate
+airqo_g5477,Katukuru,2026-08-07 00:00:00+00:00,26.274700871946337,Moderate
+airqo_g5477,Katukuru,2026-08-08 00:00:00+00:00,26.28889041973073,Moderate
+airqo_g5477,Katukuru,2026-08-09 00:00:00+00:00,26.342120467171714,Moderate
+airqo_g5477,Katukuru,2026-08-10 00:00:00+00:00,26.418202524801586,Moderate
+airqo_g5477,Katukuru,2026-08-11 00:00:00+00:00,26.257846218584657,Moderate
+airqo_g5477,Katukuru,2026-08-12 00:00:00+00:00,26.184510934701873,Moderate
+airqo_g5477,Katukuru,2026-08-13 00:00:00+00:00,26.313446512578853,Moderate
+airqo_g5477,Katukuru,2026-08-14 00:00:00+00:00,26.274700871946337,Moderate
+airqo_g5481,Ruti Mbarara,2026-08-01 00:00:00+00:00,21.9794116617815,Moderate
+airqo_g5481,Ruti Mbarara,2026-08-02 00:00:00+00:00,21.95896768691378,Moderate
+airqo_g5481,Ruti Mbarara,2026-08-03 00:00:00+00:00,22.050031839526213,Moderate
+airqo_g5481,Ruti Mbarara,2026-08-04 00:00:00+00:00,22.01191546499218,Moderate
+airqo_g5481,Ruti Mbarara,2026-08-05 00:00:00+00:00,22.030261517406203,Moderate
+airqo_g5481,Ruti Mbarara,2026-08-06 00:00:00+00:00,22.0660657366823,Moderate
+airqo_g5481,Ruti Mbarara,2026-08-07 00:00:00+00:00,21.968194178315898,Moderate
+airqo_g5481,Ruti Mbarara,2026-08-08 00:00:00+00:00,21.9794116617815,Moderate
+airqo_g5481,Ruti Mbarara,2026-08-09 00:00:00+00:00,21.95896768691378,Moderate
+airqo_g5481,Ruti Mbarara,2026-08-10 00:00:00+00:00,22.050031839526213,Moderate
+airqo_g5481,Ruti Mbarara,2026-08-11 00:00:00+00:00,22.01191546499218,Moderate
+airqo_g5481,Ruti Mbarara,2026-08-12 00:00:00+00:00,22.030261517406203,Moderate
+airqo_g5481,Ruti Mbarara,2026-08-13 00:00:00+00:00,22.0660657366823,Moderate
+airqo_g5481,Ruti Mbarara,2026-08-14 00:00:00+00:00,21.968194178315898,Moderate
+airqo_g5499,Nyabuhama,2026-08-01 00:00:00+00:00,16.83752047626563,Moderate
+airqo_g5499,Nyabuhama,2026-08-02 00:00:00+00:00,16.815843247805436,Moderate
+airqo_g5499,Nyabuhama,2026-08-03 00:00:00+00:00,16.84427980203824,Moderate
+airqo_g5499,Nyabuhama,2026-08-04 00:00:00+00:00,16.824101840578404,Moderate
+airqo_g5499,Nyabuhama,2026-08-05 00:00:00+00:00,16.848908790809883,Moderate
+airqo_g5499,Nyabuhama,2026-08-06 00:00:00+00:00,16.944512625736532,Moderate
+airqo_g5499,Nyabuhama,2026-08-07 00:00:00+00:00,16.862643905498434,Moderate
+airqo_g5499,Nyabuhama,2026-08-08 00:00:00+00:00,16.83752047626563,Moderate
+airqo_g5499,Nyabuhama,2026-08-09 00:00:00+00:00,16.815843247805436,Moderate
+airqo_g5499,Nyabuhama,2026-08-10 00:00:00+00:00,16.84427980203824,Moderate
+airqo_g5499,Nyabuhama,2026-08-11 00:00:00+00:00,16.824101840578404,Moderate
+airqo_g5499,Nyabuhama,2026-08-12 00:00:00+00:00,16.848908790809883,Moderate
+airqo_g5499,Nyabuhama,2026-08-13 00:00:00+00:00,16.944512625736532,Moderate
+airqo_g5499,Nyabuhama,2026-08-14 00:00:00+00:00,16.862643905498434,Moderate
+airqo_g5513,KCCA Central division HQ,2026-08-01 00:00:00+00:00,18.389504330357145,Moderate
+airqo_g5513,KCCA Central division HQ,2026-08-02 00:00:00+00:00,18.418305489493147,Moderate
+airqo_g5513,KCCA Central division HQ,2026-08-03 00:00:00+00:00,18.48656597064394,Moderate
+airqo_g5513,KCCA Central division HQ,2026-08-04 00:00:00+00:00,18.41948702801828,Moderate
+airqo_g5513,KCCA Central division HQ,2026-08-05 00:00:00+00:00,18.39767431720479,Moderate
+airqo_g5513,KCCA Central division HQ,2026-08-06 00:00:00+00:00,18.45827995099808,Moderate
+airqo_g5513,KCCA Central division HQ,2026-08-07 00:00:00+00:00,18.401454460678213,Moderate
+airqo_g5513,KCCA Central division HQ,2026-08-08 00:00:00+00:00,18.389504330357145,Moderate
+airqo_g5513,KCCA Central division HQ,2026-08-09 00:00:00+00:00,18.418305489493147,Moderate
+airqo_g5513,KCCA Central division HQ,2026-08-10 00:00:00+00:00,18.48656597064394,Moderate
+airqo_g5513,KCCA Central division HQ,2026-08-11 00:00:00+00:00,18.41948702801828,Moderate
+airqo_g5513,KCCA Central division HQ,2026-08-12 00:00:00+00:00,18.39767431720479,Moderate
+airqo_g5513,KCCA Central division HQ,2026-08-13 00:00:00+00:00,18.45827995099808,Moderate
+airqo_g5513,KCCA Central division HQ,2026-08-14 00:00:00+00:00,18.401454460678213,Moderate
+airqo_g5518,Golf Course Kampala. Site 1. Training Area,2026-08-01 00:00:00+00:00,19.306768002009566,Moderate
+airqo_g5518,Golf Course Kampala. Site 1. Training Area,2026-08-02 00:00:00+00:00,19.313569851190476,Moderate
+airqo_g5518,Golf Course Kampala. Site 1. Training Area,2026-08-03 00:00:00+00:00,19.411767858796296,Moderate
+airqo_g5518,Golf Course Kampala. Site 1. Training Area,2026-08-04 00:00:00+00:00,19.376648852813855,Moderate
+airqo_g5518,Golf Course Kampala. Site 1. Training Area,2026-08-05 00:00:00+00:00,19.373768962958337,Moderate
+airqo_g5518,Golf Course Kampala. Site 1. Training Area,2026-08-06 00:00:00+00:00,19.415285068808505,Moderate
+airqo_g5518,Golf Course Kampala. Site 1. Training Area,2026-08-07 00:00:00+00:00,19.300792430746338,Moderate
+airqo_g5518,Golf Course Kampala. Site 1. Training Area,2026-08-08 00:00:00+00:00,19.306768002009566,Moderate
+airqo_g5518,Golf Course Kampala. Site 1. Training Area,2026-08-09 00:00:00+00:00,19.313569851190476,Moderate
+airqo_g5518,Golf Course Kampala. Site 1. Training Area,2026-08-10 00:00:00+00:00,19.411767858796296,Moderate
+airqo_g5518,Golf Course Kampala. Site 1. Training Area,2026-08-11 00:00:00+00:00,19.376648852813855,Moderate
+airqo_g5518,Golf Course Kampala. Site 1. Training Area,2026-08-12 00:00:00+00:00,19.373768962958337,Moderate
+airqo_g5518,Golf Course Kampala. Site 1. Training Area,2026-08-13 00:00:00+00:00,19.415285068808505,Moderate
+airqo_g5518,Golf Course Kampala. Site 1. Training Area,2026-08-14 00:00:00+00:00,19.300792430746338,Moderate
+airqo_g5519,Nyamitanga,2026-08-01 00:00:00+00:00,20.567835061252406,Moderate
+airqo_g5519,Nyamitanga,2026-08-02 00:00:00+00:00,20.52799610539923,Moderate
+airqo_g5519,Nyamitanga,2026-08-03 00:00:00+00:00,20.47290807464526,Moderate
+airqo_g5519,Nyamitanga,2026-08-04 00:00:00+00:00,20.332575832506617,Moderate
+airqo_g5519,Nyamitanga,2026-08-05 00:00:00+00:00,20.369067625661376,Moderate
+airqo_g5519,Nyamitanga,2026-08-06 00:00:00+00:00,20.624680606060608,Moderate
+airqo_g5519,Nyamitanga,2026-08-07 00:00:00+00:00,20.664219923190235,Moderate
+airqo_g5519,Nyamitanga,2026-08-08 00:00:00+00:00,20.567835061252406,Moderate
+airqo_g5519,Nyamitanga,2026-08-09 00:00:00+00:00,20.52799610539923,Moderate
+airqo_g5519,Nyamitanga,2026-08-10 00:00:00+00:00,20.47290807464526,Moderate
+airqo_g5519,Nyamitanga,2026-08-11 00:00:00+00:00,20.332575832506617,Moderate
+airqo_g5519,Nyamitanga,2026-08-12 00:00:00+00:00,20.369067625661376,Moderate
+airqo_g5519,Nyamitanga,2026-08-13 00:00:00+00:00,20.624680606060608,Moderate
+airqo_g5519,Nyamitanga,2026-08-14 00:00:00+00:00,20.664219923190235,Moderate
+airqo_g5544,Katete,2026-08-01 00:00:00+00:00,33.772635310019844,Moderate
+airqo_g5544,Katete,2026-08-02 00:00:00+00:00,33.835848206845235,Moderate
+airqo_g5544,Katete,2026-08-03 00:00:00+00:00,33.81620738921958,Moderate
+airqo_g5544,Katete,2026-08-04 00:00:00+00:00,33.72861255787037,Moderate
+airqo_g5544,Katete,2026-08-05 00:00:00+00:00,33.66304995453043,Moderate
+airqo_g5544,Katete,2026-08-06 00:00:00+00:00,33.68384205687831,Moderate
+airqo_g5544,Katete,2026-08-07 00:00:00+00:00,33.68914041501323,Moderate
+airqo_g5544,Katete,2026-08-08 00:00:00+00:00,33.772635310019844,Moderate
+airqo_g5544,Katete,2026-08-09 00:00:00+00:00,33.835848206845235,Moderate
+airqo_g5544,Katete,2026-08-10 00:00:00+00:00,33.81620738921958,Moderate
+airqo_g5544,Katete,2026-08-11 00:00:00+00:00,33.72861255787037,Moderate
+airqo_g5544,Katete,2026-08-12 00:00:00+00:00,33.66304995453043,Moderate
+airqo_g5544,Katete,2026-08-13 00:00:00+00:00,33.68384205687831,Moderate
+airqo_g5544,Katete,2026-08-14 00:00:00+00:00,33.68914041501323,Moderate
+airqo_g5545,Bishop Stuart University,2026-08-01 00:00:00+00:00,35.735939542974386,Unhealthy for Sensitive Groups
+airqo_g5545,Bishop Stuart University,2026-08-02 00:00:00+00:00,35.83339811357624,Unhealthy for Sensitive Groups
+airqo_g5545,Bishop Stuart University,2026-08-03 00:00:00+00:00,35.821842771915584,Unhealthy for Sensitive Groups
+airqo_g5545,Bishop Stuart University,2026-08-04 00:00:00+00:00,35.62910719155844,Unhealthy for Sensitive Groups
+airqo_g5545,Bishop Stuart University,2026-08-05 00:00:00+00:00,35.52718431209416,Unhealthy for Sensitive Groups
+airqo_g5545,Bishop Stuart University,2026-08-06 00:00:00+00:00,35.58090697661135,Unhealthy for Sensitive Groups
+airqo_g5545,Bishop Stuart University,2026-08-07 00:00:00+00:00,35.62238378817941,Unhealthy for Sensitive Groups
+airqo_g5545,Bishop Stuart University,2026-08-08 00:00:00+00:00,35.735939542974386,Unhealthy for Sensitive Groups
+airqo_g5545,Bishop Stuart University,2026-08-09 00:00:00+00:00,35.83339811357624,Unhealthy for Sensitive Groups
+airqo_g5545,Bishop Stuart University,2026-08-10 00:00:00+00:00,35.821842771915584,Unhealthy for Sensitive Groups
+airqo_g5545,Bishop Stuart University,2026-08-11 00:00:00+00:00,35.62910719155844,Unhealthy for Sensitive Groups
+airqo_g5545,Bishop Stuart University,2026-08-12 00:00:00+00:00,35.52718431209416,Unhealthy for Sensitive Groups
+airqo_g5545,Bishop Stuart University,2026-08-13 00:00:00+00:00,35.58090697661135,Unhealthy for Sensitive Groups
+airqo_g5545,Bishop Stuart University,2026-08-14 00:00:00+00:00,35.62238378817941,Unhealthy for Sensitive Groups
+airqo_g5546,Kiteezi. Kampala,2026-08-01 00:00:00+00:00,25.175775197585978,Moderate
+airqo_g5546,Kiteezi. Kampala,2026-08-02 00:00:00+00:00,25.249805881283066,Moderate
+airqo_g5546,Kiteezi. Kampala,2026-08-03 00:00:00+00:00,25.309825865575394,Moderate
+airqo_g5546,Kiteezi. Kampala,2026-08-04 00:00:00+00:00,25.016606905588628,Moderate
+airqo_g5546,Kiteezi. Kampala,2026-08-05 00:00:00+00:00,24.93424599371693,Moderate
+airqo_g5546,Kiteezi. Kampala,2026-08-06 00:00:00+00:00,25.104005759755292,Moderate
+airqo_g5546,Kiteezi. Kampala,2026-08-07 00:00:00+00:00,25.084062432208995,Moderate
+airqo_g5546,Kiteezi. Kampala,2026-08-08 00:00:00+00:00,25.175775197585978,Moderate
+airqo_g5546,Kiteezi. Kampala,2026-08-09 00:00:00+00:00,25.249805881283066,Moderate
+airqo_g5546,Kiteezi. Kampala,2026-08-10 00:00:00+00:00,25.309825865575394,Moderate
+airqo_g5546,Kiteezi. Kampala,2026-08-11 00:00:00+00:00,25.016606905588628,Moderate
+airqo_g5546,Kiteezi. Kampala,2026-08-12 00:00:00+00:00,24.93424599371693,Moderate
+airqo_g5546,Kiteezi. Kampala,2026-08-13 00:00:00+00:00,25.104005759755292,Moderate
+airqo_g5546,Kiteezi. Kampala,2026-08-14 00:00:00+00:00,25.084062432208995,Moderate
+airqo_g5548,Mbuya_Nadiope,2026-08-01 00:00:00+00:00,18.379231330868205,Moderate
+airqo_g5548,Mbuya_Nadiope,2026-08-02 00:00:00+00:00,18.41244368371212,Moderate
+airqo_g5548,Mbuya_Nadiope,2026-08-03 00:00:00+00:00,18.448616105173762,Moderate
+airqo_g5548,Mbuya_Nadiope,2026-08-04 00:00:00+00:00,18.34043038570226,Moderate
+airqo_g5548,Mbuya_Nadiope,2026-08-05 00:00:00+00:00,18.30667597928692,Moderate
+airqo_g5548,Mbuya_Nadiope,2026-08-06 00:00:00+00:00,18.43610522802429,Moderate
+airqo_g5548,Mbuya_Nadiope,2026-08-07 00:00:00+00:00,18.40248471463143,Moderate
+airqo_g5548,Mbuya_Nadiope,2026-08-08 00:00:00+00:00,18.379231330868205,Moderate
+airqo_g5548,Mbuya_Nadiope,2026-08-09 00:00:00+00:00,18.41244368371212,Moderate
+airqo_g5548,Mbuya_Nadiope,2026-08-10 00:00:00+00:00,18.448616105173762,Moderate
+airqo_g5548,Mbuya_Nadiope,2026-08-11 00:00:00+00:00,18.34043038570226,Moderate
+airqo_g5548,Mbuya_Nadiope,2026-08-12 00:00:00+00:00,18.30667597928692,Moderate
+airqo_g5548,Mbuya_Nadiope,2026-08-13 00:00:00+00:00,18.43610522802429,Moderate
+airqo_g5548,Mbuya_Nadiope,2026-08-14 00:00:00+00:00,18.40248471463143,Moderate
+airqo_g5549,Munyonyo Site 1,2026-08-01 00:00:00+00:00,18.119948376773696,Moderate
+airqo_g5549,Munyonyo Site 1,2026-08-02 00:00:00+00:00,18.11831230617184,Moderate
+airqo_g5549,Munyonyo Site 1,2026-08-03 00:00:00+00:00,18.111389426707554,Moderate
+airqo_g5549,Munyonyo Site 1,2026-08-04 00:00:00+00:00,18.05998711519962,Moderate
+airqo_g5549,Munyonyo Site 1,2026-08-05 00:00:00+00:00,18.065119290298824,Moderate
+airqo_g5549,Munyonyo Site 1,2026-08-06 00:00:00+00:00,18.098929816092475,Moderate
+airqo_g5549,Munyonyo Site 1,2026-08-07 00:00:00+00:00,18.13203685643639,Moderate
+airqo_g5549,Munyonyo Site 1,2026-08-08 00:00:00+00:00,18.119948376773696,Moderate
+airqo_g5549,Munyonyo Site 1,2026-08-09 00:00:00+00:00,18.11831230617184,Moderate
+airqo_g5549,Munyonyo Site 1,2026-08-10 00:00:00+00:00,18.111389426707554,Moderate
+airqo_g5549,Munyonyo Site 1,2026-08-11 00:00:00+00:00,18.05998711519962,Moderate
+airqo_g5549,Munyonyo Site 1,2026-08-12 00:00:00+00:00,18.065119290298824,Moderate
+airqo_g5549,Munyonyo Site 1,2026-08-13 00:00:00+00:00,18.098929816092475,Moderate
+airqo_g5549,Munyonyo Site 1,2026-08-14 00:00:00+00:00,18.13203685643639,Moderate
+airqo_g5551,Golf course Kampala. Site 2. playing ground,2026-08-01 00:00:00+00:00,19.380203943452383,Moderate
+airqo_g5551,Golf course Kampala. Site 2. playing ground,2026-08-02 00:00:00+00:00,19.396139621362433,Moderate
+airqo_g5551,Golf course Kampala. Site 2. playing ground,2026-08-03 00:00:00+00:00,19.368767352843914,Moderate
+airqo_g5551,Golf course Kampala. Site 2. playing ground,2026-08-04 00:00:00+00:00,19.28576525214947,Moderate
+airqo_g5551,Golf course Kampala. Site 2. playing ground,2026-08-05 00:00:00+00:00,19.27024217840609,Moderate
+airqo_g5551,Golf course Kampala. Site 2. playing ground,2026-08-06 00:00:00+00:00,19.36648445271164,Moderate
+airqo_g5551,Golf course Kampala. Site 2. playing ground,2026-08-07 00:00:00+00:00,19.37566483134921,Moderate
+airqo_g5551,Golf course Kampala. Site 2. playing ground,2026-08-08 00:00:00+00:00,19.380203943452383,Moderate
+airqo_g5551,Golf course Kampala. Site 2. playing ground,2026-08-09 00:00:00+00:00,19.396139621362433,Moderate
+airqo_g5551,Golf course Kampala. Site 2. playing ground,2026-08-10 00:00:00+00:00,19.368767352843914,Moderate
+airqo_g5551,Golf course Kampala. Site 2. playing ground,2026-08-11 00:00:00+00:00,19.28576525214947,Moderate
+airqo_g5551,Golf course Kampala. Site 2. playing ground,2026-08-12 00:00:00+00:00,19.27024217840609,Moderate
+airqo_g5551,Golf course Kampala. Site 2. playing ground,2026-08-13 00:00:00+00:00,19.36648445271164,Moderate
+airqo_g5551,Golf course Kampala. Site 2. playing ground,2026-08-14 00:00:00+00:00,19.37566483134921,Moderate
+airqo_g5555,Munyonyo Site 2,2026-08-01 00:00:00+00:00,19.333216722189846,Moderate
+airqo_g5555,Munyonyo Site 2,2026-08-02 00:00:00+00:00,19.3143444878848,Moderate
+airqo_g5555,Munyonyo Site 2,2026-08-03 00:00:00+00:00,19.35035606774591,Moderate
+airqo_g5555,Munyonyo Site 2,2026-08-04 00:00:00+00:00,19.263872234923642,Moderate
+airqo_g5555,Munyonyo Site 2,2026-08-05 00:00:00+00:00,19.282489338606997,Moderate
+airqo_g5555,Munyonyo Site 2,2026-08-06 00:00:00+00:00,19.4289747397163,Moderate
+airqo_g5555,Munyonyo Site 2,2026-08-07 00:00:00+00:00,19.39165978435916,Moderate
+airqo_g5555,Munyonyo Site 2,2026-08-08 00:00:00+00:00,19.333216722189846,Moderate
+airqo_g5555,Munyonyo Site 2,2026-08-09 00:00:00+00:00,19.3143444878848,Moderate
+airqo_g5555,Munyonyo Site 2,2026-08-10 00:00:00+00:00,19.35035606774591,Moderate
+airqo_g5555,Munyonyo Site 2,2026-08-11 00:00:00+00:00,19.263872234923642,Moderate
+airqo_g5555,Munyonyo Site 2,2026-08-12 00:00:00+00:00,19.282489338606997,Moderate
+airqo_g5555,Munyonyo Site 2,2026-08-13 00:00:00+00:00,19.4289747397163,Moderate
+airqo_g5555,Munyonyo Site 2,2026-08-14 00:00:00+00:00,19.39165978435916,Moderate
+airqo_g5558,Kyambogo University,2026-08-01 00:00:00+00:00,19.992792056427373,Moderate
+airqo_g5558,Kyambogo University,2026-08-02 00:00:00+00:00,20.03614920259139,Moderate
+airqo_g5558,Kyambogo University,2026-08-03 00:00:00+00:00,19.97604596846441,Moderate
+airqo_g5558,Kyambogo University,2026-08-04 00:00:00+00:00,19.969127297002764,Moderate
+airqo_g5558,Kyambogo University,2026-08-05 00:00:00+00:00,19.9272757063943,Moderate
+airqo_g5558,Kyambogo University,2026-08-06 00:00:00+00:00,19.98507960978836,Moderate
+airqo_g5558,Kyambogo University,2026-08-07 00:00:00+00:00,19.995345109953707,Moderate
+airqo_g5558,Kyambogo University,2026-08-08 00:00:00+00:00,19.992792056427373,Moderate
+airqo_g5558,Kyambogo University,2026-08-09 00:00:00+00:00,20.03614920259139,Moderate
+airqo_g5558,Kyambogo University,2026-08-10 00:00:00+00:00,19.97604596846441,Moderate
+airqo_g5558,Kyambogo University,2026-08-11 00:00:00+00:00,19.969127297002764,Moderate
+airqo_g5558,Kyambogo University,2026-08-12 00:00:00+00:00,19.9272757063943,Moderate
+airqo_g5558,Kyambogo University,2026-08-13 00:00:00+00:00,19.98507960978836,Moderate
+airqo_g5558,Kyambogo University,2026-08-14 00:00:00+00:00,19.995345109953707,Moderate
+airqo_g5559,Kyarwabuganda,2026-08-01 00:00:00+00:00,64.59508985772908,Unhealthy
+airqo_g5559,Kyarwabuganda,2026-08-02 00:00:00+00:00,64.95119441874098,Unhealthy
+airqo_g5559,Kyarwabuganda,2026-08-03 00:00:00+00:00,65.01352960805976,Unhealthy
+airqo_g5559,Kyarwabuganda,2026-08-04 00:00:00+00:00,65.20417739575818,Unhealthy
+airqo_g5559,Kyarwabuganda,2026-08-05 00:00:00+00:00,64.86176775290103,Unhealthy
+airqo_g5559,Kyarwabuganda,2026-08-06 00:00:00+00:00,64.13137212714948,Unhealthy
+airqo_g5559,Kyarwabuganda,2026-08-07 00:00:00+00:00,64.15894646825397,Unhealthy
+airqo_g5559,Kyarwabuganda,2026-08-08 00:00:00+00:00,64.59508985772908,Unhealthy
+airqo_g5559,Kyarwabuganda,2026-08-09 00:00:00+00:00,64.95119441874098,Unhealthy
+airqo_g5559,Kyarwabuganda,2026-08-10 00:00:00+00:00,65.01352960805976,Unhealthy
+airqo_g5559,Kyarwabuganda,2026-08-11 00:00:00+00:00,65.20417739575818,Unhealthy
+airqo_g5559,Kyarwabuganda,2026-08-12 00:00:00+00:00,64.86176775290103,Unhealthy
+airqo_g5559,Kyarwabuganda,2026-08-13 00:00:00+00:00,64.13137212714948,Unhealthy
+airqo_g5559,Kyarwabuganda,2026-08-14 00:00:00+00:00,64.15894646825397,Unhealthy
+airqo_g5563,Bulange_Mengo,2026-08-01 00:00:00+00:00,44.38871401695527,Unhealthy for Sensitive Groups
+airqo_g5563,Bulange_Mengo,2026-08-02 00:00:00+00:00,44.47654062492484,Unhealthy for Sensitive Groups
+airqo_g5563,Bulange_Mengo,2026-08-03 00:00:00+00:00,44.569599999849686,Unhealthy for Sensitive Groups
+airqo_g5563,Bulange_Mengo,2026-08-04 00:00:00+00:00,44.65642111757455,Unhealthy for Sensitive Groups
+airqo_g5563,Bulange_Mengo,2026-08-05 00:00:00+00:00,44.555380025477994,Unhealthy for Sensitive Groups
+airqo_g5563,Bulange_Mengo,2026-08-06 00:00:00+00:00,44.3233231613005,Unhealthy for Sensitive Groups
+airqo_g5563,Bulange_Mengo,2026-08-07 00:00:00+00:00,44.2396768328373,Unhealthy for Sensitive Groups
+airqo_g5563,Bulange_Mengo,2026-08-08 00:00:00+00:00,44.38871401695527,Unhealthy for Sensitive Groups
+airqo_g5563,Bulange_Mengo,2026-08-09 00:00:00+00:00,44.47654062492484,Unhealthy for Sensitive Groups
+airqo_g5563,Bulange_Mengo,2026-08-10 00:00:00+00:00,44.569599999849686,Unhealthy for Sensitive Groups
+airqo_g5563,Bulange_Mengo,2026-08-11 00:00:00+00:00,44.65642111757455,Unhealthy for Sensitive Groups
+airqo_g5563,Bulange_Mengo,2026-08-12 00:00:00+00:00,44.555380025477994,Unhealthy for Sensitive Groups
+airqo_g5563,Bulange_Mengo,2026-08-13 00:00:00+00:00,44.3233231613005,Unhealthy for Sensitive Groups
+airqo_g5563,Bulange_Mengo,2026-08-14 00:00:00+00:00,44.2396768328373,Unhealthy for Sensitive Groups
+airqo_g5564,"Busabala, Wakiso",2026-08-01 00:00:00+00:00,43.91908433471621,Unhealthy for Sensitive Groups
+airqo_g5564,"Busabala, Wakiso",2026-08-02 00:00:00+00:00,44.05772859066858,Unhealthy for Sensitive Groups
+airqo_g5564,"Busabala, Wakiso",2026-08-03 00:00:00+00:00,44.083594435575996,Unhealthy for Sensitive Groups
+airqo_g5564,"Busabala, Wakiso",2026-08-04 00:00:00+00:00,43.72502270277176,Unhealthy for Sensitive Groups
+airqo_g5564,"Busabala, Wakiso",2026-08-05 00:00:00+00:00,43.58469046566859,Unhealthy for Sensitive Groups
+airqo_g5564,"Busabala, Wakiso",2026-08-06 00:00:00+00:00,43.906167408234126,Unhealthy for Sensitive Groups
+airqo_g5564,"Busabala, Wakiso",2026-08-07 00:00:00+00:00,43.98125613035112,Unhealthy for Sensitive Groups
+airqo_g5564,"Busabala, Wakiso",2026-08-08 00:00:00+00:00,43.91908433471621,Unhealthy for Sensitive Groups
+airqo_g5564,"Busabala, Wakiso",2026-08-09 00:00:00+00:00,44.05772859066858,Unhealthy for Sensitive Groups
+airqo_g5564,"Busabala, Wakiso",2026-08-10 00:00:00+00:00,44.083594435575996,Unhealthy for Sensitive Groups
+airqo_g5564,"Busabala, Wakiso",2026-08-11 00:00:00+00:00,43.72502270277176,Unhealthy for Sensitive Groups
+airqo_g5564,"Busabala, Wakiso",2026-08-12 00:00:00+00:00,43.58469046566859,Unhealthy for Sensitive Groups
+airqo_g5564,"Busabala, Wakiso",2026-08-13 00:00:00+00:00,43.906167408234126,Unhealthy for Sensitive Groups
+airqo_g5564,"Busabala, Wakiso",2026-08-14 00:00:00+00:00,43.98125613035112,Unhealthy for Sensitive Groups
+airqo_g5566,Makerere University Business School(MUBS) Nakawa,2026-08-01 00:00:00+00:00,22.61646613035113,Moderate
+airqo_g5566,Makerere University Business School(MUBS) Nakawa,2026-08-02 00:00:00+00:00,22.608480245761186,Moderate
+airqo_g5566,Makerere University Business School(MUBS) Nakawa,2026-08-03 00:00:00+00:00,22.46138976047679,Moderate
+airqo_g5566,Makerere University Business School(MUBS) Nakawa,2026-08-04 00:00:00+00:00,22.296681167328043,Moderate
+airqo_g5566,Makerere University Business School(MUBS) Nakawa,2026-08-05 00:00:00+00:00,22.306593445767195,Moderate
+airqo_g5566,Makerere University Business School(MUBS) Nakawa,2026-08-06 00:00:00+00:00,22.46811910233285,Moderate
+airqo_g5566,Makerere University Business School(MUBS) Nakawa,2026-08-07 00:00:00+00:00,22.6573318619228,Moderate
+airqo_g5566,Makerere University Business School(MUBS) Nakawa,2026-08-08 00:00:00+00:00,22.61646613035113,Moderate
+airqo_g5566,Makerere University Business School(MUBS) Nakawa,2026-08-09 00:00:00+00:00,22.608480245761186,Moderate
+airqo_g5566,Makerere University Business School(MUBS) Nakawa,2026-08-10 00:00:00+00:00,22.46138976047679,Moderate
+airqo_g5566,Makerere University Business School(MUBS) Nakawa,2026-08-11 00:00:00+00:00,22.296681167328043,Moderate
+airqo_g5566,Makerere University Business School(MUBS) Nakawa,2026-08-12 00:00:00+00:00,22.306593445767195,Moderate
+airqo_g5566,Makerere University Business School(MUBS) Nakawa,2026-08-13 00:00:00+00:00,22.46811910233285,Moderate
+airqo_g5566,Makerere University Business School(MUBS) Nakawa,2026-08-14 00:00:00+00:00,22.6573318619228,Moderate
+airqo_g5567,Kamwokya_OldKiira,2026-08-01 00:00:00+00:00,31.473406533564816,Moderate
+airqo_g5567,Kamwokya_OldKiira,2026-08-02 00:00:00+00:00,31.476546960152117,Moderate
+airqo_g5567,Kamwokya_OldKiira,2026-08-03 00:00:00+00:00,31.554661307870372,Moderate
+airqo_g5567,Kamwokya_OldKiira,2026-08-04 00:00:00+00:00,31.544601378367002,Moderate
+airqo_g5567,Kamwokya_OldKiira,2026-08-05 00:00:00+00:00,31.543437232368323,Moderate
+airqo_g5567,Kamwokya_OldKiira,2026-08-06 00:00:00+00:00,31.634500012551104,Moderate
+airqo_g5567,Kamwokya_OldKiira,2026-08-07 00:00:00+00:00,31.48346308449074,Moderate
+airqo_g5567,Kamwokya_OldKiira,2026-08-08 00:00:00+00:00,31.473406533564816,Moderate
+airqo_g5567,Kamwokya_OldKiira,2026-08-09 00:00:00+00:00,31.476546960152117,Moderate
+airqo_g5567,Kamwokya_OldKiira,2026-08-10 00:00:00+00:00,31.554661307870372,Moderate
+airqo_g5567,Kamwokya_OldKiira,2026-08-11 00:00:00+00:00,31.544601378367002,Moderate
+airqo_g5567,Kamwokya_OldKiira,2026-08-12 00:00:00+00:00,31.543437232368323,Moderate
+airqo_g5567,Kamwokya_OldKiira,2026-08-13 00:00:00+00:00,31.634500012551104,Moderate
+airqo_g5567,Kamwokya_OldKiira,2026-08-14 00:00:00+00:00,31.48346308449074,Moderate
+airqo_g5568,Kakiika,2026-08-01 00:00:00+00:00,60.71663355429293,Unhealthy
+airqo_g5568,Kakiika,2026-08-02 00:00:00+00:00,60.976361101415954,Unhealthy
+airqo_g5568,Kakiika,2026-08-03 00:00:00+00:00,60.93716944880351,Unhealthy
+airqo_g5568,Kakiika,2026-08-04 00:00:00+00:00,60.789481287427854,Unhealthy
+airqo_g5568,Kakiika,2026-08-05 00:00:00+00:00,60.56809945707071,Unhealthy
+airqo_g5568,Kakiika,2026-08-06 00:00:00+00:00,60.26290795740139,Unhealthy
+airqo_g5568,Kakiika,2026-08-07 00:00:00+00:00,60.47568575998076,Unhealthy
+airqo_g5568,Kakiika,2026-08-08 00:00:00+00:00,60.71663355429293,Unhealthy
+airqo_g5568,Kakiika,2026-08-09 00:00:00+00:00,60.976361101415954,Unhealthy
+airqo_g5568,Kakiika,2026-08-10 00:00:00+00:00,60.93716944880351,Unhealthy
+airqo_g5568,Kakiika,2026-08-11 00:00:00+00:00,60.789481287427854,Unhealthy
+airqo_g5568,Kakiika,2026-08-12 00:00:00+00:00,60.56809945707071,Unhealthy
+airqo_g5568,Kakiika,2026-08-13 00:00:00+00:00,60.26290795740139,Unhealthy
+airqo_g5568,Kakiika,2026-08-14 00:00:00+00:00,60.47568575998076,Unhealthy
+airqo_g5569,"Buyala 2, Mpigi",2026-08-01 00:00:00+00:00,30.799724624351345,Moderate
+airqo_g5569,"Buyala 2, Mpigi",2026-08-02 00:00:00+00:00,30.81700774801587,Moderate
+airqo_g5569,"Buyala 2, Mpigi",2026-08-03 00:00:00+00:00,30.8349217650463,Moderate
+airqo_g5569,"Buyala 2, Mpigi",2026-08-04 00:00:00+00:00,30.599513770667986,Moderate
+airqo_g5569,"Buyala 2, Mpigi",2026-08-05 00:00:00+00:00,30.57700259640822,Moderate
+airqo_g5569,"Buyala 2, Mpigi",2026-08-06 00:00:00+00:00,30.777764343266686,Moderate
+airqo_g5569,"Buyala 2, Mpigi",2026-08-07 00:00:00+00:00,30.87227223182489,Moderate
+airqo_g5569,"Buyala 2, Mpigi",2026-08-08 00:00:00+00:00,30.799724624351345,Moderate
+airqo_g5569,"Buyala 2, Mpigi",2026-08-09 00:00:00+00:00,30.81700774801587,Moderate
+airqo_g5569,"Buyala 2, Mpigi",2026-08-10 00:00:00+00:00,30.8349217650463,Moderate
+airqo_g5569,"Buyala 2, Mpigi",2026-08-11 00:00:00+00:00,30.599513770667986,Moderate
+airqo_g5569,"Buyala 2, Mpigi",2026-08-12 00:00:00+00:00,30.57700259640822,Moderate
+airqo_g5569,"Buyala 2, Mpigi",2026-08-13 00:00:00+00:00,30.777764343266686,Moderate
+airqo_g5569,"Buyala 2, Mpigi",2026-08-14 00:00:00+00:00,30.87227223182489,Moderate
+airqo_g5570,Biharwe,2026-08-01 00:00:00+00:00,54.54644076050686,Unhealthy for Sensitive Groups
+airqo_g5570,Biharwe,2026-08-02 00:00:00+00:00,54.71794852340369,Unhealthy for Sensitive Groups
+airqo_g5570,Biharwe,2026-08-03 00:00:00+00:00,54.60661287938913,Unhealthy for Sensitive Groups
+airqo_g5570,Biharwe,2026-08-04 00:00:00+00:00,54.793130182629874,Unhealthy for Sensitive Groups
+airqo_g5570,Biharwe,2026-08-05 00:00:00+00:00,54.63811214691558,Unhealthy for Sensitive Groups
+airqo_g5570,Biharwe,2026-08-06 00:00:00+00:00,53.65559151973605,Unhealthy for Sensitive Groups
+airqo_g5570,Biharwe,2026-08-07 00:00:00+00:00,54.07124950336701,Unhealthy for Sensitive Groups
+airqo_g5570,Biharwe,2026-08-08 00:00:00+00:00,54.54644076050686,Unhealthy for Sensitive Groups
+airqo_g5570,Biharwe,2026-08-09 00:00:00+00:00,54.71794852340369,Unhealthy for Sensitive Groups
+airqo_g5570,Biharwe,2026-08-10 00:00:00+00:00,54.60661287938913,Unhealthy for Sensitive Groups
+airqo_g5570,Biharwe,2026-08-11 00:00:00+00:00,54.793130182629874,Unhealthy for Sensitive Groups
+airqo_g5570,Biharwe,2026-08-12 00:00:00+00:00,54.63811214691558,Unhealthy for Sensitive Groups
+airqo_g5570,Biharwe,2026-08-13 00:00:00+00:00,53.65559151973605,Unhealthy for Sensitive Groups
+airqo_g5570,Biharwe,2026-08-14 00:00:00+00:00,54.07124950336701,Unhealthy for Sensitive Groups
+airqo_g5573,Buyala 1 Mpigi,2026-08-01 00:00:00+00:00,19.570353074194326,Moderate
+airqo_g5573,Buyala 1 Mpigi,2026-08-02 00:00:00+00:00,19.61089478385041,Moderate
+airqo_g5573,Buyala 1 Mpigi,2026-08-03 00:00:00+00:00,19.613786296747232,Moderate
+airqo_g5573,Buyala 1 Mpigi,2026-08-04 00:00:00+00:00,19.530727875105217,Moderate
+airqo_g5573,Buyala 1 Mpigi,2026-08-05 00:00:00+00:00,19.48705301068723,Moderate
+airqo_g5573,Buyala 1 Mpigi,2026-08-06 00:00:00+00:00,19.489536889655483,Moderate
+airqo_g5573,Buyala 1 Mpigi,2026-08-07 00:00:00+00:00,19.496989012521045,Moderate
+airqo_g5573,Buyala 1 Mpigi,2026-08-08 00:00:00+00:00,19.570353074194326,Moderate
+airqo_g5573,Buyala 1 Mpigi,2026-08-09 00:00:00+00:00,19.61089478385041,Moderate
+airqo_g5573,Buyala 1 Mpigi,2026-08-10 00:00:00+00:00,19.613786296747232,Moderate
+airqo_g5573,Buyala 1 Mpigi,2026-08-11 00:00:00+00:00,19.530727875105217,Moderate
+airqo_g5573,Buyala 1 Mpigi,2026-08-12 00:00:00+00:00,19.48705301068723,Moderate
+airqo_g5573,Buyala 1 Mpigi,2026-08-13 00:00:00+00:00,19.489536889655483,Moderate
+airqo_g5573,Buyala 1 Mpigi,2026-08-14 00:00:00+00:00,19.496989012521045,Moderate
+aq_04,St.Paul Kyebando C/U Primary School,2026-08-01 00:00:00+00:00,28.730422529403466,Moderate
+aq_04,St.Paul Kyebando C/U Primary School,2026-08-02 00:00:00+00:00,28.85227260050135,Moderate
+aq_04,St.Paul Kyebando C/U Primary School,2026-08-03 00:00:00+00:00,28.940436616705053,Moderate
+aq_04,St.Paul Kyebando C/U Primary School,2026-08-04 00:00:00+00:00,28.686724003802908,Moderate
+aq_04,St.Paul Kyebando C/U Primary School,2026-08-05 00:00:00+00:00,28.569420500165347,Moderate
+aq_04,St.Paul Kyebando C/U Primary School,2026-08-06 00:00:00+00:00,28.56200358202561,Moderate
+aq_04,St.Paul Kyebando C/U Primary School,2026-08-07 00:00:00+00:00,28.531918308173307,Moderate
+aq_04,St.Paul Kyebando C/U Primary School,2026-08-08 00:00:00+00:00,28.730422529403466,Moderate
+aq_04,St.Paul Kyebando C/U Primary School,2026-08-09 00:00:00+00:00,28.85227260050135,Moderate
+aq_04,St.Paul Kyebando C/U Primary School,2026-08-10 00:00:00+00:00,28.940436616705053,Moderate
+aq_04,St.Paul Kyebando C/U Primary School,2026-08-11 00:00:00+00:00,28.686724003802908,Moderate
+aq_04,St.Paul Kyebando C/U Primary School,2026-08-12 00:00:00+00:00,28.569420500165347,Moderate
+aq_04,St.Paul Kyebando C/U Primary School,2026-08-13 00:00:00+00:00,28.56200358202561,Moderate
+aq_04,St.Paul Kyebando C/U Primary School,2026-08-14 00:00:00+00:00,28.531918308173307,Moderate
+aq_10,"Rwengoma, Kabarole",2026-08-01 00:00:00+00:00,26.658368400823715,Moderate
+aq_10,"Rwengoma, Kabarole",2026-08-02 00:00:00+00:00,26.74932696233165,Moderate
+aq_10,"Rwengoma, Kabarole",2026-08-03 00:00:00+00:00,26.85526391992845,Moderate
+aq_10,"Rwengoma, Kabarole",2026-08-04 00:00:00+00:00,26.707201830779173,Moderate
+aq_10,"Rwengoma, Kabarole",2026-08-05 00:00:00+00:00,26.61954535260457,Moderate
+aq_10,"Rwengoma, Kabarole",2026-08-06 00:00:00+00:00,26.872487694625974,Moderate
+aq_10,"Rwengoma, Kabarole",2026-08-07 00:00:00+00:00,26.612972783264187,Moderate
+aq_10,"Rwengoma, Kabarole",2026-08-08 00:00:00+00:00,26.658368400823715,Moderate
+aq_10,"Rwengoma, Kabarole",2026-08-09 00:00:00+00:00,26.74932696233165,Moderate
+aq_10,"Rwengoma, Kabarole",2026-08-10 00:00:00+00:00,26.85526391992845,Moderate
+aq_10,"Rwengoma, Kabarole",2026-08-11 00:00:00+00:00,26.707201830779173,Moderate
+aq_10,"Rwengoma, Kabarole",2026-08-12 00:00:00+00:00,26.61954535260457,Moderate
+aq_10,"Rwengoma, Kabarole",2026-08-13 00:00:00+00:00,26.872487694625974,Moderate
+aq_10,"Rwengoma, Kabarole",2026-08-14 00:00:00+00:00,26.612972783264187,Moderate
+aq_18,"Pramukh steel Limited, Njeru ,Jinja",2026-08-01 00:00:00+00:00,29.636416276079245,Moderate
+aq_18,"Pramukh steel Limited, Njeru ,Jinja",2026-08-02 00:00:00+00:00,29.7431133643729,Moderate
+aq_18,"Pramukh steel Limited, Njeru ,Jinja",2026-08-03 00:00:00+00:00,29.71203561801046,Moderate
+aq_18,"Pramukh steel Limited, Njeru ,Jinja",2026-08-04 00:00:00+00:00,29.47213621339887,Moderate
+aq_18,"Pramukh steel Limited, Njeru ,Jinja",2026-08-05 00:00:00+00:00,29.377712140978232,Moderate
+aq_18,"Pramukh steel Limited, Njeru ,Jinja",2026-08-06 00:00:00+00:00,29.478485088909935,Moderate
+aq_18,"Pramukh steel Limited, Njeru ,Jinja",2026-08-07 00:00:00+00:00,29.559516115695647,Moderate
+aq_18,"Pramukh steel Limited, Njeru ,Jinja",2026-08-08 00:00:00+00:00,29.636416276079245,Moderate
+aq_18,"Pramukh steel Limited, Njeru ,Jinja",2026-08-09 00:00:00+00:00,29.7431133643729,Moderate
+aq_18,"Pramukh steel Limited, Njeru ,Jinja",2026-08-10 00:00:00+00:00,29.71203561801046,Moderate
+aq_18,"Pramukh steel Limited, Njeru ,Jinja",2026-08-11 00:00:00+00:00,29.47213621339887,Moderate
+aq_18,"Pramukh steel Limited, Njeru ,Jinja",2026-08-12 00:00:00+00:00,29.377712140978232,Moderate
+aq_18,"Pramukh steel Limited, Njeru ,Jinja",2026-08-13 00:00:00+00:00,29.478485088909935,Moderate
+aq_18,"Pramukh steel Limited, Njeru ,Jinja",2026-08-14 00:00:00+00:00,29.559516115695647,Moderate
+aq_23,"Jinja Main Street, Jinja",2026-08-01 00:00:00+00:00,25.272690989733647,Moderate
+aq_23,"Jinja Main Street, Jinja",2026-08-02 00:00:00+00:00,25.39914275560666,Moderate
+aq_23,"Jinja Main Street, Jinja",2026-08-03 00:00:00+00:00,25.62630589466089,Moderate
+aq_23,"Jinja Main Street, Jinja",2026-08-04 00:00:00+00:00,25.422832549753483,Moderate
+aq_23,"Jinja Main Street, Jinja",2026-08-05 00:00:00+00:00,25.300522606797134,Moderate
+aq_23,"Jinja Main Street, Jinja",2026-08-06 00:00:00+00:00,25.382364587617243,Moderate
+aq_23,"Jinja Main Street, Jinja",2026-08-07 00:00:00+00:00,25.18688012167809,Moderate
+aq_23,"Jinja Main Street, Jinja",2026-08-08 00:00:00+00:00,25.272690989733647,Moderate
+aq_23,"Jinja Main Street, Jinja",2026-08-09 00:00:00+00:00,25.39914275560666,Moderate
+aq_23,"Jinja Main Street, Jinja",2026-08-10 00:00:00+00:00,25.62630589466089,Moderate
+aq_23,"Jinja Main Street, Jinja",2026-08-11 00:00:00+00:00,25.422832549753483,Moderate
+aq_23,"Jinja Main Street, Jinja",2026-08-12 00:00:00+00:00,25.300522606797134,Moderate
+aq_23,"Jinja Main Street, Jinja",2026-08-13 00:00:00+00:00,25.382364587617243,Moderate
+aq_23,"Jinja Main Street, Jinja",2026-08-14 00:00:00+00:00,25.18688012167809,Moderate
+aq_27,"Njeru PSL 2(Pramukh steel limited, Jinja)",2026-08-01 00:00:00+00:00,29.761688642526455,Moderate
+aq_27,"Njeru PSL 2(Pramukh steel limited, Jinja)",2026-08-02 00:00:00+00:00,29.843642992724867,Moderate
+aq_27,"Njeru PSL 2(Pramukh steel limited, Jinja)",2026-08-03 00:00:00+00:00,29.877021839300742,Moderate
+aq_27,"Njeru PSL 2(Pramukh steel limited, Jinja)",2026-08-04 00:00:00+00:00,29.549717552008175,Moderate
+aq_27,"Njeru PSL 2(Pramukh steel limited, Jinja)",2026-08-05 00:00:00+00:00,29.469976366492304,Moderate
+aq_27,"Njeru PSL 2(Pramukh steel limited, Jinja)",2026-08-06 00:00:00+00:00,29.740389190491225,Moderate
+aq_27,"Njeru PSL 2(Pramukh steel limited, Jinja)",2026-08-07 00:00:00+00:00,29.722774580026453,Moderate
+aq_27,"Njeru PSL 2(Pramukh steel limited, Jinja)",2026-08-08 00:00:00+00:00,29.761688642526455,Moderate
+aq_27,"Njeru PSL 2(Pramukh steel limited, Jinja)",2026-08-09 00:00:00+00:00,29.843642992724867,Moderate
+aq_27,"Njeru PSL 2(Pramukh steel limited, Jinja)",2026-08-10 00:00:00+00:00,29.877021839300742,Moderate
+aq_27,"Njeru PSL 2(Pramukh steel limited, Jinja)",2026-08-11 00:00:00+00:00,29.549717552008175,Moderate
+aq_27,"Njeru PSL 2(Pramukh steel limited, Jinja)",2026-08-12 00:00:00+00:00,29.469976366492304,Moderate
+aq_27,"Njeru PSL 2(Pramukh steel limited, Jinja)",2026-08-13 00:00:00+00:00,29.740389190491225,Moderate
+aq_27,"Njeru PSL 2(Pramukh steel limited, Jinja)",2026-08-14 00:00:00+00:00,29.722774580026453,Moderate
+aq_39,"Rubaga, Kampala",2026-08-01 00:00:00+00:00,45.114620155197805,Unhealthy for Sensitive Groups
+aq_39,"Rubaga, Kampala",2026-08-02 00:00:00+00:00,45.263412955297014,Unhealthy for Sensitive Groups
+aq_39,"Rubaga, Kampala",2026-08-03 00:00:00+00:00,45.33664017030423,Unhealthy for Sensitive Groups
+aq_39,"Rubaga, Kampala",2026-08-04 00:00:00+00:00,45.33114573826058,Unhealthy for Sensitive Groups
+aq_39,"Rubaga, Kampala",2026-08-05 00:00:00+00:00,45.17837579778439,Unhealthy for Sensitive Groups
+aq_39,"Rubaga, Kampala",2026-08-06 00:00:00+00:00,44.9341637334656,Unhealthy for Sensitive Groups
+aq_39,"Rubaga, Kampala",2026-08-07 00:00:00+00:00,44.91037878532347,Unhealthy for Sensitive Groups
+aq_39,"Rubaga, Kampala",2026-08-08 00:00:00+00:00,45.114620155197805,Unhealthy for Sensitive Groups
+aq_39,"Rubaga, Kampala",2026-08-09 00:00:00+00:00,45.263412955297014,Unhealthy for Sensitive Groups
+aq_39,"Rubaga, Kampala",2026-08-10 00:00:00+00:00,45.33664017030423,Unhealthy for Sensitive Groups
+aq_39,"Rubaga, Kampala",2026-08-11 00:00:00+00:00,45.33114573826058,Unhealthy for Sensitive Groups
+aq_39,"Rubaga, Kampala",2026-08-12 00:00:00+00:00,45.17837579778439,Unhealthy for Sensitive Groups
+aq_39,"Rubaga, Kampala",2026-08-13 00:00:00+00:00,44.9341637334656,Unhealthy for Sensitive Groups
+aq_39,"Rubaga, Kampala",2026-08-14 00:00:00+00:00,44.91037878532347,Unhealthy for Sensitive Groups
+aq_40,"Central Ward, Mityana",2026-08-01 00:00:00+00:00,47.706969256703935,Unhealthy for Sensitive Groups
+aq_40,"Central Ward, Mityana",2026-08-02 00:00:00+00:00,47.90268017436267,Unhealthy for Sensitive Groups
+aq_40,"Central Ward, Mityana",2026-08-03 00:00:00+00:00,47.83908759747775,Unhealthy for Sensitive Groups
+aq_40,"Central Ward, Mityana",2026-08-04 00:00:00+00:00,47.18193198112073,Unhealthy for Sensitive Groups
+aq_40,"Central Ward, Mityana",2026-08-05 00:00:00+00:00,47.00194833776755,Unhealthy for Sensitive Groups
+aq_40,"Central Ward, Mityana",2026-08-06 00:00:00+00:00,47.238456923550984,Unhealthy for Sensitive Groups
+aq_40,"Central Ward, Mityana",2026-08-07 00:00:00+00:00,47.54809554059944,Unhealthy for Sensitive Groups
+aq_40,"Central Ward, Mityana",2026-08-08 00:00:00+00:00,47.706969256703935,Unhealthy for Sensitive Groups
+aq_40,"Central Ward, Mityana",2026-08-09 00:00:00+00:00,47.90268017436267,Unhealthy for Sensitive Groups
+aq_40,"Central Ward, Mityana",2026-08-10 00:00:00+00:00,47.83908759747775,Unhealthy for Sensitive Groups
+aq_40,"Central Ward, Mityana",2026-08-11 00:00:00+00:00,47.18193198112073,Unhealthy for Sensitive Groups
+aq_40,"Central Ward, Mityana",2026-08-12 00:00:00+00:00,47.00194833776755,Unhealthy for Sensitive Groups
+aq_40,"Central Ward, Mityana",2026-08-13 00:00:00+00:00,47.238456923550984,Unhealthy for Sensitive Groups
+aq_40,"Central Ward, Mityana",2026-08-14 00:00:00+00:00,47.54809554059944,Unhealthy for Sensitive Groups
+aq_43,"Makindye, Lukuli Makindye",2026-08-01 00:00:00+00:00,67.52163220651455,Unhealthy
+aq_43,"Makindye, Lukuli Makindye",2026-08-02 00:00:00+00:00,68.17429477430555,Unhealthy
+aq_43,"Makindye, Lukuli Makindye",2026-08-03 00:00:00+00:00,68.23564499007936,Unhealthy
+aq_43,"Makindye, Lukuli Makindye",2026-08-04 00:00:00+00:00,68.37692379133598,Unhealthy
+aq_43,"Makindye, Lukuli Makindye",2026-08-05 00:00:00+00:00,67.72795485449736,Unhealthy
+aq_43,"Makindye, Lukuli Makindye",2026-08-06 00:00:00+00:00,65.83463685102514,Unhealthy
+aq_43,"Makindye, Lukuli Makindye",2026-08-07 00:00:00+00:00,66.50056090525793,Unhealthy
+aq_43,"Makindye, Lukuli Makindye",2026-08-08 00:00:00+00:00,67.52163220651455,Unhealthy
+aq_43,"Makindye, Lukuli Makindye",2026-08-09 00:00:00+00:00,68.17429477430555,Unhealthy
+aq_43,"Makindye, Lukuli Makindye",2026-08-10 00:00:00+00:00,68.23564499007936,Unhealthy
+aq_43,"Makindye, Lukuli Makindye",2026-08-11 00:00:00+00:00,68.37692379133598,Unhealthy
+aq_43,"Makindye, Lukuli Makindye",2026-08-12 00:00:00+00:00,67.72795485449736,Unhealthy
+aq_43,"Makindye, Lukuli Makindye",2026-08-13 00:00:00+00:00,65.83463685102514,Unhealthy
+aq_43,"Makindye, Lukuli Makindye",2026-08-14 00:00:00+00:00,66.50056090525793,Unhealthy
+aq_44,"Naguru II, Nakawa",2026-08-01 00:00:00+00:00,31.192346277432062,Moderate
+aq_44,"Naguru II, Nakawa",2026-08-02 00:00:00+00:00,31.291916914832854,Moderate
+aq_44,"Naguru II, Nakawa",2026-08-03 00:00:00+00:00,31.585499454816016,Moderate
+aq_44,"Naguru II, Nakawa",2026-08-04 00:00:00+00:00,31.503325483405487,Moderate
+aq_44,"Naguru II, Nakawa",2026-08-05 00:00:00+00:00,31.38930416396104,Moderate
+aq_44,"Naguru II, Nakawa",2026-08-06 00:00:00+00:00,31.470837724491943,Moderate
+aq_44,"Naguru II, Nakawa",2026-08-07 00:00:00+00:00,31.186736491552434,Moderate
+aq_44,"Naguru II, Nakawa",2026-08-08 00:00:00+00:00,31.192346277432062,Moderate
+aq_44,"Naguru II, Nakawa",2026-08-09 00:00:00+00:00,31.291916914832854,Moderate
+aq_44,"Naguru II, Nakawa",2026-08-10 00:00:00+00:00,31.585499454816016,Moderate
+aq_44,"Naguru II, Nakawa",2026-08-11 00:00:00+00:00,31.503325483405487,Moderate
+aq_44,"Naguru II, Nakawa",2026-08-12 00:00:00+00:00,31.38930416396104,Moderate
+aq_44,"Naguru II, Nakawa",2026-08-13 00:00:00+00:00,31.470837724491943,Moderate
+aq_44,"Naguru II, Nakawa",2026-08-14 00:00:00+00:00,31.186736491552434,Moderate
+aq_46,ACCACIA ACADEMY MUYENGA,2026-08-01 00:00:00+00:00,85.39728379050926,Unhealthy
+aq_46,ACCACIA ACADEMY MUYENGA,2026-08-02 00:00:00+00:00,85.85906485945766,Unhealthy
+aq_46,ACCACIA ACADEMY MUYENGA,2026-08-03 00:00:00+00:00,85.8848892989418,Unhealthy
+aq_46,ACCACIA ACADEMY MUYENGA,2026-08-04 00:00:00+00:00,85.22199276409933,Unhealthy
+aq_46,ACCACIA ACADEMY MUYENGA,2026-08-05 00:00:00+00:00,84.81892286578584,Unhealthy
+aq_46,ACCACIA ACADEMY MUYENGA,2026-08-06 00:00:00+00:00,84.82500496279762,Unhealthy
+aq_46,ACCACIA ACADEMY MUYENGA,2026-08-07 00:00:00+00:00,85.16452255291006,Unhealthy
+aq_46,ACCACIA ACADEMY MUYENGA,2026-08-08 00:00:00+00:00,85.39728379050926,Unhealthy
+aq_46,ACCACIA ACADEMY MUYENGA,2026-08-09 00:00:00+00:00,85.85906485945766,Unhealthy
+aq_46,ACCACIA ACADEMY MUYENGA,2026-08-10 00:00:00+00:00,85.8848892989418,Unhealthy
+aq_46,ACCACIA ACADEMY MUYENGA,2026-08-11 00:00:00+00:00,85.22199276409933,Unhealthy
+aq_46,ACCACIA ACADEMY MUYENGA,2026-08-12 00:00:00+00:00,84.81892286578584,Unhealthy
+aq_46,ACCACIA ACADEMY MUYENGA,2026-08-13 00:00:00+00:00,84.82500496279762,Unhealthy
+aq_46,ACCACIA ACADEMY MUYENGA,2026-08-14 00:00:00+00:00,85.16452255291006,Unhealthy
+aq_47,"Bukoto I, Kawempe",2026-08-01 00:00:00+00:00,62.960323520767425,Unhealthy
+aq_47,"Bukoto I, Kawempe",2026-08-02 00:00:00+00:00,63.47763230714309,Unhealthy
+aq_47,"Bukoto I, Kawempe",2026-08-03 00:00:00+00:00,63.31651875803595,Unhealthy
+aq_47,"Bukoto I, Kawempe",2026-08-04 00:00:00+00:00,62.87653847101394,Unhealthy
+aq_47,"Bukoto I, Kawempe",2026-08-05 00:00:00+00:00,62.30251263602716,Unhealthy
+aq_47,"Bukoto I, Kawempe",2026-08-06 00:00:00+00:00,62.24213933658933,Unhealthy
+aq_47,"Bukoto I, Kawempe",2026-08-07 00:00:00+00:00,62.78590277258621,Unhealthy
+aq_47,"Bukoto I, Kawempe",2026-08-08 00:00:00+00:00,62.960323520767425,Unhealthy
+aq_47,"Bukoto I, Kawempe",2026-08-09 00:00:00+00:00,63.47763230714309,Unhealthy
+aq_47,"Bukoto I, Kawempe",2026-08-10 00:00:00+00:00,63.31651875803595,Unhealthy
+aq_47,"Bukoto I, Kawempe",2026-08-11 00:00:00+00:00,62.87653847101394,Unhealthy
+aq_47,"Bukoto I, Kawempe",2026-08-12 00:00:00+00:00,62.30251263602716,Unhealthy
+aq_47,"Bukoto I, Kawempe",2026-08-13 00:00:00+00:00,62.24213933658933,Unhealthy
+aq_47,"Bukoto I, Kawempe",2026-08-14 00:00:00+00:00,62.78590277258621,Unhealthy
+aq_48,"Seguku, Makindye-Ssabagabo",2026-08-01 00:00:00+00:00,34.02411746279762,Moderate
+aq_48,"Seguku, Makindye-Ssabagabo",2026-08-02 00:00:00+00:00,34.29749020585317,Moderate
+aq_48,"Seguku, Makindye-Ssabagabo",2026-08-03 00:00:00+00:00,34.38208490575397,Moderate
+aq_48,"Seguku, Makindye-Ssabagabo",2026-08-04 00:00:00+00:00,34.907755040208635,Moderate
+aq_48,"Seguku, Makindye-Ssabagabo",2026-08-05 00:00:00+00:00,34.65628105211339,Moderate
+aq_48,"Seguku, Makindye-Ssabagabo",2026-08-06 00:00:00+00:00,33.27106450284091,Moderate
+aq_48,"Seguku, Makindye-Ssabagabo",2026-08-07 00:00:00+00:00,33.204796880787036,Moderate
+aq_48,"Seguku, Makindye-Ssabagabo",2026-08-08 00:00:00+00:00,34.02411746279762,Moderate
+aq_48,"Seguku, Makindye-Ssabagabo",2026-08-09 00:00:00+00:00,34.29749020585317,Moderate
+aq_48,"Seguku, Makindye-Ssabagabo",2026-08-10 00:00:00+00:00,34.38208490575397,Moderate
+aq_48,"Seguku, Makindye-Ssabagabo",2026-08-11 00:00:00+00:00,34.907755040208635,Moderate
+aq_48,"Seguku, Makindye-Ssabagabo",2026-08-12 00:00:00+00:00,34.65628105211339,Moderate
+aq_48,"Seguku, Makindye-Ssabagabo",2026-08-13 00:00:00+00:00,33.27106450284091,Moderate
+aq_48,"Seguku, Makindye-Ssabagabo",2026-08-14 00:00:00+00:00,33.204796880787036,Moderate
+aq_54,"Kalerwe, Kawempe",2026-08-01 00:00:00+00:00,76.31670539998197,Unhealthy
+aq_54,"Kalerwe, Kawempe",2026-08-02 00:00:00+00:00,76.86436020074255,Unhealthy
+aq_54,"Kalerwe, Kawempe",2026-08-03 00:00:00+00:00,76.82215971049784,Unhealthy
+aq_54,"Kalerwe, Kawempe",2026-08-04 00:00:00+00:00,76.66523000067643,Unhealthy
+aq_54,"Kalerwe, Kawempe",2026-08-05 00:00:00+00:00,76.11334039832853,Unhealthy
+aq_54,"Kalerwe, Kawempe",2026-08-06 00:00:00+00:00,75.56993985795455,Unhealthy
+aq_54,"Kalerwe, Kawempe",2026-08-07 00:00:00+00:00,75.8540522289863,Unhealthy
+aq_54,"Kalerwe, Kawempe",2026-08-08 00:00:00+00:00,76.31670539998197,Unhealthy
+aq_54,"Kalerwe, Kawempe",2026-08-09 00:00:00+00:00,76.86436020074255,Unhealthy
+aq_54,"Kalerwe, Kawempe",2026-08-10 00:00:00+00:00,76.82215971049784,Unhealthy
+aq_54,"Kalerwe, Kawempe",2026-08-11 00:00:00+00:00,76.66523000067643,Unhealthy
+aq_54,"Kalerwe, Kawempe",2026-08-12 00:00:00+00:00,76.11334039832853,Unhealthy
+aq_54,"Kalerwe, Kawempe",2026-08-13 00:00:00+00:00,75.56993985795455,Unhealthy
+aq_54,"Kalerwe, Kawempe",2026-08-14 00:00:00+00:00,75.8540522289863,Unhealthy
+aq_58,"Nansana east ward, Wakiso",2026-08-01 00:00:00+00:00,24.65824152965669,Moderate
+aq_58,"Nansana east ward, Wakiso",2026-08-02 00:00:00+00:00,24.67543312687891,Moderate
+aq_58,"Nansana east ward, Wakiso",2026-08-03 00:00:00+00:00,24.820462768909334,Moderate
+aq_58,"Nansana east ward, Wakiso",2026-08-04 00:00:00+00:00,24.61165178428632,Moderate
+aq_58,"Nansana east ward, Wakiso",2026-08-05 00:00:00+00:00,24.582957498572032,Moderate
+aq_58,"Nansana east ward, Wakiso",2026-08-06 00:00:00+00:00,24.845080944339227,Moderate
+aq_58,"Nansana east ward, Wakiso",2026-08-07 00:00:00+00:00,24.727829448803515,Moderate
+aq_58,"Nansana east ward, Wakiso",2026-08-08 00:00:00+00:00,24.65824152965669,Moderate
+aq_58,"Nansana east ward, Wakiso",2026-08-09 00:00:00+00:00,24.67543312687891,Moderate
+aq_58,"Nansana east ward, Wakiso",2026-08-10 00:00:00+00:00,24.820462768909334,Moderate
+aq_58,"Nansana east ward, Wakiso",2026-08-11 00:00:00+00:00,24.61165178428632,Moderate
+aq_58,"Nansana east ward, Wakiso",2026-08-12 00:00:00+00:00,24.582957498572032,Moderate
+aq_58,"Nansana east ward, Wakiso",2026-08-13 00:00:00+00:00,24.845080944339227,Moderate
+aq_58,"Nansana east ward, Wakiso",2026-08-14 00:00:00+00:00,24.727829448803515,Moderate
+aq_59,"Kyaliwajala, Kira Municipality",2026-08-01 00:00:00+00:00,70.24446002480158,Unhealthy
+aq_59,"Kyaliwajala, Kira Municipality",2026-08-02 00:00:00+00:00,70.75198636904761,Unhealthy
+aq_59,"Kyaliwajala, Kira Municipality",2026-08-03 00:00:00+00:00,70.74548617311508,Unhealthy
+aq_59,"Kyaliwajala, Kira Municipality",2026-08-04 00:00:00+00:00,70.18389490560365,Unhealthy
+aq_59,"Kyaliwajala, Kira Municipality",2026-08-05 00:00:00+00:00,69.68172129449255,Unhealthy
+aq_59,"Kyaliwajala, Kira Municipality",2026-08-06 00:00:00+00:00,69.56979143856722,Unhealthy
+aq_59,"Kyaliwajala, Kira Municipality",2026-08-07 00:00:00+00:00,70.13290996204606,Unhealthy
+aq_59,"Kyaliwajala, Kira Municipality",2026-08-08 00:00:00+00:00,70.24446002480158,Unhealthy
+aq_59,"Kyaliwajala, Kira Municipality",2026-08-09 00:00:00+00:00,70.75198636904761,Unhealthy
+aq_59,"Kyaliwajala, Kira Municipality",2026-08-10 00:00:00+00:00,70.74548617311508,Unhealthy
+aq_59,"Kyaliwajala, Kira Municipality",2026-08-11 00:00:00+00:00,70.18389490560365,Unhealthy
+aq_59,"Kyaliwajala, Kira Municipality",2026-08-12 00:00:00+00:00,69.68172129449255,Unhealthy
+aq_59,"Kyaliwajala, Kira Municipality",2026-08-13 00:00:00+00:00,69.56979143856722,Unhealthy
+aq_59,"Kyaliwajala, Kira Municipality",2026-08-14 00:00:00+00:00,70.13290996204606,Unhealthy
+aq_60,"Butabika, Nakawa",2026-08-01 00:00:00+00:00,36.5399144563943,Unhealthy for Sensitive Groups
+aq_60,"Butabika, Nakawa",2026-08-02 00:00:00+00:00,36.72816067663239,Unhealthy for Sensitive Groups
+aq_60,"Butabika, Nakawa",2026-08-03 00:00:00+00:00,36.81759181998557,Unhealthy for Sensitive Groups
+aq_60,"Butabika, Nakawa",2026-08-04 00:00:00+00:00,36.644876411586104,Unhealthy for Sensitive Groups
+aq_60,"Butabika, Nakawa",2026-08-05 00:00:00+00:00,36.454250199615196,Unhealthy for Sensitive Groups
+aq_60,"Butabika, Nakawa",2026-08-06 00:00:00+00:00,36.448922003667626,Unhealthy for Sensitive Groups
+aq_60,"Butabika, Nakawa",2026-08-07 00:00:00+00:00,36.45862317099567,Unhealthy for Sensitive Groups
+aq_60,"Butabika, Nakawa",2026-08-08 00:00:00+00:00,36.5399144563943,Unhealthy for Sensitive Groups
+aq_60,"Butabika, Nakawa",2026-08-09 00:00:00+00:00,36.72816067663239,Unhealthy for Sensitive Groups
+aq_60,"Butabika, Nakawa",2026-08-10 00:00:00+00:00,36.81759181998557,Unhealthy for Sensitive Groups
+aq_60,"Butabika, Nakawa",2026-08-11 00:00:00+00:00,36.644876411586104,Unhealthy for Sensitive Groups
+aq_60,"Butabika, Nakawa",2026-08-12 00:00:00+00:00,36.454250199615196,Unhealthy for Sensitive Groups
+aq_60,"Butabika, Nakawa",2026-08-13 00:00:00+00:00,36.448922003667626,Unhealthy for Sensitive Groups
+aq_60,"Butabika, Nakawa",2026-08-14 00:00:00+00:00,36.45862317099567,Unhealthy for Sensitive Groups
+aq_62,"Makerere University_01, Kawempe",2026-08-01 00:00:00+00:00,66.88855088301166,Unhealthy
+aq_62,"Makerere University_01, Kawempe",2026-08-02 00:00:00+00:00,67.42273245791246,Unhealthy
+aq_62,"Makerere University_01, Kawempe",2026-08-03 00:00:00+00:00,67.472241942791,Unhealthy
+aq_62,"Makerere University_01, Kawempe",2026-08-04 00:00:00+00:00,67.4781891765873,Unhealthy
+aq_62,"Makerere University_01, Kawempe",2026-08-05 00:00:00+00:00,66.9142005828373,Unhealthy
+aq_62,"Makerere University_01, Kawempe",2026-08-06 00:00:00+00:00,66.19555932291668,Unhealthy
+aq_62,"Makerere University_01, Kawempe",2026-08-07 00:00:00+00:00,66.34979740582914,Unhealthy
+aq_62,"Makerere University_01, Kawempe",2026-08-08 00:00:00+00:00,66.88855088301166,Unhealthy
+aq_62,"Makerere University_01, Kawempe",2026-08-09 00:00:00+00:00,67.42273245791246,Unhealthy
+aq_62,"Makerere University_01, Kawempe",2026-08-10 00:00:00+00:00,67.472241942791,Unhealthy
+aq_62,"Makerere University_01, Kawempe",2026-08-11 00:00:00+00:00,67.4781891765873,Unhealthy
+aq_62,"Makerere University_01, Kawempe",2026-08-12 00:00:00+00:00,66.9142005828373,Unhealthy
+aq_62,"Makerere University_01, Kawempe",2026-08-13 00:00:00+00:00,66.19555932291668,Unhealthy
+aq_62,"Makerere University_01, Kawempe",2026-08-14 00:00:00+00:00,66.34979740582914,Unhealthy
+aq_66,"Nakasero II, Kampala 66",2026-08-01 00:00:00+00:00,37.43796228167087,Unhealthy for Sensitive Groups
+aq_66,"Nakasero II, Kampala 66",2026-08-02 00:00:00+00:00,37.50331162698412,Unhealthy for Sensitive Groups
+aq_66,"Nakasero II, Kampala 66",2026-08-03 00:00:00+00:00,37.621917173445766,Unhealthy for Sensitive Groups
+aq_66,"Nakasero II, Kampala 66",2026-08-04 00:00:00+00:00,37.44125337466931,Unhealthy for Sensitive Groups
+aq_66,"Nakasero II, Kampala 66",2026-08-05 00:00:00+00:00,37.380962130456346,Unhealthy for Sensitive Groups
+aq_66,"Nakasero II, Kampala 66",2026-08-06 00:00:00+00:00,37.37968729392136,Unhealthy for Sensitive Groups
+aq_66,"Nakasero II, Kampala 66",2026-08-07 00:00:00+00:00,37.36197239305255,Unhealthy for Sensitive Groups
+aq_66,"Nakasero II, Kampala 66",2026-08-08 00:00:00+00:00,37.43796228167087,Unhealthy for Sensitive Groups
+aq_66,"Nakasero II, Kampala 66",2026-08-09 00:00:00+00:00,37.50331162698412,Unhealthy for Sensitive Groups
+aq_66,"Nakasero II, Kampala 66",2026-08-10 00:00:00+00:00,37.621917173445766,Unhealthy for Sensitive Groups
+aq_66,"Nakasero II, Kampala 66",2026-08-11 00:00:00+00:00,37.44125337466931,Unhealthy for Sensitive Groups
+aq_66,"Nakasero II, Kampala 66",2026-08-12 00:00:00+00:00,37.380962130456346,Unhealthy for Sensitive Groups
+aq_66,"Nakasero II, Kampala 66",2026-08-13 00:00:00+00:00,37.37968729392136,Unhealthy for Sensitive Groups
+aq_66,"Nakasero II, Kampala 66",2026-08-14 00:00:00+00:00,37.36197239305255,Unhealthy for Sensitive Groups
+aq_69,"Ntinda Junction, Kampala Uganda",2026-08-01 00:00:00+00:00,52.67841501736111,Unhealthy for Sensitive Groups
+aq_69,"Ntinda Junction, Kampala Uganda",2026-08-02 00:00:00+00:00,53.26053724454365,Unhealthy for Sensitive Groups
+aq_69,"Ntinda Junction, Kampala Uganda",2026-08-03 00:00:00+00:00,53.1504939781746,Unhealthy for Sensitive Groups
+aq_69,"Ntinda Junction, Kampala Uganda",2026-08-04 00:00:00+00:00,52.38434499075577,Unhealthy for Sensitive Groups
+aq_69,"Ntinda Junction, Kampala Uganda",2026-08-05 00:00:00+00:00,51.79993972785895,Unhealthy for Sensitive Groups
+aq_69,"Ntinda Junction, Kampala Uganda",2026-08-06 00:00:00+00:00,52.310677022156085,Unhealthy for Sensitive Groups
+aq_69,"Ntinda Junction, Kampala Uganda",2026-08-07 00:00:00+00:00,52.624350061177246,Unhealthy for Sensitive Groups
+aq_69,"Ntinda Junction, Kampala Uganda",2026-08-08 00:00:00+00:00,52.67841501736111,Unhealthy for Sensitive Groups
+aq_69,"Ntinda Junction, Kampala Uganda",2026-08-09 00:00:00+00:00,53.26053724454365,Unhealthy for Sensitive Groups
+aq_69,"Ntinda Junction, Kampala Uganda",2026-08-10 00:00:00+00:00,53.1504939781746,Unhealthy for Sensitive Groups
+aq_69,"Ntinda Junction, Kampala Uganda",2026-08-11 00:00:00+00:00,52.38434499075577,Unhealthy for Sensitive Groups
+aq_69,"Ntinda Junction, Kampala Uganda",2026-08-12 00:00:00+00:00,51.79993972785895,Unhealthy for Sensitive Groups
+aq_69,"Ntinda Junction, Kampala Uganda",2026-08-13 00:00:00+00:00,52.310677022156085,Unhealthy for Sensitive Groups
+aq_69,"Ntinda Junction, Kampala Uganda",2026-08-14 00:00:00+00:00,52.624350061177246,Unhealthy for Sensitive Groups
+aq_70,"Kasenge, Wakiso",2026-08-01 00:00:00+00:00,93.28951555337602,Unhealthy
+aq_70,"Kasenge, Wakiso",2026-08-02 00:00:00+00:00,93.70554669920936,Unhealthy
+aq_70,"Kasenge, Wakiso",2026-08-03 00:00:00+00:00,93.62912911323053,Unhealthy
+aq_70,"Kasenge, Wakiso",2026-08-04 00:00:00+00:00,93.76254905122657,Unhealthy
+aq_70,"Kasenge, Wakiso",2026-08-05 00:00:00+00:00,93.32300050955989,Unhealthy
+aq_70,"Kasenge, Wakiso",2026-08-06 00:00:00+00:00,92.7984274900042,Unhealthy
+aq_70,"Kasenge, Wakiso",2026-08-07 00:00:00+00:00,92.96302383259682,Unhealthy
+aq_70,"Kasenge, Wakiso",2026-08-08 00:00:00+00:00,93.28951555337602,Unhealthy
+aq_70,"Kasenge, Wakiso",2026-08-09 00:00:00+00:00,93.70554669920936,Unhealthy
+aq_70,"Kasenge, Wakiso",2026-08-10 00:00:00+00:00,93.62912911323053,Unhealthy
+aq_70,"Kasenge, Wakiso",2026-08-11 00:00:00+00:00,93.76254905122657,Unhealthy
+aq_70,"Kasenge, Wakiso",2026-08-12 00:00:00+00:00,93.32300050955989,Unhealthy
+aq_70,"Kasenge, Wakiso",2026-08-13 00:00:00+00:00,92.7984274900042,Unhealthy
+aq_70,"Kasenge, Wakiso",2026-08-14 00:00:00+00:00,92.96302383259682,Unhealthy
+aq_71,"Mbalwa, Kira Municipality",2026-08-01 00:00:00+00:00,57.57703329049423,Unhealthy
+aq_71,"Mbalwa, Kira Municipality",2026-08-02 00:00:00+00:00,57.78166073593073,Unhealthy
+aq_71,"Mbalwa, Kira Municipality",2026-08-03 00:00:00+00:00,57.66749871460137,Unhealthy
+aq_71,"Mbalwa, Kira Municipality",2026-08-04 00:00:00+00:00,57.11335762746512,Unhealthy
+aq_71,"Mbalwa, Kira Municipality",2026-08-05 00:00:00+00:00,56.90659702726671,Unhealthy
+aq_71,"Mbalwa, Kira Municipality",2026-08-06 00:00:00+00:00,56.19791658346861,Unhealthy
+aq_71,"Mbalwa, Kira Municipality",2026-08-07 00:00:00+00:00,57.033152465578404,Unhealthy
+aq_71,"Mbalwa, Kira Municipality",2026-08-08 00:00:00+00:00,57.57703329049423,Unhealthy
+aq_71,"Mbalwa, Kira Municipality",2026-08-09 00:00:00+00:00,57.78166073593073,Unhealthy
+aq_71,"Mbalwa, Kira Municipality",2026-08-10 00:00:00+00:00,57.66749871460137,Unhealthy
+aq_71,"Mbalwa, Kira Municipality",2026-08-11 00:00:00+00:00,57.11335762746512,Unhealthy
+aq_71,"Mbalwa, Kira Municipality",2026-08-12 00:00:00+00:00,56.90659702726671,Unhealthy
+aq_71,"Mbalwa, Kira Municipality",2026-08-13 00:00:00+00:00,56.19791658346861,Unhealthy
+aq_71,"Mbalwa, Kira Municipality",2026-08-14 00:00:00+00:00,57.033152465578404,Unhealthy
+aq_72,"Luwafu, Makindye",2026-08-01 00:00:00+00:00,33.728055887879485,Moderate
+aq_72,"Luwafu, Makindye",2026-08-02 00:00:00+00:00,33.80059841051888,Moderate
+aq_72,"Luwafu, Makindye",2026-08-03 00:00:00+00:00,33.81559979301948,Moderate
+aq_72,"Luwafu, Makindye",2026-08-04 00:00:00+00:00,33.518127173295454,Moderate
+aq_72,"Luwafu, Makindye",2026-08-05 00:00:00+00:00,33.45479239040474,Moderate
+aq_72,"Luwafu, Makindye",2026-08-06 00:00:00+00:00,33.693033336322245,Moderate
+aq_72,"Luwafu, Makindye",2026-08-07 00:00:00+00:00,33.824579155901965,Moderate
+aq_72,"Luwafu, Makindye",2026-08-08 00:00:00+00:00,33.728055887879485,Moderate
+aq_72,"Luwafu, Makindye",2026-08-09 00:00:00+00:00,33.80059841051888,Moderate
+aq_72,"Luwafu, Makindye",2026-08-10 00:00:00+00:00,33.81559979301948,Moderate
+aq_72,"Luwafu, Makindye",2026-08-11 00:00:00+00:00,33.518127173295454,Moderate
+aq_72,"Luwafu, Makindye",2026-08-12 00:00:00+00:00,33.45479239040474,Moderate
+aq_72,"Luwafu, Makindye",2026-08-13 00:00:00+00:00,33.693033336322245,Moderate
+aq_72,"Luwafu, Makindye",2026-08-14 00:00:00+00:00,33.824579155901965,Moderate
+aq_78,"Lubanga Road, Mubende",2026-08-01 00:00:00+00:00,28.719266799242423,Moderate
+aq_78,"Lubanga Road, Mubende",2026-08-02 00:00:00+00:00,28.73658077162999,Moderate
+aq_78,"Lubanga Road, Mubende",2026-08-03 00:00:00+00:00,28.776614491041368,Moderate
+aq_78,"Lubanga Road, Mubende",2026-08-04 00:00:00+00:00,28.46994821969697,Moderate
+aq_78,"Lubanga Road, Mubende",2026-08-05 00:00:00+00:00,28.445117351641414,Moderate
+aq_78,"Lubanga Road, Mubende",2026-08-06 00:00:00+00:00,28.82659931825697,Moderate
+aq_78,"Lubanga Road, Mubende",2026-08-07 00:00:00+00:00,28.7916816545665,Moderate
+aq_78,"Lubanga Road, Mubende",2026-08-08 00:00:00+00:00,28.719266799242423,Moderate
+aq_78,"Lubanga Road, Mubende",2026-08-09 00:00:00+00:00,28.73658077162999,Moderate
+aq_78,"Lubanga Road, Mubende",2026-08-10 00:00:00+00:00,28.776614491041368,Moderate
+aq_78,"Lubanga Road, Mubende",2026-08-11 00:00:00+00:00,28.46994821969697,Moderate
+aq_78,"Lubanga Road, Mubende",2026-08-12 00:00:00+00:00,28.445117351641414,Moderate
+aq_78,"Lubanga Road, Mubende",2026-08-13 00:00:00+00:00,28.82659931825697,Moderate
+aq_78,"Lubanga Road, Mubende",2026-08-14 00:00:00+00:00,28.7916816545665,Moderate
+aq_79,"Ntinda, Nakawa",2026-08-01 00:00:00+00:00,73.55156663758117,Unhealthy
+aq_79,"Ntinda, Nakawa",2026-08-02 00:00:00+00:00,73.90906044545154,Unhealthy
+aq_79,"Ntinda, Nakawa",2026-08-03 00:00:00+00:00,73.94310978324917,Unhealthy
+aq_79,"Ntinda, Nakawa",2026-08-04 00:00:00+00:00,73.89106322157589,Unhealthy
+aq_79,"Ntinda, Nakawa",2026-08-05 00:00:00+00:00,73.53572899207853,Unhealthy
+aq_79,"Ntinda, Nakawa",2026-08-06 00:00:00+00:00,72.74333245610872,Unhealthy
+aq_79,"Ntinda, Nakawa",2026-08-07 00:00:00+00:00,72.98662852919072,Unhealthy
+aq_79,"Ntinda, Nakawa",2026-08-08 00:00:00+00:00,73.55156663758117,Unhealthy
+aq_79,"Ntinda, Nakawa",2026-08-09 00:00:00+00:00,73.90906044545154,Unhealthy
+aq_79,"Ntinda, Nakawa",2026-08-10 00:00:00+00:00,73.94310978324917,Unhealthy
+aq_79,"Ntinda, Nakawa",2026-08-11 00:00:00+00:00,73.89106322157589,Unhealthy
+aq_79,"Ntinda, Nakawa",2026-08-12 00:00:00+00:00,73.53572899207853,Unhealthy
+aq_79,"Ntinda, Nakawa",2026-08-13 00:00:00+00:00,72.74333245610872,Unhealthy
+aq_79,"Ntinda, Nakawa",2026-08-14 00:00:00+00:00,72.98662852919072,Unhealthy
+aq_82,"Kamwokya, Kira Road, Kampala, Uganda",2026-08-01 00:00:00+00:00,34.73080945083273,Moderate
+aq_82,"Kamwokya, Kira Road, Kampala, Uganda",2026-08-02 00:00:00+00:00,34.796589507876384,Moderate
+aq_82,"Kamwokya, Kira Road, Kampala, Uganda",2026-08-03 00:00:00+00:00,34.882322097387565,Moderate
+aq_82,"Kamwokya, Kira Road, Kampala, Uganda",2026-08-04 00:00:00+00:00,34.70532244851792,Moderate
+aq_82,"Kamwokya, Kira Road, Kampala, Uganda",2026-08-05 00:00:00+00:00,34.640868448021884,Moderate
+aq_82,"Kamwokya, Kira Road, Kampala, Uganda",2026-08-06 00:00:00+00:00,34.627806635251325,Moderate
+aq_82,"Kamwokya, Kira Road, Kampala, Uganda",2026-08-07 00:00:00+00:00,34.67413904574014,Moderate
+aq_82,"Kamwokya, Kira Road, Kampala, Uganda",2026-08-08 00:00:00+00:00,34.73080945083273,Moderate
+aq_82,"Kamwokya, Kira Road, Kampala, Uganda",2026-08-09 00:00:00+00:00,34.796589507876384,Moderate
+aq_82,"Kamwokya, Kira Road, Kampala, Uganda",2026-08-10 00:00:00+00:00,34.882322097387565,Moderate
+aq_82,"Kamwokya, Kira Road, Kampala, Uganda",2026-08-11 00:00:00+00:00,34.70532244851792,Moderate
+aq_82,"Kamwokya, Kira Road, Kampala, Uganda",2026-08-12 00:00:00+00:00,34.640868448021884,Moderate
+aq_82,"Kamwokya, Kira Road, Kampala, Uganda",2026-08-13 00:00:00+00:00,34.627806635251325,Moderate
+aq_82,"Kamwokya, Kira Road, Kampala, Uganda",2026-08-14 00:00:00+00:00,34.67413904574014,Moderate
+aq_88,"Makerere, Kawempe",2026-08-01 00:00:00+00:00,57.584665821608944,Unhealthy
+aq_88,"Makerere, Kawempe",2026-08-02 00:00:00+00:00,58.052397234623015,Unhealthy
+aq_88,"Makerere, Kawempe",2026-08-03 00:00:00+00:00,58.13427407738095,Unhealthy
+aq_88,"Makerere, Kawempe",2026-08-04 00:00:00+00:00,58.14031330026455,Unhealthy
+aq_88,"Makerere, Kawempe",2026-08-05 00:00:00+00:00,57.68339498181217,Unhealthy
+aq_88,"Makerere, Kawempe",2026-08-06 00:00:00+00:00,56.610128912037034,Unhealthy
+aq_88,"Makerere, Kawempe",2026-08-07 00:00:00+00:00,56.92882044627825,Unhealthy
+aq_88,"Makerere, Kawempe",2026-08-08 00:00:00+00:00,57.584665821608944,Unhealthy
+aq_88,"Makerere, Kawempe",2026-08-09 00:00:00+00:00,58.052397234623015,Unhealthy
+aq_88,"Makerere, Kawempe",2026-08-10 00:00:00+00:00,58.13427407738095,Unhealthy
+aq_88,"Makerere, Kawempe",2026-08-11 00:00:00+00:00,58.14031330026455,Unhealthy
+aq_88,"Makerere, Kawempe",2026-08-12 00:00:00+00:00,57.68339498181217,Unhealthy
+aq_88,"Makerere, Kawempe",2026-08-13 00:00:00+00:00,56.610128912037034,Unhealthy
+aq_88,"Makerere, Kawempe",2026-08-14 00:00:00+00:00,56.92882044627825,Unhealthy
+aq_93,"Nyendo, Masaka",2026-08-01 00:00:00+00:00,37.09560676820286,Unhealthy for Sensitive Groups
+aq_93,"Nyendo, Masaka",2026-08-02 00:00:00+00:00,37.11812930540524,Unhealthy for Sensitive Groups
+aq_93,"Nyendo, Masaka",2026-08-03 00:00:00+00:00,37.1977566937981,Unhealthy for Sensitive Groups
+aq_93,"Nyendo, Masaka",2026-08-04 00:00:00+00:00,37.17040831334175,Unhealthy for Sensitive Groups
+aq_93,"Nyendo, Masaka",2026-08-05 00:00:00+00:00,37.1438033406235,Unhealthy for Sensitive Groups
+aq_93,"Nyendo, Masaka",2026-08-06 00:00:00+00:00,37.07870627713144,Unhealthy for Sensitive Groups
+aq_93,"Nyendo, Masaka",2026-08-07 00:00:00+00:00,37.034888494393336,Unhealthy for Sensitive Groups
+aq_93,"Nyendo, Masaka",2026-08-08 00:00:00+00:00,37.09560676820286,Unhealthy for Sensitive Groups
+aq_93,"Nyendo, Masaka",2026-08-09 00:00:00+00:00,37.11812930540524,Unhealthy for Sensitive Groups
+aq_93,"Nyendo, Masaka",2026-08-10 00:00:00+00:00,37.1977566937981,Unhealthy for Sensitive Groups
+aq_93,"Nyendo, Masaka",2026-08-11 00:00:00+00:00,37.17040831334175,Unhealthy for Sensitive Groups
+aq_93,"Nyendo, Masaka",2026-08-12 00:00:00+00:00,37.1438033406235,Unhealthy for Sensitive Groups
+aq_93,"Nyendo, Masaka",2026-08-13 00:00:00+00:00,37.07870627713144,Unhealthy for Sensitive Groups
+aq_93,"Nyendo, Masaka",2026-08-14 00:00:00+00:00,37.034888494393336,Unhealthy for Sensitive Groups
+aq_g4_95,"YMCA, Jinja",2026-08-01 00:00:00+00:00,29.798848134394536,Moderate
+aq_g4_95,"YMCA, Jinja",2026-08-02 00:00:00+00:00,29.889973828838986,Moderate
+aq_g4_95,"YMCA, Jinja",2026-08-03 00:00:00+00:00,30.063333441934223,Moderate
+aq_g4_95,"YMCA, Jinja",2026-08-04 00:00:00+00:00,29.660456233841387,Moderate
+aq_g4_95,"YMCA, Jinja",2026-08-05 00:00:00+00:00,29.570635846936625,Moderate
+aq_g4_95,"YMCA, Jinja",2026-08-06 00:00:00+00:00,30.04093672205688,Moderate
+aq_g4_95,"YMCA, Jinja",2026-08-07 00:00:00+00:00,29.843799121497714,Moderate
+aq_g4_95,"YMCA, Jinja",2026-08-08 00:00:00+00:00,29.798848134394536,Moderate
+aq_g4_95,"YMCA, Jinja",2026-08-09 00:00:00+00:00,29.889973828838986,Moderate
+aq_g4_95,"YMCA, Jinja",2026-08-10 00:00:00+00:00,30.063333441934223,Moderate
+aq_g4_95,"YMCA, Jinja",2026-08-11 00:00:00+00:00,29.660456233841387,Moderate
+aq_g4_95,"YMCA, Jinja",2026-08-12 00:00:00+00:00,29.570635846936625,Moderate
+aq_g4_95,"YMCA, Jinja",2026-08-13 00:00:00+00:00,30.04093672205688,Moderate
+aq_g4_95,"YMCA, Jinja",2026-08-14 00:00:00+00:00,29.843799121497714,Moderate
+aq_g4_99,"Rubaga Ward, Jinja City",2026-08-01 00:00:00+00:00,58.83089861538924,Unhealthy
+aq_g4_99,"Rubaga Ward, Jinja City",2026-08-02 00:00:00+00:00,59.366604644655105,Unhealthy
+aq_g4_99,"Rubaga Ward, Jinja City",2026-08-03 00:00:00+00:00,59.22042185447654,Unhealthy
+aq_g4_99,"Rubaga Ward, Jinja City",2026-08-04 00:00:00+00:00,58.315419181541834,Unhealthy
+aq_g4_99,"Rubaga Ward, Jinja City",2026-08-05 00:00:00+00:00,57.76001072668072,Unhealthy
+aq_g4_99,"Rubaga Ward, Jinja City",2026-08-06 00:00:00+00:00,58.17950726039586,Unhealthy
+aq_g4_99,"Rubaga Ward, Jinja City",2026-08-07 00:00:00+00:00,58.77259869723448,Unhealthy
+aq_g4_99,"Rubaga Ward, Jinja City",2026-08-08 00:00:00+00:00,58.83089861538924,Unhealthy
+aq_g4_99,"Rubaga Ward, Jinja City",2026-08-09 00:00:00+00:00,59.366604644655105,Unhealthy
+aq_g4_99,"Rubaga Ward, Jinja City",2026-08-10 00:00:00+00:00,59.22042185447654,Unhealthy
+aq_g4_99,"Rubaga Ward, Jinja City",2026-08-11 00:00:00+00:00,58.315419181541834,Unhealthy
+aq_g4_99,"Rubaga Ward, Jinja City",2026-08-12 00:00:00+00:00,57.76001072668072,Unhealthy
+aq_g4_99,"Rubaga Ward, Jinja City",2026-08-13 00:00:00+00:00,58.17950726039586,Unhealthy
+aq_g4_99,"Rubaga Ward, Jinja City",2026-08-14 00:00:00+00:00,58.77259869723448,Unhealthy
+aq_g501,Makerere University Weather Station 94,2026-08-01 00:00:00+00:00,25.732358441332973,Moderate
+aq_g501,Makerere University Weather Station 94,2026-08-02 00:00:00+00:00,25.78219258402477,Moderate
+aq_g501,Makerere University Weather Station 94,2026-08-03 00:00:00+00:00,25.92049870670996,Moderate
+aq_g501,Makerere University Weather Station 94,2026-08-04 00:00:00+00:00,25.763735069970537,Moderate
+aq_g501,Makerere University Weather Station 94,2026-08-05 00:00:00+00:00,25.71020485585017,Moderate
+aq_g501,Makerere University Weather Station 94,2026-08-06 00:00:00+00:00,25.796136600228476,Moderate
+aq_g501,Makerere University Weather Station 94,2026-08-07 00:00:00+00:00,25.71174288991101,Moderate
+aq_g501,Makerere University Weather Station 94,2026-08-08 00:00:00+00:00,25.732358441332973,Moderate
+aq_g501,Makerere University Weather Station 94,2026-08-09 00:00:00+00:00,25.78219258402477,Moderate
+aq_g501,Makerere University Weather Station 94,2026-08-10 00:00:00+00:00,25.92049870670996,Moderate
+aq_g501,Makerere University Weather Station 94,2026-08-11 00:00:00+00:00,25.763735069970537,Moderate
+aq_g501,Makerere University Weather Station 94,2026-08-12 00:00:00+00:00,25.71020485585017,Moderate
+aq_g501,Makerere University Weather Station 94,2026-08-13 00:00:00+00:00,25.796136600228476,Moderate
+aq_g501,Makerere University Weather Station 94,2026-08-14 00:00:00+00:00,25.71174288991101,Moderate
+aq_g502,"Katende Ward, Jinja",2026-08-01 00:00:00+00:00,41.4106477891206,Unhealthy for Sensitive Groups
+aq_g502,"Katende Ward, Jinja",2026-08-02 00:00:00+00:00,41.69019572066822,Unhealthy for Sensitive Groups
+aq_g502,"Katende Ward, Jinja",2026-08-03 00:00:00+00:00,41.646654192890445,Unhealthy for Sensitive Groups
+aq_g502,"Katende Ward, Jinja",2026-08-04 00:00:00+00:00,41.07904389203967,Unhealthy for Sensitive Groups
+aq_g502,"Katende Ward, Jinja",2026-08-05 00:00:00+00:00,40.782649685690465,Unhealthy for Sensitive Groups
+aq_g502,"Katende Ward, Jinja",2026-08-06 00:00:00+00:00,41.20192646223568,Unhealthy for Sensitive Groups
+aq_g502,"Katende Ward, Jinja",2026-08-07 00:00:00+00:00,41.40689655317484,Unhealthy for Sensitive Groups
+aq_g502,"Katende Ward, Jinja",2026-08-08 00:00:00+00:00,41.4106477891206,Unhealthy for Sensitive Groups
+aq_g502,"Katende Ward, Jinja",2026-08-09 00:00:00+00:00,41.69019572066822,Unhealthy for Sensitive Groups
+aq_g502,"Katende Ward, Jinja",2026-08-10 00:00:00+00:00,41.646654192890445,Unhealthy for Sensitive Groups
+aq_g502,"Katende Ward, Jinja",2026-08-11 00:00:00+00:00,41.07904389203967,Unhealthy for Sensitive Groups
+aq_g502,"Katende Ward, Jinja",2026-08-12 00:00:00+00:00,40.782649685690465,Unhealthy for Sensitive Groups
+aq_g502,"Katende Ward, Jinja",2026-08-13 00:00:00+00:00,41.20192646223568,Unhealthy for Sensitive Groups
+aq_g502,"Katende Ward, Jinja",2026-08-14 00:00:00+00:00,41.40689655317484,Unhealthy for Sensitive Groups
+aq_g503,"Nakawa, KCCA Head Office",2026-08-01 00:00:00+00:00,24.98405668049543,Moderate
+aq_g503,"Nakawa, KCCA Head Office",2026-08-02 00:00:00+00:00,25.039420110554953,Moderate
+aq_g503,"Nakawa, KCCA Head Office",2026-08-03 00:00:00+00:00,25.134250360224268,Moderate
+aq_g503,"Nakawa, KCCA Head Office",2026-08-04 00:00:00+00:00,25.124569626397903,Moderate
+aq_g503,"Nakawa, KCCA Head Office",2026-08-05 00:00:00+00:00,25.060547347132033,Moderate
+aq_g503,"Nakawa, KCCA Head Office",2026-08-06 00:00:00+00:00,25.01519112569144,Moderate
+aq_g503,"Nakawa, KCCA Head Office",2026-08-07 00:00:00+00:00,24.904567894871334,Moderate
+aq_g503,"Nakawa, KCCA Head Office",2026-08-08 00:00:00+00:00,24.98405668049543,Moderate
+aq_g503,"Nakawa, KCCA Head Office",2026-08-09 00:00:00+00:00,25.039420110554953,Moderate
+aq_g503,"Nakawa, KCCA Head Office",2026-08-10 00:00:00+00:00,25.134250360224268,Moderate
+aq_g503,"Nakawa, KCCA Head Office",2026-08-11 00:00:00+00:00,25.124569626397903,Moderate
+aq_g503,"Nakawa, KCCA Head Office",2026-08-12 00:00:00+00:00,25.060547347132033,Moderate
+aq_g503,"Nakawa, KCCA Head Office",2026-08-13 00:00:00+00:00,25.01519112569144,Moderate
+aq_g503,"Nakawa, KCCA Head Office",2026-08-14 00:00:00+00:00,24.904567894871334,Moderate
+aq_g505,Bukasa Kira Municipality Wakiso,2026-08-01 00:00:00+00:00,45.77128575765091,Unhealthy for Sensitive Groups
+aq_g505,Bukasa Kira Municipality Wakiso,2026-08-02 00:00:00+00:00,46.19586951839827,Unhealthy for Sensitive Groups
+aq_g505,Bukasa Kira Municipality Wakiso,2026-08-03 00:00:00+00:00,46.22658546296296,Unhealthy for Sensitive Groups
+aq_g505,Bukasa Kira Municipality Wakiso,2026-08-04 00:00:00+00:00,45.8896433917298,Unhealthy for Sensitive Groups
+aq_g505,Bukasa Kira Municipality Wakiso,2026-08-05 00:00:00+00:00,45.48527586610149,Unhealthy for Sensitive Groups
+aq_g505,Bukasa Kira Municipality Wakiso,2026-08-06 00:00:00+00:00,45.57620442542989,Unhealthy for Sensitive Groups
+aq_g505,Bukasa Kira Municipality Wakiso,2026-08-07 00:00:00+00:00,45.6260124168771,Unhealthy for Sensitive Groups
+aq_g505,Bukasa Kira Municipality Wakiso,2026-08-08 00:00:00+00:00,45.77128575765091,Unhealthy for Sensitive Groups
+aq_g505,Bukasa Kira Municipality Wakiso,2026-08-09 00:00:00+00:00,46.19586951839827,Unhealthy for Sensitive Groups
+aq_g505,Bukasa Kira Municipality Wakiso,2026-08-10 00:00:00+00:00,46.22658546296296,Unhealthy for Sensitive Groups
+aq_g505,Bukasa Kira Municipality Wakiso,2026-08-11 00:00:00+00:00,45.8896433917298,Unhealthy for Sensitive Groups
+aq_g505,Bukasa Kira Municipality Wakiso,2026-08-12 00:00:00+00:00,45.48527586610149,Unhealthy for Sensitive Groups
+aq_g505,Bukasa Kira Municipality Wakiso,2026-08-13 00:00:00+00:00,45.57620442542989,Unhealthy for Sensitive Groups
+aq_g505,Bukasa Kira Municipality Wakiso,2026-08-14 00:00:00+00:00,45.6260124168771,Unhealthy for Sensitive Groups
+aq_g507,"Lower Nsooba, Kawempe",2026-08-01 00:00:00+00:00,42.12488149726431,Unhealthy for Sensitive Groups
+aq_g507,"Lower Nsooba, Kawempe",2026-08-02 00:00:00+00:00,42.40774771096381,Unhealthy for Sensitive Groups
+aq_g507,"Lower Nsooba, Kawempe",2026-08-03 00:00:00+00:00,42.53177154716811,Unhealthy for Sensitive Groups
+aq_g507,"Lower Nsooba, Kawempe",2026-08-04 00:00:00+00:00,42.45590423738877,Unhealthy for Sensitive Groups
+aq_g507,"Lower Nsooba, Kawempe",2026-08-05 00:00:00+00:00,42.17386048738877,Unhealthy for Sensitive Groups
+aq_g507,"Lower Nsooba, Kawempe",2026-08-06 00:00:00+00:00,41.911289360494834,Unhealthy for Sensitive Groups
+aq_g507,"Lower Nsooba, Kawempe",2026-08-07 00:00:00+00:00,41.88131182795214,Unhealthy for Sensitive Groups
+aq_g507,"Lower Nsooba, Kawempe",2026-08-08 00:00:00+00:00,42.12488149726431,Unhealthy for Sensitive Groups
+aq_g507,"Lower Nsooba, Kawempe",2026-08-09 00:00:00+00:00,42.40774771096381,Unhealthy for Sensitive Groups
+aq_g507,"Lower Nsooba, Kawempe",2026-08-10 00:00:00+00:00,42.53177154716811,Unhealthy for Sensitive Groups
+aq_g507,"Lower Nsooba, Kawempe",2026-08-11 00:00:00+00:00,42.45590423738877,Unhealthy for Sensitive Groups
+aq_g507,"Lower Nsooba, Kawempe",2026-08-12 00:00:00+00:00,42.17386048738877,Unhealthy for Sensitive Groups
+aq_g507,"Lower Nsooba, Kawempe",2026-08-13 00:00:00+00:00,41.911289360494834,Unhealthy for Sensitive Groups
+aq_g507,"Lower Nsooba, Kawempe",2026-08-14 00:00:00+00:00,41.88131182795214,Unhealthy for Sensitive Groups
+aq_g508,"Bahai, Kawempe",2026-08-01 00:00:00+00:00,25.860819833002648,Moderate
+aq_g508,"Bahai, Kawempe",2026-08-02 00:00:00+00:00,25.89881038938492,Moderate
+aq_g508,"Bahai, Kawempe",2026-08-03 00:00:00+00:00,26.087829077380956,Moderate
+aq_g508,"Bahai, Kawempe",2026-08-04 00:00:00+00:00,25.916836593464406,Moderate
+aq_g508,"Bahai, Kawempe",2026-08-05 00:00:00+00:00,25.87307266406626,Moderate
+aq_g508,"Bahai, Kawempe",2026-08-06 00:00:00+00:00,25.965106867559527,Moderate
+aq_g508,"Bahai, Kawempe",2026-08-07 00:00:00+00:00,25.787995345568785,Moderate
+aq_g508,"Bahai, Kawempe",2026-08-08 00:00:00+00:00,25.860819833002648,Moderate
+aq_g508,"Bahai, Kawempe",2026-08-09 00:00:00+00:00,25.89881038938492,Moderate
+aq_g508,"Bahai, Kawempe",2026-08-10 00:00:00+00:00,26.087829077380956,Moderate
+aq_g508,"Bahai, Kawempe",2026-08-11 00:00:00+00:00,25.916836593464406,Moderate
+aq_g508,"Bahai, Kawempe",2026-08-12 00:00:00+00:00,25.87307266406626,Moderate
+aq_g508,"Bahai, Kawempe",2026-08-13 00:00:00+00:00,25.965106867559527,Moderate
+aq_g508,"Bahai, Kawempe",2026-08-14 00:00:00+00:00,25.787995345568785,Moderate
+aq_g510,"Mpererwe, Kawempe",2026-08-01 00:00:00+00:00,43.55381323172198,Unhealthy for Sensitive Groups
+aq_g510,"Mpererwe, Kawempe",2026-08-02 00:00:00+00:00,43.69033586234368,Unhealthy for Sensitive Groups
+aq_g510,"Mpererwe, Kawempe",2026-08-03 00:00:00+00:00,43.74516298370611,Unhealthy for Sensitive Groups
+aq_g510,"Mpererwe, Kawempe",2026-08-04 00:00:00+00:00,43.47866803391053,Unhealthy for Sensitive Groups
+aq_g510,"Mpererwe, Kawempe",2026-08-05 00:00:00+00:00,43.33938917809042,Unhealthy for Sensitive Groups
+aq_g510,"Mpererwe, Kawempe",2026-08-06 00:00:00+00:00,43.26968618130712,Unhealthy for Sensitive Groups
+aq_g510,"Mpererwe, Kawempe",2026-08-07 00:00:00+00:00,43.35541431720478,Unhealthy for Sensitive Groups
+aq_g510,"Mpererwe, Kawempe",2026-08-08 00:00:00+00:00,43.55381323172198,Unhealthy for Sensitive Groups
+aq_g510,"Mpererwe, Kawempe",2026-08-09 00:00:00+00:00,43.69033586234368,Unhealthy for Sensitive Groups
+aq_g510,"Mpererwe, Kawempe",2026-08-10 00:00:00+00:00,43.74516298370611,Unhealthy for Sensitive Groups
+aq_g510,"Mpererwe, Kawempe",2026-08-11 00:00:00+00:00,43.47866803391053,Unhealthy for Sensitive Groups
+aq_g510,"Mpererwe, Kawempe",2026-08-12 00:00:00+00:00,43.33938917809042,Unhealthy for Sensitive Groups
+aq_g510,"Mpererwe, Kawempe",2026-08-13 00:00:00+00:00,43.26968618130712,Unhealthy for Sensitive Groups
+aq_g510,"Mpererwe, Kawempe",2026-08-14 00:00:00+00:00,43.35541431720478,Unhealthy for Sensitive Groups
+aq_g512,Kawempe,2026-08-01 00:00:00+00:00,41.916229121723184,Unhealthy for Sensitive Groups
+aq_g512,Kawempe,2026-08-02 00:00:00+00:00,42.20350038412398,Unhealthy for Sensitive Groups
+aq_g512,Kawempe,2026-08-03 00:00:00+00:00,42.359293061868684,Unhealthy for Sensitive Groups
+aq_g512,Kawempe,2026-08-04 00:00:00+00:00,42.272693978700694,Unhealthy for Sensitive Groups
+aq_g512,Kawempe,2026-08-05 00:00:00+00:00,41.999506061207306,Unhealthy for Sensitive Groups
+aq_g512,Kawempe,2026-08-06 00:00:00+00:00,41.75253466157107,Unhealthy for Sensitive Groups
+aq_g512,Kawempe,2026-08-07 00:00:00+00:00,41.700676915208625,Unhealthy for Sensitive Groups
+aq_g512,Kawempe,2026-08-08 00:00:00+00:00,41.916229121723184,Unhealthy for Sensitive Groups
+aq_g512,Kawempe,2026-08-09 00:00:00+00:00,42.20350038412398,Unhealthy for Sensitive Groups
+aq_g512,Kawempe,2026-08-10 00:00:00+00:00,42.359293061868684,Unhealthy for Sensitive Groups
+aq_g512,Kawempe,2026-08-11 00:00:00+00:00,42.272693978700694,Unhealthy for Sensitive Groups
+aq_g512,Kawempe,2026-08-12 00:00:00+00:00,41.999506061207306,Unhealthy for Sensitive Groups
+aq_g512,Kawempe,2026-08-13 00:00:00+00:00,41.75253466157107,Unhealthy for Sensitive Groups
+aq_g512,Kawempe,2026-08-14 00:00:00+00:00,41.700676915208625,Unhealthy for Sensitive Groups
+aq_g513,"Nsawo, Kira Municipality",2026-08-01 00:00:00+00:00,16.312542821443603,Moderate
+aq_g513,"Nsawo, Kira Municipality",2026-08-02 00:00:00+00:00,16.32761569677429,Moderate
+aq_g513,"Nsawo, Kira Municipality",2026-08-03 00:00:00+00:00,16.271565298295457,Moderate
+aq_g513,"Nsawo, Kira Municipality",2026-08-04 00:00:00+00:00,16.24705498263889,Moderate
+aq_g513,"Nsawo, Kira Municipality",2026-08-05 00:00:00+00:00,16.22527290839947,Moderate
+aq_g513,"Nsawo, Kira Municipality",2026-08-06 00:00:00+00:00,16.240273564965133,Moderate
+aq_g513,"Nsawo, Kira Municipality",2026-08-07 00:00:00+00:00,16.272689114733648,Moderate
+aq_g513,"Nsawo, Kira Municipality",2026-08-08 00:00:00+00:00,16.312542821443603,Moderate
+aq_g513,"Nsawo, Kira Municipality",2026-08-09 00:00:00+00:00,16.32761569677429,Moderate
+aq_g513,"Nsawo, Kira Municipality",2026-08-10 00:00:00+00:00,16.271565298295457,Moderate
+aq_g513,"Nsawo, Kira Municipality",2026-08-11 00:00:00+00:00,16.24705498263889,Moderate
+aq_g513,"Nsawo, Kira Municipality",2026-08-12 00:00:00+00:00,16.22527290839947,Moderate
+aq_g513,"Nsawo, Kira Municipality",2026-08-13 00:00:00+00:00,16.240273564965133,Moderate
+aq_g513,"Nsawo, Kira Municipality",2026-08-14 00:00:00+00:00,16.272689114733648,Moderate
+aq_g514,"Kitukutwe, Kira Municipality",2026-08-01 00:00:00+00:00,30.00221089841871,Moderate
+aq_g514,"Kitukutwe, Kira Municipality",2026-08-02 00:00:00+00:00,30.17597467570046,Moderate
+aq_g514,"Kitukutwe, Kira Municipality",2026-08-03 00:00:00+00:00,30.27175109375,Moderate
+aq_g514,"Kitukutwe, Kira Municipality",2026-08-04 00:00:00+00:00,29.645737468584656,Moderate
+aq_g514,"Kitukutwe, Kira Municipality",2026-08-05 00:00:00+00:00,29.461706860945768,Moderate
+aq_g514,"Kitukutwe, Kira Municipality",2026-08-06 00:00:00+00:00,29.94400597124519,Moderate
+aq_g514,"Kitukutwe, Kira Municipality",2026-08-07 00:00:00+00:00,29.96594513452982,Moderate
+aq_g514,"Kitukutwe, Kira Municipality",2026-08-08 00:00:00+00:00,30.00221089841871,Moderate
+aq_g514,"Kitukutwe, Kira Municipality",2026-08-09 00:00:00+00:00,30.17597467570046,Moderate
+aq_g514,"Kitukutwe, Kira Municipality",2026-08-10 00:00:00+00:00,30.27175109375,Moderate
+aq_g514,"Kitukutwe, Kira Municipality",2026-08-11 00:00:00+00:00,29.645737468584656,Moderate
+aq_g514,"Kitukutwe, Kira Municipality",2026-08-12 00:00:00+00:00,29.461706860945768,Moderate
+aq_g514,"Kitukutwe, Kira Municipality",2026-08-13 00:00:00+00:00,29.94400597124519,Moderate
+aq_g514,"Kitukutwe, Kira Municipality",2026-08-14 00:00:00+00:00,29.96594513452982,Moderate
+aq_g515,"City Council, Jinja",2026-08-01 00:00:00+00:00,38.35220963383838,Unhealthy for Sensitive Groups
+aq_g515,"City Council, Jinja",2026-08-02 00:00:00+00:00,38.53969683869949,Unhealthy for Sensitive Groups
+aq_g515,"City Council, Jinja",2026-08-03 00:00:00+00:00,38.54868268195346,Unhealthy for Sensitive Groups
+aq_g515,"City Council, Jinja",2026-08-04 00:00:00+00:00,38.24109032910955,Unhealthy for Sensitive Groups
+aq_g515,"City Council, Jinja",2026-08-05 00:00:00+00:00,38.056890728415105,Unhealthy for Sensitive Groups
+aq_g515,"City Council, Jinja",2026-08-06 00:00:00+00:00,38.44409887573653,Unhealthy for Sensitive Groups
+aq_g515,"City Council, Jinja",2026-08-07 00:00:00+00:00,38.39857535143098,Unhealthy for Sensitive Groups
+aq_g515,"City Council, Jinja",2026-08-08 00:00:00+00:00,38.35220963383838,Unhealthy for Sensitive Groups
+aq_g515,"City Council, Jinja",2026-08-09 00:00:00+00:00,38.53969683869949,Unhealthy for Sensitive Groups
+aq_g515,"City Council, Jinja",2026-08-10 00:00:00+00:00,38.54868268195346,Unhealthy for Sensitive Groups
+aq_g515,"City Council, Jinja",2026-08-11 00:00:00+00:00,38.24109032910955,Unhealthy for Sensitive Groups
+aq_g515,"City Council, Jinja",2026-08-12 00:00:00+00:00,38.056890728415105,Unhealthy for Sensitive Groups
+aq_g515,"City Council, Jinja",2026-08-13 00:00:00+00:00,38.44409887573653,Unhealthy for Sensitive Groups
+aq_g515,"City Council, Jinja",2026-08-14 00:00:00+00:00,38.39857535143098,Unhealthy for Sensitive Groups
+aq_g516,"Bbuto, Kira Municipality",2026-08-01 00:00:00+00:00,32.108902954470295,Moderate
+aq_g516,"Bbuto, Kira Municipality",2026-08-02 00:00:00+00:00,32.42765346290284,Moderate
+aq_g516,"Bbuto, Kira Municipality",2026-08-03 00:00:00+00:00,32.51065168132215,Moderate
+aq_g516,"Bbuto, Kira Municipality",2026-08-04 00:00:00+00:00,32.13645709964226,Moderate
+aq_g516,"Bbuto, Kira Municipality",2026-08-05 00:00:00+00:00,31.817133215713685,Moderate
+aq_g516,"Bbuto, Kira Municipality",2026-08-06 00:00:00+00:00,31.953831258868448,Moderate
+aq_g516,"Bbuto, Kira Municipality",2026-08-07 00:00:00+00:00,31.906015033670034,Moderate
+aq_g516,"Bbuto, Kira Municipality",2026-08-08 00:00:00+00:00,32.108902954470295,Moderate
+aq_g516,"Bbuto, Kira Municipality",2026-08-09 00:00:00+00:00,32.42765346290284,Moderate
+aq_g516,"Bbuto, Kira Municipality",2026-08-10 00:00:00+00:00,32.51065168132215,Moderate
+aq_g516,"Bbuto, Kira Municipality",2026-08-11 00:00:00+00:00,32.13645709964226,Moderate
+aq_g516,"Bbuto, Kira Municipality",2026-08-12 00:00:00+00:00,31.817133215713685,Moderate
+aq_g516,"Bbuto, Kira Municipality",2026-08-13 00:00:00+00:00,31.953831258868448,Moderate
+aq_g516,"Bbuto, Kira Municipality",2026-08-14 00:00:00+00:00,31.906015033670034,Moderate
+aq_g517,"Walukuba East, Jinja City",2026-08-01 00:00:00+00:00,23.766407238380832,Moderate
+aq_g517,"Walukuba East, Jinja City",2026-08-02 00:00:00+00:00,23.80651163570226,Moderate
+aq_g517,"Walukuba East, Jinja City",2026-08-03 00:00:00+00:00,23.880669636694325,Moderate
+aq_g517,"Walukuba East, Jinja City",2026-08-04 00:00:00+00:00,23.668083380080564,Moderate
+aq_g517,"Walukuba East, Jinja City",2026-08-05 00:00:00+00:00,23.627099885536918,Moderate
+aq_g517,"Walukuba East, Jinja City",2026-08-06 00:00:00+00:00,23.815429653905124,Moderate
+aq_g517,"Walukuba East, Jinja City",2026-08-07 00:00:00+00:00,23.68130600326178,Moderate
+aq_g517,"Walukuba East, Jinja City",2026-08-08 00:00:00+00:00,23.766407238380832,Moderate
+aq_g517,"Walukuba East, Jinja City",2026-08-09 00:00:00+00:00,23.80651163570226,Moderate
+aq_g517,"Walukuba East, Jinja City",2026-08-10 00:00:00+00:00,23.880669636694325,Moderate
+aq_g517,"Walukuba East, Jinja City",2026-08-11 00:00:00+00:00,23.668083380080564,Moderate
+aq_g517,"Walukuba East, Jinja City",2026-08-12 00:00:00+00:00,23.627099885536918,Moderate
+aq_g517,"Walukuba East, Jinja City",2026-08-13 00:00:00+00:00,23.815429653905124,Moderate
+aq_g517,"Walukuba East, Jinja City",2026-08-14 00:00:00+00:00,23.68130600326178,Moderate
+aq_g518,"Kivubuka Budondo, Jinja",2026-08-01 00:00:00+00:00,46.87146146990741,Unhealthy for Sensitive Groups
+aq_g518,"Kivubuka Budondo, Jinja",2026-08-02 00:00:00+00:00,47.2568359416336,Unhealthy for Sensitive Groups
+aq_g518,"Kivubuka Budondo, Jinja",2026-08-03 00:00:00+00:00,47.27904134920635,Unhealthy for Sensitive Groups
+aq_g518,"Kivubuka Budondo, Jinja",2026-08-04 00:00:00+00:00,46.98654455026455,Unhealthy for Sensitive Groups
+aq_g518,"Kivubuka Budondo, Jinja",2026-08-05 00:00:00+00:00,46.64442085978836,Unhealthy for Sensitive Groups
+aq_g518,"Kivubuka Budondo, Jinja",2026-08-06 00:00:00+00:00,46.68066309689153,Unhealthy for Sensitive Groups
+aq_g518,"Kivubuka Budondo, Jinja",2026-08-07 00:00:00+00:00,46.740178667328045,Unhealthy for Sensitive Groups
+aq_g518,"Kivubuka Budondo, Jinja",2026-08-08 00:00:00+00:00,46.87146146990741,Unhealthy for Sensitive Groups
+aq_g518,"Kivubuka Budondo, Jinja",2026-08-09 00:00:00+00:00,47.2568359416336,Unhealthy for Sensitive Groups
+aq_g518,"Kivubuka Budondo, Jinja",2026-08-10 00:00:00+00:00,47.27904134920635,Unhealthy for Sensitive Groups
+aq_g518,"Kivubuka Budondo, Jinja",2026-08-11 00:00:00+00:00,46.98654455026455,Unhealthy for Sensitive Groups
+aq_g518,"Kivubuka Budondo, Jinja",2026-08-12 00:00:00+00:00,46.64442085978836,Unhealthy for Sensitive Groups
+aq_g518,"Kivubuka Budondo, Jinja",2026-08-13 00:00:00+00:00,46.68066309689153,Unhealthy for Sensitive Groups
+aq_g518,"Kivubuka Budondo, Jinja",2026-08-14 00:00:00+00:00,46.740178667328045,Unhealthy for Sensitive Groups
+aq_g519,"Kyabirwa Namizzi, Jinja",2026-08-01 00:00:00+00:00,23.137339527792808,Moderate
+aq_g519,"Kyabirwa Namizzi, Jinja",2026-08-02 00:00:00+00:00,23.17764166320947,Moderate
+aq_g519,"Kyabirwa Namizzi, Jinja",2026-08-03 00:00:00+00:00,23.19242564965127,Moderate
+aq_g519,"Kyabirwa Namizzi, Jinja",2026-08-04 00:00:00+00:00,23.102143508522726,Moderate
+aq_g519,"Kyabirwa Namizzi, Jinja",2026-08-05 00:00:00+00:00,23.066921244137802,Moderate
+aq_g519,"Kyabirwa Namizzi, Jinja",2026-08-06 00:00:00+00:00,23.255648981331166,Moderate
+aq_g519,"Kyabirwa Namizzi, Jinja",2026-08-07 00:00:00+00:00,23.165428453884076,Moderate
+aq_g519,"Kyabirwa Namizzi, Jinja",2026-08-08 00:00:00+00:00,23.137339527792808,Moderate
+aq_g519,"Kyabirwa Namizzi, Jinja",2026-08-09 00:00:00+00:00,23.17764166320947,Moderate
+aq_g519,"Kyabirwa Namizzi, Jinja",2026-08-10 00:00:00+00:00,23.19242564965127,Moderate
+aq_g519,"Kyabirwa Namizzi, Jinja",2026-08-11 00:00:00+00:00,23.102143508522726,Moderate
+aq_g519,"Kyabirwa Namizzi, Jinja",2026-08-12 00:00:00+00:00,23.066921244137802,Moderate
+aq_g519,"Kyabirwa Namizzi, Jinja",2026-08-13 00:00:00+00:00,23.255648981331166,Moderate
+aq_g519,"Kyabirwa Namizzi, Jinja",2026-08-14 00:00:00+00:00,23.165428453884076,Moderate
+aq_g520,wabigalo,2026-08-01 00:00:00+00:00,34.59512034472472,Moderate
+aq_g520,wabigalo,2026-08-02 00:00:00+00:00,34.72391381313131,Moderate
+aq_g520,wabigalo,2026-08-03 00:00:00+00:00,34.75388674302549,Moderate
+aq_g520,wabigalo,2026-08-04 00:00:00+00:00,34.464007405227875,Moderate
+aq_g520,wabigalo,2026-08-05 00:00:00+00:00,34.34795416499588,Moderate
+aq_g520,wabigalo,2026-08-06 00:00:00+00:00,34.562307469394035,Moderate
+aq_g520,wabigalo,2026-08-07 00:00:00+00:00,34.572723781398004,Moderate
+aq_g520,wabigalo,2026-08-08 00:00:00+00:00,34.59512034472472,Moderate
+aq_g520,wabigalo,2026-08-09 00:00:00+00:00,34.72391381313131,Moderate
+aq_g520,wabigalo,2026-08-10 00:00:00+00:00,34.75388674302549,Moderate
+aq_g520,wabigalo,2026-08-11 00:00:00+00:00,34.464007405227875,Moderate
+aq_g520,wabigalo,2026-08-12 00:00:00+00:00,34.34795416499588,Moderate
+aq_g520,wabigalo,2026-08-13 00:00:00+00:00,34.562307469394035,Moderate
+aq_g520,wabigalo,2026-08-14 00:00:00+00:00,34.572723781398004,Moderate
+aq_g522,"Kirinya, Kira Municipality",2026-08-01 00:00:00+00:00,39.54059065754269,Unhealthy for Sensitive Groups
+aq_g522,"Kirinya, Kira Municipality",2026-08-02 00:00:00+00:00,39.71699361967893,Unhealthy for Sensitive Groups
+aq_g522,"Kirinya, Kira Municipality",2026-08-03 00:00:00+00:00,39.67374260273869,Unhealthy for Sensitive Groups
+aq_g522,"Kirinya, Kira Municipality",2026-08-04 00:00:00+00:00,39.36447793575637,Unhealthy for Sensitive Groups
+aq_g522,"Kirinya, Kira Municipality",2026-08-05 00:00:00+00:00,39.21779512490981,Unhealthy for Sensitive Groups
+aq_g522,"Kirinya, Kira Municipality",2026-08-06 00:00:00+00:00,39.361596680119646,Unhealthy for Sensitive Groups
+aq_g522,"Kirinya, Kira Municipality",2026-08-07 00:00:00+00:00,39.48421530949375,Unhealthy for Sensitive Groups
+aq_g522,"Kirinya, Kira Municipality",2026-08-08 00:00:00+00:00,39.54059065754269,Unhealthy for Sensitive Groups
+aq_g522,"Kirinya, Kira Municipality",2026-08-09 00:00:00+00:00,39.71699361967893,Unhealthy for Sensitive Groups
+aq_g522,"Kirinya, Kira Municipality",2026-08-10 00:00:00+00:00,39.67374260273869,Unhealthy for Sensitive Groups
+aq_g522,"Kirinya, Kira Municipality",2026-08-11 00:00:00+00:00,39.36447793575637,Unhealthy for Sensitive Groups
+aq_g522,"Kirinya, Kira Municipality",2026-08-12 00:00:00+00:00,39.21779512490981,Unhealthy for Sensitive Groups
+aq_g522,"Kirinya, Kira Municipality",2026-08-13 00:00:00+00:00,39.361596680119646,Unhealthy for Sensitive Groups
+aq_g522,"Kirinya, Kira Municipality",2026-08-14 00:00:00+00:00,39.48421530949375,Unhealthy for Sensitive Groups
+aq_g523,"Buwate, Kira Municipality",2026-08-01 00:00:00+00:00,26.72654837662338,Moderate
+aq_g523,"Buwate, Kira Municipality",2026-08-02 00:00:00+00:00,26.775243222853536,Moderate
+aq_g523,"Buwate, Kira Municipality",2026-08-03 00:00:00+00:00,26.96215513257576,Moderate
+aq_g523,"Buwate, Kira Municipality",2026-08-04 00:00:00+00:00,26.793461158534754,Moderate
+aq_g523,"Buwate, Kira Municipality",2026-08-05 00:00:00+00:00,26.72766888174904,Moderate
+aq_g523,"Buwate, Kira Municipality",2026-08-06 00:00:00+00:00,26.84735891797439,Moderate
+aq_g523,"Buwate, Kira Municipality",2026-08-07 00:00:00+00:00,26.710564996167026,Moderate
+aq_g523,"Buwate, Kira Municipality",2026-08-08 00:00:00+00:00,26.72654837662338,Moderate
+aq_g523,"Buwate, Kira Municipality",2026-08-09 00:00:00+00:00,26.775243222853536,Moderate
+aq_g523,"Buwate, Kira Municipality",2026-08-10 00:00:00+00:00,26.96215513257576,Moderate
+aq_g523,"Buwate, Kira Municipality",2026-08-11 00:00:00+00:00,26.793461158534754,Moderate
+aq_g523,"Buwate, Kira Municipality",2026-08-12 00:00:00+00:00,26.72766888174904,Moderate
+aq_g523,"Buwate, Kira Municipality",2026-08-13 00:00:00+00:00,26.84735891797439,Moderate
+aq_g523,"Buwate, Kira Municipality",2026-08-14 00:00:00+00:00,26.710564996167026,Moderate
+aq_g524,"Municipal Council, Kira Municipality",2026-08-01 00:00:00+00:00,31.18448033482143,Moderate
+aq_g524,"Municipal Council, Kira Municipality",2026-08-02 00:00:00+00:00,31.500179086347682,Moderate
+aq_g524,"Municipal Council, Kira Municipality",2026-08-03 00:00:00+00:00,31.621366187493063,Moderate
+aq_g524,"Municipal Council, Kira Municipality",2026-08-04 00:00:00+00:00,31.507850403011343,Moderate
+aq_g524,"Municipal Council, Kira Municipality",2026-08-05 00:00:00+00:00,31.187282251683502,Moderate
+aq_g524,"Municipal Council, Kira Municipality",2026-08-06 00:00:00+00:00,31.123778304022366,Moderate
+aq_g524,"Municipal Council, Kira Municipality",2026-08-07 00:00:00+00:00,31.022481798115077,Moderate
+aq_g524,"Municipal Council, Kira Municipality",2026-08-08 00:00:00+00:00,31.18448033482143,Moderate
+aq_g524,"Municipal Council, Kira Municipality",2026-08-09 00:00:00+00:00,31.500179086347682,Moderate
+aq_g524,"Municipal Council, Kira Municipality",2026-08-10 00:00:00+00:00,31.621366187493063,Moderate
+aq_g524,"Municipal Council, Kira Municipality",2026-08-11 00:00:00+00:00,31.507850403011343,Moderate
+aq_g524,"Municipal Council, Kira Municipality",2026-08-12 00:00:00+00:00,31.187282251683502,Moderate
+aq_g524,"Municipal Council, Kira Municipality",2026-08-13 00:00:00+00:00,31.123778304022366,Moderate
+aq_g524,"Municipal Council, Kira Municipality",2026-08-14 00:00:00+00:00,31.022481798115077,Moderate
+aq_g526,"Kasusu, Fort Portal",2026-08-01 00:00:00+00:00,36.53445539908009,Unhealthy for Sensitive Groups
+aq_g526,"Kasusu, Fort Portal",2026-08-02 00:00:00+00:00,36.57619973935787,Unhealthy for Sensitive Groups
+aq_g526,"Kasusu, Fort Portal",2026-08-03 00:00:00+00:00,36.6892170467322,Unhealthy for Sensitive Groups
+aq_g526,"Kasusu, Fort Portal",2026-08-04 00:00:00+00:00,36.650539158174006,Unhealthy for Sensitive Groups
+aq_g526,"Kasusu, Fort Portal",2026-08-05 00:00:00+00:00,36.61100848357083,Unhealthy for Sensitive Groups
+aq_g526,"Kasusu, Fort Portal",2026-08-06 00:00:00+00:00,36.811173490184586,Unhealthy for Sensitive Groups
+aq_g526,"Kasusu, Fort Portal",2026-08-07 00:00:00+00:00,36.59581108525733,Unhealthy for Sensitive Groups
+aq_g526,"Kasusu, Fort Portal",2026-08-08 00:00:00+00:00,36.53445539908009,Unhealthy for Sensitive Groups
+aq_g526,"Kasusu, Fort Portal",2026-08-09 00:00:00+00:00,36.57619973935787,Unhealthy for Sensitive Groups
+aq_g526,"Kasusu, Fort Portal",2026-08-10 00:00:00+00:00,36.6892170467322,Unhealthy for Sensitive Groups
+aq_g526,"Kasusu, Fort Portal",2026-08-11 00:00:00+00:00,36.650539158174006,Unhealthy for Sensitive Groups
+aq_g526,"Kasusu, Fort Portal",2026-08-12 00:00:00+00:00,36.61100848357083,Unhealthy for Sensitive Groups
+aq_g526,"Kasusu, Fort Portal",2026-08-13 00:00:00+00:00,36.811173490184586,Unhealthy for Sensitive Groups
+aq_g526,"Kasusu, Fort Portal",2026-08-14 00:00:00+00:00,36.59581108525733,Unhealthy for Sensitive Groups
+aq_g530,"Mpanga, Fort Portal",2026-08-01 00:00:00+00:00,21.155181251427972,Moderate
+aq_g530,"Mpanga, Fort Portal",2026-08-02 00:00:00+00:00,21.195459915449135,Moderate
+aq_g530,"Mpanga, Fort Portal",2026-08-03 00:00:00+00:00,21.283367277462123,Moderate
+aq_g530,"Mpanga, Fort Portal",2026-08-04 00:00:00+00:00,21.24994676639911,Moderate
+aq_g530,"Mpanga, Fort Portal",2026-08-05 00:00:00+00:00,21.20817576358826,Moderate
+aq_g530,"Mpanga, Fort Portal",2026-08-06 00:00:00+00:00,21.28452450975529,Moderate
+aq_g530,"Mpanga, Fort Portal",2026-08-07 00:00:00+00:00,21.165925754569503,Moderate
+aq_g530,"Mpanga, Fort Portal",2026-08-08 00:00:00+00:00,21.155181251427972,Moderate
+aq_g530,"Mpanga, Fort Portal",2026-08-09 00:00:00+00:00,21.195459915449135,Moderate
+aq_g530,"Mpanga, Fort Portal",2026-08-10 00:00:00+00:00,21.283367277462123,Moderate
+aq_g530,"Mpanga, Fort Portal",2026-08-11 00:00:00+00:00,21.24994676639911,Moderate
+aq_g530,"Mpanga, Fort Portal",2026-08-12 00:00:00+00:00,21.20817576358826,Moderate
+aq_g530,"Mpanga, Fort Portal",2026-08-13 00:00:00+00:00,21.28452450975529,Moderate
+aq_g530,"Mpanga, Fort Portal",2026-08-14 00:00:00+00:00,21.165925754569503,Moderate
+aq_g532,"Mpumudde, Jinja",2026-08-01 00:00:00+00:00,15.069966004464284,Moderate
+aq_g532,"Mpumudde, Jinja",2026-08-02 00:00:00+00:00,15.099291836970897,Moderate
+aq_g532,"Mpumudde, Jinja",2026-08-03 00:00:00+00:00,15.064532528935182,Moderate
+aq_g532,"Mpumudde, Jinja",2026-08-04 00:00:00+00:00,15.081750204199734,Moderate
+aq_g532,"Mpumudde, Jinja",2026-08-05 00:00:00+00:00,15.046852377645498,Moderate
+aq_g532,"Mpumudde, Jinja",2026-08-06 00:00:00+00:00,14.905429808201056,Moderate
+aq_g532,"Mpumudde, Jinja",2026-08-07 00:00:00+00:00,14.966220631613753,Moderate
+aq_g532,"Mpumudde, Jinja",2026-08-08 00:00:00+00:00,15.069966004464284,Moderate
+aq_g532,"Mpumudde, Jinja",2026-08-09 00:00:00+00:00,15.099291836970897,Moderate
+aq_g532,"Mpumudde, Jinja",2026-08-10 00:00:00+00:00,15.064532528935182,Moderate
+aq_g532,"Mpumudde, Jinja",2026-08-11 00:00:00+00:00,15.081750204199734,Moderate
+aq_g532,"Mpumudde, Jinja",2026-08-12 00:00:00+00:00,15.046852377645498,Moderate
+aq_g532,"Mpumudde, Jinja",2026-08-13 00:00:00+00:00,14.905429808201056,Moderate
+aq_g532,"Mpumudde, Jinja",2026-08-14 00:00:00+00:00,14.966220631613753,Moderate
+aq_g534,"Kinyamasika, Fort Portal",2026-08-01 00:00:00+00:00,17.07839130456349,Moderate
+aq_g534,"Kinyamasika, Fort Portal",2026-08-02 00:00:00+00:00,17.11795278769841,Moderate
+aq_g534,"Kinyamasika, Fort Portal",2026-08-03 00:00:00+00:00,17.126117099041004,Moderate
+aq_g534,"Kinyamasika, Fort Portal",2026-08-04 00:00:00+00:00,16.90298675745551,Moderate
+aq_g534,"Kinyamasika, Fort Portal",2026-08-05 00:00:00+00:00,16.867342640392014,Moderate
+aq_g534,"Kinyamasika, Fort Portal",2026-08-06 00:00:00+00:00,17.010574745821305,Moderate
+aq_g534,"Kinyamasika, Fort Portal",2026-08-07 00:00:00+00:00,17.035469536661253,Moderate
+aq_g534,"Kinyamasika, Fort Portal",2026-08-08 00:00:00+00:00,17.07839130456349,Moderate
+aq_g534,"Kinyamasika, Fort Portal",2026-08-09 00:00:00+00:00,17.11795278769841,Moderate
+aq_g534,"Kinyamasika, Fort Portal",2026-08-10 00:00:00+00:00,17.126117099041004,Moderate
+aq_g534,"Kinyamasika, Fort Portal",2026-08-11 00:00:00+00:00,16.90298675745551,Moderate
+aq_g534,"Kinyamasika, Fort Portal",2026-08-12 00:00:00+00:00,16.867342640392014,Moderate
+aq_g534,"Kinyamasika, Fort Portal",2026-08-13 00:00:00+00:00,17.010574745821305,Moderate
+aq_g534,"Kinyamasika, Fort Portal",2026-08-14 00:00:00+00:00,17.035469536661253,Moderate
+aq_g535,"Mountains of the Moon University, Fort Portal",2026-08-01 00:00:00+00:00,36.54298003058862,Unhealthy for Sensitive Groups
+aq_g535,"Mountains of the Moon University, Fort Portal",2026-08-02 00:00:00+00:00,36.693523621031744,Unhealthy for Sensitive Groups
+aq_g535,"Mountains of the Moon University, Fort Portal",2026-08-03 00:00:00+00:00,36.665090753141534,Unhealthy for Sensitive Groups
+aq_g535,"Mountains of the Moon University, Fort Portal",2026-08-04 00:00:00+00:00,36.45388790839947,Unhealthy for Sensitive Groups
+aq_g535,"Mountains of the Moon University, Fort Portal",2026-08-05 00:00:00+00:00,36.31014246279762,Unhealthy for Sensitive Groups
+aq_g535,"Mountains of the Moon University, Fort Portal",2026-08-06 00:00:00+00:00,36.72660300347222,Unhealthy for Sensitive Groups
+aq_g535,"Mountains of the Moon University, Fort Portal",2026-08-07 00:00:00+00:00,36.69295011656746,Unhealthy for Sensitive Groups
+aq_g535,"Mountains of the Moon University, Fort Portal",2026-08-08 00:00:00+00:00,36.54298003058862,Unhealthy for Sensitive Groups
+aq_g535,"Mountains of the Moon University, Fort Portal",2026-08-09 00:00:00+00:00,36.693523621031744,Unhealthy for Sensitive Groups
+aq_g535,"Mountains of the Moon University, Fort Portal",2026-08-10 00:00:00+00:00,36.665090753141534,Unhealthy for Sensitive Groups
+aq_g535,"Mountains of the Moon University, Fort Portal",2026-08-11 00:00:00+00:00,36.45388790839947,Unhealthy for Sensitive Groups
+aq_g535,"Mountains of the Moon University, Fort Portal",2026-08-12 00:00:00+00:00,36.31014246279762,Unhealthy for Sensitive Groups
+aq_g535,"Mountains of the Moon University, Fort Portal",2026-08-13 00:00:00+00:00,36.72660300347222,Unhealthy for Sensitive Groups
+aq_g535,"Mountains of the Moon University, Fort Portal",2026-08-14 00:00:00+00:00,36.69295011656746,Unhealthy for Sensitive Groups
+aq_g5_100,"Kabusu, Natete Road, Kampala, Uganda",2026-08-01 00:00:00+00:00,29.396203269433116,Moderate
+aq_g5_100,"Kabusu, Natete Road, Kampala, Uganda",2026-08-02 00:00:00+00:00,29.487834795048702,Moderate
+aq_g5_100,"Kabusu, Natete Road, Kampala, Uganda",2026-08-03 00:00:00+00:00,29.54050436417749,Moderate
+aq_g5_100,"Kabusu, Natete Road, Kampala, Uganda",2026-08-04 00:00:00+00:00,29.51233623256373,Moderate
+aq_g5_100,"Kabusu, Natete Road, Kampala, Uganda",2026-08-05 00:00:00+00:00,29.434117422721954,Moderate
+aq_g5_100,"Kabusu, Natete Road, Kampala, Uganda",2026-08-06 00:00:00+00:00,29.478848970341005,Moderate
+aq_g5_100,"Kabusu, Natete Road, Kampala, Uganda",2026-08-07 00:00:00+00:00,29.411375259347135,Moderate
+aq_g5_100,"Kabusu, Natete Road, Kampala, Uganda",2026-08-08 00:00:00+00:00,29.396203269433116,Moderate
+aq_g5_100,"Kabusu, Natete Road, Kampala, Uganda",2026-08-09 00:00:00+00:00,29.487834795048702,Moderate
+aq_g5_100,"Kabusu, Natete Road, Kampala, Uganda",2026-08-10 00:00:00+00:00,29.54050436417749,Moderate
+aq_g5_100,"Kabusu, Natete Road, Kampala, Uganda",2026-08-11 00:00:00+00:00,29.51233623256373,Moderate
+aq_g5_100,"Kabusu, Natete Road, Kampala, Uganda",2026-08-12 00:00:00+00:00,29.434117422721954,Moderate
+aq_g5_100,"Kabusu, Natete Road, Kampala, Uganda",2026-08-13 00:00:00+00:00,29.478848970341005,Moderate
+aq_g5_100,"Kabusu, Natete Road, Kampala, Uganda",2026-08-14 00:00:00+00:00,29.411375259347135,Moderate
+aq_g5_101,"Water and Environment House, Luzira",2026-08-01 00:00:00+00:00,20.57034013310185,Moderate
+aq_g5_101,"Water and Environment House, Luzira",2026-08-02 00:00:00+00:00,20.607544403108463,Moderate
+aq_g5_101,"Water and Environment House, Luzira",2026-08-03 00:00:00+00:00,20.677874370039678,Moderate
+aq_g5_101,"Water and Environment House, Luzira",2026-08-04 00:00:00+00:00,20.667961798415703,Moderate
+aq_g5_101,"Water and Environment House, Luzira",2026-08-05 00:00:00+00:00,20.628066486742423,Moderate
+aq_g5_101,"Water and Environment House, Luzira",2026-08-06 00:00:00+00:00,20.747380922619048,Moderate
+aq_g5_101,"Water and Environment House, Luzira",2026-08-07 00:00:00+00:00,20.606008577215608,Moderate
+aq_g5_101,"Water and Environment House, Luzira",2026-08-08 00:00:00+00:00,20.57034013310185,Moderate
+aq_g5_101,"Water and Environment House, Luzira",2026-08-09 00:00:00+00:00,20.607544403108463,Moderate
+aq_g5_101,"Water and Environment House, Luzira",2026-08-10 00:00:00+00:00,20.677874370039678,Moderate
+aq_g5_101,"Water and Environment House, Luzira",2026-08-11 00:00:00+00:00,20.667961798415703,Moderate
+aq_g5_101,"Water and Environment House, Luzira",2026-08-12 00:00:00+00:00,20.628066486742423,Moderate
+aq_g5_101,"Water and Environment House, Luzira",2026-08-13 00:00:00+00:00,20.747380922619048,Moderate
+aq_g5_101,"Water and Environment House, Luzira",2026-08-14 00:00:00+00:00,20.606008577215608,Moderate
+aq_g5_114,Layibi Gulu,2026-08-01 00:00:00+00:00,15.446860201719579,Moderate
+aq_g5_114,Layibi Gulu,2026-08-02 00:00:00+00:00,15.474772002314815,Moderate
+aq_g5_114,Layibi Gulu,2026-08-03 00:00:00+00:00,15.47886070684524,Moderate
+aq_g5_114,Layibi Gulu,2026-08-04 00:00:00+00:00,15.35304184275794,Moderate
+aq_g5_114,Layibi Gulu,2026-08-05 00:00:00+00:00,15.336070012400796,Moderate
+aq_g5_114,Layibi Gulu,2026-08-06 00:00:00+00:00,15.463028601791727,Moderate
+aq_g5_114,Layibi Gulu,2026-08-07 00:00:00+00:00,15.469408065927128,Moderate
+aq_g5_114,Layibi Gulu,2026-08-08 00:00:00+00:00,15.446860201719579,Moderate
+aq_g5_114,Layibi Gulu,2026-08-09 00:00:00+00:00,15.474772002314815,Moderate
+aq_g5_114,Layibi Gulu,2026-08-10 00:00:00+00:00,15.47886070684524,Moderate
+aq_g5_114,Layibi Gulu,2026-08-11 00:00:00+00:00,15.35304184275794,Moderate
+aq_g5_114,Layibi Gulu,2026-08-12 00:00:00+00:00,15.336070012400796,Moderate
+aq_g5_114,Layibi Gulu,2026-08-13 00:00:00+00:00,15.463028601791727,Moderate
+aq_g5_114,Layibi Gulu,2026-08-14 00:00:00+00:00,15.469408065927128,Moderate
+aq_g5_117,Mary Queen of Peace P/s Gulu,2026-08-01 00:00:00+00:00,21.547034616627585,Moderate
+aq_g5_117,Mary Queen of Peace P/s Gulu,2026-08-02 00:00:00+00:00,21.59738683884981,Moderate
+aq_g5_117,Mary Queen of Peace P/s Gulu,2026-08-03 00:00:00+00:00,21.614184205747957,Moderate
+aq_g5_117,Mary Queen of Peace P/s Gulu,2026-08-04 00:00:00+00:00,21.260803280799063,Moderate
+aq_g5_117,Mary Queen of Peace P/s Gulu,2026-08-05 00:00:00+00:00,21.22928928278319,Moderate
+aq_g5_117,Mary Queen of Peace P/s Gulu,2026-08-06 00:00:00+00:00,21.602041299152237,Moderate
+aq_g5_117,Mary Queen of Peace P/s Gulu,2026-08-07 00:00:00+00:00,21.65480097327441,Moderate
+aq_g5_117,Mary Queen of Peace P/s Gulu,2026-08-08 00:00:00+00:00,21.547034616627585,Moderate
+aq_g5_117,Mary Queen of Peace P/s Gulu,2026-08-09 00:00:00+00:00,21.59738683884981,Moderate
+aq_g5_117,Mary Queen of Peace P/s Gulu,2026-08-10 00:00:00+00:00,21.614184205747957,Moderate
+aq_g5_117,Mary Queen of Peace P/s Gulu,2026-08-11 00:00:00+00:00,21.260803280799063,Moderate
+aq_g5_117,Mary Queen of Peace P/s Gulu,2026-08-12 00:00:00+00:00,21.22928928278319,Moderate
+aq_g5_117,Mary Queen of Peace P/s Gulu,2026-08-13 00:00:00+00:00,21.602041299152237,Moderate
+aq_g5_117,Mary Queen of Peace P/s Gulu,2026-08-14 00:00:00+00:00,21.65480097327441,Moderate
+aq_g5_127,Nyakasura school Fortportal,2026-08-01 00:00:00+00:00,16.204135685801468,Moderate
+aq_g5_127,Nyakasura school Fortportal,2026-08-02 00:00:00+00:00,16.19975020630411,Moderate
+aq_g5_127,Nyakasura school Fortportal,2026-08-03 00:00:00+00:00,16.22151151582792,Moderate
+aq_g5_127,Nyakasura school Fortportal,2026-08-04 00:00:00+00:00,16.22141805773509,Moderate
+aq_g5_127,Nyakasura school Fortportal,2026-08-05 00:00:00+00:00,16.232963998541965,Moderate
+aq_g5_127,Nyakasura school Fortportal,2026-08-06 00:00:00+00:00,16.33662442670755,Moderate
+aq_g5_127,Nyakasura school Fortportal,2026-08-07 00:00:00+00:00,16.23439616514851,Moderate
+aq_g5_127,Nyakasura school Fortportal,2026-08-08 00:00:00+00:00,16.204135685801468,Moderate
+aq_g5_127,Nyakasura school Fortportal,2026-08-09 00:00:00+00:00,16.19975020630411,Moderate
+aq_g5_127,Nyakasura school Fortportal,2026-08-10 00:00:00+00:00,16.22151151582792,Moderate
+aq_g5_127,Nyakasura school Fortportal,2026-08-11 00:00:00+00:00,16.22141805773509,Moderate
+aq_g5_127,Nyakasura school Fortportal,2026-08-12 00:00:00+00:00,16.232963998541965,Moderate
+aq_g5_127,Nyakasura school Fortportal,2026-08-13 00:00:00+00:00,16.33662442670755,Moderate
+aq_g5_127,Nyakasura school Fortportal,2026-08-14 00:00:00+00:00,16.23439616514851,Moderate
+aq_g5_37,"Civic Centre, Kampala Central",2026-08-01 00:00:00+00:00,50.423692681878315,Unhealthy for Sensitive Groups
+aq_g5_37,"Civic Centre, Kampala Central",2026-08-02 00:00:00+00:00,50.92977237268519,Unhealthy for Sensitive Groups
+aq_g5_37,"Civic Centre, Kampala Central",2026-08-03 00:00:00+00:00,51.24748120701059,Unhealthy for Sensitive Groups
+aq_g5_37,"Civic Centre, Kampala Central",2026-08-04 00:00:00+00:00,51.02348830838144,Unhealthy for Sensitive Groups
+aq_g5_37,"Civic Centre, Kampala Central",2026-08-05 00:00:00+00:00,50.534974736126145,Unhealthy for Sensitive Groups
+aq_g5_37,"Civic Centre, Kampala Central",2026-08-06 00:00:00+00:00,50.49997009920636,Unhealthy for Sensitive Groups
+aq_g5_37,"Civic Centre, Kampala Central",2026-08-07 00:00:00+00:00,50.26221241402117,Unhealthy for Sensitive Groups
+aq_g5_37,"Civic Centre, Kampala Central",2026-08-08 00:00:00+00:00,50.423692681878315,Unhealthy for Sensitive Groups
+aq_g5_37,"Civic Centre, Kampala Central",2026-08-09 00:00:00+00:00,50.92977237268519,Unhealthy for Sensitive Groups
+aq_g5_37,"Civic Centre, Kampala Central",2026-08-10 00:00:00+00:00,51.24748120701059,Unhealthy for Sensitive Groups
+aq_g5_37,"Civic Centre, Kampala Central",2026-08-11 00:00:00+00:00,51.02348830838144,Unhealthy for Sensitive Groups
+aq_g5_37,"Civic Centre, Kampala Central",2026-08-12 00:00:00+00:00,50.534974736126145,Unhealthy for Sensitive Groups
+aq_g5_37,"Civic Centre, Kampala Central",2026-08-13 00:00:00+00:00,50.49997009920636,Unhealthy for Sensitive Groups
+aq_g5_37,"Civic Centre, Kampala Central",2026-08-14 00:00:00+00:00,50.26221241402117,Unhealthy for Sensitive Groups
+aq_g5_4,"Kireka, Kira Municipality",2026-08-01 00:00:00+00:00,36.6867862962963,Unhealthy for Sensitive Groups
+aq_g5_4,"Kireka, Kira Municipality",2026-08-02 00:00:00+00:00,36.873874828042325,Unhealthy for Sensitive Groups
+aq_g5_4,"Kireka, Kira Municipality",2026-08-03 00:00:00+00:00,37.00203632109788,Unhealthy for Sensitive Groups
+aq_g5_4,"Kireka, Kira Municipality",2026-08-04 00:00:00+00:00,36.80217846312831,Unhealthy for Sensitive Groups
+aq_g5_4,"Kireka, Kira Municipality",2026-08-05 00:00:00+00:00,36.595493845072745,Unhealthy for Sensitive Groups
+aq_g5_4,"Kireka, Kira Municipality",2026-08-06 00:00:00+00:00,36.78059395367364,Unhealthy for Sensitive Groups
+aq_g5_4,"Kireka, Kira Municipality",2026-08-07 00:00:00+00:00,36.702031584295334,Unhealthy for Sensitive Groups
+aq_g5_4,"Kireka, Kira Municipality",2026-08-08 00:00:00+00:00,36.6867862962963,Unhealthy for Sensitive Groups
+aq_g5_4,"Kireka, Kira Municipality",2026-08-09 00:00:00+00:00,36.873874828042325,Unhealthy for Sensitive Groups
+aq_g5_4,"Kireka, Kira Municipality",2026-08-10 00:00:00+00:00,37.00203632109788,Unhealthy for Sensitive Groups
+aq_g5_4,"Kireka, Kira Municipality",2026-08-11 00:00:00+00:00,36.80217846312831,Unhealthy for Sensitive Groups
+aq_g5_4,"Kireka, Kira Municipality",2026-08-12 00:00:00+00:00,36.595493845072745,Unhealthy for Sensitive Groups
+aq_g5_4,"Kireka, Kira Municipality",2026-08-13 00:00:00+00:00,36.78059395367364,Unhealthy for Sensitive Groups
+aq_g5_4,"Kireka, Kira Municipality",2026-08-14 00:00:00+00:00,36.702031584295334,Unhealthy for Sensitive Groups
+aq_g5_42,"Rugarama Hill, Kabale",2026-08-01 00:00:00+00:00,41.30785503554895,Unhealthy for Sensitive Groups
+aq_g5_42,"Rugarama Hill, Kabale",2026-08-02 00:00:00+00:00,41.57335310515873,Unhealthy for Sensitive Groups
+aq_g5_42,"Rugarama Hill, Kabale",2026-08-03 00:00:00+00:00,41.69716897321428,Unhealthy for Sensitive Groups
+aq_g5_42,"Rugarama Hill, Kabale",2026-08-04 00:00:00+00:00,41.41524603009259,Unhealthy for Sensitive Groups
+aq_g5_42,"Rugarama Hill, Kabale",2026-08-05 00:00:00+00:00,41.156811978339945,Unhealthy for Sensitive Groups
+aq_g5_42,"Rugarama Hill, Kabale",2026-08-06 00:00:00+00:00,41.292626378141534,Unhealthy for Sensitive Groups
+aq_g5_42,"Rugarama Hill, Kabale",2026-08-07 00:00:00+00:00,41.20497790839947,Unhealthy for Sensitive Groups
+aq_g5_42,"Rugarama Hill, Kabale",2026-08-08 00:00:00+00:00,41.30785503554895,Unhealthy for Sensitive Groups
+aq_g5_42,"Rugarama Hill, Kabale",2026-08-09 00:00:00+00:00,41.57335310515873,Unhealthy for Sensitive Groups
+aq_g5_42,"Rugarama Hill, Kabale",2026-08-10 00:00:00+00:00,41.69716897321428,Unhealthy for Sensitive Groups
+aq_g5_42,"Rugarama Hill, Kabale",2026-08-11 00:00:00+00:00,41.41524603009259,Unhealthy for Sensitive Groups
+aq_g5_42,"Rugarama Hill, Kabale",2026-08-12 00:00:00+00:00,41.156811978339945,Unhealthy for Sensitive Groups
+aq_g5_42,"Rugarama Hill, Kabale",2026-08-13 00:00:00+00:00,41.292626378141534,Unhealthy for Sensitive Groups
+aq_g5_42,"Rugarama Hill, Kabale",2026-08-14 00:00:00+00:00,41.20497790839947,Unhealthy for Sensitive Groups
+aq_g5_43,"Katwe 1, Makindye",2026-08-01 00:00:00+00:00,45.16219377307299,Unhealthy for Sensitive Groups
+aq_g5_43,"Katwe 1, Makindye",2026-08-02 00:00:00+00:00,45.37160450471981,Unhealthy for Sensitive Groups
+aq_g5_43,"Katwe 1, Makindye",2026-08-03 00:00:00+00:00,45.43731733871453,Unhealthy for Sensitive Groups
+aq_g5_43,"Katwe 1, Makindye",2026-08-04 00:00:00+00:00,45.14976718051046,Unhealthy for Sensitive Groups
+aq_g5_43,"Katwe 1, Makindye",2026-08-05 00:00:00+00:00,44.960881667117604,Unhealthy for Sensitive Groups
+aq_g5_43,"Katwe 1, Makindye",2026-08-06 00:00:00+00:00,45.06253089736652,Unhealthy for Sensitive Groups
+aq_g5_43,"Katwe 1, Makindye",2026-08-07 00:00:00+00:00,45.08050265579906,Unhealthy for Sensitive Groups
+aq_g5_43,"Katwe 1, Makindye",2026-08-08 00:00:00+00:00,45.16219377307299,Unhealthy for Sensitive Groups
+aq_g5_43,"Katwe 1, Makindye",2026-08-09 00:00:00+00:00,45.37160450471981,Unhealthy for Sensitive Groups
+aq_g5_43,"Katwe 1, Makindye",2026-08-10 00:00:00+00:00,45.43731733871453,Unhealthy for Sensitive Groups
+aq_g5_43,"Katwe 1, Makindye",2026-08-11 00:00:00+00:00,45.14976718051046,Unhealthy for Sensitive Groups
+aq_g5_43,"Katwe 1, Makindye",2026-08-12 00:00:00+00:00,44.960881667117604,Unhealthy for Sensitive Groups
+aq_g5_43,"Katwe 1, Makindye",2026-08-13 00:00:00+00:00,45.06253089736652,Unhealthy for Sensitive Groups
+aq_g5_43,"Katwe 1, Makindye",2026-08-14 00:00:00+00:00,45.08050265579906,Unhealthy for Sensitive Groups
+aq_g5_46,"Ggaba, Makindye",2026-08-01 00:00:00+00:00,31.516096715292807,Moderate
+aq_g5_46,"Ggaba, Makindye",2026-08-02 00:00:00+00:00,31.586372502329848,Moderate
+aq_g5_46,"Ggaba, Makindye",2026-08-03 00:00:00+00:00,31.611657582521644,Moderate
+aq_g5_46,"Ggaba, Makindye",2026-08-04 00:00:00+00:00,31.082679851040165,Moderate
+aq_g5_46,"Ggaba, Makindye",2026-08-05 00:00:00+00:00,31.00896339932059,Moderate
+aq_g5_46,"Ggaba, Makindye",2026-08-06 00:00:00+00:00,31.538896660729318,Moderate
+aq_g5_46,"Ggaba, Makindye",2026-08-07 00:00:00+00:00,31.57862802150974,Moderate
+aq_g5_46,"Ggaba, Makindye",2026-08-08 00:00:00+00:00,31.516096715292807,Moderate
+aq_g5_46,"Ggaba, Makindye",2026-08-09 00:00:00+00:00,31.586372502329848,Moderate
+aq_g5_46,"Ggaba, Makindye",2026-08-10 00:00:00+00:00,31.611657582521644,Moderate
+aq_g5_46,"Ggaba, Makindye",2026-08-11 00:00:00+00:00,31.082679851040165,Moderate
+aq_g5_46,"Ggaba, Makindye",2026-08-12 00:00:00+00:00,31.00896339932059,Moderate
+aq_g5_46,"Ggaba, Makindye",2026-08-13 00:00:00+00:00,31.538896660729318,Moderate
+aq_g5_46,"Ggaba, Makindye",2026-08-14 00:00:00+00:00,31.57862802150974,Moderate
+aq_g5_48,"Kabalagala town, Makindye",2026-08-01 00:00:00+00:00,29.861251815701653,Moderate
+aq_g5_48,"Kabalagala town, Makindye",2026-08-02 00:00:00+00:00,29.971436995099804,Moderate
+aq_g5_48,"Kabalagala town, Makindye",2026-08-03 00:00:00+00:00,29.908186473289437,Moderate
+aq_g5_48,"Kabalagala town, Makindye",2026-08-04 00:00:00+00:00,29.504670381869285,Moderate
+aq_g5_48,"Kabalagala town, Makindye",2026-08-05 00:00:00+00:00,29.408744745295213,Moderate
+aq_g5_48,"Kabalagala town, Makindye",2026-08-06 00:00:00+00:00,29.763844757846314,Moderate
+aq_g5_48,"Kabalagala town, Makindye",2026-08-07 00:00:00+00:00,29.91202012588684,Moderate
+aq_g5_48,"Kabalagala town, Makindye",2026-08-08 00:00:00+00:00,29.861251815701653,Moderate
+aq_g5_48,"Kabalagala town, Makindye",2026-08-09 00:00:00+00:00,29.971436995099804,Moderate
+aq_g5_48,"Kabalagala town, Makindye",2026-08-10 00:00:00+00:00,29.908186473289437,Moderate
+aq_g5_48,"Kabalagala town, Makindye",2026-08-11 00:00:00+00:00,29.504670381869285,Moderate
+aq_g5_48,"Kabalagala town, Makindye",2026-08-12 00:00:00+00:00,29.408744745295213,Moderate
+aq_g5_48,"Kabalagala town, Makindye",2026-08-13 00:00:00+00:00,29.763844757846314,Moderate
+aq_g5_48,"Kabalagala town, Makindye",2026-08-14 00:00:00+00:00,29.91202012588684,Moderate
+aq_g5_49,Makindye Kcca division offices,2026-08-01 00:00:00+00:00,25.062358519871335,Moderate
+aq_g5_49,Makindye Kcca division offices,2026-08-02 00:00:00+00:00,25.11101715578403,Moderate
+aq_g5_49,Makindye Kcca division offices,2026-08-03 00:00:00+00:00,25.18203967299483,Moderate
+aq_g5_49,Makindye Kcca division offices,2026-08-04 00:00:00+00:00,25.1369559256253,Moderate
+aq_g5_49,Makindye Kcca division offices,2026-08-05 00:00:00+00:00,25.092307577411017,Moderate
+aq_g5_49,Makindye Kcca division offices,2026-08-06 00:00:00+00:00,25.024646889580325,Moderate
+aq_g5_49,Makindye Kcca division offices,2026-08-07 00:00:00+00:00,24.999331183561807,Moderate
+aq_g5_49,Makindye Kcca division offices,2026-08-08 00:00:00+00:00,25.062358519871335,Moderate
+aq_g5_49,Makindye Kcca division offices,2026-08-09 00:00:00+00:00,25.11101715578403,Moderate
+aq_g5_49,Makindye Kcca division offices,2026-08-10 00:00:00+00:00,25.18203967299483,Moderate
+aq_g5_49,Makindye Kcca division offices,2026-08-11 00:00:00+00:00,25.1369559256253,Moderate
+aq_g5_49,Makindye Kcca division offices,2026-08-12 00:00:00+00:00,25.092307577411017,Moderate
+aq_g5_49,Makindye Kcca division offices,2026-08-13 00:00:00+00:00,25.024646889580325,Moderate
+aq_g5_49,Makindye Kcca division offices,2026-08-14 00:00:00+00:00,24.999331183561807,Moderate
+aq_g5_5,Pece Gulu,2026-08-01 00:00:00+00:00,21.10867410616582,Moderate
+aq_g5_5,Pece Gulu,2026-08-02 00:00:00+00:00,21.15760704515392,Moderate
+aq_g5_5,Pece Gulu,2026-08-03 00:00:00+00:00,21.298224823758417,Moderate
+aq_g5_5,Pece Gulu,2026-08-04 00:00:00+00:00,21.10225281392797,Moderate
+aq_g5_5,Pece Gulu,2026-08-05 00:00:00+00:00,21.055763114027176,Moderate
+aq_g5_5,Pece Gulu,2026-08-06 00:00:00+00:00,21.256538028123497,Moderate
+aq_g5_5,Pece Gulu,2026-08-07 00:00:00+00:00,21.12024541982323,Moderate
+aq_g5_5,Pece Gulu,2026-08-08 00:00:00+00:00,21.10867410616582,Moderate
+aq_g5_5,Pece Gulu,2026-08-09 00:00:00+00:00,21.15760704515392,Moderate
+aq_g5_5,Pece Gulu,2026-08-10 00:00:00+00:00,21.298224823758417,Moderate
+aq_g5_5,Pece Gulu,2026-08-11 00:00:00+00:00,21.10225281392797,Moderate
+aq_g5_5,Pece Gulu,2026-08-12 00:00:00+00:00,21.055763114027176,Moderate
+aq_g5_5,Pece Gulu,2026-08-13 00:00:00+00:00,21.256538028123497,Moderate
+aq_g5_5,Pece Gulu,2026-08-14 00:00:00+00:00,21.12024541982323,Moderate
+aq_g5_50,"Rushoroza Hill, Kabale",2026-08-01 00:00:00+00:00,62.11639821676587,Unhealthy
+aq_g5_50,"Rushoroza Hill, Kabale",2026-08-02 00:00:00+00:00,62.60235469907408,Unhealthy
+aq_g5_50,"Rushoroza Hill, Kabale",2026-08-03 00:00:00+00:00,62.71395725446428,Unhealthy
+aq_g5_50,"Rushoroza Hill, Kabale",2026-08-04 00:00:00+00:00,62.75005011739418,Unhealthy
+aq_g5_50,"Rushoroza Hill, Kabale",2026-08-05 00:00:00+00:00,62.2885846999008,Unhealthy
+aq_g5_50,"Rushoroza Hill, Kabale",2026-08-06 00:00:00+00:00,61.616605896164025,Unhealthy
+aq_g5_50,"Rushoroza Hill, Kabale",2026-08-07 00:00:00+00:00,61.61881018187831,Unhealthy
+aq_g5_50,"Rushoroza Hill, Kabale",2026-08-08 00:00:00+00:00,62.11639821676587,Unhealthy
+aq_g5_50,"Rushoroza Hill, Kabale",2026-08-09 00:00:00+00:00,62.60235469907408,Unhealthy
+aq_g5_50,"Rushoroza Hill, Kabale",2026-08-10 00:00:00+00:00,62.71395725446428,Unhealthy
+aq_g5_50,"Rushoroza Hill, Kabale",2026-08-11 00:00:00+00:00,62.75005011739418,Unhealthy
+aq_g5_50,"Rushoroza Hill, Kabale",2026-08-12 00:00:00+00:00,62.2885846999008,Unhealthy
+aq_g5_50,"Rushoroza Hill, Kabale",2026-08-13 00:00:00+00:00,61.616605896164025,Unhealthy
+aq_g5_50,"Rushoroza Hill, Kabale",2026-08-14 00:00:00+00:00,61.61881018187831,Unhealthy
+aq_g5_51,"Muyenga tank hill, Makindye",2026-08-01 00:00:00+00:00,39.37105199570106,Unhealthy for Sensitive Groups
+aq_g5_51,"Muyenga tank hill, Makindye",2026-08-02 00:00:00+00:00,39.504229150132275,Unhealthy for Sensitive Groups
+aq_g5_51,"Muyenga tank hill, Makindye",2026-08-03 00:00:00+00:00,39.672130159481725,Unhealthy for Sensitive Groups
+aq_g5_51,"Muyenga tank hill, Makindye",2026-08-04 00:00:00+00:00,39.33443497166606,Unhealthy for Sensitive Groups
+aq_g5_51,"Muyenga tank hill, Makindye",2026-08-05 00:00:00+00:00,39.210913175204425,Unhealthy for Sensitive Groups
+aq_g5_51,"Muyenga tank hill, Makindye",2026-08-06 00:00:00+00:00,39.37361039757696,Unhealthy for Sensitive Groups
+aq_g5_51,"Muyenga tank hill, Makindye",2026-08-07 00:00:00+00:00,39.303254148478835,Unhealthy for Sensitive Groups
+aq_g5_51,"Muyenga tank hill, Makindye",2026-08-08 00:00:00+00:00,39.37105199570106,Unhealthy for Sensitive Groups
+aq_g5_51,"Muyenga tank hill, Makindye",2026-08-09 00:00:00+00:00,39.504229150132275,Unhealthy for Sensitive Groups
+aq_g5_51,"Muyenga tank hill, Makindye",2026-08-10 00:00:00+00:00,39.672130159481725,Unhealthy for Sensitive Groups
+aq_g5_51,"Muyenga tank hill, Makindye",2026-08-11 00:00:00+00:00,39.33443497166606,Unhealthy for Sensitive Groups
+aq_g5_51,"Muyenga tank hill, Makindye",2026-08-12 00:00:00+00:00,39.210913175204425,Unhealthy for Sensitive Groups
+aq_g5_51,"Muyenga tank hill, Makindye",2026-08-13 00:00:00+00:00,39.37361039757696,Unhealthy for Sensitive Groups
+aq_g5_51,"Muyenga tank hill, Makindye",2026-08-14 00:00:00+00:00,39.303254148478835,Unhealthy for Sensitive Groups
+aq_g5_53,Kansanga Seed Secondary School,2026-08-01 00:00:00+00:00,31.06109937094156,Moderate
+aq_g5_53,Kansanga Seed Secondary School,2026-08-02 00:00:00+00:00,31.19428814739658,Moderate
+aq_g5_53,Kansanga Seed Secondary School,2026-08-03 00:00:00+00:00,31.289025980564574,Moderate
+aq_g5_53,Kansanga Seed Secondary School,2026-08-04 00:00:00+00:00,31.23118330928331,Moderate
+aq_g5_53,Kansanga Seed Secondary School,2026-08-05 00:00:00+00:00,31.097101359051823,Moderate
+aq_g5_53,Kansanga Seed Secondary School,2026-08-06 00:00:00+00:00,31.10313002405002,Moderate
+aq_g5_53,Kansanga Seed Secondary School,2026-08-07 00:00:00+00:00,31.041808067204784,Moderate
+aq_g5_53,Kansanga Seed Secondary School,2026-08-08 00:00:00+00:00,31.06109937094156,Moderate
+aq_g5_53,Kansanga Seed Secondary School,2026-08-09 00:00:00+00:00,31.19428814739658,Moderate
+aq_g5_53,Kansanga Seed Secondary School,2026-08-10 00:00:00+00:00,31.289025980564574,Moderate
+aq_g5_53,Kansanga Seed Secondary School,2026-08-11 00:00:00+00:00,31.23118330928331,Moderate
+aq_g5_53,Kansanga Seed Secondary School,2026-08-12 00:00:00+00:00,31.097101359051823,Moderate
+aq_g5_53,Kansanga Seed Secondary School,2026-08-13 00:00:00+00:00,31.10313002405002,Moderate
+aq_g5_53,Kansanga Seed Secondary School,2026-08-14 00:00:00+00:00,31.041808067204784,Moderate
+aq_g5_54,KCCA Division Rubaga,2026-08-01 00:00:00+00:00,31.6997344457221,Moderate
+aq_g5_54,KCCA Division Rubaga,2026-08-02 00:00:00+00:00,31.731640294763107,Moderate
+aq_g5_54,KCCA Division Rubaga,2026-08-03 00:00:00+00:00,31.88784735825517,Moderate
+aq_g5_54,KCCA Division Rubaga,2026-08-04 00:00:00+00:00,31.838350916456225,Moderate
+aq_g5_54,KCCA Division Rubaga,2026-08-05 00:00:00+00:00,31.80794434816919,Moderate
+aq_g5_54,KCCA Division Rubaga,2026-08-06 00:00:00+00:00,31.792339950021045,Moderate
+aq_g5_54,KCCA Division Rubaga,2026-08-07 00:00:00+00:00,31.652954041456226,Moderate
+aq_g5_54,KCCA Division Rubaga,2026-08-08 00:00:00+00:00,31.6997344457221,Moderate
+aq_g5_54,KCCA Division Rubaga,2026-08-09 00:00:00+00:00,31.731640294763107,Moderate
+aq_g5_54,KCCA Division Rubaga,2026-08-10 00:00:00+00:00,31.88784735825517,Moderate
+aq_g5_54,KCCA Division Rubaga,2026-08-11 00:00:00+00:00,31.838350916456225,Moderate
+aq_g5_54,KCCA Division Rubaga,2026-08-12 00:00:00+00:00,31.80794434816919,Moderate
+aq_g5_54,KCCA Division Rubaga,2026-08-13 00:00:00+00:00,31.792339950021045,Moderate
+aq_g5_54,KCCA Division Rubaga,2026-08-14 00:00:00+00:00,31.652954041456226,Moderate
+aq_g5_59,"Kikungiri Hill, Kabale Municipality Kabale",2026-08-01 00:00:00+00:00,32.61247493138227,Moderate
+aq_g5_59,"Kikungiri Hill, Kabale Municipality Kabale",2026-08-02 00:00:00+00:00,32.780076687334656,Moderate
+aq_g5_59,"Kikungiri Hill, Kabale Municipality Kabale",2026-08-03 00:00:00+00:00,32.85411138723545,Moderate
+aq_g5_59,"Kikungiri Hill, Kabale Municipality Kabale",2026-08-04 00:00:00+00:00,32.35938818948413,Moderate
+aq_g5_59,"Kikungiri Hill, Kabale Municipality Kabale",2026-08-05 00:00:00+00:00,32.17068431547619,Moderate
+aq_g5_59,"Kikungiri Hill, Kabale Municipality Kabale",2026-08-06 00:00:00+00:00,32.44942481977513,Moderate
+aq_g5_59,"Kikungiri Hill, Kabale Municipality Kabale",2026-08-07 00:00:00+00:00,32.52269022156084,Moderate
+aq_g5_59,"Kikungiri Hill, Kabale Municipality Kabale",2026-08-08 00:00:00+00:00,32.61247493138227,Moderate
+aq_g5_59,"Kikungiri Hill, Kabale Municipality Kabale",2026-08-09 00:00:00+00:00,32.780076687334656,Moderate
+aq_g5_59,"Kikungiri Hill, Kabale Municipality Kabale",2026-08-10 00:00:00+00:00,32.85411138723545,Moderate
+aq_g5_59,"Kikungiri Hill, Kabale Municipality Kabale",2026-08-11 00:00:00+00:00,32.35938818948413,Moderate
+aq_g5_59,"Kikungiri Hill, Kabale Municipality Kabale",2026-08-12 00:00:00+00:00,32.17068431547619,Moderate
+aq_g5_59,"Kikungiri Hill, Kabale Municipality Kabale",2026-08-13 00:00:00+00:00,32.44942481977513,Moderate
+aq_g5_59,"Kikungiri Hill, Kabale Municipality Kabale",2026-08-14 00:00:00+00:00,32.52269022156084,Moderate
+aq_g5_62,"Bunyonyi Region, Kabale",2026-08-01 00:00:00+00:00,21.030332234623014,Moderate
+aq_g5_62,"Bunyonyi Region, Kabale",2026-08-02 00:00:00+00:00,21.09532807043651,Moderate
+aq_g5_62,"Bunyonyi Region, Kabale",2026-08-03 00:00:00+00:00,21.171430439814813,Moderate
+aq_g5_62,"Bunyonyi Region, Kabale",2026-08-04 00:00:00+00:00,20.977531044146822,Moderate
+aq_g5_62,"Bunyonyi Region, Kabale",2026-08-05 00:00:00+00:00,20.918999895833334,Moderate
+aq_g5_62,"Bunyonyi Region, Kabale",2026-08-06 00:00:00+00:00,21.083787454530423,Moderate
+aq_g5_62,"Bunyonyi Region, Kabale",2026-08-07 00:00:00+00:00,21.004224519675926,Moderate
+aq_g5_62,"Bunyonyi Region, Kabale",2026-08-08 00:00:00+00:00,21.030332234623014,Moderate
+aq_g5_62,"Bunyonyi Region, Kabale",2026-08-09 00:00:00+00:00,21.09532807043651,Moderate
+aq_g5_62,"Bunyonyi Region, Kabale",2026-08-10 00:00:00+00:00,21.171430439814813,Moderate
+aq_g5_62,"Bunyonyi Region, Kabale",2026-08-11 00:00:00+00:00,20.977531044146822,Moderate
+aq_g5_62,"Bunyonyi Region, Kabale",2026-08-12 00:00:00+00:00,20.918999895833334,Moderate
+aq_g5_62,"Bunyonyi Region, Kabale",2026-08-13 00:00:00+00:00,21.083787454530423,Moderate
+aq_g5_62,"Bunyonyi Region, Kabale",2026-08-14 00:00:00+00:00,21.004224519675926,Moderate
+aq_g5_71,"Kyebando, Kampala",2026-08-01 00:00:00+00:00,35.31498086422258,Moderate
+aq_g5_71,"Kyebando, Kampala",2026-08-02 00:00:00+00:00,35.36519954395142,Moderate
+aq_g5_71,"Kyebando, Kampala",2026-08-03 00:00:00+00:00,35.38064756478475,Moderate
+aq_g5_71,"Kyebando, Kampala",2026-08-04 00:00:00+00:00,35.02731999338624,Moderate
+aq_g5_71,"Kyebando, Kampala",2026-08-05 00:00:00+00:00,34.97968333994709,Moderate
+aq_g5_71,"Kyebando, Kampala",2026-08-06 00:00:00+00:00,35.1851295716841,Moderate
+aq_g5_71,"Kyebando, Kampala",2026-08-07 00:00:00+00:00,35.16549083107864,Moderate
+aq_g5_71,"Kyebando, Kampala",2026-08-08 00:00:00+00:00,35.31498086422258,Moderate
+aq_g5_71,"Kyebando, Kampala",2026-08-09 00:00:00+00:00,35.36519954395142,Moderate
+aq_g5_71,"Kyebando, Kampala",2026-08-10 00:00:00+00:00,35.38064756478475,Moderate
+aq_g5_71,"Kyebando, Kampala",2026-08-11 00:00:00+00:00,35.02731999338624,Moderate
+aq_g5_71,"Kyebando, Kampala",2026-08-12 00:00:00+00:00,34.97968333994709,Moderate
+aq_g5_71,"Kyebando, Kampala",2026-08-13 00:00:00+00:00,35.1851295716841,Moderate
+aq_g5_71,"Kyebando, Kampala",2026-08-14 00:00:00+00:00,35.16549083107864,Moderate
+aq_g5_75,Faculty of Engineering Technology and Applied Art,2026-08-01 00:00:00+00:00,37.120291515376984,Unhealthy for Sensitive Groups
+aq_g5_75,Faculty of Engineering Technology and Applied Art,2026-08-02 00:00:00+00:00,37.30867984126984,Unhealthy for Sensitive Groups
+aq_g5_75,Faculty of Engineering Technology and Applied Art,2026-08-03 00:00:00+00:00,37.425952218088625,Unhealthy for Sensitive Groups
+aq_g5_75,Faculty of Engineering Technology and Applied Art,2026-08-04 00:00:00+00:00,37.27123860697751,Unhealthy for Sensitive Groups
+aq_g5_75,Faculty of Engineering Technology and Applied Art,2026-08-05 00:00:00+00:00,37.07758520006613,Unhealthy for Sensitive Groups
+aq_g5_75,Faculty of Engineering Technology and Applied Art,2026-08-06 00:00:00+00:00,37.187219650297614,Unhealthy for Sensitive Groups
+aq_g5_75,Faculty of Engineering Technology and Applied Art,2026-08-07 00:00:00+00:00,37.09012247023809,Unhealthy for Sensitive Groups
+aq_g5_75,Faculty of Engineering Technology and Applied Art,2026-08-08 00:00:00+00:00,37.120291515376984,Unhealthy for Sensitive Groups
+aq_g5_75,Faculty of Engineering Technology and Applied Art,2026-08-09 00:00:00+00:00,37.30867984126984,Unhealthy for Sensitive Groups
+aq_g5_75,Faculty of Engineering Technology and Applied Art,2026-08-10 00:00:00+00:00,37.425952218088625,Unhealthy for Sensitive Groups
+aq_g5_75,Faculty of Engineering Technology and Applied Art,2026-08-11 00:00:00+00:00,37.27123860697751,Unhealthy for Sensitive Groups
+aq_g5_75,Faculty of Engineering Technology and Applied Art,2026-08-12 00:00:00+00:00,37.07758520006613,Unhealthy for Sensitive Groups
+aq_g5_75,Faculty of Engineering Technology and Applied Art,2026-08-13 00:00:00+00:00,37.187219650297614,Unhealthy for Sensitive Groups
+aq_g5_75,Faculty of Engineering Technology and Applied Art,2026-08-14 00:00:00+00:00,37.09012247023809,Unhealthy for Sensitive Groups
+aq_g5_79,Lapeta Health Centre 3,2026-08-01 00:00:00+00:00,12.790042070105821,Moderate
+aq_g5_79,Lapeta Health Centre 3,2026-08-02 00:00:00+00:00,12.796189958664023,Moderate
+aq_g5_79,Lapeta Health Centre 3,2026-08-03 00:00:00+00:00,12.63847161541005,Moderate
+aq_g5_79,Lapeta Health Centre 3,2026-08-04 00:00:00+00:00,12.64559104068963,Moderate
+aq_g5_79,Lapeta Health Centre 3,2026-08-05 00:00:00+00:00,12.648833340623492,Moderate
+aq_g5_79,Lapeta Health Centre 3,2026-08-06 00:00:00+00:00,12.712791419928449,Moderate
+aq_g5_79,Lapeta Health Centre 3,2026-08-07 00:00:00+00:00,12.828611025583216,Moderate
+aq_g5_79,Lapeta Health Centre 3,2026-08-08 00:00:00+00:00,12.790042070105821,Moderate
+aq_g5_79,Lapeta Health Centre 3,2026-08-09 00:00:00+00:00,12.796189958664023,Moderate
+aq_g5_79,Lapeta Health Centre 3,2026-08-10 00:00:00+00:00,12.63847161541005,Moderate
+aq_g5_79,Lapeta Health Centre 3,2026-08-11 00:00:00+00:00,12.64559104068963,Moderate
+aq_g5_79,Lapeta Health Centre 3,2026-08-12 00:00:00+00:00,12.648833340623492,Moderate
+aq_g5_79,Lapeta Health Centre 3,2026-08-13 00:00:00+00:00,12.712791419928449,Moderate
+aq_g5_79,Lapeta Health Centre 3,2026-08-14 00:00:00+00:00,12.828611025583216,Moderate
+aq_g5_86,Makerere Main Gate Area.,2026-08-01 00:00:00+00:00,29.841239323367606,Moderate
+aq_g5_86,Makerere Main Gate Area.,2026-08-02 00:00:00+00:00,29.885287775748555,Moderate
+aq_g5_86,Makerere Main Gate Area.,2026-08-03 00:00:00+00:00,30.119525489042207,Moderate
+aq_g5_86,Makerere Main Gate Area.,2026-08-04 00:00:00+00:00,30.167371816753853,Moderate
+aq_g5_86,Makerere Main Gate Area.,2026-08-05 00:00:00+00:00,30.132006871317344,Moderate
+aq_g5_86,Makerere Main Gate Area.,2026-08-06 00:00:00+00:00,29.88044497978295,Moderate
+aq_g5_86,Makerere Main Gate Area.,2026-08-07 00:00:00+00:00,29.648111309148025,Moderate
+aq_g5_86,Makerere Main Gate Area.,2026-08-08 00:00:00+00:00,29.841239323367606,Moderate
+aq_g5_86,Makerere Main Gate Area.,2026-08-09 00:00:00+00:00,29.885287775748555,Moderate
+aq_g5_86,Makerere Main Gate Area.,2026-08-10 00:00:00+00:00,30.119525489042207,Moderate
+aq_g5_86,Makerere Main Gate Area.,2026-08-11 00:00:00+00:00,30.167371816753853,Moderate
+aq_g5_86,Makerere Main Gate Area.,2026-08-12 00:00:00+00:00,30.132006871317344,Moderate
+aq_g5_86,Makerere Main Gate Area.,2026-08-13 00:00:00+00:00,29.88044497978295,Moderate
+aq_g5_86,Makerere Main Gate Area.,2026-08-14 00:00:00+00:00,29.648111309148025,Moderate
+aq_g5_93,Gulu university,2026-08-01 00:00:00+00:00,12.228735760206234,Moderate
+aq_g5_93,Gulu university,2026-08-02 00:00:00+00:00,12.247440105444326,Moderate
+aq_g5_93,Gulu university,2026-08-03 00:00:00+00:00,12.172257917944327,Moderate
+aq_g5_93,Gulu university,2026-08-04 00:00:00+00:00,12.13358852385462,Moderate
+aq_g5_93,Gulu university,2026-08-05 00:00:00+00:00,12.12001900996573,Moderate
+aq_g5_93,Gulu university,2026-08-06 00:00:00+00:00,12.147609079936268,Moderate
+aq_g5_93,Gulu university,2026-08-07 00:00:00+00:00,12.235819053481244,Moderate
+aq_g5_93,Gulu university,2026-08-08 00:00:00+00:00,12.228735760206234,Moderate
+aq_g5_93,Gulu university,2026-08-09 00:00:00+00:00,12.247440105444326,Moderate
+aq_g5_93,Gulu university,2026-08-10 00:00:00+00:00,12.172257917944327,Moderate
+aq_g5_93,Gulu university,2026-08-11 00:00:00+00:00,12.13358852385462,Moderate
+aq_g5_93,Gulu university,2026-08-12 00:00:00+00:00,12.12001900996573,Moderate
+aq_g5_93,Gulu university,2026-08-13 00:00:00+00:00,12.147609079936268,Moderate
+aq_g5_93,Gulu university,2026-08-14 00:00:00+00:00,12.235819053481244,Moderate
+aq_g5_97,"Mbuya II, Nakawa",2026-08-01 00:00:00+00:00,21.07029877728175,Moderate
+aq_g5_97,"Mbuya II, Nakawa",2026-08-02 00:00:00+00:00,21.06975202876984,Moderate
+aq_g5_97,"Mbuya II, Nakawa",2026-08-03 00:00:00+00:00,21.073096684854498,Moderate
+aq_g5_97,"Mbuya II, Nakawa",2026-08-04 00:00:00+00:00,20.938903069234005,Moderate
+aq_g5_97,"Mbuya II, Nakawa",2026-08-05 00:00:00+00:00,20.935285517977395,Moderate
+aq_g5_97,"Mbuya II, Nakawa",2026-08-06 00:00:00+00:00,21.074964422123017,Moderate
+aq_g5_97,"Mbuya II, Nakawa",2026-08-07 00:00:00+00:00,21.091991882440478,Moderate
+aq_g5_97,"Mbuya II, Nakawa",2026-08-08 00:00:00+00:00,21.07029877728175,Moderate
+aq_g5_97,"Mbuya II, Nakawa",2026-08-09 00:00:00+00:00,21.06975202876984,Moderate
+aq_g5_97,"Mbuya II, Nakawa",2026-08-10 00:00:00+00:00,21.073096684854498,Moderate
+aq_g5_97,"Mbuya II, Nakawa",2026-08-11 00:00:00+00:00,20.938903069234005,Moderate
+aq_g5_97,"Mbuya II, Nakawa",2026-08-12 00:00:00+00:00,20.935285517977395,Moderate
+aq_g5_97,"Mbuya II, Nakawa",2026-08-13 00:00:00+00:00,21.074964422123017,Moderate
+aq_g5_97,"Mbuya II, Nakawa",2026-08-14 00:00:00+00:00,21.091991882440478,Moderate

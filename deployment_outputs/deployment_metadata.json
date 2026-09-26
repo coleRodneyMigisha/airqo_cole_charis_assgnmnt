@@ -1,0 +1,34 @@
+{
+  "model_name": "Random Forest (untuned baseline)",
+  "model_artifact": "/home/kingcole/Documents/uniAssignments/year_3_sem_1/ai_week_5/best_pm25_model.joblib",
+  "target_mean_ug_m3": 34.49381071090862,
+  "target_std_ug_m3": 31.703567124685428,
+  "numeric_feature_columns": [
+    "temperature",
+    "humidity",
+    "pm10_calibrated_value",
+    "latitude",
+    "longitude",
+    "hour_sin",
+    "hour_cos",
+    "day_of_week_sin",
+    "day_of_week_cos",
+    "month_sin",
+    "month_cos"
+  ],
+  "categorical_feature_columns": [
+    "device_name"
+  ],
+  "sensor_count": 149,
+  "daily_forecast_start": "2026-08-01 00:00:00+00:00",
+  "daily_forecast_end": "2026-08-14 00:00:00+00:00",
+  "daily_forecast_rows": 2086,
+  "hourly_forecast_start": "2026-08-01 00:00:00+00:00",
+  "hourly_forecast_end": "2026-08-01 23:00:00+00:00",
+  "hourly_forecast_rows": 3576,
+  "test_mae_ug_m3": 3.220653102581139,
+  "test_rmse_ug_m3": 7.03841528459104,
+  "test_r2": 0.896797186260461,
+  "coordinate_missingness_handled_by_pipeline": true,
+  "weather_forecast_method": "device-specific hour-of-day climatology with all-device fallback"
+}
