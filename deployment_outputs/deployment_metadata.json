@@ -7,8 +7,6 @@
     "temperature",
     "humidity",
     "pm10_calibrated_value",
-    "latitude",
-    "longitude",
     "hour_sin",
     "hour_cos",
     "day_of_week_sin",
@@ -26,9 +24,9 @@
   "hourly_forecast_start": "2026-08-01 00:00:00+00:00",
   "hourly_forecast_end": "2026-08-01 23:00:00+00:00",
   "hourly_forecast_rows": 3576,
-  "test_mae_ug_m3": 3.220653102581139,
-  "test_rmse_ug_m3": 7.03841528459104,
-  "test_r2": 0.896797186260461,
+  "test_mae_ug_m3": 3.313258578705444,
+  "test_rmse_ug_m3": 7.308377947821263,
+  "test_r2": 0.8887285468758869,
   "coordinate_missingness_handled_by_pipeline": true,
   "weather_forecast_method": "device-specific hour-of-day climatology with all-device fallback"
 }
