@@ -1,8 +1,8 @@
 {
-  "model_name": "Random Forest (untuned baseline)",
-  "model_artifact": "/home/kingcole/Documents/uniAssignments/year_3_sem_1/ai_week_5/best_pm25_model.joblib",
+  "model_name": "Random Forest (tuned)",
+  "model_artifact": "C:\\Users\\chari\\Desktop\\airqo_cole_charis_assgnmnt\\best_pm25_model.joblib",
   "target_mean_ug_m3": 34.49381071090862,
-  "target_std_ug_m3": 31.703567124685428,
+  "target_std_ug_m3": 31.70356712468543,
   "numeric_feature_columns": [
     "temperature",
     "humidity",
@@ -24,9 +24,9 @@
   "hourly_forecast_start": "2026-08-01 00:00:00+00:00",
   "hourly_forecast_end": "2026-08-01 23:00:00+00:00",
   "hourly_forecast_rows": 3576,
-  "test_mae_ug_m3": 3.313258578705444,
-  "test_rmse_ug_m3": 7.308377947821263,
-  "test_r2": 0.8887285468758869,
+  "test_mae_ug_m3": 3.103130321729082,
+  "test_rmse_ug_m3": 7.003421577619434,
+  "test_r2": 0.8978208460323409,
   "coordinate_missingness_handled_by_pipeline": true,
   "weather_forecast_method": "device-specific hour-of-day climatology with all-device fallback"
 }
