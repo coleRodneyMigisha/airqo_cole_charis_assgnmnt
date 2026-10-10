@@ -1,0 +1,29 @@
+{
+  "run_platform": "Local machine",
+  "python_version": "3.13.7",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "logical_cpus": 16,
+  "pipeline_runtime_seconds": 685.2,
+  "peak_ram_notebook_process_mb": 902.0,
+  "peak_ram_largest_child_process_mb": null,
+  "gpu": {
+    "available": false
+  },
+  "model_load_seconds": 0.43,
+  "prediction_latency": {
+    "single_row_ms": 20.54,
+    "hourly_forecast_batch_rows": 3576,
+    "hourly_forecast_batch_ms": 105.79,
+    "two_week_forecast_batch_rows": 50064,
+    "two_week_forecast_batch_ms": 715.46,
+    "two_week_forecast_us_per_row": 14.29
+  },
+  "forecast_mode": "single pass over all forecast rows (not autoregressive)",
+  "file_sizes_mb": {
+    "Sensor Data Jan - July 2026.csv": 1.74,
+    "best_pm25_model.joblib": 114.63,
+    "daily_pm25_predictions_august_1_to_14.csv": 0.19,
+    "hourly_pm25_predictions_august_1.csv": 0.32
+  },
+  "evidently_monitoring_completed": true
+}

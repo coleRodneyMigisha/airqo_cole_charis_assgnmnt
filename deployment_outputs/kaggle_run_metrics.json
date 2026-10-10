@@ -1,0 +1,110 @@
+{
+  "run_started_utc": "2026-10-05T04:28:13+00:00",
+  "run_finished_utc": "2026-10-05T04:39:38+00:00",
+  "runtime_seconds": 685.3,
+  "peak_ram_mb": 902.0,
+  "environment": {
+    "platform": "Local machine",
+    "kaggle_kernel_run_type": null,
+    "python_version": "3.13.7",
+    "os": "Windows-11-10.0.26300-SP0",
+    "logical_cpus": 16,
+    "total_ram_gb": 15.3,
+    "gpu": {
+      "available": false
+    }
+  },
+  "pipeline": {
+    "raw_rows": 14600,
+    "sensors": 149,
+    "resampled_rows": 758112,
+    "rows_with_observed_pm25": 14275,
+    "training_rows": 11633,
+    "test_rows": 2642
+  },
+  "selected_model": {
+    "name": "Random Forest (tuned)",
+    "test_mae_ug_m3": 3.103,
+    "test_rmse_ug_m3": 7.003,
+    "test_r2": 0.898,
+    "test_aqi_category_accuracy": 0.862
+  },
+  "all_models": [
+    {
+      "model": "Random Forest (tuned)",
+      "MAE_ug_m3": 3.103,
+      "RMSE_ug_m3": 7.003,
+      "R2_ug_m3": 0.898
+    },
+    {
+      "model": "Random Forest (untuned baseline)",
+      "MAE_ug_m3": 3.272,
+      "RMSE_ug_m3": 7.123,
+      "R2_ug_m3": 0.894
+    },
+    {
+      "model": "SVR (tuned)",
+      "MAE_ug_m3": 4.585,
+      "RMSE_ug_m3": 7.697,
+      "R2_ug_m3": 0.877
+    },
+    {
+      "model": "Ridge Regression (tuned)",
+      "MAE_ug_m3": 5.292,
+      "RMSE_ug_m3": 9.923,
+      "R2_ug_m3": 0.795
+    },
+    {
+      "model": "KNN (tuned)",
+      "MAE_ug_m3": 5.722,
+      "RMSE_ug_m3": 11.67,
+      "R2_ug_m3": 0.716
+    },
+    {
+      "model": "Polynomial Regression (tuned)",
+      "MAE_ug_m3": 6.005,
+      "RMSE_ug_m3": 10.606,
+      "R2_ug_m3": 0.766
+    },
+    {
+      "model": "Linear Regression (tuned)",
+      "MAE_ug_m3": 6.005,
+      "RMSE_ug_m3": 10.606,
+      "R2_ug_m3": 0.766
+    }
+  ],
+  "forecasts": {
+    "daily_rows": 2086,
+    "hourly_rows": 3576,
+    "daily_aqi_counts": {
+      "Moderate": 1356,
+      "Unhealthy for Sensitive Groups": 490,
+      "Unhealthy": 226,
+      "Very Unhealthy": 14
+    }
+  },
+  "prediction_latency_ms": {
+    "single_row_ms": 20.54,
+    "hourly_forecast_batch_rows": 3576,
+    "hourly_forecast_batch_ms": 105.79,
+    "two_week_forecast_batch_rows": 50064,
+    "two_week_forecast_batch_ms": 715.46,
+    "two_week_forecast_us_per_row": 14.29
+  },
+  "monitoring": {
+    "evidently_completed": true,
+    "evidently_error": null,
+    "drifted_columns": 6,
+    "columns_checked": 7
+  },
+  "artifacts_mb": {
+    "best_pm25_model.joblib": 114.63,
+    "daily_pm25_predictions_august_1_to_14.csv": 0.19,
+    "deployment_metadata.json": 0.0,
+    "evidently_monitoring_summary.csv": 0.0,
+    "hourly_pm25_predictions_august_1.csv": 0.32,
+    "run_resource_report.json": 0.0,
+    "test_features_for_standalone_inference.csv": 0.34,
+    "test_predictions_standalone.csv": 0.42
+  }
+}
