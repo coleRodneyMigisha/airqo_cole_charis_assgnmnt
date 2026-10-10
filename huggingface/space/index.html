@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AirQo PM2.5 Forecasts</title>
+<style>
+  :root {
+    --bg: #fcfcfb; --panel: #ffffff; --ink: #1d2125; --muted: #6b737b;
+    --line: #e3e5e8; --accent: #1f4e79;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15181b; --panel: #1d2125; --ink: #eef0f2; --muted: #959ca3;
+      --line: #30363c; --accent: #8bb8e3;
+    }
+  }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 system-ui, sans-serif; }
+  main { max-width: 900px; margin: 0 auto; padding: 24px 16px; }
+  h1 { margin: 0 0 4px; font-size: 1.6rem; }
+  h2 { margin: 0 0 12px; font-size: 1.1rem; }
+  section { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 16px; margin-bottom: 16px; }
+  select { font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px; max-width: 100%; }
+  .muted { color: var(--muted); font-size: .9rem; }
+  a { color: var(--accent); }
+
+  .calendar { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 2px; }
+  .day { border-radius: 6px; padding: 6px; color: #1d2125; }
+  .day.dark { color: #fff; }
+  .day b { display: block; font-size: 1.1rem; }
+  .day small { display: block; font-size: .72rem; }
+  .day .code { display: none; }
+
+  .legend { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: 12px; font-size: .85rem; }
+  .swatch { display: inline-block; width: 12px; height: 12px; border-radius: 3px; vertical-align: -1px; margin-right: 4px; box-shadow: 0 0 0 1px var(--line); }
+
+  .chart { overflow-x: auto; }
+  svg { width: 100%; min-width: 600px; }
+  svg text { fill: var(--muted); font-size: 11px; }
+
+  @media (max-width: 560px) {
+    .day .name { display: none; }
+    .day .code { display: block; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>AirQo PM2.5 Forecasts</h1>
+  <p class="muted">Predicted PM2.5 for 149 AirQo sensors in Uganda, August 2026.</p>
+
+  <section>
+    <select id="sensor" aria-label="Sensor"></select>
+    <p id="summary"></p>
+  </section>
+
+  <section>
+    <h2>Daily forecast, 1&ndash;14 August</h2>
+    <div class="calendar" id="calendar"></div>
+    <div class="legend" id="legend"></div>
+  </section>
+
+  <section>
+    <h2>Hourly forecast, 1 August (UTC)</h2>
+    <div class="chart"><svg id="chart" viewBox="0 0 800 260"></svg></div>
+    <p class="muted">Dashed lines are the AQI category boundaries. Hover a bar for its value.</p>
+  </section>
+
+  <p class="muted">
+    Model: Random Forest, test error MAE 3.10 &micro;g/m&sup3;, R&sup2; 0.898.
+    August weather and PM10 were not known in advance, so each sensor's typical values for each hour were used:
+    the forecasts show each site's usual daily pattern.
+    Download the model: <a href="https://huggingface.co/Kyalis/airqo-pm25-random-forest">Kyalis/airqo-pm25-random-forest</a>
+  </p>
+</main>
+
+<script>
+// AQI categories from the assignment (same colours as the notebook).
+const AQI = [
+  { name: 'Good',                           code: 'Good',  max: 9,        color: '#2ca25f' },
+  { name: 'Moderate',                       code: 'Mod',   max: 35.49,    color: '#f1c40f' },
+  { name: 'Unhealthy for Sensitive Groups', code: 'USG',   max: 55.49,    color: '#f39c12' },
+  { name: 'Unhealthy',                      code: 'Unh',   max: 125.49,   color: '#e74c3c' },
+  { name: 'Very Unhealthy',                 code: 'V.Unh', max: 225.49,   color: '#8e44ad', dark: true },
+  { name: 'Hazardous',                      code: 'Haz',   max: Infinity, color: '#5b0f14', dark: true },
+];
+const category = value => AQI.find(c => value <= c.max);
+
+let data;
+
+function showCalendar(sensor) {
+  document.getElementById('calendar').innerHTML = data.dates.map((date, i) => {
+    const value = sensor.daily[i];
+    const c = category(value);
+    const day = new Date(date).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'UTC' });
+    return `<div class="day ${c.dark ? 'dark' : ''}" style="background:${c.color}">
+              <small>${day}</small><b>${value.toFixed(1)}</b>
+              <small class="name">${c.name}</small><small class="code">${c.code}</small>
+            </div>`;
+  }).join('');
+}
+
+function showChart(sensor) {
+  const left = 40, width = 640, top = 10, height = 220;
+  const yMax = Math.ceil(Math.max(...sensor.hourly, 60) / 20) * 20;
+  const y = value => top + height - (value / yMax) * height;
+  const slot = width / 24;
+  let svg = '';
+
+  for (let tick = 0; tick <= yMax; tick += 20) {
+    svg += `<text x="${left - 6}" y="${y(tick) + 4}" text-anchor="end">${tick}</text>`;
+  }
+  AQI.forEach((c, i) => {
+    if (c.max >= yMax) return;
+    svg += `<line x1="${left}" x2="${left + width}" y1="${y(c.max)}" y2="${y(c.max)}" stroke="currentColor" stroke-dasharray="3 3" opacity=".4"/>`;
+    svg += `<text x="${left + width + 6}" y="${y(c.max) - 3}">${AQI[i + 1].code} above</text>`;
+  });
+  sensor.hourly.forEach((value, hour) => {
+    const c = category(value);
+    const time = String(hour).padStart(2, '0') + ':00';
+    svg += `<rect x="${left + hour * slot + 1}" y="${y(value)}" width="${slot - 2}" height="${top + height - y(value)}" rx="3" fill="${c.color}">
+              <title>${time} UTC: ${value.toFixed(1)} µg/m³ (${c.name})</title></rect>`;
+    if (hour % 3 === 0) {
+      svg += `<text x="${left + hour * slot + slot / 2}" y="${top + height + 18}" text-anchor="middle">${time}</text>`;
+    }
+  });
+
+  const chart = document.getElementById('chart');
+  chart.style.color = getComputedStyle(document.body).color;
+  chart.innerHTML = svg;
+}
+
+function show(id) {
+  const sensor = data.sensors.find(s => s.id === id);
+  const average = sensor.daily.reduce((a, b) => a + b) / sensor.daily.length;
+  document.getElementById('summary').textContent =
+    `14-day average: ${average.toFixed(1)} µg/m³ (${category(average).name})`;
+  showCalendar(sensor);
+  showChart(sensor);
+}
+
+fetch('forecasts.json').then(response => response.json()).then(json => {
+  data = json;
+  const select = document.getElementById('sensor');
+  select.innerHTML = data.sensors.map(s => `<option value="${s.id}">${s.site} (${s.id})</option>`).join('');
+  select.value = (data.sensors.find(s => s.site.startsWith('Nakasero II')) || data.sensors[0]).id;
+  select.onchange = () => show(select.value);
+  show(select.value);
+
+  document.getElementById('legend').innerHTML = AQI.map(c =>
+    `<span><span class="swatch" style="background:${c.color}"></span>${c.name}${c.code !== c.name ? ` (${c.code})` : ''}</span>`).join('');
+}).catch(() => {
+  document.getElementById('summary').textContent =
+    'Could not load forecasts.json. Upload it to the Space next to index.html.';
+});
+</script>
+</body>
+</html>

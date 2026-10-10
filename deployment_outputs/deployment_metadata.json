@@ -27,6 +27,9 @@
   "test_mae_ug_m3": 3.103130321729082,
   "test_rmse_ug_m3": 7.003421577619434,
   "test_r2": 0.8978208460323409,
+  "test_aqi_category_accuracy": 0.8618470855412567,
   "coordinate_missingness_handled_by_pipeline": true,
+  "evidently_monitoring_completed": true,
+  "evidently_error": null,
   "weather_forecast_method": "device-specific hour-of-day climatology with all-device fallback"
 }
