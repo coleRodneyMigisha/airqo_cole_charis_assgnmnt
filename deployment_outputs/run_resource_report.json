@@ -3,27 +3,27 @@
   "python_version": "3.13.7",
   "platform": "Windows-11-10.0.26300-SP0",
   "logical_cpus": 16,
-  "pipeline_runtime_seconds": 2635.6,
-  "peak_ram_notebook_process_mb": 1702.8,
+  "pipeline_runtime_seconds": 3880.7,
+  "peak_ram_notebook_process_mb": 1269.9,
   "peak_ram_largest_child_process_mb": null,
   "gpu": {
     "available": false
   },
-  "model_load_seconds": 0.34,
+  "model_load_seconds": 0.0,
   "prediction_latency": {
-    "single_row_ms": 112.4,
+    "single_row_ms": 9.71,
     "hourly_forecast_batch_rows": 3576,
-    "hourly_forecast_batch_ms": 143.12,
+    "hourly_forecast_batch_ms": 1201.19,
     "two_week_forecast_batch_rows": 50064,
-    "two_week_forecast_batch_ms": 375.7,
-    "two_week_forecast_us_per_row": 7.5
+    "two_week_forecast_batch_ms": 16378.62,
+    "two_week_forecast_us_per_row": 327.15
   },
   "forecast_mode": "single pass over all forecast rows (not autoregressive)",
   "file_sizes_mb": {
     "Sensor Data Jan - July 2026.csv": 1.74,
-    "best_pm25_model.joblib": 81.65,
+    "best_pm25_model.joblib": 1.17,
     "daily_pm25_predictions_august_1_to_14.csv": 0.18,
-    "hourly_pm25_predictions_august_1.csv": 0.31
+    "hourly_pm25_predictions_august_1.csv": 0.3
   },
   "evidently_monitoring_completed": true
 }
