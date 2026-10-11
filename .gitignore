@@ -1,6 +1,0 @@
-# Trained model artifacts are too large for GitHub (100 MB file limit).
-# Regenerate with train.ipynb or share the file separately.
-*.joblib
-
-# Copied in by huggingface/prepare.py (the original is in the project root).
-huggingface/model/pm25_inference.py
