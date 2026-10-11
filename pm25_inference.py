@@ -1,4 +1,10 @@
 
+# Standalone PM2.5 inference.
+#
+# The required feature columns are read from the saved model artifact, so
+# this script always matches the model it loads. The current model uses
+# temperature, humidity, hour_sin, hour_cos, day_of_week_sin,
+# day_of_week_cos, month_sin, month_cos and device_name. PM10 is not used.
 import argparse
 from pathlib import Path
 

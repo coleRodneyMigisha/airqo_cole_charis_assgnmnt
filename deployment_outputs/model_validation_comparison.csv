@@ -1,0 +1,14 @@
+setup,Chronological hold-out,Chronological hold-out,Chronological hold-out,Expanding-window CV,Expanding-window CV,Expanding-window CV,Leave-sensors-out,Leave-sensors-out,Leave-sensors-out,Hold-out
+,MAE,RMSE,R2,MAE,RMSE,R2,MAE,RMSE,R2,AQI accuracy
+model,,,,,,,,,,
+Random Forest (untuned baseline),11.78,25.206,-0.324,30.573,39.372,-2.035,15.725,26.936,0.186,0.719
+Random Forest (tuned),11.83,25.307,-0.334,30.675,39.551,-2.035,15.744,26.964,0.185,0.719
+KNN (tuned),12.055,21.424,0.044,18.156,29.84,-0.455,17.569,29.178,0.005,0.707
+LSTM (weather + time + PM2.5 history),12.606,19.231,0.23,13.814,25.278,0.045,10.852,20.644,0.526,0.671
+LSTM (weather + time),13.421,21.972,-0.006,23.822,34.971,-1.508,16.391,26.171,0.233,0.686
+Baseline (training mean),19.204,23.944,-0.194,25.417,33.58,-0.872,21.411,30.01,-0.023,0.729
+LightGBM (tuned),21.876,31.382,-1.052,23.413,34.415,-1.488,16.189,26.3,0.224,0.402
+SVR (tuned),22.241,26.383,-0.45,18.483,29.751,-0.333,18.219,27.184,0.154,0.356
+Ridge Regression (tuned),31.977,36.482,-1.773,26.428,37.652,-1.907,18.764,27.781,0.12,0.157
+Linear Regression (tuned),32.385,38.821,-2.14,26.856,37.957,-1.875,17.186,27.301,0.161,0.206
+Polynomial Regression (tuned),32.385,38.821,-2.14,26.786,37.93,-1.877,18.956,28.076,0.099,0.206

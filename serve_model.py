@@ -9,10 +9,11 @@ Endpoints:
     POST /predict   -> {"rows": [{feature: value, ...}, ...]}
                        returns PM2.5 (ug/m3) and the AQI category per row
 
-Each row needs: temperature, humidity, pm10_calibrated_value, hour_sin,
-hour_cos, day_of_week_sin, day_of_week_cos, month_sin, month_cos,
-device_name. Missing weather values may be left out; the model encodes
-them as 0, the same as in training.
+Each row needs: temperature, humidity, hour_sin, hour_cos,
+day_of_week_sin, day_of_week_cos, month_sin, month_cos, device_name.
+The list is read from the saved model, so it always matches the artifact.
+PM10 is not used. Missing weather values may be left out; the pipeline
+fills them with the training median.
 """
 
 import json
