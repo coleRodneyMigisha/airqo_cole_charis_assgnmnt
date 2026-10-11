@@ -1,9 +1,9 @@
 AirQo PM2.5 pipeline: run log (Local machine)
 ============================================================
-Started (UTC):      2026-10-05T04:28:13+00:00
-Finished (UTC):     2026-10-05T04:39:38+00:00
-Runtime:            11.4 min
-Peak RAM:           902 MB
+Started (UTC):      2026-10-10T18:21:38+00:00
+Finished (UTC):     2026-10-10T19:05:34+00:00
+Runtime:            43.9 min
+Peak RAM:           1703 MB
 Python / OS:        3.13.7 / Windows-11-10.0.26300-SP0
 CPUs / RAM:         16 logical CPUs, 15.3 GB RAM
 GPU:                none (pipeline runs on CPU)
@@ -15,28 +15,34 @@ Pipeline stages
   Training / test rows:     11,633 / 2,642
 
 Model results (test set, ug/m3)
-  Random Forest (tuned)              MAE  3.103  RMSE   7.003  R2 0.898
-  Random Forest (untuned baseline)   MAE  3.272  RMSE   7.123  R2 0.894
-  SVR (tuned)                        MAE  4.585  RMSE   7.697  R2 0.877
-  Ridge Regression (tuned)           MAE  5.292  RMSE   9.923  R2 0.795
-  KNN (tuned)                        MAE  5.722  RMSE  11.670  R2 0.716
-  Polynomial Regression (tuned)      MAE  6.005  RMSE  10.606  R2 0.766
-  Linear Regression (tuned)          MAE  6.005  RMSE  10.606  R2 0.766
+  Random Forest (untuned baseline)   MAE 11.780  RMSE  25.206  R2 -0.324
+  Random Forest (tuned)              MAE 11.830  RMSE  25.307  R2 -0.334
+  KNN (tuned)                        MAE 12.055  RMSE  21.424  R2 0.044
+  LSTM (weather + time + PM2.5 history) MAE 12.606  RMSE  19.231  R2 0.230
+  LSTM (weather + time)              MAE 13.421  RMSE  21.972  R2 -0.006
+  LightGBM (tuned)                   MAE 21.876  RMSE  31.382  R2 -1.052
+  SVR (tuned)                        MAE 22.241  RMSE  26.383  R2 -0.450
+  Ridge Regression (tuned)           MAE 31.977  RMSE  36.482  R2 -1.773
+  Linear Regression (tuned)          MAE 32.385  RMSE  38.821  R2 -2.140
+  Polynomial Regression (tuned)      MAE 32.385  RMSE  38.821  R2 -2.140
 
-Selected model:     Random Forest (tuned)
-  MAE / RMSE / R2:  3.103 / 7.003 / 0.898
-  AQI accuracy:     86.2%
+Selected model:     Random Forest (untuned baseline)
+  MAE / RMSE / R2:  11.78 / 25.206 / -0.324
+  AQI accuracy:     71.9%
 
 Forecasts:          2,086 daily rows, 3,576 hourly rows
-Evidently:          completed, 6 of 7 columns drifted
-Latency:            1 row 20.5 ms, 50,064 rows 715 ms
+Evidently:          completed, 8 of 9 columns drifted
+Latency:            1 row 112.4 ms, 50,064 rows 376 ms
 
 Artifacts produced
-  best_pm25_model.joblib                           114.63 MB
-  daily_pm25_predictions_august_1_to_14.csv          0.19 MB
+  best_pm25_model.joblib                            81.65 MB
+  daily_pm25_predictions_august_1_to_14.csv          0.18 MB
   deployment_metadata.json                           0.00 MB
   evidently_monitoring_summary.csv                   0.00 MB
-  hourly_pm25_predictions_august_1.csv               0.32 MB
+  hourly_pm25_predictions_august_1.csv               0.31 MB
+  kaggle_run_log.txt                                 0.00 MB
+  kaggle_run_metrics.json                            0.01 MB
+  model_validation_comparison.csv                    0.00 MB
   run_resource_report.json                           0.00 MB
   test_features_for_standalone_inference.csv         0.34 MB
   test_predictions_standalone.csv                    0.42 MB
