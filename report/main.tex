@@ -12,9 +12,11 @@
 \usepackage{xcolor}
 \usepackage{enumitem}
 \usepackage{amsmath}
+\usepackage{setspace}
 \usepackage[hidelinks]{hyperref}
 
 \graphicspath{{figures/}}
+\onehalfspacing
 
 \setlist{nosep}
 \setlength{\parskip}{0.5em}
@@ -23,6 +25,7 @@
 
 \newcommand{\ugm}{\,$\mu$g/m$^{3}$}
 \newcommand{\tofill}[1]{\textcolor{red}{\textbf{[FILL IN FROM KAGGLE RUN LOG: #1]}}}
+\newcommand{\addurl}[1]{\textcolor{red}{\textbf{[ADD LINK: #1]}}}
 \newcolumntype{L}{>{\raggedright\arraybackslash}X}
 
 \begin{document}
@@ -38,7 +41,7 @@
 {\large CSC3119: AI Model Deployment and Scalability\par}
 {\large Track: Artificial Intelligence and Robotics\par}
 \vspace{1.0cm}
-{\Huge\bfseries Predicting PM2.5 Air Quality Concentrations from AirQo Sensor Data\par}
+{\Large\bfseries Predicting PM2.5 Air Quality Concentrations from AirQo Sensor Data\par}
 \vspace{0.6cm}
 {\Large Assignment 4: Final Report\par}
 \vspace{1.0cm}
@@ -47,16 +50,7 @@
 No. & Name & Registration No. \\
 \midrule
 1 & Charis Opol & S24B23/003 \\
-2 & Kirabo Esther Kebirungi & S24B23/045 \\
-3 & Ansasiire Nehum Naamaye & S24B23/018 \\
-4 & Norah-Angel Nakaye & M24B23/008 \\
-5 & Mwonge Andrea & S24B23/070 \\
-6 & Cole Rodney Migisha & S24B23/006 \\
-7 & Ssendagire Abubaker & S24B23/012 \\
-8 & Shane Munanura & M24B23/031 \\
-9 & Mirembe Peace Mercy & M24B23/005 \\
-10 & Tony Blair & S24B23/024 \\
-11 & Musoke Nestroy & S24B23/069 \\
+2 & Cole Rodney Migisha & S24B23/006 \\
 \bottomrule
 \end{tabular}
 \vfill
@@ -65,8 +59,9 @@ No. & Name & Registration No. \\
 
 %-------------------------------------------------------------------- Abstract
 \begin{abstract}
-We built a complete pipeline that predicts hourly PM2.5 concentration from AirQo low-cost sensor data: data preparation, exploratory analysis, model training, evaluation, explainability, an external test on a second dataset, August 2026 forecasts, monitoring with Evidently AI, and deployment. The supplied data contains 14{,}600 hourly records from 149 sensors, but readings exist on only eight days (1--3 January, 1--2 April and 1--3 June 2026). Following feedback on our presentation, PM10 was removed from the pipeline, so PM2.5 is predicted from temperature, humidity, time and sensor identity. Gaps are filled by windowed interpolation and time-of-day imputation, and a bidirectional LSTM imputer in the style of BRITS was added and tested. Extreme PM2.5 readings (1.5\% of readings) are replaced by the nearest normal reading of the same sensor. SMOTE was tested on the training data and left out because it made every model less accurate. Thirteen models were compared under three validation setups. The best forecast model, a tuned SVR, reaches MAE 9.34\ugm{} ($R^2$ 0.34) on the held-out June days. Adding the PM2.5 readings of the previous three hours to the tree models lowers this to 8.43\ugm{} ($R^2$ 0.42) and makes the models far more stable, but such models need recent readings and cannot forecast weeks ahead. On an external August dataset the forecast models are no better than predicting the training mean, while the models with PM2.5 history keep part of their skill (MAE 14.8\ugm). The bidirectional imputer is the most accurate imputer for gaps of six hours or more, but it does not improve the prediction models. With PM10 as an input the earlier version of the pipeline scored MAE 3.10\ugm; that accuracy depended on a second particle reading from the same instrument.
+We built a complete pipeline that predicts hourly PM2.5 concentration from AirQo low-cost sensor data: data preparation, exploratory analysis, model training, evaluation, explainability, an external test on a second dataset, August 2026 forecasts, monitoring with Evidently AI, and deployment as a web service on Render with a dashboard on Vercel. The supplied data contains 14{,}600 hourly records from 149 sensors, but readings exist on only eight days (1--3 January, 1--2 April and 1--3 June 2026). Following feedback on our presentation, PM10 was removed from the pipeline, so PM2.5 is predicted from temperature, humidity, time and sensor identity. Gaps are filled by windowed interpolation and time-of-day imputation, and a bidirectional LSTM imputer in the style of BRITS was added and tested. Extreme PM2.5 readings (1.5\% of readings) are replaced by the nearest normal reading of the same sensor. SMOTE was tested on the training data and left out because it made every model less accurate. Thirteen models were compared under three validation setups. The best forecast model, a tuned SVR, reaches MAE 9.34\ugm{} ($R^2$ 0.34) on the held-out June days. Adding the PM2.5 readings of the previous three hours to the tree models lowers this to 8.43\ugm{} ($R^2$ 0.42) and makes the models far more stable, but such models need recent readings and cannot forecast weeks ahead. On an external August dataset the forecast models are no better than predicting the training mean, while the models with PM2.5 history keep part of their skill (MAE 14.8\ugm). The bidirectional imputer is the most accurate imputer for gaps of six hours or more, but it does not improve the prediction models. With PM10 as an input the earlier version of the pipeline scored MAE 3.10\ugm; that accuracy depended on a second particle reading from the same instrument.
 \end{abstract}
+\clearpage
 
 \tableofcontents
 \newpage
@@ -596,7 +591,7 @@ Five models were retrained with the weather features cleaned by each method, und
 \label{tab:down}
 \begin{tabular}{lrrr}
 \toprule
-Model & (a) Interpolation only & (b) Time-of-day & (c) Bidirectional LSTM \\
+Model & (a) Interpolation & (b) Time-of-day & (c) BiLSTM \\
 \midrule
 SVR & 9.34 & 9.34 & 9.38 \\
 LightGBM & 9.94 & 9.82 & 9.74 \\
@@ -772,9 +767,16 @@ Of the 2{,}086 sensor-days, 2{,}082 are forecast as Moderate and four as Unhealt
 
 Evidently 0.7.23~\cite{evidently} compares a \emph{reference} dataset, the training period (11{,}633 rows), with a \emph{current} dataset, the test period (2{,}642 rows). The Evidently cells are wrapped so that an Evidently error cannot crash the pipeline, as the brief requires.
 
-\textbf{Data drift.} For each feature Evidently reports a drift score: the normed Wasserstein distance for numeric features and the Jensen--Shannon distance for categorical or low-cardinality features, with a threshold of 0.1. Eight of nine features drifted (share 0.89). The largest scores are day of week (1.43 and 1.19) and month (0.65), because the test window holds only two weekdays of one month; temperature and humidity drifted moderately (0.36 and 0.37) and hour of day barely (0.08 and 0.15). The alert means ``the current data is not representative of what the model was trained on'' rather than ``pollution behaviour has changed''.
+\textbf{Data drift.} For each feature Evidently reports a drift score: the normed Wasserstein distance for numeric features and the Jensen--Shannon distance for categorical or low-cardinality features, with a threshold of 0.1. Eight of nine features drifted (share 0.89). The largest scores are day of week (1.43 and 1.19) and month (0.65), because the test window holds only two weekdays of one month; temperature and humidity drifted moderately (0.36 and 0.37) and hour of day barely (0.08 and 0.15). The alert means ``the current data is not representative of what the model was trained on'' rather than ``pollution behaviour has changed'' (Figure~\ref{fig:drift}).
 
-\textbf{Model drift.} Table~\ref{tab:modeldrift} compares the selected forecast model on the two periods. Error rises from reference to current; part of that is expected because reference predictions are in-sample. The mean prediction (22.4\ugm) stays close to the mean actual value (23.4\ugm), so the model is not systematically biased on the test period.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{monitoring_drift_scores.png}
+\caption{Evidently data-drift scores, training period against test period. Orange bars exceed the 0.1 threshold.}
+\label{fig:drift}
+\end{figure}
+
+\textbf{Model drift.} Table~\ref{tab:modeldrift} and Figure~\ref{fig:modeldrift} compare the selected forecast model on the two periods. Error rises from reference to current; part of that is expected because reference predictions are in-sample. The mean prediction (22.4\ugm) stays close to the mean actual value (23.4\ugm), so the model is not systematically biased on the test period.
 
 \begin{table}[H]
 \centering
@@ -790,19 +792,43 @@ Current (test) & 9.34 & 15.14 & 0.34 \\
 \end{tabular}
 \end{table}
 
-A second drift report compares the training data with the August dataset (7 of 9 features drifted).
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth]{monitoring_model_drift.png}
+\caption{Model drift: MAE, RMSE and $R^2$ of the selected forecast model on the reference (training) and current (test) periods.}
+\label{fig:modeldrift}
+\end{figure}
+
+The mean error on the test period is $-0.97$\ugm{} with a standard deviation of 15.1\ugm, the mean absolute percentage error is 44.9\%, and the largest single error is 134\ugm. The model is therefore close to unbiased on average but can miss individual hours by a wide margin, which matches the residual plots in Section~\ref{sec:results}.
+
+\textbf{Drift against the August dataset.} A second drift report compares the training data with the August dataset (Figure~\ref{fig:drift2}). Seven of nine features drifted. Month and sensor drift most (0.83 and 0.78), because August and eight of its sensors were never seen in training; humidity drifted more than against the test period (0.55 against 0.37), and hour of day did not drift. This is the input-side explanation of the weak August results in Section~\ref{sec:second}: the model is being asked about a month, sensors and humidity levels outside its training data. In production, a drift share this high together with a rising error on newly labelled readings would trigger retraining.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{monitoring_second_dataset_drift.png}
+\caption{Evidently data-drift scores, training data against the August dataset.}
+\label{fig:drift2}
+\end{figure}
 
 %==================================================================== 13
 \section{Deployment}
 
-\subsection{Choice of cloud platform}
+The pipeline is deployed in three parts: the training pipeline is the notebook, verified end to end (Section~\ref{sec:local}); the trained model is served as a web service on \textbf{Render}; and a dashboard that uses that service is hosted on \textbf{Vercel}.
 
-The brief proposed RunPod, a pay-as-you-go GPU cloud. RunPod requires credit to be bought in advance, which became financially straining for the group, so we moved the deployment to \textbf{Kaggle}, which provides free cloud notebooks and runs a saved notebook as a batch job while keeping each run's log and output files.
+\subsection{Choice of platforms}
+
+The brief proposed RunPod, a pay-as-you-go GPU cloud. RunPod requires credit to be bought in advance, which became financially straining for the group. The first version of the pipeline was therefore run in the cloud on Kaggle and its forecasts were published as a static demo on Hugging Face; a Hugging Face Space that runs Python on a server needed a paid plan, so that demo could only display saved forecasts and could not run the model.
+
+For the revised pipeline we wanted the model itself to answer requests. Render and Vercel both have free tiers and fit the two halves of the problem:
+\begin{itemize}
+\item \textbf{Render} runs a long-lived Python web service, which is what loading a scikit-learn model and predicting on request needs.
+\item \textbf{Vercel} hosts the front end, a web dashboard that calls the Render service from the visitor's browser.
+\end{itemize}
 
 \subsection{Local verification}
 \label{sec:local}
 
-The revised pipeline was run cleanly end to end locally with the pinned package versions in \texttt{requirements.txt} (Table~\ref{tab:local}).
+The revised pipeline was first run cleanly end to end locally with the pinned package versions in \texttt{requirements.txt} (Table~\ref{tab:local}).
 
 \begin{table}[H]
 \centering
@@ -823,37 +849,60 @@ Standalone inference script & Identical predictions to the notebook on all 2{,}6
 \end{tabularx}
 \end{table}
 
-The runtime is much longer than in the earlier version (11 minutes) because every model is refitted for seven validation folds, the bidirectional imputer is retrained per fold, and the second-dataset test, SHAP and maps were added. The packages added to \texttt{requirements.txt} are \texttt{lightgbm}, \texttt{imbalanced-learn}, \texttt{tensorflow}, \texttt{shap}, \texttt{geopandas} and \texttt{shapely}.
+The runtime is much longer than in the earlier version (11 minutes) because every model is refitted for seven validation folds, the bidirectional imputer is retrained per fold, and the second-dataset test, SHAP and maps were added. Training needs \texttt{lightgbm}, \texttt{imbalanced-learn}, \texttt{tensorflow}, \texttt{shap}, \texttt{geopandas} and \texttt{shapely} in addition to the original packages.
 
-\subsection{Deployment on Kaggle and Hugging Face}
+\subsection{Model service on Render}
 
-The deployment steps on Kaggle are: import \texttt{train.ipynb}, attach the sensor CSV files as a Kaggle dataset, install the pinned package versions, and run the whole pipeline with \emph{Save \& Run All}. The final notebook section writes the runtime log and resulting metrics to \texttt{kaggle\_run\_log.txt} and \texttt{kaggle\_run\_metrics.json}.
+The saved forecast model (\texttt{best\_pm25\_model.joblib}: the SVR pipeline with its preprocessing, the target scaler and the feature lists) is served by a small Python web service on Render at \addurl{Render service URL}.
 
-\textbf{Status.} The Kaggle run and the Hugging Face model and demo (\url{https://huggingface.co/Kyalis/airqo-pm25-random-forest} and \url{https://huggingface.co/spaces/Kyalis/airqo-pm25-forecasts}) were made with the earlier, PM10-based version of the pipeline. They must be repeated with the revised notebook before submission; Table~\ref{tab:kaggle} is to be completed from that run.
+\begin{itemize}
+\item \textbf{Small footprint.} The service only needs the packages required to load the model and predict. They are pinned in \texttt{requirements-render.txt}: \texttt{numpy}, \texttt{pandas}, \texttt{scikit-learn}, \texttt{scipy} and \texttt{joblib}. TensorFlow, LightGBM, SHAP and the mapping libraries are needed for training and analysis only, so they are not installed on the server. The model file is 1.2 MB and a single prediction takes about 10\,ms, which suits a free instance.
+\item \textbf{Interface.} The service accepts a JSON \texttt{POST} request to \texttt{/predict} with the place (sensor), the date and time in UTC, the temperature and the humidity, and returns the predicted PM2.5 in \ugm{} together with its AQI category. The time features (hour, day of week and month as sine and cosine pairs) are derived from the timestamp, exactly as in training, and the prediction is transformed back from the Z-score scale with the saved target scaler.
+\item \textbf{Same code path as the notebook.} The service uses the serialised pipeline unchanged, so preprocessing is identical to training. The standalone inference script reproduced the notebook's predictions exactly on all 2{,}642 test rows.
+\end{itemize}
 
-\begin{table}[H]
+\subsection{Dashboard on Vercel}
+
+The dashboard is hosted on Vercel at \addurl{Vercel dashboard URL}. It shows model estimates of hourly PM2.5 for the AirQo sensors for August 2026 and reports whether the model service is connected.
+
+\begin{itemize}
+\item \textbf{Filters and summary} (Figure~\ref{fig:dep1}). The user chooses a place, a date range and an hourly or daily resolution. The page shows the mean, maximum and minimum predicted PM2.5 with their AQI categories, and the share of time in each category. Every panel states what the inputs are: for the place shown, 97\% of hours use observed August temperature and humidity and 3\% use the place's typical hourly profile, which is labelled as assumed.
+\item \textbf{Predicted against actual} (Figure~\ref{fig:dep2}). The predicted series is drawn over the AQI category bands, with the actual sensor readings where they exist and the MAE and RMSE against them for the selected range.
+\item \textbf{Calendar and map} (Figure~\ref{fig:dep3}). A daily calendar of the mean predicted PM2.5 in the category colours, and a map of the places coloured by their mean predicted category. The 143 of 149 places that have coordinates in the source data are shown.
+\item \textbf{Try the model.} A form sends a place, date and time, temperature and humidity to the service's \texttt{/predict} endpoint and shows the prediction, its category and the exact request that was sent.
+\end{itemize}
+
+\begin{figure}[H]
 \centering
-\caption{Runtime log and resulting metrics of the Kaggle run of the revised pipeline.}
-\label{tab:kaggle}
-\begin{tabularx}{\textwidth}{l L}
-\toprule
-Item & Kaggle run \\
-\midrule
-Hardware (CPUs, RAM, GPU) & \tofill{CPUs / RAM / GPU line} \\
-Start and end time (UTC) & \tofill{Started / Finished lines} \\
-Pipeline runtime & \tofill{Runtime line} \\
-Peak RAM & \tofill{Peak RAM line} \\
-Selected model & \tofill{expected SVR (tuned)} \\
-Test MAE / RMSE / $R^2$ & \tofill{expected 9.341 / 15.138 / 0.338} \\
-AQI category accuracy & \tofill{expected 75.2\%} \\
-Forecasts & \tofill{expected 2{,}086 daily and 3{,}576 hourly rows} \\
-Evidently monitoring & \tofill{expected 8 of 9 columns drifted} \\
-Cost & Free (Kaggle notebook) \\
-\bottomrule
-\end{tabularx}
-\end{table}
+\includegraphics[width=\textwidth]{deplyment1.png}
+\caption{Dashboard: filters, summary of predicted PM2.5 and share of time in each category.}
+\label{fig:dep1}
+\end{figure}
 
-A standalone script (\texttt{pm25\_inference.py}) produces batch predictions from a CSV of features. It reads the required columns from the saved model, so it works with both the forecast and the nowcast artifact, and it reproduced the notebook's predictions exactly.
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{deployment2.png}
+\caption{Dashboard: predicted PM2.5 over the AQI category bands, with the actual sensor readings and the error against them.}
+\label{fig:dep2}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{deployment3.png}
+\caption{Dashboard: daily calendar of predicted PM2.5 and map of the places.}
+\label{fig:dep3}
+\end{figure}
+
+\textbf{What the deployment shows about the model.} The dashboard is honest about the model's limits. For the place in Figure~\ref{fig:dep2} the predicted line stays between about 20 and 50\ugm{} while the actual readings spike above 150\ugm, and the error against the actual August readings is MAE 21.2\ugm{} (RMSE 31.4\ugm). That agrees with the external test in Section~\ref{sec:second}: the forecast model predicts a typical daily pattern and does not anticipate episodes.
+
+\subsection{Limitations of the deployment}
+
+\begin{itemize}
+\item \textbf{Forecast model only.} The service runs the forecast model (SVR). The more accurate model with PM2.5 history is saved but not served, because it needs the sensor's readings from the previous three hours with every request.
+\item \textbf{Free tiers.} A free Render instance stops when idle and takes time to start again on the first request, and it has limited memory, which is why the service installs only the small set of packages above.
+\item \textbf{No automatic retraining.} The service loads a fixed model file. Retraining still means running the notebook and redeploying the new file.
+\item \textbf{Earlier deployments.} The Kaggle run and the Hugging Face model card and static demo were made with the first, PM10-based version of the pipeline and do not reflect the revised model.
+\end{itemize}
 
 %==================================================================== 14
 \section{Discussion and limitations}
@@ -865,7 +914,7 @@ A standalone script (\texttt{pm25\_inference.py}) produces batch predictions fro
 \item \textbf{Extreme values.} Replacing extreme readings lowers the reported errors; scored against the untouched readings the best models' MAEs are about 1.3\ugm{} higher. The replacement rule uses each sensor's whole record, and it was not applied to the second dataset.
 \item \textbf{SMOTE} was evaluated and rejected on evidence; the cross-validation used to choose its strength was itself unstable because the folds come from different bursts.
 \item \textbf{Imputation.} The bidirectional imputer's PM2.5 fills are too smooth to serve as training targets, and its benefit for prediction is negligible on this data.
-\item \textbf{Deployment.} The cloud run and the public demo still reflect the earlier version and must be redone.
+\item \textbf{Deployment.} The live service runs the forecast model only, on free hosting tiers; the model with PM2.5 history is not served.
 \end{itemize}
 
 \subsection{Future development}
@@ -968,7 +1017,8 @@ File & Purpose \\
 \texttt{Sensor Data Jan - July 2026.csv} & Main dataset \\
 \texttt{AirQo\_August\_2026\_hourly\_matched\_partial.csv} & Second dataset (external test) \\
 \texttt{data/uganda\_adm1\_boundaries.geojson} & Regional boundaries for the maps \\
-\texttt{DEPLOYMENT.md} & Step-by-step instructions for running the pipeline on Kaggle \\
+\texttt{requirements-render.txt} & Packages installed by the model service on Render \\
+\texttt{report/make\_monitoring\_figures.py} & Draws the monitoring figures from the Evidently outputs \\
 \texttt{serve\_model.py} & HTTP prediction endpoint (\texttt{GET /health}, \texttt{POST /predict}) \\
 \texttt{pm25\_inference.py} & Command-line batch inference from a CSV of features \\
 \texttt{best\_pm25\_model.joblib} & The forecast model, target scaler and feature lists \\
