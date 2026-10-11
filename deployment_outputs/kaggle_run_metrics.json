@@ -1,0 +1,364 @@
+{
+  "run_started_utc": "2026-10-10T18:21:38+00:00",
+  "run_finished_utc": "2026-10-10T19:05:34+00:00",
+  "runtime_seconds": 2635.6,
+  "peak_ram_mb": 1702.8,
+  "environment": {
+    "platform": "Local machine",
+    "kaggle_kernel_run_type": null,
+    "python_version": "3.13.7",
+    "os": "Windows-11-10.0.26300-SP0",
+    "logical_cpus": 16,
+    "total_ram_gb": 15.3,
+    "gpu": {
+      "available": false
+    }
+  },
+  "pipeline": {
+    "raw_rows": 14600,
+    "sensors": 149,
+    "resampled_rows": 758112,
+    "rows_with_observed_pm25": 14275,
+    "training_rows": 11633,
+    "test_rows": 2642
+  },
+  "selected_model": {
+    "name": "Random Forest (untuned baseline)",
+    "test_mae_ug_m3": 11.78,
+    "test_rmse_ug_m3": 25.206,
+    "test_r2": -0.324,
+    "test_aqi_category_accuracy": 0.719
+  },
+  "all_models": [
+    {
+      "model": "Random Forest (untuned baseline)",
+      "MAE_ug_m3": 11.78,
+      "RMSE_ug_m3": 25.206,
+      "R2_ug_m3": -0.324
+    },
+    {
+      "model": "Random Forest (tuned)",
+      "MAE_ug_m3": 11.83,
+      "RMSE_ug_m3": 25.307,
+      "R2_ug_m3": -0.334
+    },
+    {
+      "model": "KNN (tuned)",
+      "MAE_ug_m3": 12.055,
+      "RMSE_ug_m3": 21.424,
+      "R2_ug_m3": 0.044
+    },
+    {
+      "model": "LSTM (weather + time + PM2.5 history)",
+      "MAE_ug_m3": 12.606,
+      "RMSE_ug_m3": 19.231,
+      "R2_ug_m3": 0.23
+    },
+    {
+      "model": "LSTM (weather + time)",
+      "MAE_ug_m3": 13.421,
+      "RMSE_ug_m3": 21.972,
+      "R2_ug_m3": -0.006
+    },
+    {
+      "model": "LightGBM (tuned)",
+      "MAE_ug_m3": 21.876,
+      "RMSE_ug_m3": 31.382,
+      "R2_ug_m3": -1.052
+    },
+    {
+      "model": "SVR (tuned)",
+      "MAE_ug_m3": 22.241,
+      "RMSE_ug_m3": 26.383,
+      "R2_ug_m3": -0.45
+    },
+    {
+      "model": "Ridge Regression (tuned)",
+      "MAE_ug_m3": 31.977,
+      "RMSE_ug_m3": 36.482,
+      "R2_ug_m3": -1.773
+    },
+    {
+      "model": "Linear Regression (tuned)",
+      "MAE_ug_m3": 32.385,
+      "RMSE_ug_m3": 38.821,
+      "R2_ug_m3": -2.14
+    },
+    {
+      "model": "Polynomial Regression (tuned)",
+      "MAE_ug_m3": 32.385,
+      "RMSE_ug_m3": 38.821,
+      "R2_ug_m3": -2.14
+    }
+  ],
+  "validation_setups": [
+    {
+      "setup": "Chronological hold-out",
+      "model": "Baseline (training mean)",
+      "MAE": 19.204,
+      "RMSE": 23.944,
+      "R2": -0.194
+    },
+    {
+      "setup": "Chronological hold-out",
+      "model": "KNN (tuned)",
+      "MAE": 12.055,
+      "RMSE": 21.424,
+      "R2": 0.044
+    },
+    {
+      "setup": "Chronological hold-out",
+      "model": "LSTM (weather + time + PM2.5 history)",
+      "MAE": 12.606,
+      "RMSE": 19.231,
+      "R2": 0.23
+    },
+    {
+      "setup": "Chronological hold-out",
+      "model": "LSTM (weather + time)",
+      "MAE": 13.421,
+      "RMSE": 21.972,
+      "R2": -0.006
+    },
+    {
+      "setup": "Chronological hold-out",
+      "model": "LightGBM (tuned)",
+      "MAE": 21.876,
+      "RMSE": 31.382,
+      "R2": -1.052
+    },
+    {
+      "setup": "Chronological hold-out",
+      "model": "Linear Regression (tuned)",
+      "MAE": 32.385,
+      "RMSE": 38.821,
+      "R2": -2.14
+    },
+    {
+      "setup": "Chronological hold-out",
+      "model": "Polynomial Regression (tuned)",
+      "MAE": 32.385,
+      "RMSE": 38.821,
+      "R2": -2.14
+    },
+    {
+      "setup": "Chronological hold-out",
+      "model": "Random Forest (tuned)",
+      "MAE": 11.83,
+      "RMSE": 25.307,
+      "R2": -0.334
+    },
+    {
+      "setup": "Chronological hold-out",
+      "model": "Random Forest (untuned baseline)",
+      "MAE": 11.78,
+      "RMSE": 25.206,
+      "R2": -0.324
+    },
+    {
+      "setup": "Chronological hold-out",
+      "model": "Ridge Regression (tuned)",
+      "MAE": 31.977,
+      "RMSE": 36.482,
+      "R2": -1.773
+    },
+    {
+      "setup": "Chronological hold-out",
+      "model": "SVR (tuned)",
+      "MAE": 22.241,
+      "RMSE": 26.383,
+      "R2": -0.45
+    },
+    {
+      "setup": "Expanding-window CV",
+      "model": "Baseline (training mean)",
+      "MAE": 25.417,
+      "RMSE": 33.58,
+      "R2": -0.872
+    },
+    {
+      "setup": "Expanding-window CV",
+      "model": "KNN (tuned)",
+      "MAE": 18.156,
+      "RMSE": 29.84,
+      "R2": -0.455
+    },
+    {
+      "setup": "Expanding-window CV",
+      "model": "LSTM (weather + time + PM2.5 history)",
+      "MAE": 13.814,
+      "RMSE": 25.278,
+      "R2": 0.045
+    },
+    {
+      "setup": "Expanding-window CV",
+      "model": "LSTM (weather + time)",
+      "MAE": 23.822,
+      "RMSE": 34.971,
+      "R2": -1.508
+    },
+    {
+      "setup": "Expanding-window CV",
+      "model": "LightGBM (tuned)",
+      "MAE": 23.413,
+      "RMSE": 34.415,
+      "R2": -1.488
+    },
+    {
+      "setup": "Expanding-window CV",
+      "model": "Linear Regression (tuned)",
+      "MAE": 26.856,
+      "RMSE": 37.957,
+      "R2": -1.875
+    },
+    {
+      "setup": "Expanding-window CV",
+      "model": "Polynomial Regression (tuned)",
+      "MAE": 26.786,
+      "RMSE": 37.93,
+      "R2": -1.877
+    },
+    {
+      "setup": "Expanding-window CV",
+      "model": "Random Forest (tuned)",
+      "MAE": 30.675,
+      "RMSE": 39.551,
+      "R2": -2.035
+    },
+    {
+      "setup": "Expanding-window CV",
+      "model": "Random Forest (untuned baseline)",
+      "MAE": 30.573,
+      "RMSE": 39.372,
+      "R2": -2.035
+    },
+    {
+      "setup": "Expanding-window CV",
+      "model": "Ridge Regression (tuned)",
+      "MAE": 26.428,
+      "RMSE": 37.652,
+      "R2": -1.907
+    },
+    {
+      "setup": "Expanding-window CV",
+      "model": "SVR (tuned)",
+      "MAE": 18.483,
+      "RMSE": 29.751,
+      "R2": -0.333
+    },
+    {
+      "setup": "Leave-sensors-out",
+      "model": "Baseline (training mean)",
+      "MAE": 21.411,
+      "RMSE": 30.01,
+      "R2": -0.023
+    },
+    {
+      "setup": "Leave-sensors-out",
+      "model": "KNN (tuned)",
+      "MAE": 17.569,
+      "RMSE": 29.178,
+      "R2": 0.005
+    },
+    {
+      "setup": "Leave-sensors-out",
+      "model": "LSTM (weather + time + PM2.5 history)",
+      "MAE": 10.852,
+      "RMSE": 20.644,
+      "R2": 0.526
+    },
+    {
+      "setup": "Leave-sensors-out",
+      "model": "LSTM (weather + time)",
+      "MAE": 16.391,
+      "RMSE": 26.171,
+      "R2": 0.233
+    },
+    {
+      "setup": "Leave-sensors-out",
+      "model": "LightGBM (tuned)",
+      "MAE": 16.189,
+      "RMSE": 26.3,
+      "R2": 0.224
+    },
+    {
+      "setup": "Leave-sensors-out",
+      "model": "Linear Regression (tuned)",
+      "MAE": 17.186,
+      "RMSE": 27.301,
+      "R2": 0.161
+    },
+    {
+      "setup": "Leave-sensors-out",
+      "model": "Polynomial Regression (tuned)",
+      "MAE": 18.956,
+      "RMSE": 28.076,
+      "R2": 0.099
+    },
+    {
+      "setup": "Leave-sensors-out",
+      "model": "Random Forest (tuned)",
+      "MAE": 15.744,
+      "RMSE": 26.964,
+      "R2": 0.185
+    },
+    {
+      "setup": "Leave-sensors-out",
+      "model": "Random Forest (untuned baseline)",
+      "MAE": 15.725,
+      "RMSE": 26.936,
+      "R2": 0.186
+    },
+    {
+      "setup": "Leave-sensors-out",
+      "model": "Ridge Regression (tuned)",
+      "MAE": 18.764,
+      "RMSE": 27.781,
+      "R2": 0.12
+    },
+    {
+      "setup": "Leave-sensors-out",
+      "model": "SVR (tuned)",
+      "MAE": 18.219,
+      "RMSE": 27.184,
+      "R2": 0.154
+    }
+  ],
+  "forecasts": {
+    "daily_rows": 2086,
+    "hourly_rows": 3576,
+    "daily_aqi_counts": {
+      "Moderate": 1944,
+      "Unhealthy for Sensitive Groups": 92,
+      "Unhealthy": 36,
+      "Hazardous": 14
+    }
+  },
+  "prediction_latency_ms": {
+    "single_row_ms": 112.4,
+    "hourly_forecast_batch_rows": 3576,
+    "hourly_forecast_batch_ms": 143.12,
+    "two_week_forecast_batch_rows": 50064,
+    "two_week_forecast_batch_ms": 375.7,
+    "two_week_forecast_us_per_row": 7.5
+  },
+  "monitoring": {
+    "evidently_completed": true,
+    "evidently_error": null,
+    "drifted_columns": 8,
+    "columns_checked": 9
+  },
+  "artifacts_mb": {
+    "best_pm25_model.joblib": 81.65,
+    "daily_pm25_predictions_august_1_to_14.csv": 0.18,
+    "deployment_metadata.json": 0.0,
+    "evidently_monitoring_summary.csv": 0.0,
+    "hourly_pm25_predictions_august_1.csv": 0.31,
+    "kaggle_run_log.txt": 0.0,
+    "kaggle_run_metrics.json": 0.01,
+    "model_validation_comparison.csv": 0.0,
+    "run_resource_report.json": 0.0,
+    "test_features_for_standalone_inference.csv": 0.34,
+    "test_predictions_standalone.csv": 0.42
+  }
+}
