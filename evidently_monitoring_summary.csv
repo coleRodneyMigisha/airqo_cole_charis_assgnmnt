@@ -1,8 +1,8 @@
 monitoring_component,reference_value,current_value,interpretation
 Data drift,8 of 9 columns drifted,8 of 9 columns drifted,Mostly calendar and sensor-coverage drift; interpret cautiously.
-Model MAE,6.37236091025854,11.779923986256748,Higher current error than in-sample reference error.
-Model RMSE,12.046622326804924,25.205777376825417,Approximately stable between reference and current periods.
-Model R2,0.8556051627989313,-0.3235548839813245,Lower current explanatory performance than reference period.
+Model MAE,5.9002913506279855,9.340895884710271,Higher current error than in-sample reference error.
+Model RMSE,12.097739938410047,15.138281470529115,Approximately stable between reference and current periods.
+Model R2,0.8124907478470584,0.33773221996249436,Lower current explanatory performance than reference period.
 Temperature missingness,0.0,0.0,"Lower current missingness, but comparison window is very short."
 Humidity missingness,0.0,0.0,"Lower current missingness, but comparison window is very short."
 Sensor population,149,119,Current period contains fewer reporting sensors.
