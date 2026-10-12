@@ -1,9 +1,9 @@
 AirQo PM2.5 pipeline: run log (Local machine)
 ============================================================
-Started (UTC):      2026-10-11T17:43:07+00:00
-Finished (UTC):     2026-10-11T18:47:47+00:00
-Runtime:            64.7 min
-Peak RAM:           1270 MB
+Started (UTC):      2026-10-11T22:25:55+00:00
+Finished (UTC):     2026-10-11T23:21:52+00:00
+Runtime:            56.0 min
+Peak RAM:           1230 MB
 Python / OS:        3.13.7 / Windows-11-10.0.26300-SP0
 CPUs / RAM:         16 logical CPUs, 15.3 GB RAM
 GPU:                none (pipeline runs on CPU)
@@ -34,7 +34,7 @@ Selected model:     SVR (tuned)
 
 Forecasts:          2,086 daily rows, 3,576 hourly rows
 Evidently:          completed, 8 of 9 columns drifted
-Latency:            1 row 9.7 ms, 50,064 rows 16379 ms
+Latency:            1 row 13.8 ms, 50,064 rows 20672 ms
 
 Artifacts produced
   best_pm25_model.joblib                             1.17 MB

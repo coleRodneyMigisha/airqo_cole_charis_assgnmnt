@@ -59,7 +59,7 @@ No. & Name & Registration No. \\
 
 %-------------------------------------------------------------------- Abstract
 \begin{abstract}
-We built a complete pipeline that predicts hourly PM2.5 concentration from AirQo low-cost sensor data: data preparation, exploratory analysis, model training, evaluation, explainability, an external test on a second dataset, August 2026 forecasts, monitoring with Evidently AI, and deployment as a web service on Render with a dashboard on Vercel. The supplied data contains 14{,}600 hourly records from 149 sensors, but readings exist on only eight days (1--3 January, 1--2 April and 1--3 June 2026). Following feedback on our presentation, PM10 was removed from the pipeline, so PM2.5 is predicted from temperature, humidity, time and sensor identity. Gaps are filled by windowed interpolation and time-of-day imputation, and a bidirectional LSTM imputer in the style of BRITS was added and tested. Extreme PM2.5 readings (1.5\% of readings) are replaced by the nearest normal reading of the same sensor. SMOTE was tested on the training data and left out because it made every model less accurate. Thirteen models were compared under three validation setups. The best forecast model, a tuned SVR, reaches MAE 9.34\ugm{} ($R^2$ 0.34) on the held-out June days. Adding the PM2.5 readings of the previous three hours to the tree models lowers this to 8.43\ugm{} ($R^2$ 0.42) and makes the models far more stable, but such models need recent readings and cannot forecast weeks ahead. On an external August dataset the forecast models are no better than predicting the training mean, while the models with PM2.5 history keep part of their skill (MAE 14.8\ugm). The bidirectional imputer is the most accurate imputer for gaps of six hours or more, but it does not improve the prediction models. With PM10 as an input the earlier version of the pipeline scored MAE 3.10\ugm; that accuracy depended on a second particle reading from the same instrument.
+We built a complete pipeline that predicts hourly PM2.5 concentration from AirQo low-cost sensor data: data preparation, exploratory analysis, model training, evaluation, explainability, an external test on a second dataset, August 2026 forecasts, monitoring with Evidently AI, and deployment as a web service on Render with a dashboard on Vercel. The supplied data contains 14{,}600 hourly records from 149 sensors, but readings exist on only eight days (1--3 January, 1--2 April and 1--3 June 2026). Following feedback on our presentation, PM10 was removed from the pipeline, so PM2.5 is predicted from temperature, humidity, time and sensor identity. Gaps are filled by windowed interpolation and time-of-day imputation, and a bidirectional LSTM imputer in the style of BRITS was added and tested. Extreme PM2.5 readings (1.5\% of readings) are replaced by the nearest normal reading of the same sensor. SMOTE was tested on the training data and left out because it made every model less accurate. Thirteen models were compared under three validation setups. The best forecast model, a tuned SVR, reaches MAE 9.34\ugm{} ($R^2$ 0.34) on the held-out June days. Adding the PM2.5 readings of the previous three hours to the tree models lowers this to 8.43\ugm{} ($R^2$ 0.42) and makes the models far more stable, but such models need recent readings and cannot forecast weeks ahead. On an external dataset covering all of August for 125 of the sensors, the forecast models are no better than predicting the training mean, while the models with PM2.5 history keep part of their skill (MAE 13.7\ugm). The bidirectional imputer is the most accurate imputer for gaps of six hours or more, but it does not improve the prediction models. With PM10 as an input the earlier version of the pipeline scored MAE 3.10\ugm; that accuracy depended on a second particle reading from the same instrument.
 \end{abstract}
 \clearpage
 
@@ -131,7 +131,7 @@ Three properties of the data shaped every later decision:
 \item \textbf{Uneven sensors.} Devices contribute between 20 and 147 records (median 105).
 \end{enumerate}
 
-A second file, \texttt{AirQo\_August\_2026\_hourly\_matched\_partial.csv}, became available later and is used only as an external test set (Section~\ref{sec:second}).
+A second file, \texttt{AirQo\_August\_2026\_hourly\_matched.csv}, became available later and is used only as an external test set (Section~\ref{sec:second}).
 
 %==================================================================== 4
 \section{Data preparation}
@@ -602,14 +602,28 @@ LSTM with PM2.5 history & 10.20 & 10.89 & 9.48 \\
 \end{tabular}
 \end{table}
 
-The differences are small and no method is consistently best: over the fifteen model-and-setup combinations, (a) is best six times, (c) five times and (b) four times.
+The differences are small and no method is consistently best: over the fifteen model-and-setup combinations, (a) is best six times, (c) five times and (b) four times. Figure~\ref{fig:effectmae} shows this for all three setups: within each model the three bars are almost level, and the differences between models and between setups are far larger than the differences between imputation methods.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{brits_training_effect_mae.png}
+\caption{Prediction MAE of the five retrained models under the three validation setups, by the imputation method used for the weather features. Scores use real PM2.5 readings only.}
+\label{fig:effectmae}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth]{brits_training_effect_change.png}
+\caption{Change in prediction MAE when a model is trained on the bidirectional LSTM imputer's weather instead of the time-of-day weather. Negative values mean the bidirectional imputer helped.}
+\label{fig:effectchange}
+\end{figure}
 
 \subsection{Does the bidirectional LSTM imputation add value?}
 
 \begin{enumerate}
 \item \textbf{As an imputer, yes.} Against the time-of-day method its error is lower in every one of the fifteen variable-and-gap combinations, by 21\% on average: about half the error for one-hour weather gaps, 15 to 27\% lower for temperature at 6 to 12 hours, and 6 to 25\% lower for PM2.5.
 \item \textbf{What it adds to the real gaps: full coverage, but smoother values.} Interpolation can fill only 5 to 12\% of the values that are really missing; the time-of-day method and the bidirectional model fill all of them. The bidirectional model's fills are less varied than real readings: their standard deviation is 2.7\,\textdegree C against 4.1\,\textdegree C observed for temperature, and 11.9 against 26.8\ugm{} for PM2.5 (Figure~\ref{fig:britsfill}). It is more accurate on average because it predicts cautiously; it does not reproduce peaks.
-\item \textbf{For training, no reliable gain.} Training on its weather instead of the time-of-day weather changed the prediction MAE by $-0.4\%$ on average and helped in 7 of 15 cases. It helped the LSTMs on the hold-out ($-13\%$ and $-5\%$), hurt the SVR in the expanding-window CV ($+11\%$), and changed everything else by less than 1\%.
+\item \textbf{For training, no reliable gain.} Training on its weather instead of the time-of-day weather changed the prediction MAE by $-0.4\%$ on average and helped in 7 of 15 cases. It helped the LSTMs on the hold-out ($-13\%$ and $-5\%$), hurt the SVR in the expanding-window CV ($+11\%$), and changed everything else by about 1\% or less (Figure~\ref{fig:effectchange}).
 \end{enumerate}
 
 The bidirectional imputer is the right tool when the imputed values themselves are the product, especially for gaps of 6 to 12 hours. For training the PM2.5 models here it brings no reliable gain over the simpler time-of-day method, which the pipeline keeps, because weather is a minor input for these models (Section~\ref{sec:shap}).
@@ -620,6 +634,20 @@ The bidirectional imputer is the right tool when the imputed values themselves a
 \caption{Values filled into the real gaps by the time-of-day method and by the bidirectional model, against the observed readings.}
 \label{fig:britsfill}
 \end{figure}
+
+\subsection{Decision: which imputed data the final models are trained on}
+
+The final models, including the deployed forecast model and the models with PM2.5 history, are trained on weather filled by windowed interpolation followed by time-of-day imputation. The bidirectional LSTM imputer is kept in the notebook as a tested method, but its values are not used to train the final models, and the remaining models were not retrained on it. The reasons are:
+
+\begin{itemize}
+\item \textbf{The test showed no reliable benefit.} Across five models and three validation setups the prediction MAE changed by $-0.4\%$ on average and improved in 7 of 15 cases (Figures~\ref{fig:effectmae} and~\ref{fig:effectchange}).
+\item \textbf{There is little for it to improve.} The imputer fills only temperature and humidity, which carry a small share of what the models rely on (Section~\ref{sec:shap}).
+\item \textbf{The one clear gain does not change the outcome.} It lowered the hold-out MAE of the LSTMs (10.89 to 9.48\ugm{} with PM2.5 history, 12.22 to 11.56\ugm{} without), but they remain behind the tree models with PM2.5 history (8.43\ugm), so the best model and the deployed model would be the same.
+\item \textbf{Cost and simplicity.} The bidirectional imputer must be retrained for every data split and would add a neural network to the serving path. The time-of-day method needs no training and is easy to explain.
+\item \textbf{The untested models use the same inputs.} Ridge, Linear, Polynomial, KNN and the Random Forests use the same two weather features, so a different result from retraining them is not expected. This was not tested.
+\end{itemize}
+
+Independently of this decision, PM2.5 is never imputed for training or scoring. The decision should be revisited if weather becomes a stronger predictor (for example with forecast weather for multi-day forecasting), if gaps of 6 to 12 hours become common in the data being served, or if the imputed series itself is the deliverable; in those cases the masked-gap test shows the bidirectional imputer is the better choice.
 
 %==================================================================== 8
 \section{Model explainability with SHAP}
@@ -705,7 +733,7 @@ Error does not follow sensor density: its rank correlation with the distance to 
 \section{Second dataset test}
 \label{sec:second}
 
-The file \texttt{AirQo\_August\_2026\_hourly\_matched\_partial.csv} was used as an external test set with no retraining. It has 8{,}958 hourly rows from 17 sensors for 1--30 August 2026, with the same columns and units as the main file; its PM10 column is empty. Nine sensors were in the training data and eight are new, and five of the new ones are outside Uganda (four in Maputo province, Mozambique, and one in Pretoria, South Africa). August was more polluted than the hold-out days (mean PM2.5 35 against 23\ugm). The same cleaning was applied except the extreme-value replacement, so the models are scored against the original August readings.
+The file \texttt{AirQo\_August\_2026\_hourly\_matched.csv} was used as an external test set with no retraining. It has 73{,}274 hourly rows from 125 sensors for 1--31 August 2026, with the same columns and units as the main file. All 125 sensors are also in the main dataset and all are in Uganda. Its PM10 column was dropped and its zero temperature and humidity readings (about 14\%) were treated as missing, as in the main data. August was more polluted than the hold-out days (mean PM2.5 35.5 against 23\ugm). The extreme-value replacement was not applied to this file, so the models are scored against the original August readings.
 
 \begin{table}[H]
 \centering
@@ -716,23 +744,41 @@ The file \texttt{AirQo\_August\_2026\_hourly\_matched\_partial.csv} was used as 
  & \multicolumn{3}{c}{August 2026} & Hold-out \\
 Model & MAE & RMSE & $R^2$ & MAE \\
 \midrule
-Random Forest + PM2.5 history & 14.82 & 24.02 & 0.20 & 8.50 \\
-LightGBM + PM2.5 history & 14.94 & 24.18 & 0.19 & 8.43 \\
-LightGBM & 18.45 & 27.64 & $-0.06$ & 9.82 \\
-SVR (selected forecast model) & 18.47 & 28.51 & $-0.13$ & 9.34 \\
-LSTM (weather and time) & 19.27 & 27.09 & $-0.02$ & 12.22 \\
-Baseline (training mean) & 19.49 & 26.87 & $0.00$ & 17.60 \\
-Random Forest (untuned) & 19.62 & 30.03 & $-0.25$ & 9.61 \\
-LSTM with PM2.5 history & 20.13 & 27.36 & $-0.04$ & 10.89 \\
+Random Forest + PM2.5 history & 13.70 & 21.71 & 0.30 & 8.50 \\
+LightGBM + PM2.5 history & 14.02 & 22.14 & 0.27 & 8.43 \\
+SVR (selected forecast model) & 18.32 & 27.95 & $-0.16$ & 9.34 \\
+KNN & 18.65 & 27.58 & $-0.13$ & 10.01 \\
+LightGBM & 18.79 & 27.94 & $-0.16$ & 9.82 \\
+Random Forest (untuned) & 19.05 & 28.67 & $-0.22$ & 9.61 \\
+Baseline (training mean) & 19.21 & 26.04 & $-0.01$ & 17.60 \\
+LSTM with PM2.5 history & 19.31 & 25.59 & 0.03 & 10.89 \\
+LSTM (weather and time) & 19.47 & 26.61 & $-0.05$ & 12.22 \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-\textbf{Generalisation.} The forecast models do not generalise: they are barely better than always predicting the training mean (Table~\ref{tab:second}), and the forecast model predicts Moderate on all 30 days while the actual daily mean is Unhealthy for Sensitive Groups on 18 of them (Figure~\ref{fig:secondcal}). The tree models with PM2.5 history keep part of their skill (MAE 14.8\ugm, $R^2$ 0.20) and match the category on 16 of 30 days. On the eight sensors the models have never seen, LightGBM with history reaches an MAE of 9.3\ugm{} ($R^2$ 0.46), almost as good as on the main hold-out; on the nine known sensors it is 18.5\ugm, because the model's memory of those sensors pulls its predictions towards their cleaner training-period levels.
+\textbf{Generalisation.} The forecast models do not generalise to a new month: they are barely better than always predicting the training mean (Table~\ref{tab:second}), and the forecast model predicts Moderate on all 31 days while the actual daily mean is Unhealthy for Sensitive Groups on 16 of them (Figure~\ref{fig:secondcal}). The tree models with PM2.5 history keep part of their skill (MAE 13.7 and 14.0\ugm, $R^2$ about 0.3) and match the category on 17 of 31 days. Every sensor in this file was seen in training, so unfamiliar sensors are not the explanation: the models know these sensors, but only at their January, April and June levels.
 
-The likely reasons for the drop are an unseen month (the largest SHAP driver of the forecast trees), eight unseen sensors, five sensors in another country and season, and a more polluted, less humid period. Evidently flags 7 of 9 input features as drifted between the training data and August. Missingness is not a cause: the August sensors are more complete than the main ones.
+The likely reasons for the drop are an unseen month (month is the largest SHAP driver of the forecast trees), a more polluted period, and too little training data in time: six training days in three bursts cannot teach a model what a full month looks like. Evidently flags 6 of 9 input features as drifted between the training data and August (Figure~\ref{fig:drift2}). Missingness is not a cause: 76 of the 125 sensors are data-rich in August. Table~\ref{tab:secondclass} shows that the data-poor sensors have the lowest absolute error, because their sites were cleaner in August; relative to the mean level the three classes are alike.
 
-Imputation generalises much better. For temperature the fitted bidirectional model is as accurate on August as on the main hold-out (1.4\,\textdegree C at six hours and 2.0\,\textdegree C at 24 hours on both) and holds at 72 hours (2.3\,\textdegree C; time-of-day 2.5\,\textdegree C). The daily cycle of weather transfers to new sensors and places; PM2.5 levels do not, unless the model is given recent readings.
+\begin{table}[H]
+\centering
+\caption{Second dataset: MAE (\ugm) by sensor class, and the mean actual PM2.5 of each class.}
+\label{tab:secondclass}
+\begin{tabular}{lrrr}
+\toprule
+ & Data-rich & Intermediate & Data-poor \\
+\midrule
+Sensors & 76 & 31 & 18 \\
+Mean actual PM2.5 & 36.0 & 35.3 & 29.8 \\
+SVR (forecast model) & 18.72 & 18.08 & 14.32 \\
+LightGBM + PM2.5 history & 14.04 & 14.36 & 12.51 \\
+LSTM with PM2.5 history & 19.04 & 19.93 & 20.24 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Imputation generalises well. With the imputers fitted on the main training period and applied unchanged, the bidirectional model is as accurate on August as on the main hold-out for temperature (1.3\,\textdegree C at six hours and 1.8\,\textdegree C at 24 hours) and holds at 72 hours (2.0\,\textdegree C, the same as the time-of-day method). For PM2.5 it is the best method at every gap length from six hours up (13.9 to 16.7\ugm{} against 15.7 to 18.4\ugm{} for the time-of-day method). The daily cycle of weather transfers to a new month; PM2.5 levels do not, unless the model is given recent readings.
 
 \begin{figure}[H]
 \centering
@@ -753,7 +799,7 @@ Imputation generalises much better. For temperature the fitted bidirectional mod
 
 The saved forecast model (SVR) produced daily forecasts for all 149 sensors for 1--14 August 2026 (2{,}086 sensor-days) and hourly forecasts for 1 August 2026 (3{,}576 sensor-hours). August lies outside the main data, so the time features are computed from the forecast timestamps, while temperature and humidity are each sensor's typical value for that hour of day. All forecast checks passed: correct row counts, all sensors and days, and no missing or negative predictions.
 
-Of the 2{,}086 sensor-days, 2{,}082 are forecast as Moderate and four as Unhealthy for Sensitive Groups (Figure~\ref{fig:fccal}). The forecasts repeat each sensor's typical pattern; they do not react to actual conditions. The second dataset shows how far that is from reality: the actual August daily mean was above Moderate on 18 of 30 days. Reliable forecasts beyond a few hours would need recent readings or forecast weather as inputs.
+Of the 2{,}086 sensor-days, 2{,}082 are forecast as Moderate and four as Unhealthy for Sensitive Groups (Figure~\ref{fig:fccal}). The forecasts repeat each sensor's typical pattern; they do not react to actual conditions. The second dataset shows how far that is from reality: the actual August daily mean was above Moderate on 16 of 31 days. Reliable forecasts beyond a few hours would need recent readings or forecast weather as inputs.
 
 \begin{figure}[H]
 \centering
@@ -801,7 +847,7 @@ Current (test) & 9.34 & 15.14 & 0.34 \\
 
 The mean error on the test period is $-0.97$\ugm{} with a standard deviation of 15.1\ugm, the mean absolute percentage error is 44.9\%, and the largest single error is 134\ugm. The model is therefore close to unbiased on average but can miss individual hours by a wide margin, which matches the residual plots in Section~\ref{sec:results}.
 
-\textbf{Drift against the August dataset.} A second drift report compares the training data with the August dataset (Figure~\ref{fig:drift2}). Seven of nine features drifted. Month and sensor drift most (0.83 and 0.78), because August and eight of its sensors were never seen in training; humidity drifted more than against the test period (0.55 against 0.37), and hour of day did not drift. This is the input-side explanation of the weak August results in Section~\ref{sec:second}: the model is being asked about a month, sensors and humidity levels outside its training data. In production, a drift share this high together with a rising error on newly labelled readings would trigger retraining.
+\textbf{Drift against the August dataset.} A second drift report compares the training data with the August dataset (Figure~\ref{fig:drift2}). Six of nine features drifted. Month drifts most (0.83), because August was never seen in training, followed by day of week (0.75 and 0.61), humidity (0.26) and the mix of sensors (0.25); temperature and hour of day did not drift. This is the input-side explanation of the weak August results in Section~\ref{sec:second}: the model is being asked about a month outside its training data. In production, a drift share this high together with a rising error on newly labelled readings would trigger retraining.
 
 \begin{figure}[H]
 \centering
@@ -839,11 +885,11 @@ The revised pipeline was first run cleanly end to end locally with the pinned pa
 Check & Result \\
 \midrule
 Full notebook run & 346 code cells executed, 0 errors, 70 figures \\
-Pipeline runtime & 3{,}881\,s (about 65 minutes), CPU only \\
-Peak RAM & 1{,}270 MB \\
+Pipeline runtime & 3{,}357\,s (about 56 minutes), CPU only \\
+Peak RAM & 1{,}230 MB \\
 Forecast model artifact & 1.2 MB (SVR pipeline, target scaler, feature lists) \\
 Nowcast model artifact & 0.6 MB (LightGBM with PM2.5 history) \\
-Prediction latency (forecast model) & 1 row: 10\,ms; 3{,}576 rows: 1.2\,s; 50{,}064 rows: 16.4\,s \\
+Prediction latency (forecast model) & 1 row: 14\,ms; 3{,}576 rows: 1.4\,s; 50{,}064 rows: 20.7\,s \\
 Standalone inference script & Identical predictions to the notebook on all 2{,}642 test rows \\
 \bottomrule
 \end{tabularx}
@@ -908,7 +954,7 @@ The dashboard is hosted on Vercel at \addurl{Vercel dashboard URL}. It shows mod
 \section{Discussion and limitations}
 
 \begin{itemize}
-\item \textbf{Little data in time.} Eight days in three bursts cannot capture seasonal patterns. The three validation setups disagree on the ranking of the forecast models, and the external August test shows that the forecast models do not transfer to a new month.
+\item \textbf{Little data in time.} Eight days in three bursts cannot capture seasonal patterns. The three validation setups disagree on the ranking of the forecast models, and the external August test, on 125 of the same sensors, shows that the forecast models do not transfer to a new month.
 \item \textbf{Weak predictors without PM10.} With PM10 the earlier Random Forest scored MAE 3.10\ugm{} ($R^2$ 0.90). Without it, weather, time and sensor identity explain little of hourly PM2.5; the recent PM2.5 readings are the only strong signal available.
 \item \textbf{Forecast and nowcast are different tasks.} The models with PM2.5 history are the most accurate but need recent readings from the sensor, so they cannot produce the two-week forecast.
 \item \textbf{Extreme values.} Replacing extreme readings lowers the reported errors; scored against the untouched readings the best models' MAEs are about 1.3\ugm{} higher. The replacement rule uses each sensor's whole record, and it was not applied to the second dataset.
@@ -1015,7 +1061,7 @@ File & Purpose \\
 \texttt{train.ipynb} & The full pipeline, from raw data to deployment outputs \\
 \texttt{requirements.txt} & Pinned package versions (Python 3.11+) \\
 \texttt{Sensor Data Jan - July 2026.csv} & Main dataset \\
-\texttt{AirQo\_August\_2026\_hourly\_matched\_partial.csv} & Second dataset (external test) \\
+\texttt{AirQo\_August\_2026\_hourly\_matched.csv} & Second dataset (external test) \\
 \texttt{data/uganda\_adm1\_boundaries.geojson} & Regional boundaries for the maps \\
 \texttt{requirements-render.txt} & Packages installed by the model service on Render \\
 \texttt{report/make\_monitoring\_figures.py} & Draws the monitoring figures from the Evidently outputs \\

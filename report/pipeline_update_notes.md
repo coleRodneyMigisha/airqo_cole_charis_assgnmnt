@@ -1,6 +1,6 @@
 # AirQo PM2.5 pipeline: change notes
 
-The full write-up is now in `report/main.tex`. These notes list what changed in each round and the headline numbers of the current run, so the report can be checked against them. All numbers come from the run stored in `train.ipynb` (local machine, Python 3.13, about 65 minutes, 346 code cells, 0 errors, 70 figures). Figures are in `report/figures/`.
+The full write-up is now in `report/main.tex`. These notes list what changed in each round and the headline numbers of the current run, so the report can be checked against them. All numbers come from the run stored in `train.ipynb` (local machine, Python 3.13, about 56 minutes, 346 code cells, 0 errors, 70 figures). Figures are in `report/figures/`.
 
 ## Current headline results
 
@@ -32,10 +32,27 @@ MAE and RMSE are in µg/m³. The full table is in `deployment_outputs/model_vali
    - For training it brings no reliable gain: prediction MAE changed by −0.4 % on average and improved in 7 of 15 cases.
 7. **Report** (`report/main.tex`) rewritten for the current pipeline, with the UCU logo on the title page (`report/figures/ucu_logo.png`).
 
+## Round 4: training-effect figures and the imputation decision
+
+- Two figures added to the notebook (cells `effect-01` to `effect-03`, after the "Does the bidirectional LSTM imputation add value?" checks) and to the report: `brits_training_effect_mae.png` (MAE by imputation method, model and validation setup) and `brits_training_effect_change.png` (% change in MAE, bidirectional imputer against time-of-day).
+- Decision cell (`decision-01`) and report subsection "Decision: which imputed data the final models are trained on": the final models use windowed interpolation plus time-of-day imputation and are not retrained on the bidirectional imputer's values.
+- The two figure cells were run on the downstream table stored in the notebook, not as part of a full top-to-bottom run, so they have no execution number until the notebook is next run in full.
+- Slides: `report/slides/bilstm_imputation_effect_slides.pptx` (three slides on the UCU template).
+
+## Second dataset (full August file)
+
+The external test now uses `AirQo_August_2026_hourly_matched.csv`: 73,274 rows, 125 sensors (all in the main dataset, all in Uganda), 1-31 August 2026. No retraining.
+
+- Forecast models: SVR 18.3, KNN 18.6, LightGBM 18.8, Random Forest 19.0 MAE; baseline (training mean) 19.2. All R² below zero.
+- Models with PM2.5 history: Random Forest 13.7 (R² 0.30), LightGBM 14.0 (R² 0.27).
+- Calendar: forecast model predicts Moderate on all 31 days; actual is Unhealthy for Sensitive Groups on 16; 15 days match (17 with the history model).
+- Sensor classes in August: 76 data-rich, 31 intermediate, 18 data-poor.
+- Evidently: 6 of 9 features drifted (month 0.83, day of week 0.75 and 0.61, humidity 0.26, sensors 0.25).
+- Imputation (fitted imputers, MAE): bidirectional model temperature 1.3 °C at 6 h, 1.8 at 24 h, 2.0 at 72 h; PM2.5 13.9 to 16.7 µg/m³ from 6 to 72 h (time-of-day 15.7 to 18.4).
+
 ## Still to do by hand
 
-- Compile `main.tex` (no LaTeX compiler was available on this machine, so it has not been compiled here) and rebuild `airqo_report_overleaf.zip`.
-- Re-run the notebook on Kaggle and fill in the red placeholders in the Kaggle table of the report.
+- Add the Render and Vercel links where the report shows the red `[ADD LINK: ...]` markers.
 - Update the Hugging Face model card, demo and `DEPLOYMENT.md` / `HUGGINGFACE.md`, which still describe the PM10-based Random Forest.
 
 ## Earlier rounds, in brief
