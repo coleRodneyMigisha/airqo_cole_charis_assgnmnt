@@ -3,20 +3,20 @@
   "python_version": "3.13.7",
   "platform": "Windows-11-10.0.26300-SP0",
   "logical_cpus": 16,
-  "pipeline_runtime_seconds": 3880.7,
-  "peak_ram_notebook_process_mb": 1269.9,
+  "pipeline_runtime_seconds": 3357.3,
+  "peak_ram_notebook_process_mb": 1229.8,
   "peak_ram_largest_child_process_mb": null,
   "gpu": {
     "available": false
   },
-  "model_load_seconds": 0.0,
+  "model_load_seconds": 0.01,
   "prediction_latency": {
-    "single_row_ms": 9.71,
+    "single_row_ms": 13.85,
     "hourly_forecast_batch_rows": 3576,
-    "hourly_forecast_batch_ms": 1201.19,
+    "hourly_forecast_batch_ms": 1444.21,
     "two_week_forecast_batch_rows": 50064,
-    "two_week_forecast_batch_ms": 16378.62,
-    "two_week_forecast_us_per_row": 327.15
+    "two_week_forecast_batch_ms": 20671.77,
+    "two_week_forecast_us_per_row": 412.91
   },
   "forecast_mode": "single pass over all forecast rows (not autoregressive)",
   "file_sizes_mb": {
