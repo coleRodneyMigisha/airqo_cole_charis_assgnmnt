@@ -24,7 +24,7 @@ MAE and RMSE are in µg/m³. The full table is in `deployment_outputs/model_vali
 1. **SMOTE removed from the final models, kept as an experiment.** `USE_SMOTE = False`. The SMOTE section still runs the cross-validation over strengths, the synthetic-row check and a with/without table. All eight models were worse with SMOTE on the hold-out at both strengths (for example LightGBM 9.8 → 28.7 at 0.25; SVR 9.3 → 30.2; Random Forest 9.6 → 10.1). A markdown cell under the table explains the effect and the decision.
 2. **PM2.5 history features for the tree models.** Readings 1, 2 and 3 hours earlier, their mean and their count. Random Forest 9.61 → 8.50 (−11.6 %), LightGBM 9.82 → 8.43 (−14.2 %); in the expanding-window CV about 27 → 10.3 and 12.1. These are nowcast models; the best is saved as `best_pm25_nowcast_model.joblib`. In SHAP, 50 % of its attribution is on the history features.
 3. **Extreme PM2.5 values replaced by the nearest normal reading.** Rule: above the sensor's Q3 + 3 × IQR. 225 of 14,275 readings (1.5 %) at 59 sensors; 223 replaced by a normal reading of the same sensor at most 5 hours away (median 1 hour), 2 by the sensor median. Maximum 998 → 415 µg/m³. Original values are kept in `pm2_5_original`. Scored against the original readings the hold-out MAEs are 9.79 (LightGBM + history) and 10.62 (SVR).
-4. **PM10 stays out.**
+4. **PM10 stays out.** PM2.5 is the fine fraction of PM10, so PM10 is a same-hour co-measurement of the same particles rather than a driver of PM2.5; the literature points to meteorological drivers (temperature, humidity). PM10 is also not known ahead of time.
 5. **EDA sites with data.** A Kampala site must have readings in every month that contains data. The five sites are Nakasero II, Lower Nsooba, Salama Road, Namungona Primary School and Kabusu; the EDA time-series figures now use these five plus the network mean, so no panel is empty.
 6. **Effect of the bidirectional LSTM (BRITS-style) imputation.** The imputer now uses LSTM cells. A new section answers three questions:
    - As an imputer it is better than the time-of-day method in all 15 variable-and-gap combinations, by 21 % on average.
@@ -50,10 +50,19 @@ The external test now uses `AirQo_August_2026_hourly_matched.csv`: 73,274 rows, 
 - Evidently: 6 of 9 features drifted (month 0.83, day of week 0.75 and 0.61, humidity 0.26, sensors 0.25).
 - Imputation (fitted imputers, MAE): bidirectional model temperature 1.3 °C at 6 h, 1.8 at 24 h, 2.0 at 72 h; PM2.5 13.9 to 16.7 µg/m³ from 6 to 72 h (time-of-day 15.7 to 18.4).
 
+## Round 5: full project story, literature and documentation
+
+- **Report.** New subsection "Project evolution and key decisions" (Phase 1 with PM10 and why it was abandoned; rejected ideas with evidence; Phase 2; the BiLSTM decision) with a decision-log table. The Data section gained a missing/zero table, gap counts, the 28.8 % weather-dropout share, sensor data-quality flags and AQI counts before and after the extreme-value replacement. The EDA correlation discussion now gives the per-site ranges and the temperature/humidity mechanisms (Wang & Ogawa 2015; Yang et al. 2017). Results cite Febrian & Permai (history is enough) and Gürtepe et al. 2025 (station-blinded validation). Monitoring adds the Phase 1 Evidently result. Deployment is now a chronology: RunPod (dropped, cost) → Kaggle → Hugging Face (static, 402 for server Spaces) → Render + Vercel. Limitations and future work extended (short test window, calibration, untested models for the BiLSTM decision, GCP/Azure, ONNX). "The group" and "a team member" replaced.
+- **Checked against the notebook and git history.** Phase 1 numbers come from the pre-feedback notebook (commit `245c2e2`): tuned Random Forest MAE 3.103, RMSE 7.003, R² 0.898, AQI accuracy 86.2 %, untuned Random Forest MAE 3.272, PM10 importance 76 %, Evidently 6 of 7 columns. KNN long-gap filling: 96.0–97.7 % imputed, 11.1–12.5 % distinct values (commit `32edd3e`).
+- **Not used because no run output supports them:** the feature-set sensitivity table (MAE 11.20 / 11.12 / 13.56, 3.54 without weather) and an untuned Random Forest MAE of 3.221.
+- **Docs.** `DEPLOYMENT.md` rewritten around the current SVR and the deployment chronology. `HUGGINGFACE.md`, `huggingface/model/README.md`, `huggingface/space/README.md` and the footer of `huggingface/space/index.html` now describe the SVR; `huggingface/prepare.py` was re-run, so `forecasts.json` and the local model copy are the current ones. The online Hugging Face repos are unchanged until they are uploaded again.
+- **One-page abstract** in `report/abstract/abstract.tex` / `abstract.pdf`.
+
 ## Still to do by hand
 
-- Add the Render and Vercel links where the report shows the red `[ADD LINK: ...]` markers.
-- Update the Hugging Face model card, demo and `DEPLOYMENT.md` / `HUGGINGFACE.md`, which still describe the PM10-based Random Forest.
+- Add the Render and Vercel links where the report shows the red `[ADD LINK: ...]` markers, and in `DEPLOYMENT.md`.
+- Complete the Wang et al. 2019 reference (title, authors, DOI); it is marked in red in the bibliography.
+- Re-upload the Hugging Face model and Space (HUGGINGFACE.md steps 3 and 4) if the online versions should show the current model.
 
 ## Earlier rounds, in brief
 
@@ -69,3 +78,11 @@ The external test now uses `AirQo_August_2026_hourly_matched.csv`: 73,274 rows, 
 - Torgo, L., Ribeiro, R. P., Pfahringer, B., & Branco, P. (2013). SMOTE for Regression. *EPIA 2013*, LNCS 8154, pp. 378–389.
 - Saminathan, S., & Malathy, C. (2023). Ensemble-based classification approach for PM2.5 concentration forecasting using meteorological data. *Frontiers in Big Data*, 6, 1175259.
 - Febrian, S., & Permai, S. D. (2025). PM2.5 Index Prediction in Central Jakarta Using Pollution and Meteorological Data with CNN-LSTM. *E3S Web of Conferences*, 680, 00067.
+- Gürtepe, I. C., Senkal, I. T., Ünal, A., Güllü, G., Aslanoğlu, S. Y., & Marshall, J. D. (2025). Machine learning driven regional prediction of PM2.5 concentrations in the Eastern Mediterranean: bridging spatial data gaps in air quality monitoring. *Environmental Modelling & Software*, 192, 106586. doi:10.1016/j.envsoft.2025.106586
+- Wang, J., & Ogawa, S. (2015). Effects of Meteorological Conditions on PM2.5 Concentrations in Nagasaki, Japan. *IJERPH*, 12(8), 9089–9101. doi:10.3390/ijerph120809089
+- Yang, Q., Yuan, Q., Li, T., Shen, H., & Zhang, L. (2017). The Relationships between PM2.5 and Meteorological Factors in China: Seasonal and Regional Variations. *IJERPH*, 14(12), 1510. doi:10.3390/ijerph14121510
+- Wang et al. (2019). *Environment International*, 124, 371–379. Title, authors and DOI still to be completed.
+
+## Round 6: reason for removing PM10
+
+The stated reason is now scientific first: PM2.5 is the fine fraction of PM10, so PM10 is a co-measurement of the same particles rather than a driver, and the literature (Wang & Ogawa 2015; Yang et al. 2017) points to meteorological conditions as drivers. Not being known ahead of time is the second reason. Updated in `main.tex` (abstract, change list, Phase 1, decision log, cleaning, limitations), `abstract.tex`, `DEPLOYMENT.md`, the Hugging Face model card and the notebook markdown cells `pm10-01` and the model summary.
