@@ -1,0 +1,68 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[a4paper,top=2.2cm,bottom=2.2cm,left=2.0cm,right=2.0cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext,newtxmath}
+\usepackage{xcolor}
+\usepackage{microtype}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\definecolor{rulegrey}{gray}{0.35}
+\newcommand{\band}{\noindent{\color{rulegrey}\rule{\textwidth}{0.6pt}}}
+\newcommand{\ugm}{\,$\mu$g/m$^{3}$}
+
+\begin{document}
+
+%-------------------------------------------------------------------- Title
+\vspace*{0.4cm}
+{\fontsize{19}{24}\selectfont\raggedright
+Forecasting Hourly PM2.5 from Sparse Low-Cost Sensor Records in Uganda: Gap-Aware Imputation, Time-Aware Validation and Cloud Deployment\par}
+
+\vspace{0.55cm}
+{\large Charis Opol$^{\mathrm{a},*}$, Cole Rodney Migisha$^{\mathrm{a}}$\par}
+
+\vspace{0.3cm}
+{\small\itshape $^{\mathrm{a}}$Department of Computing and Technology, Faculty of Engineering, Design and Technology, Uganda Christian University, Mukono, Uganda\par}
+
+\vspace{0.45cm}
+\band
+
+%-------------------------------------------------------------------- Info and abstract band
+\vspace{0.15cm}
+\begin{minipage}[t]{0.27\textwidth}
+\raggedright
+{\footnotesize\scshape Article info}\par
+\vspace{-0.1cm}{\color{rulegrey}\rule{\linewidth}{0.4pt}}\par
+\vspace{0.1cm}
+{\footnotesize\itshape Keywords:\par}
+\vspace{0.1cm}
+{\footnotesize
+PM2.5 forecasting\\
+Low-cost sensors\\
+AirQo\\
+Missing-data imputation\\
+Time-series validation\\
+Model deployment\par}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.68\textwidth}
+{\footnotesize\scshape Abstract}\par
+\vspace{-0.1cm}{\color{rulegrey}\rule{\linewidth}{0.4pt}}\par
+\vspace{0.1cm}
+\small\setlength{\parskip}{0pt}\linespread{1.08}\selectfont
+\noindent Fine particulate matter (PM2.5) is the air pollutant of greatest health concern in Ugandan cities, yet low-cost monitoring networks such as AirQo's suffer from intermittent sensor availability. This study develops and deploys a pipeline predicting hourly PM2.5 from temperature, humidity, time and recent PM2.5 readings. PM10 is excluded: PM2.5 is part of PM10, so PM10 is a co-measurement of the same particles rather than a driver, and it is unavailable ahead of time; an early model using it reached an MAE of 3.10\ugm. The data comprise 14{,}600 hourly records from 149 sensors, with readings on only eight days. Extreme PM2.5 values were replaced by the nearest normal reading from the same sensor, and weather gaps were filled by windowed interpolation, time-of-day profiles, or a BRITS-style bidirectional LSTM. More than ten model variants were compared under chronological hold-out, expanding-window and leave-sensors-out validation, and SMOTE was tested and rejected. A tuned SVR was the best forecast model on the hold-out (MAE 9.34\ugm, $R^2$ 0.34); adding recent PM2.5 lowered the error to 8.43\ugm{} (LightGBM, $R^2$ 0.42) against 17.60 for a training-mean baseline. The bidirectional imputer cut imputation error by 21\% but changed prediction error by only $-0.4\%$, so time-of-day imputation was kept. On a full-August 2026 test set, the best model reached MAE 13.70\ugm{} (baseline 19.21), with drift in six of nine features. The model is served through a cloud API and dashboard. In sparse networks, recent pollutant history matters more than weather or sophisticated imputation.
+\end{minipage}
+
+\vspace{0.3cm}
+\band
+
+%-------------------------------------------------------------------- Footer
+\vfill
+{\color{rulegrey}\rule{0.25\textwidth}{0.4pt}}\par
+\vspace{0.1cm}
+{\footnotesize $^{*}$Corresponding author: Charis Opol, Department of Computing and Technology, Uganda Christian University.\par
+\vspace{0.1cm}
+CSC3119 AI Model Deployment and Scalability, Assignment 4. October 2026.\par}
+
+\end{document}

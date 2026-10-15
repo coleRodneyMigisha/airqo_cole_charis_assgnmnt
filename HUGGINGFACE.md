@@ -7,7 +7,9 @@ Two repos, one folder each:
 | `huggingface/model/` | [Kyalis/airqo-pm25-random-forest](https://huggingface.co/Kyalis/airqo-pm25-random-forest) (model) | The trained model, its model card and the inference script |
 | `huggingface/space/` | [Kyalis/airqo-pm25-forecasts](https://huggingface.co/spaces/Kyalis/airqo-pm25-forecasts) (static Space) | A web page showing the August 2026 forecasts for all 149 sensors |
 
-The page is static: it shows the forecasts saved in `forecasts.json` and does not run the model.
+The page is static: it shows the forecasts saved in `forecasts.json` and does not run the model. Server-side Spaces (Gradio, Docker, Streamlit) were refused with `402 Payment Required` because they need a PRO plan. The live model service is on Render instead (see [DEPLOYMENT.md](DEPLOYMENT.md)).
+
+**Current state.** The local folders now hold the current forecast model, a tuned SVR without PM10 (hold-out MAE 9.34 µg/m³, R² 0.34), and its forecasts. The versions online on Hugging Face are still the first, PM10-based Random Forest (MAE 3.10 µg/m³) until steps 3 and 4 below are run again. The repository keeps its original name, `airqo-pm25-random-forest`; the model card explains why.
 
 ## Deploy
 

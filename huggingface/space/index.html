@@ -67,9 +67,9 @@
   </section>
 
   <p class="muted">
-    Model: Random Forest, test error MAE 3.10 &micro;g/m&sup3;, R&sup2; 0.898.
-    August weather and PM10 were not known in advance, so each sensor's typical values for each hour were used:
-    the forecasts show each site's usual daily pattern.
+    Model: tuned SVR (no PM10), test error MAE 9.34 &micro;g/m&sup3;, R&sup2; 0.34.
+    August weather was not known in advance, so each sensor's typical temperature and humidity for each hour were used:
+    the forecasts show each site's usual daily pattern and do not anticipate pollution episodes.
     Download the model: <a href="https://huggingface.co/Kyalis/airqo-pm25-random-forest">Kyalis/airqo-pm25-random-forest</a>
   </p>
 </main>

@@ -26,6 +26,7 @@
 \newcommand{\ugm}{\,$\mu$g/m$^{3}$}
 \newcommand{\tofill}[1]{\textcolor{red}{\textbf{[FILL IN FROM KAGGLE RUN LOG: #1]}}}
 \newcommand{\addurl}[1]{\textcolor{red}{\textbf{[ADD LINK: #1]}}}
+\newcommand{\tocheck}[1]{\textcolor{red}{\textbf{[CHECK: #1]}}}
 \newcolumntype{L}{>{\raggedright\arraybackslash}X}
 
 \begin{document}
@@ -59,7 +60,7 @@ No. & Name & Registration No. \\
 
 %-------------------------------------------------------------------- Abstract
 \begin{abstract}
-We built a complete pipeline that predicts hourly PM2.5 concentration from AirQo low-cost sensor data: data preparation, exploratory analysis, model training, evaluation, explainability, an external test on a second dataset, August 2026 forecasts, monitoring with Evidently AI, and deployment as a web service on Render with a dashboard on Vercel. The supplied data contains 14{,}600 hourly records from 149 sensors, but readings exist on only eight days (1--3 January, 1--2 April and 1--3 June 2026). Following feedback on our presentation, PM10 was removed from the pipeline, so PM2.5 is predicted from temperature, humidity, time and sensor identity. Gaps are filled by windowed interpolation and time-of-day imputation, and a bidirectional LSTM imputer in the style of BRITS was added and tested. Extreme PM2.5 readings (1.5\% of readings) are replaced by the nearest normal reading of the same sensor. SMOTE was tested on the training data and left out because it made every model less accurate. Thirteen models were compared under three validation setups. The best forecast model, a tuned SVR, reaches MAE 9.34\ugm{} ($R^2$ 0.34) on the held-out June days. Adding the PM2.5 readings of the previous three hours to the tree models lowers this to 8.43\ugm{} ($R^2$ 0.42) and makes the models far more stable, but such models need recent readings and cannot forecast weeks ahead. On an external dataset covering all of August for 125 of the sensors, the forecast models are no better than predicting the training mean, while the models with PM2.5 history keep part of their skill (MAE 13.7\ugm). The bidirectional imputer is the most accurate imputer for gaps of six hours or more, but it does not improve the prediction models. With PM10 as an input the earlier version of the pipeline scored MAE 3.10\ugm; that accuracy depended on a second particle reading from the same instrument.
+We built a complete pipeline that predicts hourly PM2.5 concentration from AirQo low-cost sensor data: data preparation, exploratory analysis, model training, evaluation, explainability, an external test on a second dataset, August 2026 forecasts, monitoring with Evidently AI, and deployment as a web service on Render with a dashboard on Vercel. The supplied data contains 14{,}600 hourly records from 149 sensors, but readings exist on only eight days (1--3 January, 1--2 April and 1--3 June 2026). PM10 was removed from the pipeline: PM2.5 is the fine fraction of PM10, so the two rise and fall together because they are the same particles measured by the same instrument, not because PM10 drives PM2.5, and the literature points to meteorological conditions such as temperature and humidity as drivers of PM2.5 concentrations. PM2.5 is therefore predicted from temperature, humidity, time and sensor identity. Gaps are filled by windowed interpolation and time-of-day imputation, and a bidirectional LSTM imputer in the style of BRITS was added and tested. Extreme PM2.5 readings (1.5\% of readings) are replaced by the nearest normal reading of the same sensor. SMOTE was tested on the training data and left out because it made every model less accurate. Thirteen models were compared under three validation setups. The best forecast model, a tuned SVR, reaches MAE 9.34\ugm{} ($R^2$ 0.34) on the held-out June days. Adding the PM2.5 readings of the previous three hours to the tree models lowers this to 8.43\ugm{} ($R^2$ 0.42) and makes the models far more stable, but such models need recent readings and cannot forecast weeks ahead. On an external dataset covering all of August for 125 of the sensors, the forecast models are no better than predicting the training mean, while the models with PM2.5 history keep part of their skill (MAE 13.7\ugm). The bidirectional imputer is the most accurate imputer for gaps of six hours or more, but it does not improve the prediction models. With PM10 as an input the earlier version of the pipeline scored MAE 3.10\ugm; that accuracy came from a co-measurement of the same particles, which is also unavailable ahead of time, not from what drives PM2.5.
 \end{abstract}
 \clearpage
 
@@ -95,9 +96,9 @@ above 225.49 & Hazardous \\
 \label{sec:changes}
 
 \begin{itemize}
-\item \textbf{PM10 removed} from every table, plot, feature set and model.
+\item \textbf{PM10 removed} from every table, plot, feature set and model, because it is a co-measurement of PM2.5 rather than a driver of it (Section~\ref{sec:evolution}).
 \item \textbf{Sensors profiled by offline time} and classed as data-rich or data-poor.
-\item \textbf{Gap filling in two steps:} windowed interpolation, then time-of-day imputation; plus a \textbf{bidirectional LSTM imputer} (BRITS-style) proposed by a team member.
+\item \textbf{Gap filling in two steps:} windowed interpolation, then time-of-day imputation; plus a \textbf{bidirectional LSTM imputer} (BRITS-style) proposed by one of us.
 \item \textbf{Extreme PM2.5 values} replaced by the nearest normal reading of the same sensor.
 \item \textbf{SMOTE} tested on the training split, documented, and left out of the final models.
 \item \textbf{New models:} LightGBM, an LSTM, and tree models that also use the PM2.5 readings of the previous hours.
@@ -105,6 +106,57 @@ above 225.49 & Hazardous \\
 \item \textbf{New evaluation:} masked-gap imputation test, SHAP explanations, sensor maps, and an external test on a second dataset.
 \item \textbf{Plots revised:} calendars coloured by PM2.5 category, density plots instead of histograms, one combined time-series figure per site, and no AUC (it is not a regression metric).
 \end{itemize}
+
+\subsection{Project evolution and key decisions}
+\label{sec:evolution}
+
+The project went through two pipelines. This subsection tells that story in order, including the ideas that were tried and dropped, because the dropped ideas explain the shape of the final pipeline. Table~\ref{tab:decisions} summarises the decisions.
+
+\textbf{Phase 1: the first pipeline, with PM10.} Zeros were converted to missing values, \texttt{device\_name} was used as the sensor key, and coordinates were filled with the median of each site's own valid coordinates. Each sensor was reindexed to an hourly grid (758{,}112 sensor-hours) with an \texttt{is\_offline} flag, and the predictors (temperature, humidity and PM10) were interpolated only across interior gaps of at most three hours; PM2.5 was never interpolated. The data were split chronologically (11{,}633 training rows up to 1 June, 2{,}642 test rows on 2--3 June), and the target was converted to a Z-score fitted on training rows only (mean 34.49, standard deviation 31.70\ugm). Ridge, Linear, Polynomial, Random Forest, SVR and KNN models were tuned with \texttt{TimeSeriesSplit}. The selected tuned Random Forest reached MAE 3.10\ugm, RMSE 7.00\ugm{} and $R^2$ 0.898 on the test days, with 86.2\% of hours in the correct AQI category (the untuned Random Forest: MAE 3.27\ugm). PM10 carried about three quarters (76\%) of that model's feature importance, while temperature and humidity carried about 1\% each.
+
+\textbf{Why Phase 1 was abandoned.} There are two reasons, one scientific and one practical.
+\begin{itemize}
+\item \textbf{PM10 is not a driver of PM2.5.} PM2.5 is the fine fraction of PM10: every particle counted in PM2.5 is also counted in PM10, and the two are measured by the same instrument in the same hour. They are strongly correlated because they share the same particles and the same sources, not because PM10 causes PM2.5. A model that uses PM10 learns this overlap, not how PM2.5 comes about. The literature on what drives PM2.5 concentrations points instead to emissions and to meteorological conditions: temperature and humidity affect how particles form, grow, disperse and are removed from the air~\cite{wangogawa2015,yang2017,wang2019} (Section~\ref{sec:corr}). We therefore model PM2.5 from those conditions, together with time and sensor identity.
+\item \textbf{PM10 is not known in advance.} Because it is measured at the same moment as the target, a model that needs it cannot forecast. In the August forecast PM10 had to be replaced by each sensor's typical value for the hour, so the forecasts only repeated each site's usual daily pattern.
+\end{itemize}
+Most of Phase~1's accuracy came from this overlap, so the drop in accuracy after removing PM10 (Section~\ref{sec:results}) is expected. Following the feedback on our presentation, PM10 was removed from every stage.
+
+\textbf{Ideas tried and rejected, with the evidence.}
+\begin{itemize}
+\item \textbf{KNN imputation of missing coordinates.} Six sites never report a valid coordinate. An early version borrowed coordinates from the five sites with the most similar temperature, humidity and pollution profile. This was rejected: a similar pollution profile does not mean a nearby location, so the six sites are left without coordinates and off the maps.
+\item \textbf{KNN filling of long gaps.} An early version filled every gap up to the last observation with a KNN imputer. For the five EDA sites 96--98\% of each hourly series became imputed, and only about 12\% of the values were distinct, because the imputer reused the same few real readings for every hour with the same hour, weekday and month. The result was an artificial repeating sawtooth in the daily means. Long gaps are now left missing for PM2.5 and are filled for weather only, by the time-of-day method (Section~\ref{sec:tod}).
+\item \textbf{Zero handling for weather dropouts.} In Phase~1, treating the 0\,\textdegree C / 0\% dropouts as missing, keeping them as 0, or adding a dropout flag changed the Random Forest's test MAE only between 3.24 and 3.30\ugm, because PM10 dominated. The comparison no longer applies without PM10; the dropouts are now treated as missing and filled by the two-step gap filling.
+\item \textbf{Latitude and longitude as predictors.} They were removed: \texttt{device\_name} already identifies the location, and six sensors have no coordinates.
+\item \textbf{SMOTE.} Tested in Phase~2 on the training split only. It made all eight models worse on the hold-out (Section~\ref{sec:smote}), so \texttt{USE\_SMOTE = False}; the experiment stays in the notebook.
+\end{itemize}
+
+\textbf{Phase 2: the rebuilt pipeline.} PM10 was dropped at loading. Extreme PM2.5 readings are replaced by the nearest normal reading of the same sensor (Section~\ref{sec:extreme}). Weather gaps are filled by windowed interpolation and then by a time-of-day profile with a local offset, both fitted on training rows only; a BRITS-style bidirectional LSTM imputer~\cite{cao2018} was added and evaluated as a third method. Recent PM2.5 readings were added as features for the ``nowcast'' models, LightGBM and two LSTMs were added, and every model is scored under three validation setups.
+
+\textbf{The bidirectional LSTM imputer.} It is the most accurate imputer on hidden values (21\% lower error than the time-of-day method on average), but training the prediction models on its values changed their MAE by only $-0.4\%$ on average. The final models therefore keep the time-of-day imputation; the evidence is in Section~\ref{sec:impeval}.
+
+\begin{table}[H]
+\centering
+\caption{Decision log: the main decisions, the alternative considered, the evidence and the outcome.}
+\label{tab:decisions}
+\small
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{2.6cm} L L >{\raggedright\arraybackslash}p{2.4cm}}
+\toprule
+Decision & Alternative & Evidence & Outcome \\
+\midrule
+Remove PM10 & Keep PM10 as an input (Phase~1) & PM2.5 is part of PM10, so PM10 is a co-measurement, not a driver; literature points to meteorological drivers; PM10 carried 76\% of importance and is unknown when forecasting & PM10 dropped everywhere \\
+Leave six sites without coordinates & KNN on pollution and weather profiles & Similar profiles do not imply nearby sites & Left missing \\
+Leave long PM2.5 gaps missing & KNN filling of long gaps & 96--98\% of series imputed, $\approx$12\% distinct values, artificial sawtooth & Rejected \\
+Treat weather zeros as missing & Keep 0 or add a dropout flag & MAE 3.24--3.30\ugm{} in Phase~1, no real difference; zeros are sensor dropouts & Missing, then imputed \\
+Drop latitude/longitude as predictors & Use coordinates & Device already identifies location; six sensors lack coordinates & Dropped \\
+Replace extreme PM2.5 & Keep or delete them & 225 readings (1.5\%) above the sensor's $Q_3+3\,$IQR; maximum 998\ugm & Nearest normal reading; originals kept \\
+No SMOTE & SMOTE for regression, strengths 0.25 and 0.5 & All eight models worse on the hold-out & \texttt{USE\_SMOTE = False} \\
+Time-of-day imputation for training & BRITS-style bidirectional LSTM & Better imputer (21\%) but MAE change $-0.4\%$ over 15 cases & Time-of-day kept \\
+Two saved models & One model & Forecast needs no recent readings; nowcast is more accurate & SVR (forecast), LightGBM + history (nowcast) \\
+Render + Vercel deployment & RunPod; Hugging Face Spaces & RunPod credit too costly; server-side Spaces need a paid plan & Render service + Vercel dashboard \\
+\bottomrule
+\end{tabularx}
+\end{table}
 
 %==================================================================== 2
 \section{Methodology overview}
@@ -126,10 +178,32 @@ The dataset (\texttt{Sensor Data Jan - July 2026.csv}) contains 14{,}600 hourly 
 Three properties of the data shaped every later decision:
 
 \begin{enumerate}
-\item \textbf{Very sparse coverage in time.} Although the file is named January--July, readings exist on only eight days, in three short windows: 1--3 January, 1--2 April and 1--3 June 2026. That is 147 hours in which at least one sensor reported.
-\item \textbf{Zero values that are not real readings.} The brief defines 0 or empty as missing. Temperature is zero or empty in 4{,}120 rows and humidity in 4{,}365; PM2.5 is empty in 325.
-\item \textbf{Uneven sensors.} Devices contribute between 20 and 147 records (median 105).
+\item \textbf{Very sparse coverage in time.} Although the file is named January--July, readings exist on only eight days, in three short windows: 1--3 January, 1--2 April and 1--3 June 2026. The last reading is at 03:00 UTC on 3 June. That is 147 hours in which at least one sensor reported.
+\item \textbf{Zero values that are not real readings.} The brief defines 0 or empty as missing. Table~\ref{tab:missing} gives the counts. About 28.8\% of rows from AirQo devices report 0\,\textdegree C and 0\% humidity together, in long unbroken blocks, and no AirGradient row does: these are weather-sensor dropouts, not real readings.
+\item \textbf{Uneven sensors.} Devices contribute between 20 and 147 records (median 105). The 149 devices sit at 145 named sites; some sites host more than one device, so the device, not the site, identifies a sensor.
 \end{enumerate}
+
+\begin{table}[H]
+\centering
+\caption{Missing and zero values in the raw file (14{,}600 rows). Zeros count as missing.}
+\label{tab:missing}
+\begin{tabular}{lrrr}
+\toprule
+Column & Empty & Zero & Total missing \\
+\midrule
+Latitude & 1 & 3{,}085 & 3{,}086 \\
+Longitude & 0 & 3{,}067 & 3{,}067 \\
+Temperature & 54 & 4{,}066 & 4{,}120 \\
+Humidity & 206 & 4{,}159 & 4{,}365 \\
+PM2.5 & 325 & 0 & 325 \\
+PM10 (dropped in Phase 2) & \multicolumn{2}{c}{--} & 430 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Gaps between readings.} Of the gaps between consecutive readings of the same sensor, 13{,}668 are one hour long and 783 are longer, the longest about 150 days (between the bursts). \textbf{Sensor data quality.} Before PM10 was removed, PM2.5 exceeded PM10 in 22.4\% of rows, which is physically impossible because PM2.5 is part of PM10, and 219 PM10 readings were below 1\ugm. Thirteen PM2.5 readings are 200\ugm{} or more, and the largest, 998.4\ugm{} at Nansana East Ward (Wakiso), came with a PM10 of only 70.8\ugm. These are signs of calibration and sensor errors in low-cost instruments, which is why extreme PM2.5 values are treated separately (Section~\ref{sec:extreme}).
+
+\textbf{AQI categories.} Of the 14{,}275 raw PM2.5 readings, 1{,}249 are Good, 8{,}494 Moderate, 1{,}820 Unhealthy for Sensitive Groups, 2{,}565 Unhealthy, 137 Very Unhealthy and 10 Hazardous. After the extreme-value replacement the counts are 1{,}270, 8{,}627, 1{,}820, 2{,}446, 107 and 5.
 
 A second file, \texttt{AirQo\_August\_2026\_hourly\_matched.csv}, became available later and is used only as an external test set (Section~\ref{sec:second}).
 
@@ -143,7 +217,7 @@ The preparation follows the general workflow of Febrian and Permai~\cite{febrian
 \subsection{Cleaning}
 
 \begin{itemize}
-\item \textbf{PM10} is dropped immediately after loading.
+\item \textbf{PM10} is dropped immediately after loading, because it is a co-measurement of the same particles rather than a driver of PM2.5 (Section~\ref{sec:evolution}).
 \item \textbf{Zeros} in temperature, humidity, PM2.5, latitude and longitude are converted to missing. The zero temperature and humidity readings (about 4{,}100 rows) are a weather-sensor dropout: every zero temperature coincides with a zero humidity, they come in long unbroken blocks, and they occur only on AirQo devices.
 \item \textbf{Types:} timestamps are parsed as UTC, and \texttt{device\_name} is used as the sensor identifier because \texttt{site\_id} is missing in about half the rows.
 \item \textbf{Empty sensors:} a sensor is removed if it has no valid reading at all or no valid PM2.5 reading. None met this rule, so none was dropped. Nine sensors report PM2.5 but never report weather; they were kept and their weather is imputed.
@@ -195,6 +269,7 @@ Data-poor & at least 50 & 48 & 68.3 \\
 A missing hour is filled by linear interpolation only when the gap is at most three hours long, has valid readings on both sides, and the 24-hour window centred on it holds at least six real readings. It runs separately for each sensor, and the window, gap limit and minimum count are parameters. Longer gaps stay missing. It filled 555 temperature and 551 humidity values.
 
 \subsection{Time-of-day imputation}
+\label{sec:tod}
 
 Longer gaps inside the observation windows are estimated from the daily cycle. The mean and variance of each variable are computed per hour of day for each sensor, falling back to the sensor's network group and then to all sensors when a sensor has too few readings. The sensor's own readings within 12 hours of the gap give a local offset from that profile, and the missing value is the profile value plus the offset (Figure~\ref{fig:diurnal}). For the models, the profiles are refitted on training rows only.
 
@@ -235,7 +310,7 @@ PM2.5 (\ugm) & 6 h & 12.54 & 19.04 & 17.95 & not filled \\
 \subsection{Bidirectional LSTM imputation (BRITS-style)}
 \label{sec:brits}
 
-A third imputation method implements an idea from a team member: a recurrent model reads each sensor series forwards and backwards, each direction estimates every value before it sees it, and a consistency loss makes the two directions agree. This is supervised learning with an added consistency loss. It follows BRITS~\cite{cao2018}: an LSTM per direction whose hidden state decays with the time since the last reading; a history-based estimate, a feature-based estimate from the other variables of the same hour, and a learned blend; a reconstruction loss on observed values only; and the forward/backward consistency loss.
+A third imputation method implements an idea proposed by one of us: a recurrent model reads each sensor series forwards and backwards, each direction estimates every value before it sees it, and a consistency loss makes the two directions agree. This is supervised learning with an added consistency loss. It follows BRITS~\cite{cao2018}: an LSTM per direction whose hidden state decays with the time since the last reading; a history-based estimate, a feature-based estimate from the other variables of the same hour, and a learned blend; a reconstruction loss on observed values only; and the forward/backward consistency loss.
 
 Our version differs from the paper in the data (three variables from sensors that report in three short bursts), in adding the hour of day and the sensor's offline share as always-known conditioning inputs, in modelling PM2.5 on a log scale, in hiding blocks of 1 to 12 hours during training, and in having no classification head. It is written in TensorFlow; the PyPOTS library was not used because it does not report the consistency term separately or accept conditioning inputs. Scalers and the model are fitted on the training period only and each split is imputed separately. Figure~\ref{fig:britsloss} shows the training curves. Its accuracy and its effect on the models are evaluated in Section~\ref{sec:impeval}.
 
@@ -328,8 +403,11 @@ Figure~\ref{fig:cal} shows the calendar for the five Kampala sites. Each site al
 \end{figure}
 
 \subsection{Correlation of temperature, humidity and PM2.5}
+\label{sec:corr}
 
-Table~\ref{tab:corr} gives the Pearson and Spearman correlations over all sensors. Temperature and humidity are strongly and inversely related; their direct link with PM2.5 is weak.
+Table~\ref{tab:corr} gives the Pearson and Spearman correlations over all sensors. Temperature and humidity are strongly and inversely related; their direct link with PM2.5 is weak. Within the five Kampala EDA sites the links are stronger and consistent in sign: PM2.5 is negatively correlated with temperature ($r$ from $-0.13$ at Nakasero to $-0.51$ at Salama Road) and positively with humidity ($r$ from $0.08$ at Namungona to $0.45$ at Kabusu).
+
+These signs agree with the literature on how weather affects PM2.5. Warmer hours usually come with a deeper, better-mixed boundary layer that dilutes particles, while cool, humid hours at night and early morning trap them near the ground; Wang and Ogawa~\cite{wangogawa2015} found PM2.5 negatively correlated with temperature in Nagasaki. Warmth can also speed up photochemical formation of secondary particles, which pushes the other way, so the net temperature effect depends on place and season; Yang et al.~\cite{yang2017} found it negative in autumn but positive in winter across Chinese cities. Humidity has two opposing effects: moist air lets hygroscopic particles take up water and grow, and favours secondary aerosol formation, which raises PM2.5, while very humid conditions with rain remove particles by wet deposition. Which effect wins depends on particle composition and climate: Yang et al.~\cite{yang2017} found the humidity--PM2.5 correlation positive in North China but negative in most other regions, with the positive link strongest in winter and spring, and Wang and Ogawa~\cite{wangogawa2015} found the sign of the humidity relationship changing at a threshold (see also~\cite{wang2019}). With only eight days of data we cannot separate these mechanisms; the correlations are consistent with them but do not prove them.
 
 \begin{table}[H]
 \centering
@@ -463,6 +541,8 @@ Polynomial (tuned) & 23.86 & 27.87 & $-1.25$ & 24.72 & 16.67 & 0.21 \\
 \end{table}
 
 \textbf{Which model is best.} The tree models with PM2.5 history are the best overall (Table~\ref{tab:results}). LightGBM with history has the lowest hold-out MAE (8.43\ugm) and the Random Forest with history is the most consistent across the three setups (8.5, 10.3 and 9.0\ugm). The history features lower the hold-out MAE of the Random Forest by 11.6\% and of LightGBM by 14.2\%, and the gain is much larger in the other two setups, where the same models without history collapse (about 27\ugm{} in the expanding-window CV).
+
+This agrees with Febrian and Permai~\cite{febrian2025}, who found for Jakarta that historical pollutant readings alone were sufficient for short-term PM2.5 forecasting and that meteorological inputs added little. The leave-sensors-out setup plays the same role as the station-blinded validation of G\"urtepe et al.~\cite{gurtepe2025}: it measures how well a model predicts at a location it has never seen, and, as in their study (RMSE 9.21 against 8.28\ugm{} for their temporal evaluation), it scores worse than our chronological hold-out.
 
 Among the forecast models the tuned SVR is best (MAE 9.34\ugm, $R^2$ 0.34). It is saved as \texttt{best\_pm25\_model.joblib} and produces the August forecast; LightGBM with history is saved separately as \texttt{best\_pm25\_nowcast\_model.joblib}. The forecast models beat the training-mean baseline clearly on the hold-out but not in the expanding-window CV, where the tree models are worse than the baseline: trained on one or two bursts, they learn that month's level and carry it into the next.
 
@@ -813,6 +893,8 @@ Of the 2{,}086 sensor-days, 2{,}082 are forecast as Moderate and four as Unhealt
 
 Evidently 0.7.23~\cite{evidently} compares a \emph{reference} dataset, the training period (11{,}633 rows), with a \emph{current} dataset, the test period (2{,}642 rows). The Evidently cells are wrapped so that an Evidently error cannot crash the pipeline, as the brief requires.
 
+\textbf{Phase 1 monitoring.} In the first pipeline Evidently flagged 6 of 7 scored columns as drifted. Those seven were the time features and the sensor identity; temperature, humidity and PM10 were not scored, most likely because they were held in the nullable \texttt{Float64} type, which that report did not pick up. The drift came from the make-up of the two windows (different months, weekdays and active sensors), not from a change in the air. In the revised pipeline temperature and humidity are among the nine scored features below.
+
 \textbf{Data drift.} For each feature Evidently reports a drift score: the normed Wasserstein distance for numeric features and the Jensen--Shannon distance for categorical or low-cardinality features, with a threshold of 0.1. Eight of nine features drifted (share 0.89). The largest scores are day of week (1.43 and 1.19) and month (0.65), because the test window holds only two weekdays of one month; temperature and humidity drifted moderately (0.36 and 0.37) and hour of day barely (0.08 and 0.15). The alert means ``the current data is not representative of what the model was trained on'' rather than ``pollution behaviour has changed'' (Figure~\ref{fig:drift}).
 
 \begin{figure}[H]
@@ -861,11 +943,18 @@ The mean error on the test period is $-0.97$\ugm{} with a standard deviation of 
 
 The pipeline is deployed in three parts: the training pipeline is the notebook, verified end to end (Section~\ref{sec:local}); the trained model is served as a web service on \textbf{Render}; and a dashboard that uses that service is hosted on \textbf{Vercel}.
 
-\subsection{Choice of platforms}
+\subsection{Deployment history and choice of platforms}
 
-The brief proposed RunPod, a pay-as-you-go GPU cloud. RunPod requires credit to be bought in advance, which became financially straining for the group. The first version of the pipeline was therefore run in the cloud on Kaggle and its forecasts were published as a static demo on Hugging Face; a Hugging Face Space that runs Python on a server needed a paid plan, so that demo could only display saved forecasts and could not run the model.
+The deployment changed several times. In order:
 
-For the revised pipeline we wanted the model itself to answer requests. Render and Vercel both have free tiers and fit the two halves of the problem:
+\begin{enumerate}
+\item \textbf{RunPod (planned).} The brief proposed RunPod, a pay-as-you-go GPU cloud. We prepared to run the pipeline on an RTX 2000 Ada Pod with a run script and a prediction endpoint. RunPod requires credit to be bought in advance, which became financially straining for the two of us, so this plan was dropped.
+\item \textbf{Kaggle (cloud execution).} The first, PM10-based version of the notebook was run end to end on Kaggle's cloud notebook service as the evidence of cloud execution, with a run-log section that records the runtime, hardware, row counts, metrics and output files.
+\item \textbf{Hugging Face (model and static demo).} The first model was published as the model repository \texttt{Kyalis/airqo-pm25-random-forest}, and its August forecasts as a static demo Space, \texttt{Kyalis/airqo-pm25-forecasts}. Server-side Spaces (Gradio, Docker or Streamlit) were refused with HTTP 402 because they need a paid PRO plan, so the demo only displays stored forecasts and does not run the model. Running the model in the browser with ONNX would avoid this and is left as future work.
+\item \textbf{Render and Vercel (final).} For the revised pipeline we wanted the model itself to answer requests. The model runs as a web service on Render and the dashboard is hosted on Vercel (Sections~\ref{sec:render} and~\ref{sec:vercel}).
+\end{enumerate}
+
+Render and Vercel both have free tiers and fit the two halves of the problem:
 \begin{itemize}
 \item \textbf{Render} runs a long-lived Python web service, which is what loading a scikit-learn model and predicting on request needs.
 \item \textbf{Vercel} hosts the front end, a web dashboard that calls the Render service from the visitor's browser.
@@ -898,6 +987,7 @@ Standalone inference script & Identical predictions to the notebook on all 2{,}6
 The runtime is much longer than in the earlier version (11 minutes) because every model is refitted for seven validation folds, the bidirectional imputer is retrained per fold, and the second-dataset test, SHAP and maps were added. Training needs \texttt{lightgbm}, \texttt{imbalanced-learn}, \texttt{tensorflow}, \texttt{shap}, \texttt{geopandas} and \texttt{shapely} in addition to the original packages.
 
 \subsection{Model service on Render}
+\label{sec:render}
 
 The saved forecast model (\texttt{best\_pm25\_model.joblib}: the SVR pipeline with its preprocessing, the target scaler and the feature lists) is served by a small Python web service on Render at \addurl{Render service URL}.
 
@@ -908,6 +998,7 @@ The saved forecast model (\texttt{best\_pm25\_model.joblib}: the SVR pipeline wi
 \end{itemize}
 
 \subsection{Dashboard on Vercel}
+\label{sec:vercel}
 
 The dashboard is hosted on Vercel at \addurl{Vercel dashboard URL}. It shows model estimates of hourly PM2.5 for the AirQo sensors for August 2026 and reports whether the model service is connected.
 
@@ -955,11 +1046,13 @@ The dashboard is hosted on Vercel at \addurl{Vercel dashboard URL}. It shows mod
 
 \begin{itemize}
 \item \textbf{Little data in time.} Eight days in three bursts cannot capture seasonal patterns. The three validation setups disagree on the ranking of the forecast models, and the external August test, on 125 of the same sensors, shows that the forecast models do not transfer to a new month.
-\item \textbf{Weak predictors without PM10.} With PM10 the earlier Random Forest scored MAE 3.10\ugm{} ($R^2$ 0.90). Without it, weather, time and sensor identity explain little of hourly PM2.5; the recent PM2.5 readings are the only strong signal available.
+\item \textbf{Short test window.} The chronological hold-out is two days (2--3 June); the expanding-window and leave-sensors-out setups and the August test are needed to judge stability.
+\item \textbf{Weak predictors without PM10.} With PM10 the earlier Random Forest scored MAE 3.10\ugm{} ($R^2$ 0.90), but that score came from a co-measurement of the same particles, read in the same hour, rather than from what drives PM2.5 (Section~\ref{sec:evolution}). PM10 is also the strongest predictor in G\"urtepe et al.~\cite{gurtepe2025}, which shows how closely the two measurements track each other; it does not make PM10 a cause of PM2.5. Removing it is the right choice for forecasting, but on our data the drivers that remain explain little: temperature and humidity carry only 3--8\% of the SHAP attribution (Table~\ref{tab:shap}). Eight days are too few for the model to learn the weather effects that the literature describes, and the recent PM2.5 readings are the only strong signal available.
+\item \textbf{Sensor calibration.} PM2.5 exceeded PM10 in 22.4\% of the raw rows and some PM10 readings were below 1\ugm, which point to calibration problems in the low-cost sensors. The models learn from these readings as they are, apart from the extreme-value replacement.
 \item \textbf{Forecast and nowcast are different tasks.} The models with PM2.5 history are the most accurate but need recent readings from the sensor, so they cannot produce the two-week forecast.
 \item \textbf{Extreme values.} Replacing extreme readings lowers the reported errors; scored against the untouched readings the best models' MAEs are about 1.3\ugm{} higher. The replacement rule uses each sensor's whole record, and it was not applied to the second dataset.
 \item \textbf{SMOTE} was evaluated and rejected on evidence; the cross-validation used to choose its strength was itself unstable because the folds come from different bursts.
-\item \textbf{Imputation.} The bidirectional imputer's PM2.5 fills are too smooth to serve as training targets, and its benefit for prediction is negligible on this data.
+\item \textbf{Imputation.} The bidirectional imputer's PM2.5 fills are too smooth to serve as training targets, and its benefit for prediction is negligible on this data. Only five models were retrained on its values; Ridge, Linear, Polynomial, KNN and the Random Forests were not retested, so the conclusion for them is an expectation, not a measurement.
 \item \textbf{Deployment.} The live service runs the forecast model only, on free hosting tiers; the model with PM2.5 history is not served.
 \end{itemize}
 
@@ -967,9 +1060,11 @@ The dashboard is hosted on Vercel at \addurl{Vercel dashboard URL}. It shows mod
 
 \begin{itemize}
 \item \textbf{More days of data.} The largest improvement would come from training on continuous data, such as the August file, instead of three two-day bursts.
-\item \textbf{Forecasting from history.} Combine the PM2.5 history features with multi-step forecasting, feeding each prediction forward, and add forecast weather.
+\item \textbf{Forecasting from history.} Combine lagged pollutant features with multi-step forecasting, feeding each prediction forward, and add forecast weather.
 \item \textbf{Neighbouring sensors.} Use same-hour PM2.5 from nearby sensors, which the maps show are dense around Kampala.
-\item \textbf{Managed cloud deployment and automated monitoring}, with scheduled Evidently reports, retraining when error grows, and rollback to the previous model if a retrain validates worse.
+\item \textbf{Managed cloud deployment.} Move the model service to Google Cloud (Cloud Run or a Vertex AI endpoint) or Azure (Azure Machine Learning online endpoints or Container Apps), which add autoscaling and model versioning.
+\item \textbf{In-browser inference.} Export the model to ONNX so that a static page, such as the Hugging Face Space, can run it without a server.
+\item \textbf{Automated monitoring}, with scheduled Evidently reports, retraining when error grows, and rollback to the previous model if a retrain validates worse.
 \end{itemize}
 
 %==================================================================== 15
@@ -996,6 +1091,29 @@ D.~Okure, J.~Ssematimba, R.~Sserunjogi, N.~L.~Gracia, M.~E.~Soppelsa and E.~Bain
 R.~Sserunjogi, J.~Ssematimba, D.~Okure, D.~Ogenrwot, P.~Adong, L.~Muyama, N.~Nsimbe, M.~Bbaale and E.~Bainomugisha.
 \newblock Seeing the air in detail: hyperlocal air quality dataset collected from spatially distributed AirQo network.
 \newblock \emph{Data in Brief}, 44:108512, 2022.
+
+\bibitem{gurtepe2025}
+I.~C.~G\"urtepe, I.~T.~Senkal, A.~\"Unal, G.~G\"ull\"u, S.~Y.~Aslano\u{g}lu and J.~D.~Marshall.
+\newblock Machine learning driven regional prediction of PM$_{2.5}$ concentrations in the Eastern Mediterranean: bridging spatial data gaps in air quality monitoring.
+\newblock \emph{Environmental Modelling \& Software}, 192:106586, 2025.
+\newblock \url{https://doi.org/10.1016/j.envsoft.2025.106586}.
+
+\bibitem{wangogawa2015}
+J.~Wang and S.~Ogawa.
+\newblock Effects of meteorological conditions on PM2.5 concentrations in Nagasaki, Japan.
+\newblock \emph{International Journal of Environmental Research and Public Health}, 12(8):9089--9101, 2015.
+\newblock \url{https://doi.org/10.3390/ijerph120809089}.
+
+\bibitem{yang2017}
+Q.~Yang, Q.~Yuan, T.~Li, H.~Shen and L.~Zhang.
+\newblock The relationships between PM2.5 and meteorological factors in China: seasonal and regional variations.
+\newblock \emph{International Journal of Environmental Research and Public Health}, 14(12):1510, 2017.
+\newblock \url{https://doi.org/10.3390/ijerph14121510}.
+
+\bibitem{wang2019}
+Wang et~al.
+\newblock \tocheck{title and full author list}.
+\newblock \emph{Environment International}, 124:371--379, 2019. \tocheck{DOI}
 
 \bibitem{who2021}
 World Health Organization.
