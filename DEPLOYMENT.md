@@ -4,12 +4,12 @@
 
 The deployment changed several times. In order:
 
-1. **RunPod (planned, dropped).** We planned to run the pipeline on an RTX 2000 Ada Pod with a run script and a prediction endpoint. RunPod needs prepaid credit, which was too costly for us, so we dropped it.
-2. **Kaggle (cloud execution).** The first, PM10-based notebook was run end to end on Kaggle as evidence of cloud execution (instructions below).
+1. **RunPod (attempted).** We prepared a run script for an RTX 2000 Ada Pod. RunPod needs prepaid credit, which was too costly for us, and this route did not succeed.
+2. **Kaggle (attempted).** We tried to run the first, PM10-based notebook end to end on Kaggle as evidence of cloud execution. The attempt did not complete. The instructions below are kept for anyone who wants to try again.
 3. **Hugging Face (model and static demo).** The first model and its August forecasts were published on Hugging Face; see [HUGGINGFACE.md](HUGGINGFACE.md). Server-side Spaces need a paid plan (HTTP 402), so the demo only shows stored forecasts.
 4. **Render + Vercel (final).** The current forecast model (tuned SVR, `best_pm25_model.joblib`) runs as a web service on Render, and a dashboard on Vercel calls it.
-   - Render service: **[ADD LINK]**
-   - Vercel dashboard: **[ADD LINK]**
+   - Render service (backend): <https://airqo-cole-charis-assgnmnt.onrender.com/> (health check: `/health`)
+   - Vercel dashboard (frontend): <https://airqo-model.vercel.app/>
 
 The current model does not use PM10. PM2.5 is the fine fraction of PM10, so PM10 is a co-measurement of the same particles rather than a driver of PM2.5, and it is not known ahead of time. The model predicts PM2.5 from temperature, humidity (which the literature identifies as drivers), the cyclical hour / day-of-week / month features and `device_name`.
 
