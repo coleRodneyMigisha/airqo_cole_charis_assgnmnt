@@ -1,68 +1,36 @@
-\documentclass[10pt,a4paper]{article}
-
-\usepackage[a4paper,top=2.2cm,bottom=2.2cm,left=2.0cm,right=2.0cm]{geometry}
-\usepackage[T1]{fontenc}
-\usepackage{newtxtext,newtxmath}
-\usepackage{xcolor}
-\usepackage{microtype}
-
-\pagestyle{empty}
-\setlength{\parindent}{0pt}
-\definecolor{rulegrey}{gray}{0.35}
-\newcommand{\band}{\noindent{\color{rulegrey}\rule{\textwidth}{0.6pt}}}
-\newcommand{\ugm}{\,$\mu$g/m$^{3}$}
+\documentclass{ieeeaccess}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage[hidelinks]{hyperref}
+\newcommand{\orcidicon}[1]{\href{#1}{\raisebox{-0.15ex}{\includegraphics[height=1.25ex]{orcid-id.png}}}}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.1667em\lower.7ex\hbox{E}\kern-.1257emX}}
 
 \begin{document}
 
-%-------------------------------------------------------------------- Title
-\vspace*{0.4cm}
-{\fontsize{19}{24}\selectfont\raggedright
-Forecasting Hourly PM2.5 from Sparse Low-Cost Sensor Records in Uganda: Gap-Aware Imputation, Time-Aware Validation and Cloud Deployment\par}
+% ORCID metadata supplied by the user; not part of the scientific prose:
+% Charis Opol: https://orcid.org/0009-0003-7417-7984
+% Cole Rodney Migisha: https://orcid.org/0009-0000-5311-2485
+% The source does not provide email addresses; none are added here.
+\title{Forecasting Hourly PM\textsubscript{2.5} from Sparse Low-Cost Sensor Records in Uganda: Gap-Aware Imputation, Time-Aware Validation and Cloud Deployment}
+\author{Charis Opol\authorrefmark{1}\,\orcidicon{https://orcid.org/0009-0003-7417-7984}, Cole Rodney Migisha\authorrefmark{1}\,\orcidicon{https://orcid.org/0009-0000-5311-2485}}
+\address[1]{Uganda Christian University, Mukono, Uganda, Faculty of Engineering, Design and Technology, Department of Computing and Technology  \\b29654@students.ucu.ac.ug \\b29657@students.ucu.ac.ug}
 
-\vspace{0.55cm}
-{\large Charis Opol$^{\mathrm{a},*}$, Cole Rodney Migisha$^{\mathrm{a}}$\par}
+\begin{abstract}
+Low-cost sensor networks such as AirQo have expanded PM\textsubscript{2.5} monitoring in Ugandan cities, but intermittent device availability leaves short, fragmented records, and it is unclear how well such records support forecasting. We develop and deploy a pipeline that predicts hourly PM\textsubscript{2.5} from 14{,}600 records of 149 AirQo sensors, which contain readings on only eight days in three bursts. PM\textsubscript{10} was excluded as an input because it is a same-hour co-measurement of the same particles rather than a driver of PM\textsubscript{2.5}, and is unavailable in advance. Extreme readings were replaced by the nearest normal value from the same sensor, and weather gaps were filled by windowed interpolation, time-of-day profiles or a BRITS-style bidirectional LSTM. Twelve models were compared under chronological hold-out, expanding-window and leave-sensors-out validation; SMOTE was tested and rejected. From weather, time and sensor identity alone, a tuned support vector regressor achieved a hold-out MAE of 9.34~\(\mu\)g/m\textsuperscript{3} (\(R^2 = 0.34\)), against 17.60~\(\mu\)g/m\textsuperscript{3} for a mean baseline; adding the previous three hours of PM\textsubscript{2.5} reduced the MAE to 8.43~\(\mu\)g/m\textsuperscript{3} (LightGBM, \(R^2 = 0.42\)). The bidirectional imputer reduced imputation error by 21\% but changed prediction error by only \(-0.4\)\%. On a later full-month dataset (August 2026), the history-based models retained skill (MAE 13.70 against 19.21~\(\mu\)g/m\textsuperscript{3}), whereas the weather-only models performed close to the baseline, consistent with drift in six of nine input features. The forecast model is deployed as a cloud API with a dashboard. In sparse networks, recent pollutant history matters more than weather or sophisticated imputation.
+\end{abstract}
 
-\vspace{0.3cm}
-{\small\itshape $^{\mathrm{a}}$Department of Computing and Technology, Faculty of Engineering, Design and Technology, Uganda Christian University, Mukono, Uganda\par}
+\begin{keywords}
+PM\textsubscript{2.5} forecasting, Low-cost sensors, AirQo, Missing-data imputation, Time-series validation, Model deployment
+\end{keywords}
 
-\vspace{0.45cm}
-\band
+\titlepgskip=-15pt
+\maketitle
 
-%-------------------------------------------------------------------- Info and abstract band
-\vspace{0.15cm}
-\begin{minipage}[t]{0.27\textwidth}
-\raggedright
-{\footnotesize\scshape Article info}\par
-\vspace{-0.1cm}{\color{rulegrey}\rule{\linewidth}{0.4pt}}\par
-\vspace{0.1cm}
-{\footnotesize\itshape Keywords:\par}
-\vspace{0.1cm}
-{\footnotesize
-PM2.5 forecasting\\
-Low-cost sensors\\
-AirQo\\
-Missing-data imputation\\
-Time-series validation\\
-Model deployment\par}
-\end{minipage}%
-\hfill
-\begin{minipage}[t]{0.68\textwidth}
-{\footnotesize\scshape Abstract}\par
-\vspace{-0.1cm}{\color{rulegrey}\rule{\linewidth}{0.4pt}}\par
-\vspace{0.1cm}
-\small\setlength{\parskip}{0pt}\linespread{1.08}\selectfont
-\noindent Fine particulate matter (PM2.5) is the air pollutant of greatest health concern in Ugandan cities, yet low-cost monitoring networks such as AirQo's suffer from intermittent sensor availability. This study develops and deploys a pipeline predicting hourly PM2.5 from temperature, humidity, time and recent PM2.5 readings. PM10 is excluded: PM2.5 is part of PM10, so PM10 is a co-measurement of the same particles rather than a driver, and it is unavailable ahead of time; an early model using it reached an MAE of 3.10\ugm. The data comprise 14{,}600 hourly records from 149 sensors, with readings on only eight days. Extreme PM2.5 values were replaced by the nearest normal reading from the same sensor, and weather gaps were filled by windowed interpolation, time-of-day profiles, or a BRITS-style bidirectional LSTM. More than ten model variants were compared under chronological hold-out, expanding-window and leave-sensors-out validation, and SMOTE was tested and rejected. A tuned SVR was the best forecast model on the hold-out (MAE 9.34\ugm, $R^2$ 0.34); adding recent PM2.5 lowered the error to 8.43\ugm{} (LightGBM, $R^2$ 0.42) against 17.60 for a training-mean baseline. The bidirectional imputer cut imputation error by 21\% but changed prediction error by only $-0.4\%$, so time-of-day imputation was kept. On a full-August 2026 test set, the best model reached MAE 13.70\ugm{} (baseline 19.21), with drift in six of nine features. The model is served through a cloud API and dashboard. In sparse networks, recent pollutant history matters more than weather or sophisticated imputation.
-\end{minipage}
 
-\vspace{0.3cm}
-\band
-
-%-------------------------------------------------------------------- Footer
-\vfill
-{\color{rulegrey}\rule{0.25\textwidth}{0.4pt}}\par
-\vspace{0.1cm}
-{\footnotesize $^{*}$Corresponding author: Charis Opol, Department of Computing and Technology, Uganda Christian University.\par
-\vspace{0.1cm}
-CSC3119 AI Model Deployment and Scalability, Assignment 4. October 2026.\par}
-
+\EOD
 \end{document}
