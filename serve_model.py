@@ -8,12 +8,17 @@ Endpoints:
     GET  /health    -> model name and status
     POST /predict   -> {"rows": [{feature: value, ...}, ...]}
                        returns PM2.5 (ug/m3) and the AQI category per row
+    OPTIONS         -> CORS preflight handling
 
 Each row needs: temperature, humidity, hour_sin, hour_cos,
 day_of_week_sin, day_of_week_cos, month_sin, month_cos, device_name.
 The list is read from the saved model, so it always matches the artifact.
 PM10 is not used. Missing weather values may be left out; the pipeline
 fills them with the training median.
+
+Configure CORS_ALLOWED_ORIGINS as a comma-separated list of allowed
+origins in the environment. Example:
+    CORS_ALLOWED_ORIGINS=https://airqo-model.vercel.app,http://localhost:5173
 """
 
 import json
@@ -25,6 +30,13 @@ import pandas as pd
 
 MODEL_PATH = os.environ.get('MODEL_PATH', 'best_pm25_model.joblib')
 PORT = int(os.environ.get('PORT', '8000'))
+
+# Read allowed origins from the environment; do not hardcode deployment domains.
+CORS_ALLOWED_ORIGINS = {
+    origin.strip().rstrip('/')
+    for origin in os.environ.get('CORS_ALLOWED_ORIGINS', '').split(',')
+    if origin.strip()
+}
 
 artifact = joblib.load(MODEL_PATH)
 pipeline = artifact['pipeline']
@@ -55,6 +67,22 @@ def predict(rows):
 
 
 class Handler(BaseHTTPRequestHandler):
+
+    def end_headers(self):
+        request_origin = self.headers.get('Origin')
+
+        # Grant browser access only to configured origins.
+        if (
+            request_origin
+            and request_origin.rstrip('/') in CORS_ALLOWED_ORIGINS
+        ):
+            self.send_header('Access-Control-Allow-Origin', request_origin)
+            self.send_header('Vary', 'Origin')
+            self.send_header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
+            self.send_header('Access-Control-Allow-Headers', 'Content-Type')
+
+        super().end_headers()
+
     def send_json(self, status, body):
         payload = json.dumps(body).encode()
         self.send_response(status)
@@ -62,6 +90,23 @@ class Handler(BaseHTTPRequestHandler):
         self.send_header('Content-Length', str(len(payload)))
         self.end_headers()
         self.wfile.write(payload)
+
+    def do_OPTIONS(self):
+        request_origin = self.headers.get('Origin')
+
+        # Reject preflight requests from origins not in the allowlist.
+        if (
+            request_origin
+            and request_origin.rstrip('/') not in CORS_ALLOWED_ORIGINS
+        ):
+            self.send_response(403)
+            self.send_header('Content-Length', '0')
+            self.end_headers()
+            return
+
+        self.send_response(204)
+        self.send_header('Content-Length', '0')
+        self.end_headers()
 
     def do_GET(self):
         if self.path == '/health':
