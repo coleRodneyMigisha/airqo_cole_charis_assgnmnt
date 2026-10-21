@@ -60,7 +60,11 @@ The external test now uses `AirQo_August_2026_hourly_matched.csv`: 73,274 rows, 
 
 ## Still to do by hand
 
+<<<<<<< HEAD
 - Render and Vercel links added (2026-10-21).
+=======
+- Add the Render and Vercel links where the report shows the red `[ADD LINK: ...]` markers, and in `DEPLOYMENT.md`.
+>>>>>>> 436c02e1341cb5c2af2d9caf30d8db6730a6e9a4
 - Complete the Wang et al. 2019 reference (title, authors, DOI); it is marked in red in the bibliography.
 - Re-upload the Hugging Face model and Space (HUGGINGFACE.md steps 3 and 4) if the online versions should show the current model.
 
@@ -86,6 +90,7 @@ The external test now uses `AirQo_August_2026_hourly_matched.csv`: 73,274 rows, 
 ## Round 6: reason for removing PM10
 
 The stated reason is now scientific first: PM2.5 is the fine fraction of PM10, so PM10 is a co-measurement of the same particles rather than a driver, and the literature (Wang & Ogawa 2015; Yang et al. 2017) points to meteorological conditions as drivers. Not being known ahead of time is the second reason. Updated in `main.tex` (abstract, change list, Phase 1, decision log, cleaning, limitations), `abstract.tex`, `DEPLOYMENT.md`, the Hugging Face model card and the notebook markdown cells `pm10-01` and the model summary.
+<<<<<<< HEAD
 
 ## Round 7: report moved to the IEEE Access template
 
@@ -97,3 +102,5 @@ The stated reason is now scientific first: PM2.5 is the fine fraction of PM10, s
 - Build: `main.pdf` is a local preview made with a third-party copy of `ieeeaccess.cls` (GitHub, erwinrmendez/ieee-access-template) whose Pantone spot colour was swapped for CMYK so it compiles with XeTeX. Build the final PDF on Overleaf with the official IEEE Access files. `orcid-id.png` is not in the repository and must be added on Overleaf.
 - UCU cover page removed (2026-10-21); the report now starts with the IEEE Access first page.
 - Added a "Useful Links" section after the conclusion: GitHub repository and the Vercel dashboard (2026-10-21).
+=======
+>>>>>>> 436c02e1341cb5c2af2d9caf30d8db6730a6e9a4
