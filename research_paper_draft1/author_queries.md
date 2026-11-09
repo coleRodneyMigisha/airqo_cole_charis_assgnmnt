@@ -4,27 +4,27 @@ These queries are for Charis and Cole. Markers such as `[AQ5]` in the manuscript
 
 ## A. Blocking: resolve before any submission
 
-**AQ20 – Deadline conflict.** The website (Submission and Paper Guidelines pages) gives the extended deadline as **20 November 2026**. The Call for Papers PDF gives **31 October 2026**, two days from now. Please confirm with the IST-Africa Secretariat which date applies. Do not rely on 20 November until it is confirmed.
+**AQ20 – Deadline conflict.** The website (Submission and Paper Guidelines pages) gives the extended deadline as **20 November 2026**. The Call for Papers PDF gives **31 October 2026**, two days from now. Please confirm with the IST-Africa Secretariat which date applies. Do not rely on 20 November until it is confirmed. Answer: 20th Nov
 
 **AQ15 – AI declaration, and the "AI-generated papers" rule.** The GenAI Policy says *"AI-generated papers should not be submitted"*. It also requires that analysis, interpretation of findings and conclusions be developed independently by the authors.
 - The research, the analysis and every decision in Draft 1 come from your report and notebook. The *wording* of Draft 1, however, was drafted by Claude (Anthropic) through Claude Code.
 - Before submission, please (i) rewrite the paper in your own words, especially the Introduction, Discussion and Conclusions; (ii) check that every interpretation is one you hold; and (iii) complete the declaration in the Acknowledgements truthfully.
-- The stored notebook outputs show the pipeline ran from a Claude Code scratchpad environment. If AI tools helped write the analysis code, the report or the figures, the declaration must say so, naming the tool and what it did.
+- The stored notebook outputs show the pipeline ran from a Claude Code scratchpad environment. If AI tools helped write the analysis code, the report or the figures, the declaration must say so, naming the tool and what it did. Answer: Will do!
 
 **AQ19 – Originality, course rules and anonymity.**
-- (a) The work began as CSC3119 Assignment 4. Do the course or university rules allow submitting it to a conference? Should the course be acknowledged in the final, non-anonymous version?
-- (b) Has any part of it been published or submitted elsewhere?
-- (c) The public GitHub repository, the Vercel dashboard, the Render service and the Hugging Face model and Space all carry your names or user names and the same content. Reviewers could find them. Consider making them private, or removing identifying details, during review. Add links only in the camera-ready version.
+- (a) The work began as CSC3119 Assignment 4. Do the course or university rules allow submitting it to a conference? Should the course be acknowledged in the final, non-anonymous version? Answer: The assignment ended, and the lecturer asked us to submit it... but we're keeping anonimity
+- (b) Has any part of it been published or submitted elsewhere? Answer: No
+- (c) The public GitHub repository, the Vercel dashboard, the Render service and the Hugging Face model and Space all carry your names or user names and the same content. Reviewers could find them. Consider making them private, or removing identifying details, during review. Answer: Add links only in the camera-ready version, the rest keep private
 
-**Approval.** Neither of you has reviewed or approved Draft 1. IST-Africa requires that every author approves the submitted version.
+**Approval.** Neither of you has reviewed or approved Draft 1. IST-Africa requires that every author approves the submitted version: Answer: Don't worry
 
 ## B. Facts to confirm or supply (they affect claims in the text)
 
-**AQ1 – Data spans of prior forecasting studies.** The text says the forecasting studies "work with one or more years of continuous data [8]–[11]". This is verified only for [9] (two years). Please check [8], [10] and [11], then keep or soften the sentence.
+**AQ1 – Data spans of prior forecasting studies.** The text says the forecasting studies "work with one or more years of continuous data [8]–[11]". This is verified only for [9] (two years). Please check [8], [10] and [11], then keep or soften the sentence. Answer: remove citation [11]
 
-**AQ2 – Sserunjogi et al. [3].** Your report says "68 monitoring stations, 2019–2020". I could not verify this, so Draft 1 omits it. Add it back if the paper confirms it.
+**AQ2 – Sserunjogi et al. [3].** Your report says "68 monitoring stations, 2019–2020". I could not verify this, so Draft 1 omits it. Add it back if the paper confirms it. Answer: confirmed, check https://pubmed.ncbi.nlm.nih.gov/35990920/
 
-**AQ3 – Adong et al. [4].** Your report says that a Random Forest lowered RMSE from 18.6 to 7.2 µg/m³, and that the calibration was rolled out to more than 120 devices. Unverified, so omitted. Restore it if the paper confirms it.
+**AQ3 – Adong et al. [4].** Your report says that a Random Forest lowered RMSE from 18.6 to 7.2 µg/m³, and that the calibration was rolled out to more than 120 devices. Unverified, so omitted. Restore it if the paper confirms it. Answer: confirmed, check https://onlinelibrary.wiley.com/doi/full/10.1002/ail2.76
 
 **AQ4 – Lsoto et al. [5].** The abstract confirms 11 low-cost sensors compared with a BAM over 13 months, at hourly and daily resolution. Draft 1 §1 also says sensors "agree less well at high concentrations and at hourly resolution". That comes from your report and is not in the part of the abstract I could read. Please confirm it against the full text.
 
