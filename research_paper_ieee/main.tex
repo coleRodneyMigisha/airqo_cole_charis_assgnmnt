@@ -1,44 +1,70 @@
-\documentclass[conference]{IEEEtran}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
+% Two versions: this file has the authors' credentials; main_blind.tex defines \blindversion
+% and inputs this file to produce the double-blind version.
+\newif\ifblind
+\ifdefined\blindversion\blindtrue\fi
+% Keep the current year as a number before ieeeaccess.cls turns \year into a macro (see below).
+\edef\yearnum{\the\year}
+\documentclass{ieeeaccess}
 \usepackage{cite}
-\usepackage{amsmath}
+\usepackage{amsmath,amssymb,amsfonts}
 \usepackage{graphicx}
+\usepackage{textcomp}
 \usepackage{booktabs}
 \usepackage{array}
 \usepackage{tabularx}
 \usepackage{xcolor}
+\usepackage{url}
+% ieeeaccess.cls redefines \year as a macro; TikZ needs a number in \year while it loads,
+% so lend it the real year and restore the class's version afterwards.
+\let\accessyear\year
+\let\year\yearnum
 \usepackage{tikz}
 \usetikzlibrary{positioning,arrows.meta,fit,backgrounds,patterns}
 \usepackage{pgfplots}
-\pgfplotsset{compat=1.17}
-\usepackage{textcomp}
-\usepackage{url}
+\pgfplotsset{compat=newest}
+\let\year\accessyear
+% ieeeaccess.cls registers its PANTONE 3015 C spot colour in the page resources, and pgf/TikZ
+% overwrites those resources at shipout, so viewers lose the colour (blank headings, captions).
+% Register the colour space through pgf instead, so every page keeps it.
+\makeatletter
+\ifdefined\PANTONE
+  \expandafter\pgfutil@addpdfresource@colorspaces\expandafter{\the\PANTONE}
+\fi
+\makeatother
+% ieeeaccess captions read \xfigwd, which only its \Figure command sets; give TikZ figures a default.
+\def\xfigwd{0pt}
+\usepackage[hidelinks]{hyperref}
+\graphicspath{{figures/}}
+\ifblind\hypersetup{pdfauthor={}}\else\hypersetup{pdfauthor={Charis Opol, Cole Rodney Migisha}}\fi
 
 \newcommand{\aq}[1]{\textcolor{red}{[#1]}}
 \newcommand{\ugm}{\textmu g/m\textsuperscript{3}}
+\newcommand{\orcidicon}[1]{\href{#1}{\raisebox{-0.15ex}{\includegraphics[height=1.25ex]{orcid-id.png}}}}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.1667em\lower.7ex\hbox{E}\kern-.1257emX}}
 
 \begin{document}
 
-% REPLACE: paste the submitted title from the Overleaf project here (it is also used in the AI declaration)
-\newcommand{\papertitle}{TITLE FROM OVERLEAF PROJECT}
+\newcommand{\papertitle}{Forecasting Hourly PM\textsubscript{2.5} from Sparse Low-Cost Sensor Records in Uganda: Gap-Aware Imputation, Time-Aware Validation and Cloud Deployment}
 \title{\papertitle}
-
-\author{\IEEEauthorblockN{Anonymous Authors}
-\IEEEauthorblockA{Affiliations removed for double-blind review}}
-
-\maketitle
+\ifblind
+\author{Anonymous Authors\authorrefmark{1}}
+\address[1]{Affiliation and contact details removed for double-blind review}
+\else
+% ORCID: Charis Opol https://orcid.org/0009-0003-7417-7984; Cole Rodney Migisha https://orcid.org/0009-0000-5311-2485
+\author{Charis Opol\authorrefmark{1}\,\orcidicon{https://orcid.org/0009-0003-7417-7984}, Cole Rodney Migisha\authorrefmark{1}\,\orcidicon{https://orcid.org/0009-0000-5311-2485}}
+\address[1]{Uganda Christian University, Mukono, Uganda, Faculty of Engineering, Design and Technology, Department of Computing and Technology  \\b29654@students.ucu.ac.ug \\b29657@students.ucu.ac.ug}
+\fi
 
 \begin{abstract}
-% REPLACE: paste the submitted abstract from the Overleaf project here
-ABSTRACT FROM OVERLEAF PROJECT
+What can a model learn about a city's air from eight days of readings? Low-cost sensors have widened PM\textsubscript{2.5} monitoring in Ugandan cities, but devices go offline and leave short, broken records. From 14,600 hourly records of 149 AirQo sensors, we build a prediction pipeline, compare twelve models under three validation designs and test them on a later full month. A first model scores a mean absolute error (MAE) of 3.10~\ugm{} only because it is given PM\textsubscript{10}, a same-hour co-measurement. Without it, a support vector regressor reaches 9.34~\ugm{} against 17.60~\ugm{} for a mean baseline, but gains little in August. With three hours of PM\textsubscript{2.5} history, tree models reach 8.43--8.50~\ugm{}, and the best keeps skill in August (13.70 against 19.21~\ugm{}). Better imputation fills gaps well without improving prediction. In sparse networks, recent measurements matter more than weather inputs.
 \end{abstract}
 
+\begin{keywords}
+PM\textsubscript{2.5} forecasting, Low-cost sensors, AirQo, Missing-data imputation, Time-series validation, Model deployment
+\end{keywords}
 
-\begin{IEEEkeywords}
-PM2.5 forecasting, low-cost sensors, AirQo, missing-data imputation, time-series validation, model deployment, Uganda
-\end{IEEEkeywords}
-
+\titlepgskip=-15pt
+\maketitle
 
 \section{Introduction}
 
@@ -75,32 +101,6 @@ For methods we drew on BRITS~\cite{ref11}, a bidirectional recurrent imputer bui
 \section{Methodology}
 
 Fig.~\ref{fig:pipeline} summarises how the model makes its predictions, from the raw sensor records to a served prediction. This section describes the training path, and Section~\ref{sec:technology} the deployed one.
-
-\subsection{Data}
-
-Both files come from the AirQo network and were provided to us through a university course. The main file contains 14,600 hourly records with 12 fields: site name, timestamp, sampling frequency, network (AirQo or AirGradient), latitude, longitude, temperature, relative humidity, calibrated PM2.5 and PM10, site identifier and device name. There are 149 devices at 145 named sites, so the device, not the site, identifies a sensor; no device-hour pair is duplicated. Table~\ref{tab:data} summarises the properties that shaped the study. Coverage matters most: although the file is labelled January to July 2026, readings exist only on 1--3 January, 1--2 April and 1--3 June, a total of 147 hours in which at least one sensor reported. About 28.8\% of rows from AirQo devices report exactly 0~\textdegree{}C and 0\% humidity together, in long blocks, and no AirGradient row does; we treat these as weather-sensor dropouts. In 3,199 rows (22.4\%) PM2.5 exceeded PM10, which is physically impossible because PM2.5 is a fraction of PM10 and points to calibration error.
-
-\begin{table}[t]
-\caption{Properties of the two datasets used.}
-\label{tab:data}
-\centering
-\footnotesize
-\begin{tabularx}{\columnwidth}{>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X}
-\toprule
-Property & Main dataset & August dataset \\
-\midrule
-Hourly records & 14,600 & 73,274 \\
-Sensors & 149 (AirQo and AirGradient) & 125 (AirQo; all also in main data) \\
-Days with readings & 8 (1--3 Jan, 1--2 Apr, 1--3 Jun 2026) & 31 (1--31 Aug 2026) \\
-Valid PM2.5 readings & 14,275 & not reported; extremes not replaced \\
-Weather zeros treated as missing & c. 28.8\% of AirQo rows & c. 14\% of rows \\
-Mean PM2.5 (\ugm{}) & 32.7 raw; 23 in the hold-out days & 35.5 \\
-Role & training and validation & external test only, no retraining \\
-\bottomrule
-\end{tabularx}
-\end{table}
-
-A second file covering all of August 2026 became available later. It was used only as an external test set, after the same cleaning and without retraining.
 
 % Fig. 1: pipeline diagram (drawn in TikZ, no image file needed)
 \begin{figure}[t]
@@ -143,6 +143,40 @@ A second file covering all of August 2026 became available later. It was used on
 \caption{How the deployed model makes its predictions. Left: the steps that produce the saved forecast model. Right: the path of one prediction request. Dashed arrow: the web service loads the saved model when it starts. Models with PM2.5 history are not served, because they would need each sensor's readings from the previous three hours.}
 \label{fig:pipeline}
 \end{figure}
+
+\subsection{Data}
+
+Both files come from the AirQo network and were provided to us through a university course. The main file contains 14,600 hourly records with 12 fields: site name, timestamp, sampling frequency, network (AirQo or AirGradient), latitude, longitude, temperature, relative humidity, calibrated PM2.5 and PM10, site identifier and device name. There are 149 devices at 145 named sites, so the device, not the site, identifies a sensor; no device-hour pair is duplicated. Fig.~\ref{fig:map} shows the 143 sensors that report coordinates; the other six never report a location. Table~\ref{tab:data} summarises the properties that shaped the study. Coverage matters most: although the file is labelled January to July 2026, readings exist only on 1--3 January, 1--2 April and 1--3 June, a total of 147 hours in which at least one sensor reported. About 28.8\% of rows from AirQo devices report exactly 0~\textdegree{}C and 0\% humidity together, in long blocks, and no AirGradient row does; we treat these as weather-sensor dropouts. In 3,199 rows (22.4\%) PM2.5 exceeded PM10, which is physically impossible because PM2.5 is a fraction of PM10 and points to calibration error.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.82\textwidth]{map_sensor_network.png}
+\caption{The AirQo sensors that report coordinates (n = 143), coloured by mean PM2.5 category. Marker shape gives data availability and marker size the share of time offline. Right: greater Kampala.}
+\label{fig:map}
+\end{figure*}
+
+\begin{table}[t]
+\caption{Properties of the two datasets used.}
+\label{tab:data}
+\centering
+\footnotesize
+\begin{tabularx}{\columnwidth}{>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X}
+\toprule
+Property & Main dataset & August dataset \\
+\midrule
+Hourly records & 14,600 & 73,274 \\
+Sensors & 149 (AirQo and AirGradient) & 125 (AirQo; all also in main data) \\
+Days with readings & 8 (1--3 Jan, 1--2 Apr, 1--3 Jun 2026) & 31 (1--31 Aug 2026) \\
+Valid PM2.5 readings & 14,275 & not reported; extremes not replaced \\
+Weather zeros treated as missing & c. 28.8\% of AirQo rows & c. 14\% of rows \\
+Mean PM2.5 (\ugm{}) & 32.7 raw; 23 in the hold-out days & 35.5 \\
+Role & training and validation & external test only, no retraining \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+A second file covering all of August 2026 became available later. It was used only as an external test set, after the same cleaning and without retraining.
+
 
 \subsection{Preparation and Imputation}\label{sec:prep}
 
@@ -251,7 +285,7 @@ SHAP attributions show what the forecast models were learning. Without history, 
 
 \subsection{Better Imputation, Unchanged Predictions}\label{sec:imputation}
 
-As an imputer, the bidirectional model was clearly better than the time-of-day method: its error was lower in all 15 combinations of variable and gap length, by 20.8\% on average (Table~\ref{tab:imputation}). Interpolation was most accurate for one- to three-hour weather gaps, but it could fill only 618 of the 11,423 missing temperature values. The bidirectional model's fills were also smoother than real data, with a standard deviation for PM2.5 of 11.9~\ugm{} against 26.8~\ugm{} observed.
+As an imputer, the bidirectional model was clearly better than the time-of-day method: its error was lower in all 15 combinations of variable and gap length, by 20.8\% on average (Table~\ref{tab:imputation} and Fig.~\ref{fig:imperr}). Interpolation was most accurate for one- to three-hour weather gaps, but it could fill only 618 of the 11,423 missing temperature values. The bidirectional model's fills were also smoother than real data, with a standard deviation for PM2.5 of 11.9~\ugm{} against 26.8~\ugm{} observed.
 
 \begin{table*}[t]
 \caption{Imputation MAE on hidden hold-out values, by gap length. (a) does not fill gaps longer than three hours.}
@@ -269,6 +303,14 @@ PM2.5 (\ugm{}) & (a) / (b) / (c) & 7.35 / 9.10 / 6.85 & -- / 10.42 / 9.80 & -- /
 \end{tabular}
 \end{table*}
 
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{imputation_error_vs_gap_length.png}
+\caption{Imputation error against gap length on hidden hold-out values. Method (a) fills gaps of up to three hours only; linear interpolation without a gap limit is shown for reference.}
+\label{fig:imperr}
+\end{figure*}
+
+
 The downstream test told a different story. Training on the bidirectional imputer's weather instead of the time-of-day weather changed prediction MAE by $-$0.4\% on average and helped in only 7 of 15 model-design cases. It helped both LSTMs on the hold-out (from 10.89 to 9.48~\ugm{} with history), hurt the SVR in cross-validation (from 14.68 to 16.35~\ugm{}) and changed the rest by about 1\% or less. The final models therefore keep methods (a) and (b). This decision rests on five models; the others were not retested.
 
 \subsection{Oversampling Rare High-Pollution Hours}
@@ -277,7 +319,15 @@ SMOTE for regression made all eight models on which it was tried worse on the ho
 
 \subsection{Transfer to a New Month}
 
-Now to the question we opened with: what happens on days the model has never seen? August was more polluted than the hold-out days (mean 35.5 against 23~\ugm{}). On it, the forecast models were barely better than the baseline (SVR 18.32 against 19.21~\ugm{}), all with $R^2$ below zero, whereas the random forest with history reached 13.70~\ugm{} ($R^2$ = 0.30). Aggregated to daily means, the forecast model predicted the Moderate category on all 31 days, while the observed mean fell in the Unhealthy for Sensitive Groups band on 16; it matched the observed category on 15 days and the history models on 17. Unfamiliar sensors do not explain this, because every August sensor was in the training data, and neither does missingness, since 76 of the 125 sensors were data-rich in August. Evidently flagged six of nine input features as drifted between training and August, most strongly the month (0.83), day of week (0.75 and 0.61), humidity (0.26) and the mix of sensors (0.25). The imputer, by contrast, transferred well: on August temperature its six-hour error was 1.3~\textdegree{}C.
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.85\textwidth]{august_category_calendar.png}
+\caption{Daily mean PM2.5 category in August 2026: observed (left), forecast model (centre) and a model with PM2.5 history (right). Yellow: Moderate (9.01--35.49~\ugm{}); orange: Unhealthy for Sensitive Groups (35.5--55.49~\ugm{}).}
+\label{fig:augcal}
+\end{figure*}
+
+
+Now to the question we opened with: what happens on days the model has never seen? August was more polluted than the hold-out days (mean 35.5 against 23~\ugm{}). On it, the forecast models were barely better than the baseline (SVR 18.32 against 19.21~\ugm{}), all with $R^2$ below zero, whereas the random forest with history reached 13.70~\ugm{} ($R^2$ = 0.30). Aggregated to daily means, the forecast model predicted the Moderate category on all 31 days, while the observed mean fell in the Unhealthy for Sensitive Groups band on 16; it matched the observed category on 15 days and the history models on 17 (Fig.~\ref{fig:augcal}). Unfamiliar sensors do not explain this, because every August sensor was in the training data, and neither does missingness, since 76 of the 125 sensors were data-rich in August. Evidently flagged six of nine input features as drifted between training and August, most strongly the month (0.83), day of week (0.75 and 0.61), humidity (0.26) and the mix of sensors (0.25). The imputer, by contrast, transferred well: on August temperature its six-hour error was 1.3~\textdegree{}C.
 
 \section{Discussion}
 
@@ -305,9 +355,10 @@ Eight days of readings taught our models the level of each sensor on those days,
 
 The authors acknowledge the use of content generated by Artificial Intelligence (AI) (including but not limited to text, figures, images, and code) in the paper entitled ``\papertitle'' in the following ways:
 
-The research questions, data processing, analysis, model and deployment decisions, findings and conclusions are the authors' own, developed during the project and recorded in its analysis notebook and report. Claude (Anthropic), used through the Claude Code tool, assisted with parts of the analysis code and compiled the authors' report, notebook outputs and cited sources into draft text, Tables~\ref{tab:data}--\ref{tab:imputation} and Figs.~\ref{fig:pipeline} and~\ref{fig:mae} of this paper, and checked numerical values and reference metadata against those materials. \aq{AQ15: confirm the extent of the code assistance, and add ``The authors reviewed, revised and verified the content and take full responsibility for it.'' once your joint revision is done.}
+The research questions, data processing, analysis, model and deployment decisions, findings and conclusions are the authors' own, developed during the project and recorded in its analysis notebook and report. Claude (Anthropic), used through the Claude Code tool, assisted with parts of the analysis code and compiled the authors' report, notebook outputs and cited sources into draft text, Tables~\ref{tab:data}--\ref{tab:imputation} and Figs.~\ref{fig:pipeline} and~\ref{fig:mae} of this paper, and checked numerical values and reference metadata against those materials. The authors reviewed, revised and verified the content and take full responsibility for it.
 
 \bibliographystyle{IEEEtran}
 \bibliography{references}
 
+\EOD
 \end{document}
