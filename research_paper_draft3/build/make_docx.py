@@ -52,20 +52,29 @@ def para(style, text, tab=False, size=None, extra_ppr=""):
     return f'<w:p><w:pPr><w:pStyle w:val="{style}"/>{extra_ppr}</w:pPr>{lead}{runs(text, size)}</w:p>'
 
 
+TEXT_WIDTH = 8853   # twips: A4 width 11906 minus the template's margins (1584 left, 1469 right)
+
+
 def table(rows, cols):
+    """A full-width table; each column's width follows its longest cell."""
     border = "".join(f'<w:{b} w:val="single" w:sz="4" w:space="0" w:color="000000"/>'
                      for b in ("top", "left", "bottom", "right", "insideH", "insideV"))
-    xml = [f'<w:tbl><w:tblPr><w:tblStyle w:val="TableNormal"/><w:tblW w:w="0" w:type="auto"/><w:jc w:val="center"/>'
-           f'<w:tblBorders>{border}</w:tblBorders><w:tblLayout w:type="autofit"/>'
-           f'<w:tblCellMar><w:left w:w="80" w:type="dxa"/><w:right w:w="80" w:type="dxa"/></w:tblCellMar></w:tblPr>'
-           f'<w:tblGrid>{"<w:gridCol/>" * cols}</w:tblGrid>']
-    for r, row in enumerate(rows):
+    cells_of = [(row + [""] * cols)[:cols] for row in rows]
+    longest = [max(len(r[c].replace("**", "")) for r in cells_of) for c in range(cols)]
+    weight = [min(max(n, 4), 34) for n in longest]
+    widths = [int(TEXT_WIDTH * w / sum(weight)) for w in weight]
+    xml = [f'<w:tbl><w:tblPr><w:tblStyle w:val="TableNormal"/><w:tblW w:w="{TEXT_WIDTH}" w:type="dxa"/><w:jc w:val="center"/>'
+           f'<w:tblBorders>{border}</w:tblBorders><w:tblLayout w:type="fixed"/>'
+           f'<w:tblCellMar><w:left w:w="60" w:type="dxa"/><w:right w:w="60" w:type="dxa"/></w:tblCellMar></w:tblPr>'
+           f'<w:tblGrid>{"".join(f"<w:gridCol w:w=\"{w}\"/>" for w in widths)}</w:tblGrid>']
+    size = 20 if cols < 8 else (14 if cols < 11 else 13)
+    for r, row in enumerate(cells_of):
         trpr = "<w:trPr><w:tblHeader/><w:cantSplit/></w:trPr>" if r == 0 else "<w:trPr><w:cantSplit/></w:trPr>"
         cells = "".join(
-            '<w:tc><w:tcPr><w:tcW w:w="0" w:type="auto"/></w:tcPr>'
-            + para("Normal", cell, size=20 if cols < 8 else 14, extra_ppr='<w:spacing w:before="20" w:after="20"/><w:jc w:val="left"/>')
+            f'<w:tc><w:tcPr><w:tcW w:w="{widths[c]}" w:type="dxa"/></w:tcPr>'
+            + para("Normal", cell, size=size, extra_ppr='<w:spacing w:before="10" w:after="10"/><w:jc w:val="left"/>')
             + "</w:tc>"
-            for cell in (row + [""] * cols)[:cols])
+            for c, cell in enumerate(row))
         xml.append(f"<w:tr>{trpr}{cells}</w:tr>")
     xml.append("</w:tbl>")
     return "".join(xml)
@@ -108,7 +117,7 @@ while i < len(lines):
         body.append(para("Paragraph1", text) if prev_heading else para("Paragraph2", text, tab=True))
         prev_heading = False
     elif tag == "REF":
-        body.append(para("Paragraph1", text, size=20))
+        body.append(para("Paragraph1", text, size=18))
     elif tag == "CAP":
         keep = '<w:keepNext/>' if text.startswith("Table") else ""
         body.append(para("Caption", text, extra_ppr=keep))
@@ -133,6 +142,11 @@ while i < len(lines):
 
 with zipfile.ZipFile(template) as z:
     parts = {n: z.read(n) for n in z.namelist()}
+
+# Subheadings (Heading 2): bold italic at 11 pt, one step below the 14 pt Heading 1.
+styles = parts["word/styles.xml"].decode("utf-8")
+styles = re.sub(r'(<w:style [^>]*w:styleId="Heading2".*?<w:rPr>)<w:i/>(</w:rPr>)', r'\1<w:b/><w:i/><w:sz w:val="22"/><w:szCs w:val="22"/>\2', styles, count=1, flags=re.S)
+parts["word/styles.xml"] = styles.encode("utf-8")
 
 doc = parts["word/document.xml"].decode("utf-8")
 head = doc[: doc.index("<w:body>") + len("<w:body>")]

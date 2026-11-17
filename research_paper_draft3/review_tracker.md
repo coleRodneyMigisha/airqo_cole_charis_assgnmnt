@@ -22,7 +22,7 @@ Comment numbers are the order of the comments in the review file (0 = first, on 
 | 12 | 3.2 Cleaning | PM10 sentence, outlier rule, apply to August, PM2.5 > PM10 rows, cite Stoddart and Alaran | DONE | Cake analogy replaced by a technical sentence; Stoddart [26] and Alaran [35] cited (both checked: no PM10 inputs; outlier removal improved Stoddart's forecasts). Threshold justified as Tukey's far-out limit [36], per sensor. Episode check: 52% of replaced readings coincided with 3+ other extreme sensors, so some may be real (stated). August scored both ways (661 readings replaced; order unchanged). "Missing PM2.5 targets were never imputed." |
 | 13 | 3.3 / 5.3 | Rerun without the month feature | DONE | Month held constant and models refitted: removing it made the forecast models WORSE (SVR August 18.32 → 20.51; hold-out 9.34 → 11.23), history models changed ≤1%. Reported in 5.3 and discussed in 6. |
 | 14 | 3.3 Models | Persistence baseline; hyperparameters, LSTM settings, seeds, SMOTE; models-by-family table | DONE | Persistence added everywhere. New Table 3 (models by family, inputs, final settings); LSTM/BRITS settings, seed 42 and SMOTE strengths (0.25, 0.5) in the text. |
-| 15 | 4 Technology | Business case; software packages; deployment tool; results for deployment | PARTIAL | 4.1 Software (packages and versions; TensorFlow), 4.2 Deployment, 4.3 Business Case; deployment results in 5.4. **Open: the iLabs paper (Cole will ask Mr. Stephen).** |
+| 15 | 4, 5, 7 | Business case; software packages; deployment tool; results for deployment; follow the key sections of the iLabs paper | DONE | The iLabs paper is Kyambadde, Kalyesubula et al., IST-Africa 2022 (`sources/Development_of_an_Interactive_Remote_iLab_for_a_Wind_Energy_System.pdf`). Its structure is now followed: main and specific objectives; 4 Technology Description with 4.1 Design Tools (tools table), 4.2 System Architecture, 4.3 Deployment; 5 Developments with 5.1 Pipeline Development, 5.2 Dashboard Design (screenshot), 5.3 Remote Access; 6 Results; 7 Business Benefits; 9 Conclusions. Sserunjogi et al. 2025 is cited for AirQo availability. |
 | 16 | Figures | More visuals; 2x2 time series of 4 sensors (EDA) | DONE | New Figure 3 (2x2, the four case-study sensors, cleaned and untouched readings, burst separators). Also new Figure 4 (observed vs predicted) and Figure 6 (dashboard). |
 | 17 | 5 Results | Deployment subsection, screenshot, deployment table; drop Fig. 4; merge 5.1 and 5.4; name objectives | DONE | New 5.4 Deployment (Table 7: model size, local and hosted latency, cold start 41.9 s, agreement 2,642/2,642, cost) and dashboard screenshot. Imputation figure removed. PM10 and SMOTE moved to 5.5 Additional Findings. Every subsection opens with its objective. |
 | 18 | 5.1 Table | Separate columns, bold best, lower-is-better, grouped rows, all models, RMSE, CIs, relative gains, robustness note, obs-vs-pred figure | DONE | New Table 4 (all 12 models + 2 baselines, grouped; MAE/RMSE/R² per design; sensor-cluster bootstrap 95% CIs for hold-out and August; best in bold). Text gives % gains. AQI and untouched-readings points in 5.5. MAE bar chart replaced by Figure 4. |
@@ -39,15 +39,14 @@ Comment numbers are the order of the comments in the review file (0 = first, on 
 - **The rerun reproduced every number except KNN** (grid-search near-tie: k = 5 on Linux, 10 on Windows) and the downstream LSTM/imputer results (TensorFlow not bit-identical). Tables now report the rerun; Section 4.1 says so.
 - All rerun code and outputs: `research_paper_draft3/reruns/` (`review_extras.py`, `reproduce.py`, `results/`, `deployment/`).
 
-## Housekeeping (done 17 Nov 2026)
-- References in `manuscript_source.txt` renumbered into first-citation order (36 references, all cited). The TeX version orders itself.
-- Rebuilt: `Draft3_IST_Africa_2027.docx` (and its copy and PDF under the long file name; 18 pages in Word) and both IEEE PDFs (named and blind, 12 pages; the blind one has no author names).
-- Abstract and contributions refreshed with the rerun numbers.
-- `col-ris` voice rules and the `feather` pass (integrity checks, word list, de-AI pass) applied to the new text; new claims added to `evidence_ledger.md` (N1-N19).
-- **Not done:** the docx results table (11 columns) is cramped in Word; consider a landscape page. Nothing is committed yet.
+## Housekeeping (updated 17 Nov 2026, evening)
+- **Page limit: the IST-Africa docx is 10 pages** (as rendered by LibreOffice; check in Word), the IEEE version 8. Text cut from 7,900 to about 3,400 words without dropping any result or reviewer request; the August calendar figure and the two descriptive tables (data properties, validation designs) were folded into the text; the results table omits the linear models and the tuned random forest and says so in its caption; references with more than six authors use "et al." (IEEE rule).
+- **One source for both papers.** `manuscript_source.txt` is the master. `build/make_docx.py` builds the docx; `build/make_tex_body.py` regenerates the IEEE body, abstract, availability statement and AI declaration from it; `build/renumber_refs.py` keeps references in first-citation order. Edit the txt, then run the three scripts.
+- The docx builder now sets explicit full-width table columns, bold (`**text**`) and 9 pt references.
+- Nothing from this evening is committed yet.
 
 ## Questions still open for a person
-1. The iLabs paper in comment 15 (Cole will ask Mr. Stephen).
+1. iLabs paper identified (Kyambadde, Kalyesubula et al. 2022); structure applied. Nothing to ask.
 2. Named-version acknowledgements: add the course, supervisor and any funders.
 3. **AI declaration (AQ15):** updated to describe this round, but its last sentence ("The authors reviewed, revised and verified the content...") must only stay once both of you have revised the text in your own words.
 4. Reply to Mr. Stephen on comment 8: "Lsoto" is correct (Crossref, ORCID).

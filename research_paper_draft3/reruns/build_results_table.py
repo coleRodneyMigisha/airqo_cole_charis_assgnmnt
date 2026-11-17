@@ -14,15 +14,14 @@ for name in ('holdout', 'august'):
 
 H, CV, LSO, AUG = 'Chronological hold-out', 'Expanding-window CV', 'Leave-sensors-out', 'August 2026'
 groups = [
-    ('Baselines', [('Training mean', 'Baseline (training mean)'), ('Persistence (last reading)', 'Persistence (last reading)')]),
-    ('Forecast models (weather, time, sensor)', [
-        ('SVR, tuned', 'SVR (tuned)'), ('Random forest, untuned', 'Random Forest (untuned baseline)'),
-        ('Random forest, tuned', 'Random Forest (tuned)'), ('LightGBM, tuned', 'LightGBM (tuned)'),
-        ('KNN, tuned', 'KNN (tuned)'), ('LSTM, weather and time', 'LSTM (weather + time)'),
-        ('Ridge regression, tuned', 'Ridge Regression (tuned)'), ('Linear regression', 'Linear Regression (tuned)'),
-        ('Polynomial regression', 'Polynomial Regression (tuned)')]),
-    ('Nowcast models (with PM2.5 history)', [
-        ('Random forest + history', 'Random Forest + PM2.5 history'),
+    ('Baselines', [('Mean', 'Baseline (training mean)'), ('Persistence', 'Persistence (last reading)')]),
+    ('Forecast models', [
+        ('SVR', 'SVR (tuned)'), ('RF', 'Random Forest (untuned baseline)'),
+('LightGBM', 'LightGBM (tuned)'),
+        ('KNN', 'KNN (tuned)'), ('LSTM', 'LSTM (weather + time)'),
+        ]),
+    ('Nowcast models', [
+        ('RF + history', 'Random Forest + PM2.5 history'),
         ('LightGBM + history', 'LightGBM + PM2.5 history'),
         ('LSTM + history', 'LSTM (weather + time + PM2.5 history)')]),
 ]
@@ -47,7 +46,7 @@ def cell(m, setup, metric, ci_key, tex):
 
 
 # txt (docx) version
-lines = ['@TABLE 11', '@TR Model|Hold-out MAE [95% CI]|Hold-out RMSE|Hold-out R²|CV MAE|CV R²|LSO MAE|LSO R²|August MAE [95% CI]|August RMSE|August R²']
+lines = ['@TABLE 11', '@TR Model|Hold-out MAE [CI]|RMSE|R²|CV MAE|CV R²|LSO MAE|LSO R²|August MAE [CI]|RMSE|R²']
 for label, rows in groups:
     lines.append(f'@TR {label}||||||||||')
     for name, m in rows:
