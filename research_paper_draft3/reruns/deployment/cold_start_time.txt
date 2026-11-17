@@ -1,0 +1,6 @@
+2026-11-17T15:09:50Z
+cold_health total=41.947290 connect=0.420723 ttfb=41.947064 code=200
+warm_health total=0.545004 code=200
+warm_health total=0.543583 code=200
+warm_health total=0.565404 code=200
+dashboard total=1.075668 code=200

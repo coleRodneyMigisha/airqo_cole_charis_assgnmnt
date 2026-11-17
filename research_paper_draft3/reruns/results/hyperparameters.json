@@ -1,0 +1,544 @@
+{
+ "random_seed": 42,
+ "models": {
+  "Ridge Regression (tuned)": {
+   "class": "Ridge",
+   "params": {
+    "alpha": 100.0,
+    "copy_X": true,
+    "fit_intercept": true,
+    "max_iter": null,
+    "positive": false,
+    "random_state": null,
+    "solver": "auto",
+    "tol": 0.0001
+   }
+  },
+  "Random Forest (untuned baseline)": {
+   "class": "RandomForestRegressor",
+   "params": {
+    "bootstrap": true,
+    "ccp_alpha": 0.0,
+    "criterion": "squared_error",
+    "max_depth": null,
+    "max_features": 1.0,
+    "max_leaf_nodes": null,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 2,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "monotonic_cst": null,
+    "n_estimators": 200,
+    "n_jobs": -1,
+    "oob_score": false,
+    "random_state": 42,
+    "verbose": 0,
+    "warm_start": false
+   }
+  },
+  "Random Forest (tuned)": {
+   "class": "RandomForestRegressor",
+   "params": {
+    "bootstrap": true,
+    "ccp_alpha": 0.0,
+    "criterion": "squared_error",
+    "max_depth": null,
+    "max_features": 1.0,
+    "max_leaf_nodes": null,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 2,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "monotonic_cst": null,
+    "n_estimators": 100,
+    "n_jobs": -1,
+    "oob_score": false,
+    "random_state": 42,
+    "verbose": 0,
+    "warm_start": false
+   }
+  },
+  "Linear Regression (tuned)": {
+   "class": "LinearRegression",
+   "params": {
+    "copy_X": true,
+    "fit_intercept": false,
+    "n_jobs": null,
+    "positive": false,
+    "tol": 1e-06
+   }
+  },
+  "Polynomial Regression (tuned)": {
+   "class": "LinearRegression",
+   "params": {
+    "copy_X": true,
+    "fit_intercept": true,
+    "n_jobs": null,
+    "positive": false,
+    "tol": 1e-06
+   }
+  },
+  "SVR (tuned)": {
+   "class": "SVR",
+   "params": {
+    "C": 5.0,
+    "cache_size": 200,
+    "coef0": 0.0,
+    "degree": 3,
+    "epsilon": 0.05,
+    "gamma": "scale",
+    "kernel": "rbf",
+    "max_iter": -1,
+    "shrinking": true,
+    "tol": 0.001,
+    "verbose": false
+   }
+  },
+  "KNN (tuned)": {
+   "class": "KNeighborsRegressor",
+   "params": {
+    "algorithm": "auto",
+    "leaf_size": 30,
+    "metric": "minkowski",
+    "metric_params": null,
+    "n_jobs": null,
+    "n_neighbors": 5,
+    "p": 1,
+    "weights": "distance"
+   }
+  },
+  "LightGBM (tuned)": {
+   "class": "LGBMRegressor",
+   "params": {
+    "boosting_type": "gbdt",
+    "class_weight": null,
+    "colsample_bytree": 0.7,
+    "importance_type": "split",
+    "learning_rate": 0.05,
+    "max_depth": -1,
+    "min_child_samples": 10,
+    "min_child_weight": 0.001,
+    "min_split_gain": 0.0,
+    "n_estimators": 800,
+    "n_jobs": 1,
+    "num_leaves": 31,
+    "objective": null,
+    "random_state": 42,
+    "reg_alpha": 0.0,
+    "reg_lambda": 5.0,
+    "subsample": 1.0,
+    "subsample_for_bin": 200000,
+    "subsample_freq": 0,
+    "verbose": -1,
+    "deterministic": true,
+    "force_row_wise": true
+   }
+  },
+  "Random Forest + PM2.5 history": {
+   "class": "RandomForestRegressor",
+   "params": {
+    "bootstrap": true,
+    "ccp_alpha": 0.0,
+    "criterion": "squared_error",
+    "max_depth": null,
+    "max_features": 1.0,
+    "max_leaf_nodes": null,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 2,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "monotonic_cst": null,
+    "n_estimators": 200,
+    "n_jobs": -1,
+    "oob_score": false,
+    "random_state": 42,
+    "verbose": 0,
+    "warm_start": false
+   }
+  },
+  "LightGBM + PM2.5 history": {
+   "class": "LGBMRegressor",
+   "params": {
+    "boosting_type": "gbdt",
+    "class_weight": null,
+    "colsample_bytree": 0.7,
+    "importance_type": "split",
+    "learning_rate": 0.1,
+    "max_depth": -1,
+    "min_child_samples": 20,
+    "min_child_weight": 0.001,
+    "min_split_gain": 0.0,
+    "n_estimators": 200,
+    "n_jobs": 1,
+    "num_leaves": 31,
+    "objective": null,
+    "random_state": 42,
+    "reg_alpha": 0.0,
+    "reg_lambda": 1.0,
+    "subsample": 1.0,
+    "subsample_for_bin": 200000,
+    "subsample_freq": 0,
+    "verbose": -1,
+    "deterministic": true,
+    "force_row_wise": true
+   }
+  }
+ },
+ "searches": {
+  "ridge_search": {
+   "best_params": {
+    "model__alpha": 100.0
+   },
+   "space": {
+    "model__alpha": [
+     0.01,
+     0.1,
+     1.0,
+     10.0,
+     50.0,
+     100.0
+    ]
+   },
+   "cv": "TimeSeriesSplit(gap=0, max_train_size=None, n_splits=3, test_size=None)",
+   "n_iter": null,
+   "scoring": "neg_mean_absolute_error"
+  },
+  "random_forest_search": {
+   "best_params": {
+    "model__n_estimators": 100,
+    "model__min_samples_split": 2,
+    "model__min_samples_leaf": 2,
+    "model__max_features": 1.0,
+    "model__max_depth": null
+   },
+   "space": {
+    "model__n_estimators": [
+     100,
+     200,
+     300
+    ],
+    "model__max_depth": [
+     null,
+     10,
+     20,
+     30
+    ],
+    "model__min_samples_split": [
+     2,
+     5,
+     10
+    ],
+    "model__min_samples_leaf": [
+     1,
+     2,
+     4
+    ],
+    "model__max_features": [
+     1.0,
+     "sqrt",
+     0.5
+    ]
+   },
+   "cv": "TimeSeriesSplit(gap=0, max_train_size=None, n_splits=3, test_size=None)",
+   "n_iter": 8,
+   "scoring": "neg_mean_absolute_error"
+  },
+  "linear_search": {
+   "best_params": {
+    "model__fit_intercept": false
+   },
+   "space": {
+    "model__fit_intercept": [
+     true,
+     false
+    ]
+   },
+   "cv": "TimeSeriesSplit(gap=0, max_train_size=None, n_splits=3, test_size=None)",
+   "n_iter": null,
+   "scoring": "neg_mean_absolute_error"
+  },
+  "polynomial_search": {
+   "best_params": {
+    "preprocessor__numeric__poly__degree": 1
+   },
+   "space": {
+    "preprocessor__numeric__poly__degree": [
+     1,
+     2,
+     3
+    ]
+   },
+   "cv": "TimeSeriesSplit(gap=0, max_train_size=None, n_splits=3, test_size=None)",
+   "n_iter": null,
+   "scoring": "neg_mean_absolute_error"
+  },
+  "svr_search": {
+   "best_params": {
+    "model__gamma": "scale",
+    "model__epsilon": 0.05,
+    "model__C": 5.0
+   },
+   "space": {
+    "model__C": [
+     0.1,
+     1.0,
+     5.0,
+     10.0,
+     50.0
+    ],
+    "model__epsilon": [
+     0.01,
+     0.05,
+     0.1,
+     0.2,
+     0.5
+    ],
+    "model__gamma": [
+     "scale",
+     "auto",
+     0.01,
+     0.1
+    ]
+   },
+   "cv": "TimeSeriesSplit(gap=0, max_train_size=None, n_splits=2, test_size=None)",
+   "n_iter": 6,
+   "scoring": "neg_mean_absolute_error"
+  },
+  "knn_search": {
+   "best_params": {
+    "model__n_neighbors": 5,
+    "model__p": 1,
+    "model__weights": "distance"
+   },
+   "space": {
+    "model__n_neighbors": [
+     5,
+     10,
+     15,
+     25,
+     40
+    ],
+    "model__weights": [
+     "uniform",
+     "distance"
+    ],
+    "model__p": [
+     1,
+     2
+    ]
+   },
+   "cv": "TimeSeriesSplit(gap=0, max_train_size=None, n_splits=3, test_size=None)",
+   "n_iter": null,
+   "scoring": "neg_mean_absolute_error"
+  },
+  "lightgbm_search": {
+   "best_params": {
+    "model__reg_lambda": 5.0,
+    "model__num_leaves": 31,
+    "model__n_estimators": 800,
+    "model__min_child_samples": 10,
+    "model__learning_rate": 0.05,
+    "model__colsample_bytree": 0.7
+   },
+   "space": {
+    "model__n_estimators": [
+     200,
+     400,
+     800
+    ],
+    "model__learning_rate": [
+     0.03,
+     0.05,
+     0.1
+    ],
+    "model__num_leaves": [
+     15,
+     31,
+     63
+    ],
+    "model__min_child_samples": [
+     10,
+     20,
+     40
+    ],
+    "model__colsample_bytree": [
+     0.7,
+     1.0
+    ],
+    "model__reg_lambda": [
+     0.0,
+     1.0,
+     5.0
+    ]
+   },
+   "cv": "TimeSeriesSplit(gap=0, max_train_size=None, n_splits=3, test_size=None)",
+   "n_iter": 10,
+   "scoring": "neg_mean_absolute_error"
+  },
+  "lightgbm_history_search": {
+   "best_params": {
+    "model__reg_lambda": 1.0,
+    "model__num_leaves": 31,
+    "model__n_estimators": 200,
+    "model__min_child_samples": 20,
+    "model__learning_rate": 0.1,
+    "model__colsample_bytree": 0.7
+   },
+   "space": {
+    "model__n_estimators": [
+     200,
+     400,
+     800
+    ],
+    "model__learning_rate": [
+     0.03,
+     0.05,
+     0.1
+    ],
+    "model__num_leaves": [
+     15,
+     31,
+     63
+    ],
+    "model__min_child_samples": [
+     10,
+     20,
+     40
+    ],
+    "model__colsample_bytree": [
+     0.7,
+     1.0
+    ],
+    "model__reg_lambda": [
+     0.0,
+     1.0,
+     5.0
+    ]
+   },
+   "cv": "TimeSeriesSplit(gap=0, max_train_size=None, n_splits=3, test_size=None)",
+   "n_iter": 10,
+   "scoring": "neg_mean_absolute_error"
+  }
+ },
+ "constants": {
+  "DATA_FILE_NAME": "Sensor Data Jan - July 2026.csv",
+  "EXTREME_IQR_MULTIPLIER": 3.0,
+  "EXTREME_MAX_HOURS": 6,
+  "DATA_RICH_MAX_OFFLINE_PCT": 20,
+  "DATA_POOR_MIN_OFFLINE_PCT": 50,
+  "MIN_CASE_TEST_ROWS": 12,
+  "INTERPOLATION_WINDOW_HOURS": 24,
+  "MIN_VALID_IN_WINDOW": 6,
+  "MIN_PROFILE_COUNT": 3,
+  "PM25_LAG_HOURS": [
+   1,
+   2,
+   3
+  ],
+  "PM25_LAG_COLUMNS": [
+   "pm25_lag_1h",
+   "pm25_lag_2h",
+   "pm25_lag_3h"
+  ],
+  "PM25_HISTORY_COLUMNS": [
+   "pm25_lag_1h",
+   "pm25_lag_2h",
+   "pm25_lag_3h",
+   "pm25_rolling_mean_3h",
+   "pm25_recent_readings"
+  ],
+  "USE_SMOTE": false,
+  "SMOTE_CANDIDATE_RATIOS": [
+   0.0,
+   0.1,
+   0.25,
+   0.5
+  ],
+  "SMOTE_ABLATION_RATIO": 0.5,
+  "SMOTE_K_NEIGHBORS": 5,
+  "SMOTE_CLASS_EDGES": [
+   -Infinity,
+   9,
+   35.49,
+   55.49,
+   125.49,
+   Infinity
+  ],
+  "SMOTE_CLASS_NAMES": [
+   "Good",
+   "Moderate",
+   "Unhealthy for Sensitive Groups",
+   "Unhealthy",
+   "Very Unhealthy or Hazardous"
+  ],
+  "SMOTE_CV_RATIO": 0.25,
+  "SMOTE_BEST_NONZERO_RATIO": 0.25,
+  "SMOTE_TARGET_RATIO": 0.0,
+  "SMOTE_COMPARISON_RATIOS": [
+   0.25,
+   0.5
+  ],
+  "TS_CV_FOLDS": 3,
+  "SPATIAL_FOLDS": 3,
+  "MIN_ROWS_PER_VALIDATION_DAY": 500,
+  "LSTM_WINDOW": 6,
+  "LSTM_UNITS": 32,
+  "LSTM_EPOCHS": 60,
+  "LSTM_PATIENCE": 8,
+  "LSTM_BATCH_SIZE": 64,
+  "LSTM_VALIDATION_FRACTION": 0.15,
+  "BRITS_VARIABLES": [
+   "temperature",
+   "humidity",
+   "pm2_5_calibrated_value"
+  ],
+  "BRITS_LOG_VARIABLES": [
+   "pm2_5_calibrated_value"
+  ],
+  "BRITS_WINDOW": 24,
+  "BRITS_STRIDE": 2,
+  "BRITS_UNITS": 32,
+  "BRITS_EPOCHS": 60,
+  "BRITS_PATIENCE": 6,
+  "BRITS_BATCH_SIZE": 64,
+  "BRITS_CONSISTENCY_WEIGHT": 0.1,
+  "BRITS_TRAIN_MASK_BLOCKS": [
+   1,
+   3,
+   6,
+   12
+  ],
+  "BRITS_MIN_READINGS": 6,
+  "BRITS_STOP_FRACTION": 0.15,
+  "SHAP_SAMPLE_SIZE": 400,
+  "SHAP_BACKGROUND_SIZE": 100,
+  "SHAP_SPLIT_LABEL": "chronological hold-out (test split)",
+  "LSTM_SHAP_MODEL": "LSTM (weather + time + PM2.5 history)",
+  "LSTM_CHANNELS": [
+   "temperature",
+   "humidity",
+   "hour_sin",
+   "hour_cos",
+   "day_of_week_sin",
+   "day_of_week_cos",
+   "month_sin",
+   "month_cos",
+   "PM2.5 previous hour",
+   "PM2.5 previous hour present"
+  ],
+  "LSTM_EXPLAINER": "SHAP GradientExplainer",
+  "GAP_LENGTHS": [
+   1,
+   3,
+   6,
+   12,
+   24
+  ],
+  "GAP_REPEATS": 3,
+  "MIN_CONTEXT_READINGS": 2,
+  "LSTM_HISTORY_NAME": "LSTM (weather + time + PM2.5 history)"
+ }
+}

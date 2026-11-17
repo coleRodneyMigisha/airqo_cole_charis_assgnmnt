@@ -1,0 +1,5 @@
+panel,device,site,data_class,offline_pct,readings
+1,airqo_g5282,"Lorry Park, Fort Portal",data-rich,0.0,147
+2,aq_04,St.Paul Kyebando C/U Primary School,data-poor,81.6,27
+3,airqo_g5566,Makerere University Business School(MUBS) Nakawa,data-poor,72.8,40
+4,airqo_g5551,Golf course Kampala. Site 2. playing ground,data-poor,69.4,45

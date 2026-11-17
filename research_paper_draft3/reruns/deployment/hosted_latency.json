@@ -1,0 +1,37 @@
+{
+ "endpoint": "https://airqo-cole-charis-assgnmnt.onrender.com/predict",
+ "client": "author laptop over home internet",
+ "measured_utc": "2026-11-17T15:11:16Z",
+ "prediction_latency": {
+  "1": {
+   "repeats": 20,
+   "median_s": 0.558,
+   "min_s": 0.521,
+   "max_s": 1.167
+  },
+  "100": {
+   "repeats": 10,
+   "median_s": 0.701,
+   "min_s": 0.671,
+   "max_s": 1.097
+  },
+  "1000": {
+   "repeats": 5,
+   "median_s": 2.507,
+   "min_s": 2.16,
+   "max_s": 2.669
+  }
+ },
+ "hosted_vs_standalone": {
+  "rows_compared": 2642,
+  "max_abs_diff": 0.0004999269578185306,
+  "rows_diff_over_0.001": 0
+ },
+ "note": "Hosted service rounds to 3 decimals",
+ "cold_start": {
+  "first_request_after_idle_s": 41.947,
+  "measured_utc": "2026-11-17T15:09:50Z",
+  "endpoint": "/health",
+  "single_measurement": true
+ }
+}

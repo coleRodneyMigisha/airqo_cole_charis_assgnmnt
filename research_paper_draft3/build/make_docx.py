@@ -22,18 +22,28 @@ STYLE = {"T": "Title", "AU": "AuthorName", "ABS": "Abstract", "H1": "Heading1", 
 AQ = re.compile(r"(\[AQ\d+[^\]]*\])")
 
 
+BOLD = re.compile(r"\*\*(.+?)\*\*")
+
+
 def runs(text, size=None):
+    """Runs for a paragraph. [AQn ...] markers are highlighted; **text** is bold."""
     parts = []
     for chunk in AQ.split(text):
         if not chunk:
             continue
-        rpr = ""
-        if size:
-            rpr += f'<w:sz w:val="{size}"/><w:szCs w:val="{size}"/>'
-        if AQ.fullmatch(chunk):
-            rpr += '<w:highlight w:val="yellow"/>'
-        rpr = f"<w:rPr>{rpr}</w:rPr>" if rpr else ""
-        parts.append(f'<w:r>{rpr}<w:t xml:space="preserve">{escape(chunk)}</w:t></w:r>')
+        pieces = BOLD.split(chunk) if not AQ.fullmatch(chunk) else [chunk]
+        for k, piece in enumerate(pieces):
+            if not piece:
+                continue
+            rpr = ""
+            if k % 2 == 1:
+                rpr += "<w:b/><w:bCs/>"
+            if size:
+                rpr += f'<w:sz w:val="{size}"/><w:szCs w:val="{size}"/>'
+            if AQ.fullmatch(chunk):
+                rpr += '<w:highlight w:val="yellow"/>'
+            rpr = f"<w:rPr>{rpr}</w:rPr>" if rpr else ""
+            parts.append(f'<w:r>{rpr}<w:t xml:space="preserve">{escape(piece)}</w:t></w:r>')
     return "".join(parts)
 
 
@@ -53,7 +63,7 @@ def table(rows, cols):
         trpr = "<w:trPr><w:tblHeader/><w:cantSplit/></w:trPr>" if r == 0 else "<w:trPr><w:cantSplit/></w:trPr>"
         cells = "".join(
             '<w:tc><w:tcPr><w:tcW w:w="0" w:type="auto"/></w:tcPr>'
-            + para("Normal", cell, size=20, extra_ppr='<w:spacing w:before="20" w:after="20"/><w:jc w:val="left"/>')
+            + para("Normal", cell, size=20 if cols < 8 else 14, extra_ppr='<w:spacing w:before="20" w:after="20"/><w:jc w:val="left"/>')
             + "</w:tc>"
             for cell in (row + [""] * cols)[:cols])
         xml.append(f"<w:tr>{trpr}{cells}</w:tr>")
@@ -66,15 +76,17 @@ def png_size(path):
     return struct.unpack(">II", data[16:24])
 
 
-def figure(rid, path, width_emu=5400000):
+def figure(rid, path, width_emu=5400000, num=1):
     w, h = png_size(path)
     height_emu = int(width_emu * h / w)
     return ('<w:p><w:pPr><w:pStyle w:val="Normal"/><w:keepNext/><w:spacing w:before="120"/><w:jc w:val="center"/></w:pPr><w:r><w:drawing>'
             f'<wp:inline distT="0" distB="0" distL="0" distR="0"><wp:extent cx="{width_emu}" cy="{height_emu}"/>'
-            '<wp:docPr id="1" name="Figure 1"/><a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">'
+            f'<wp:docPr id="{num}" name="Figure {num}"/>'
+            '<a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">'
             '<a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">'
             '<pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">'
-            '<pic:nvPicPr><pic:cNvPr id="1" name="figure1.png"/><pic:cNvPicPr/></pic:nvPicPr>'
+            f'<pic:nvPicPr><pic:cNvPr id="{num}" name="figure{num}.png"/>'
+            '<pic:cNvPicPr/></pic:nvPicPr>'
             f'<pic:blipFill><a:blip r:embed="{rid}"/><a:stretch><a:fillRect/></a:stretch></pic:blipFill>'
             f'<pic:spPr><a:xfrm><a:off x="0" y="0"/><a:ext cx="{width_emu}" cy="{height_emu}"/></a:xfrm>'
             '<a:prstGeom prst="rect"><a:avLst/></a:prstGeom></pic:spPr></pic:pic></a:graphicData></a:graphic>'
@@ -108,9 +120,12 @@ while i < len(lines):
             i += 1
         body.append(table(rows, cols)); prev_heading = True
     elif tag == "FIG":
-        path = source.parent / text
+        # "@FIG path" or "@FIG path|width_cm"; each image gets its own drawing id
+        rel, _, width_cm = text.partition("|")
+        path = source.parent / rel.strip()
         media.append(path)
-        body.append(figure(f"rIdImg{len(media)}", path))
+        width_emu = int(float(width_cm) * 360000) if width_cm.strip() else 5400000
+        body.append(figure(f"rIdImg{len(media)}", path, width_emu, len(media)))
     elif tag in STYLE:
         body.append(para(STYLE[tag], text))
         if tag == "LN":

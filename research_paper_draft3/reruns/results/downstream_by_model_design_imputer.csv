@@ -1,0 +1,46 @@
+setup,model,imputation,MAE,RMSE,R2
+Chronological hold-out,LSTM (weather + time + PM2.5 history),(a) Windowed interpolation only,10.202639837070093,15.210061893417594,0.33143684682592056
+Chronological hold-out,LSTM (weather + time + PM2.5 history),(b) Time-of-day imputation,10.885598794358144,15.576850482739733,0.2988034391159712
+Chronological hold-out,LSTM (weather + time + PM2.5 history),(c) BRITS-style imputation,10.95328463861204,15.565082397251935,0.29986252664406854
+Chronological hold-out,LSTM (weather + time),(a) Windowed interpolation only,12.169036200824422,18.754565057236,-0.016469772729435395
+Chronological hold-out,LSTM (weather + time),(b) Time-of-day imputation,12.223419119483319,18.527804873215768,0.007961764127699555
+Chronological hold-out,LSTM (weather + time),(c) BRITS-style imputation,12.3431113641466,18.714889839183172,-0.012173645127075527
+Chronological hold-out,LightGBM (tuned),(a) Windowed interpolation only,9.937971985803976,15.967834314897981,0.2631611600719489
+Chronological hold-out,LightGBM (tuned),(b) Time-of-day imputation,9.816945369018365,16.077972635875234,0.25296139571523757
+Chronological hold-out,LightGBM (tuned),(c) BRITS-style imputation,9.902409829539959,16.12377499843815,0.24869905858658725
+Chronological hold-out,LightGBM + PM2.5 history,(a) Windowed interpolation only,8.33467343761613,14.241647326049153,0.4138605822021575
+Chronological hold-out,LightGBM + PM2.5 history,(b) Time-of-day imputation,8.42518312306205,14.20598220004115,0.4167926251070857
+Chronological hold-out,LightGBM + PM2.5 history,(c) BRITS-style imputation,8.436289790030546,14.24207068327511,0.41382573369895437
+Chronological hold-out,SVR (tuned),(a) Windowed interpolation only,9.337111103028741,15.035180932045284,0.3467223620699742
+Chronological hold-out,SVR (tuned),(b) Time-of-day imputation,9.340895884710228,15.13828147052901,0.33773221996250335
+Chronological hold-out,SVR (tuned),(c) BRITS-style imputation,9.374814737035528,15.062828881225766,0.3443175498128075
+Expanding-window CV,LSTM (weather + time + PM2.5 history),(a) Windowed interpolation only,12.159109026080023,17.605650916731538,0.15975743735828565
+Expanding-window CV,LSTM (weather + time + PM2.5 history),(b) Time-of-day imputation,12.181185800294507,17.739396358877812,0.15053428830465507
+Expanding-window CV,LSTM (weather + time + PM2.5 history),(c) BRITS-style imputation,11.954314787967512,17.605105958018402,0.16420962744090262
+Expanding-window CV,LSTM (weather + time),(a) Windowed interpolation only,21.59233793159383,27.90904937516271,-1.6460306026030513
+Expanding-window CV,LSTM (weather + time),(b) Time-of-day imputation,20.697453885992697,27.08385282434016,-1.414128722561868
+Expanding-window CV,LSTM (weather + time),(c) BRITS-style imputation,21.32263251386463,27.66510197243402,-1.5731400374391808
+Expanding-window CV,LightGBM (tuned),(a) Windowed interpolation only,26.630551031332914,33.42045728131189,-2.177912565925828
+Expanding-window CV,LightGBM (tuned),(b) Time-of-day imputation,27.446983717960762,34.12717511662856,-2.2984518522700816
+Expanding-window CV,LightGBM (tuned),(c) BRITS-style imputation,27.507544153141367,34.198157388346125,-2.269370426819289
+Expanding-window CV,LightGBM + PM2.5 history,(a) Windowed interpolation only,11.85334857907421,18.55623183171565,0.07649393722227434
+Expanding-window CV,LightGBM + PM2.5 history,(b) Time-of-day imputation,12.08014149886378,18.60065144324312,0.0803533728715871
+Expanding-window CV,LightGBM + PM2.5 history,(c) BRITS-style imputation,11.948167394513513,18.590572441845296,0.07154120237785555
+Expanding-window CV,SVR (tuned),(a) Windowed interpolation only,16.27511045798312,21.146173282979586,-0.2195610121264302
+Expanding-window CV,SVR (tuned),(b) Time-of-day imputation,14.680543745085279,20.106583847873452,-0.058981481636072385
+Expanding-window CV,SVR (tuned),(c) BRITS-style imputation,16.50550013797324,21.33475839105081,-0.24619456045465468
+Leave-sensors-out,LSTM (weather + time + PM2.5 history),(a) Windowed interpolation only,9.558066500178757,15.857068902270774,0.6398887668172385
+Leave-sensors-out,LSTM (weather + time + PM2.5 history),(b) Time-of-day imputation,9.407648979106385,15.673444819888447,0.6473142021758873
+Leave-sensors-out,LSTM (weather + time + PM2.5 history),(c) BRITS-style imputation,9.475900875619542,15.753467925171819,0.6442445533055633
+Leave-sensors-out,LSTM (weather + time),(a) Windowed interpolation only,15.798233966804332,22.893062196499272,0.24873739675867348
+Leave-sensors-out,LSTM (weather + time),(b) Time-of-day imputation,15.604863320597923,22.695321572136688,0.2621241138913679
+Leave-sensors-out,LSTM (weather + time),(c) BRITS-style imputation,15.69786528992995,22.80837192793946,0.2538668035832656
+Leave-sensors-out,LightGBM (tuned),(a) Windowed interpolation only,15.118275016720787,22.58543365858698,0.26852257583410405
+Leave-sensors-out,LightGBM (tuned),(b) Time-of-day imputation,15.124844477690118,22.624426089884537,0.2657088784730998
+Leave-sensors-out,LightGBM (tuned),(c) BRITS-style imputation,15.135072587971143,22.596044459374667,0.267839797939258
+Leave-sensors-out,LightGBM + PM2.5 history,(a) Windowed interpolation only,9.480749916920187,16.052166676758354,0.6328966694755632
+Leave-sensors-out,LightGBM + PM2.5 history,(b) Time-of-day imputation,9.485662133952504,16.11726353106872,0.6303592012774982
+Leave-sensors-out,LightGBM + PM2.5 history,(c) BRITS-style imputation,9.465669133963823,16.052230481427042,0.6329937841331176
+Leave-sensors-out,SVR (tuned),(a) Windowed interpolation only,15.090259865999919,22.576000223617246,0.2682012665771661
+Leave-sensors-out,SVR (tuned),(b) Time-of-day imputation,15.087837606860186,22.544675199899967,0.26987533150921644
+Leave-sensors-out,SVR (tuned),(c) BRITS-style imputation,15.105684698651132,22.575674620696486,0.2679939550910557

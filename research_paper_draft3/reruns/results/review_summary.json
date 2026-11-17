@@ -1,0 +1,93 @@
+{
+ "persistence_coverage": {
+  "holdout_rows": 2642,
+  "holdout_share_with_lag1": 0.9651778955336866,
+  "august_rows": 72976,
+  "august_share_with_lag1": 0.9534915588686691
+ },
+ "bootstrap": {
+  "draws": 1000,
+  "unit": "sensor (cluster bootstrap)",
+  "holdout_sensors": 119,
+  "august_sensors": 125
+ },
+ "pm25_above_pm10": {
+  "rows_with_both": 14170,
+  "rows_above": 3199,
+  "share_of_rows_with_both": 0.22575864502470008,
+  "share_of_all_rows": 0.2191095890410959,
+  "by_network": {
+   "airqo": 3092,
+   "airgradient": 107
+  },
+  "rows_by_network": {
+   "airqo": 14117,
+   "airgradient": 483
+  },
+  "sensors_affected": 135,
+  "ratio_median": 1.5854700854700856,
+  "ratio_p90": 5.896427461944703,
+  "excess_median_ug_m3": 4.190000000000001,
+  "holdout_train_rows_flagged": 2446,
+  "holdout_train_rows": 11633,
+  "holdout_test_rows_flagged": 753,
+  "holdout_test_rows": 2642
+ },
+ "extremes_episode_check": {
+  "extreme_readings": 225,
+  "share_with_no_other_sensor_extreme_same_hour": 0.17333333333333334,
+  "share_with_3plus_other_sensors_extreme_same_hour": 0.52,
+  "share_in_top10pct_network_median_hours": 0.1688888888888889,
+  "runs": 156,
+  "runs_single_hour": 114,
+  "runs_3h_or_longer": 16,
+  "longest_run_h": 6
+ },
+ "august_extremes": {
+  "readings": 72976,
+  "extreme": 661,
+  "sensors": 96,
+  "max_before": 197.3000030517578,
+  "max_after": 197.3000030517578
+ },
+ "deployment": {
+  "best_pm25_model.joblib": {
+   "size_mb": 1.166
+  },
+  "best_pm25_nowcast_model.joblib": {
+   "size_mb": 0.57
+  },
+  "resource_report": {
+   "run_platform": "Local machine",
+   "python_version": "3.12.16",
+   "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.43",
+   "logical_cpus": 32,
+   "pipeline_runtime_seconds": 970.6,
+   "peak_ram_notebook_process_mb": 3364.5,
+   "peak_ram_largest_child_process_mb": 3363.0,
+   "gpu": {
+    "available": true,
+    "name": "NVIDIA GeForce RTX 4080 SUPER",
+    "memory_total_mb": 16376,
+    "memory_used_mb": 5728
+   },
+   "model_load_seconds": 0.0,
+   "prediction_latency": {
+    "single_row_ms": 3.21,
+    "hourly_forecast_batch_rows": 3576,
+    "hourly_forecast_batch_ms": 541.33,
+    "two_week_forecast_batch_rows": 50064,
+    "two_week_forecast_batch_ms": 7463.26,
+    "two_week_forecast_us_per_row": 149.07
+   },
+   "forecast_mode": "single pass over all forecast rows (not autoregressive)",
+   "file_sizes_mb": {
+    "Sensor Data Jan - July 2026.csv": 1.74,
+    "best_pm25_model.joblib": 1.17,
+    "daily_pm25_predictions_august_1_to_14.csv": 0.18,
+    "hourly_pm25_predictions_august_1.csv": 0.3
+   },
+   "evidently_monitoring_completed": true
+  }
+ }
+}

@@ -1,0 +1,59 @@
+# Review tracker: Mr. Stephen's comments (review_from_Mr_Stephen.docx)
+
+**Charis: every comment now has an edit. Rows marked PARTIAL or with bold notes need a person. Start with the "Read first" section below.** Rows marked DONE are already edited in both `research_paper_draft3/manuscript_source.txt` (IST-Africa docx) and `research_paper_ieee/main.tex` (+ `references.bib`). Neither build (docx, PDF) has been regenerated since these edits.
+
+Status: DONE = edited in both files · PARTIAL = edited, something still open · TODO = not started · NEEDS RUN = needs a new experiment first.
+Comment numbers are the order of the comments in the review file (0 = first, on the title).
+
+| # | Where | What he asked | Status | Notes |
+|---|---|---|---|---|
+| 0 | Title | Shorter descriptive title, "Ugandan cities" | DONE | Also updated in the AI declaration. New title: "Hourly PM2.5 Prediction from Sparse Low-Cost Sensor Records in Ugandan Cities". `report/` still has the old title (not part of the paper). |
+| 1 | Abstract | Problem statement, horizon, AirQo and AirGradient, ≤150 words | DONE | 150 words; refreshed after the reruns (persistence, 47% and 10% gains). |
+| 2 | Intro, opening | Drop the analogy, open with problem and context | DONE | Visitor paragraph removed; research question added in paragraph 3. |
+| 3 | Intro | Uganda health burden, SDG 3.9 and 11.6 | DONE | Kampala deaths [21], SDG 3.9.1 [22], SDG 11.6.2 [23]. No verifiable national figure. The two PMC papers (Africa research gap; South Central Uganda calibration) are downloaded; the calibration one is cited as Le et al. [24], the editorial is not cited. |
+| 4 | Whole paper | Tense check | DONE | Eight mixed-tense sentences fixed (Intro, Related Work, 3.1, 3.2, 5.2, 5.3, 5.4). Rule applied: present for facts and what the paper shows, past for our methods and results, past for prior studies. Passages that other comments will rewrite (5.5 opening, Discussion visitor analogy) are left for those comments and must follow the rule when rewritten. |
+| 5 | 1.1 Objectives | Overall aim, measurable verbs, split Obj. 1, reword Obj. 4 | DONE | Now five objectives (his old 1 is our 1 and 2; his old 2 is 3; his old 3 is 4; his old 4 is 5). **His later comments (17-21) use the OLD numbering; map them with this shift.** Result subsections must name the new objective they answer (comment 17). |
+| 6 | Intro, contribution | Hedged novelty claim, 3-4 contributions linked to objectives | DONE | Four contributions with key results and objective numbers; refreshed after the reruns (now state that history models only match persistence on the hold-out). |
+| 7 | Related work | Add 4-6 recent studies | DONE | Five added, all downloaded and read first: Le 2025 [24], Gahungu 2022 [25], Stoddart 2023 [26], Pandey 2024 [27], Gupta 2024 [28]. New paragraph on new or sparse networks, plus one sentence on Le et al. Gahungu is 2022, not recent. Pandey, Gahungu, Stoddart and Gupta are arXiv versions (check for journal versions before submission). Drafted with `col-ris` (Cole leads Related Work); not yet through `feather`. |
+| 8 | References | Check the author-name typo; verify 2025-26 DOIs | DONE | All DOIs checked against Crossref (`reruns/reference_check.md`). The comment sits on the paragraph with Lsoto et al. [5]; **"Lsoto" is correct** (Crossref and ORCID), so it is unchanged; reply to Mr. Stephen with the evidence. [21] issue number added. |
+| 9 | 3.1 Data | Source, export date, licence, AirQo permission; drop "university course" | DONE | "University course" removed. Data statement: AirQo network incl. AirGradient [29], obtained Sep and Oct 2026 (git dates of the files; AirQo's own export date is not known), CC BY 4.0 permits non-commercial use [33], terms require crediting AirQo and the originating provider and calling the data indicative [34]. Licence and terms verified from AirQo's website source on GitHub (live site was down). **Check: are Sep/Oct the right dates, and did AirQo grant any further permission?** |
+| 10 | 3.1/3.2 Data | What was done with PM2.5 > PM10 rows; check with them excluded | DONE | Kept (median excess 4.2 µg/m³; 3,199 of 14,170 rows, 135 sensors). Rerun without them: hold-out worse (SVR 10.51, RF+history 9.25), August within 1%. Reported in 3.2 and 5.5; limitation in Section 6. |
+| 11 | 3.1 Data | "Note necessary may be" (on the August-file paragraph) | DONE | Read as "not necessary, maybe": the separate paragraph repeated Table 1, so it is removed and its content moved into the Table 1 caption. Confirm with Mr. Stephen. |
+| 12 | 3.2 Cleaning | PM10 sentence, outlier rule, apply to August, PM2.5 > PM10 rows, cite Stoddart and Alaran | DONE | Cake analogy replaced by a technical sentence; Stoddart [26] and Alaran [35] cited (both checked: no PM10 inputs; outlier removal improved Stoddart's forecasts). Threshold justified as Tukey's far-out limit [36], per sensor. Episode check: 52% of replaced readings coincided with 3+ other extreme sensors, so some may be real (stated). August scored both ways (661 readings replaced; order unchanged). "Missing PM2.5 targets were never imputed." |
+| 13 | 3.3 / 5.3 | Rerun without the month feature | DONE | Month held constant and models refitted: removing it made the forecast models WORSE (SVR August 18.32 → 20.51; hold-out 9.34 → 11.23), history models changed ≤1%. Reported in 5.3 and discussed in 6. |
+| 14 | 3.3 Models | Persistence baseline; hyperparameters, LSTM settings, seeds, SMOTE; models-by-family table | DONE | Persistence added everywhere. New Table 3 (models by family, inputs, final settings); LSTM/BRITS settings, seed 42 and SMOTE strengths (0.25, 0.5) in the text. |
+| 15 | 4 Technology | Business case; software packages; deployment tool; results for deployment | PARTIAL | 4.1 Software (packages and versions; TensorFlow), 4.2 Deployment, 4.3 Business Case; deployment results in 5.4. **Open: the iLabs paper (Cole will ask Mr. Stephen).** |
+| 16 | Figures | More visuals; 2x2 time series of 4 sensors (EDA) | DONE | New Figure 3 (2x2, the four case-study sensors, cleaned and untouched readings, burst separators). Also new Figure 4 (observed vs predicted) and Figure 6 (dashboard). |
+| 17 | 5 Results | Deployment subsection, screenshot, deployment table; drop Fig. 4; merge 5.1 and 5.4; name objectives | DONE | New 5.4 Deployment (Table 7: model size, local and hosted latency, cold start 41.9 s, agreement 2,642/2,642, cost) and dashboard screenshot. Imputation figure removed. PM10 and SMOTE moved to 5.5 Additional Findings. Every subsection opens with its objective. |
+| 18 | 5.1 Table | Separate columns, bold best, lower-is-better, grouped rows, all models, RMSE, CIs, relative gains, robustness note, obs-vs-pred figure | DONE | New Table 4 (all 12 models + 2 baselines, grouped; MAE/RMSE/R² per design; sensor-cluster bootstrap 95% CIs for hold-out and August; best in bold). Text gives % gains. AQI and untouched-readings points in 5.5. MAE bar chart replaced by Figure 4. |
+| 19 | 5.2 Imputation | Heading, objective sentence, one row per method, all gaps, bold, downstream table, "no consistent effect", why PM2.5 | DONE | Heading "Imputation Accuracy and Downstream Effect"; Table 5 (one row per method, five gaps, bold best); Table 6 (downstream MAE by model, design and imputer). Rerun gave +1.1% (3 of 15) against -0.4% (7 of 15) in the first run, so reported as no consistent effect. |
+| 20 | 5.3 August | Topic sentence, R² < 0 explained, lead with MAE/R², persistence, LSTM failure, drift, per-group MAE, outlier note, imputer sentence moved | DONE | Retitled "Stability and Transfer to a New Month". All requested points included; LSTM over-predicts by 11.1 µg/m³; per-group MAE by data class; imputer sentence moved to 5.2. |
+| 21 | 6 Discussion | Objectives in turn, prior-work numbers, LSTM hypothesis, SMOTE here, implications, limitations | DONE | Visitor analogy removed. Niyonzima numbers (MAE 8.71, R² 0.68, 759,480 rows) and Alaran 18% added. LSTM hypothesis (month extrapolation, untested). Implications for AirQo and KCCA. Limitations extended (PM2.5>PM10, unseen month, real episodes, generalisability, run-to-run variation). |
+| 22 | 6 Discussion | Pilot plan: stakeholder, metric, timeline | DONE | Proposed (not agreed) three-month pilot with KCCA or one school: 10-20 sensors; MAE against persistence, share of hours at or above 35.5 flagged, user survey. States plainly that no pilot is agreed. |
+| 23 | 7 Conclusions | Summary Recommendations by audience, future work separate, 1-2 headline numbers, SDG, end on main finding, unknown locations | DONE | Recommendations for operators, researchers and city authorities (incl. unmonitored locations, backed by the leave-sensors-out result); Future Work separate; SDG 3.9/11.6.2; ends on the main finding. |
+| 24 | Acknowledgements | Data statement, CC BY 4.0, AirQo and AirGradient credit, AI declaration heading | DONE | Data statement in 3.1 (comment 9) and data citation [29]. Acknowledgements: blind version says withheld; named IEEE version thanks AirQo and credits AirGradient (add course, supervisor, funders yourselves). AI declaration now has its own heading. **The AI declaration text must be updated for this review round (AQ15).** |
+
+## Read first: what the reruns changed
+- **Persistence (repeat the last reading) is as good as our history models on the hold-out** (8.58 against 8.43-8.50 µg/m³; difference not significant) and better in expanding-window CV. The history models win clearly only in August (10% better). The abstract, contributions, Results, Discussion and Conclusions were rewritten around this.
+- **Removing the month feature made things worse**, not better (comment 13).
+- **The rerun reproduced every number except KNN** (grid-search near-tie: k = 5 on Linux, 10 on Windows) and the downstream LSTM/imputer results (TensorFlow not bit-identical). Tables now report the rerun; Section 4.1 says so.
+- All rerun code and outputs: `research_paper_draft3/reruns/` (`review_extras.py`, `reproduce.py`, `results/`, `deployment/`).
+
+## Housekeeping (done 17 Nov 2026)
+- References in `manuscript_source.txt` renumbered into first-citation order (36 references, all cited). The TeX version orders itself.
+- Rebuilt: `Draft3_IST_Africa_2027.docx` (and its copy and PDF under the long file name; 18 pages in Word) and both IEEE PDFs (named and blind, 12 pages; the blind one has no author names).
+- Abstract and contributions refreshed with the rerun numbers.
+- `col-ris` voice rules and the `feather` pass (integrity checks, word list, de-AI pass) applied to the new text; new claims added to `evidence_ledger.md` (N1-N19).
+- **Not done:** the docx results table (11 columns) is cramped in Word; consider a landscape page. Nothing is committed yet.
+
+## Questions still open for a person
+1. The iLabs paper in comment 15 (Cole will ask Mr. Stephen).
+2. Named-version acknowledgements: add the course, supervisor and any funders.
+3. **AI declaration (AQ15):** updated to describe this round, but its last sentence ("The authors reviewed, revised and verified the content...") must only stay once both of you have revised the text in your own words.
+4. Reply to Mr. Stephen on comment 8: "Lsoto" is correct (Crossref, ORCID).
+
+## Where the reruns happen
+Reproduction check: `research_paper_draft3/reruns/reproduce.py` (run first; the new-results script comes after it passes). The Alienware (`ssh alienware`), in `~/airqo_rerun/` (repo clone in `repo/`, Python 3.12 environment in `venv/`). scikit-learn 1.7.2, LightGBM 4.7.0 and TensorFlow 2.21.0 are installed; TensorFlow is the CPU build and does not see the GPU.
+
+## Sources downloaded into `sources/`
+See `sources/sources.txt`.

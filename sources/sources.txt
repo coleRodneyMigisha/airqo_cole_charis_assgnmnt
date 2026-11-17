@@ -1,0 +1,14 @@
+Atuyambe2024_Kampala_mortality.pdf: Atuyambe et al., J Expo Sci Environ Epidemiol 35:288-293 (2025), doi:10.1038/s41370-024-00684-9 (ref 21)
+SDG_3.9.1_metadata.pdf, SDG_11.6.2_metadata.pdf: UN Statistics Division SDG metadata, downloaded 17 Nov 2026 (refs 22, 23)
+Stoddart2023_GP_Kampala_arXiv2311.16625.pdf: Stoddart et al., Gaussian Processes for Monitoring Air-Quality in Kampala, arXiv:2311.16625 (comment 12)
+Alaran2024_PM25_meteorology_Kampala_Jinja.pdf: Alaran et al., Environ. Sci.: Atmos. 4, 1145-1156 (2024); meteorology explains about 18% of PM2.5 variation in Kampala (comments 12, 21)
+arxiv_2205.10024.pdf: Gahungu and Kubwimana, Trend analysis and forecasting air pollution in Rwanda (ref 25)
+arxiv_2412.13935.pdf: Pandey et al., Spatio-Temporal Forecasting of PM2.5 via Spatial-Diffusion guided Encoder-Decoder Architecture, CODS-COMAD 2024 (ref 27)
+arxiv_2404.07308.pdf: Gupta et al., Spatial Transfer Learning for Estimating PM2.5 in Data-poor Regions (ref 28)
+arxiv_2506.15840.pdf: Yin and Gersey, In-field Calibration of Low-Cost Sensors through XGBoost and Aggregate Sensor Data (2025); downloaded, not cited
+Calibration of low-cost sensor data ... South Central Uganda.pdf: Le et al., Atmos. Pollut. Res. 16(9), 2025 (ref 24)
+Render_free_tier_docs_2026-11-17.txt: text of https://render.com/docs/free, 17 Nov 2026 (ref 30)
+Render_pricing_page_2026-11-17.txt: text of https://render.com/pricing, 17 Nov 2026 (ref 31)
+Vercel Hobby plan: https://vercel.com/docs/plans/hobby, read 17 Nov 2026 (ref 32): 'The Hobby plan is free'
+AirQo_AirQoDataPage_source_2026-11-17.tsx: source of airqo.mak.ac.ug/legal/airqo-data from github.com/airqo-platform/AirQo-frontend (commit f9fdbc4, 6 Jul 2026); CC BY 4.0, non-commercial without permission (ref 33)
+AirQo_TOSPage_source_2026-11-17.tsx: source of airqo.mak.ac.ug/legal/terms-of-service, same commit; section 4.1 attribution to originating provider and AirQo; data indicative (ref 34). The live site reset TLS connections on 17 Nov 2026, so the GitHub source was used.

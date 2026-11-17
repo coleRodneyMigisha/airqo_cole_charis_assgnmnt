@@ -1,0 +1,126 @@
+device_name,observed_hours,offline_pct_active_hours,in_main_dataset,site_name,data_class
+airqo-g5168,613,17.61,True,Mbarara Central,data-rich
+airqo-g5181,537,27.82,True,Rakai Health Sciences Program Facility,intermediate
+airqo-g5184,665,10.62,True,"Mbarara University, Mbarara",data-rich
+airqo-g5186,300,59.68,True,Kawanda 2,data-poor
+airqo-g5187,654,12.1,True,Gulu Main Market,data-rich
+airqo_g5204,138,81.45,True,kawempe moslem p/s,data-poor
+airqo_g5206,73,90.19,True,"Civic Centre, Kampala Central",data-poor
+airqo_g5247,743,0.13,True,"Nsasa, Kira Municipality",data-rich
+airqo_g5271,718,3.49,True,"Embassy of France, Lumumba avenue",data-rich
+airqo_g5279,738,0.81,True,"Bugolobi, Nakawa",data-rich
+airqo_g5281,296,60.22,True,Kisenyi Health Centre 4 (KCCA),data-poor
+airqo_g5282,732,1.61,True,"Lorry Park, Fort Portal",data-rich
+airqo_g5293,426,42.74,True,Buganda Road P.S,intermediate
+airqo_g5328,664,10.75,True,Kiswa Health Centre,data-rich
+airqo_g5330,556,25.27,True,Komamboga Health Centre,intermediate
+airqo_g5331,540,27.42,True,Agricultural Resource Centre Kyanja,intermediate
+airqo_g5335,648,12.9,True,Kamwokya Primary School,data-rich
+airqo_g5336,212,71.51,True,Kawempe Division,data-poor
+airqo_g5337,565,24.06,True,Kololo AirStrip,intermediate
+airqo_g5339,231,68.95,True,Makerere University Weather Station 94,data-poor
+airqo_g5341,702,5.65,True,Makerere University Weather Station 94,data-rich
+airqo_g5342,347,53.36,True,Nakawa Division KCCA,data-poor
+airqo_g5343,579,22.18,True,"KCCA Hall,Parliamentary Avenue",intermediate
+airqo_g5345,549,26.21,True,"St Paul Demonstration School,Ggaba",intermediate
+airqo_g5346,578,22.31,True,Kololo Mabua Stores,intermediate
+airqo_g5356,610,18.01,True,"Kitebi Health Centre 3,Kabusu road",data-rich
+airqo_g5359,488,34.41,True,KCCA Division Kisungu,intermediate
+airqo_g5361,533,28.36,True,KCCA Stadium Lugogo,intermediate
+airqo_g5365,724,2.69,True,Namungona Primary school,data-rich
+airqo_g5366,489,34.27,True,"Kira Road Police, Kira road, Kampala Uganda",intermediate
+airqo_g5368,627,15.73,True,Ministry Of Health 2,data-rich
+airqo_g5375,606,18.55,True,Nakivubo Blue Primary School,data-rich
+airqo_g5433,721,3.09,True,Buziga Islamic,data-rich
+airqo_g5437,740,0.54,True,Rwebikona,data-rich
+airqo_g5446,355,52.28,True,Kitintale_Ntensibe,data-poor
+airqo_g5448,681,8.47,True,Mbarara Central Market,data-rich
+airqo_g5455,718,3.49,True,Nyamityobora,data-rich
+airqo_g5463,703,5.51,True,Kenkombe,data-rich
+airqo_g5477,675,9.27,True,Katukuru,data-rich
+airqo_g5481,684,8.06,True,Ruti Mbarara,data-rich
+airqo_g5499,586,21.24,True,Nyabuhama,intermediate
+airqo_g5513,598,19.62,True,KCCA Central division HQ,data-rich
+airqo_g5518,671,9.81,True,Golf Course Kampala. Site 1. Training Area,data-rich
+airqo_g5519,691,7.12,True,Nyamitanga,data-rich
+airqo_g5544,704,5.38,True,Katete,data-rich
+airqo_g5545,702,5.65,True,Bishop Stuart University,data-rich
+airqo_g5546,700,5.91,True,Kiteezi. Kampala,data-rich
+airqo_g5548,606,18.55,True,Mbuya_Nadiope,data-rich
+airqo_g5549,683,8.2,True,Munyonyo Site 1,data-rich
+airqo_g5551,587,21.1,True,Golf course Kampala. Site 2. playing ground,intermediate
+airqo_g5555,639,14.11,True,Munyonyo Site 2,data-rich
+airqo_g5558,627,15.73,True,Kyambogo University,data-rich
+airqo_g5559,739,0.67,True,Kyarwabuganda,data-rich
+airqo_g5563,571,23.25,True,Bulange_Mengo,intermediate
+airqo_g5564,512,31.18,True,"Busabala, Wakiso",intermediate
+airqo_g5566,613,17.61,True,Makerere University Business School(MUBS) Nakawa,data-rich
+airqo_g5567,557,25.13,True,Kamwokya_OldKiira,intermediate
+airqo_g5568,704,5.38,True,Kakiika,data-rich
+airqo_g5569,665,10.62,True,"Buyala 2, Mpigi",data-rich
+airqo_g5570,744,0.0,True,Biharwe,data-rich
+airqo_g5573,545,26.75,True,Buyala 1 Mpigi,intermediate
+aq_04,413,44.49,True,St.Paul Kyebando C/U Primary School,intermediate
+aq_10,715,3.9,True,"Rwengoma, Kabarole",data-rich
+aq_18,202,72.85,True,"Pramukh steel Limited, Njeru ,Jinja",data-poor
+aq_23,736,1.08,True,"Jinja Main Street, Jinja",data-rich
+aq_27,264,64.52,True,"Njeru PSL 2(Pramukh steel limited, Jinja)",data-poor
+aq_39,362,51.34,True,"Rubaga, Kampala",data-poor
+aq_40,743,0.13,True,"Central Ward, Mityana",data-rich
+aq_44,154,79.3,True,"Naguru II, Nakawa",data-poor
+aq_46,134,81.99,True,ACCACIA ACADEMY MUYENGA,data-poor
+aq_47,740,0.54,True,"Bukoto I, Kawempe",data-rich
+aq_54,79,89.38,True,"Kalerwe, Kawempe",data-poor
+aq_58,660,11.29,True,"Nansana east ward, Wakiso",data-rich
+aq_60,723,2.82,True,"Butabika, Nakawa",data-rich
+aq_66,744,0.0,True,"Nakasero II, Kampala 66",data-rich
+aq_71,385,48.25,True,"Mbalwa, Kira Municipality",intermediate
+aq_72,698,6.18,True,"Luwafu, Makindye",data-rich
+aq_78,704,5.38,True,"Lubanga Road, Mubende",data-rich
+aq_82,629,15.46,True,"Kamwokya, Kira Road, Kampala, Uganda",data-rich
+aq_93,588,20.97,True,"Nyendo, Masaka",intermediate
+aq_g4_95,721,3.09,True,"YMCA, Jinja",data-rich
+aq_g4_99,722,2.96,True,"Rubaga Ward, Jinja City",data-rich
+aq_g501,496,33.33,True,Makerere University Weather Station 94,intermediate
+aq_g502,709,4.7,True,"Katende Ward, Jinja",data-rich
+aq_g503,614,17.47,True,"Nakawa, KCCA Head Office",data-rich
+aq_g505,696,6.45,True,Bukasa Kira Municipality Wakiso,data-rich
+aq_g507,742,0.27,True,"Lower Nsooba, Kawempe",data-rich
+aq_g508,574,22.85,True,"Bahai, Kawempe",intermediate
+aq_g510,739,0.67,True,"Mpererwe, Kawempe",data-rich
+aq_g512,449,39.65,True,Kawempe,intermediate
+aq_g513,744,0.0,True,"Nsawo, Kira Municipality",data-rich
+aq_g514,689,7.39,True,"Kitukutwe, Kira Municipality",data-rich
+aq_g515,463,37.77,True,"City Council, Jinja",intermediate
+aq_g516,598,19.62,True,"Bbuto, Kira Municipality",data-rich
+aq_g517,685,7.93,True,"Walukuba East, Jinja City",data-rich
+aq_g519,744,0.0,True,"Kyabirwa Namizzi, Jinja",data-rich
+aq_g520,494,33.6,True,wabigalo,intermediate
+aq_g522,454,38.98,True,"Kirinya, Kira Municipality",intermediate
+aq_g523,693,6.85,True,"Buwate, Kira Municipality",data-rich
+aq_g524,674,9.41,True,"Municipal Council, Kira Municipality",data-rich
+aq_g526,716,3.76,True,"Kasusu, Fort Portal",data-rich
+aq_g530,589,20.83,True,"Mpanga, Fort Portal",intermediate
+aq_g532,657,11.69,True,"Mpumudde, Jinja",data-rich
+aq_g534,402,45.97,True,"Kinyamasika, Fort Portal",intermediate
+aq_g535,742,0.27,True,"Mountains of the Moon University, Fort Portal",data-rich
+aq_g5_100,694,6.72,True,"Kabusu, Natete Road, Kampala, Uganda",data-rich
+aq_g5_101,212,71.51,True,"Water and Environment House, Luzira",data-poor
+aq_g5_114,675,9.27,True,Layibi Gulu,data-rich
+aq_g5_117,744,0.0,True,Mary Queen of Peace P/s Gulu,data-rich
+aq_g5_37,738,0.81,True,"Civic Centre, Kampala Central",data-rich
+aq_g5_4,622,16.4,True,"Kireka, Kira Municipality",data-rich
+aq_g5_42,705,5.24,True,"Rugarama Hill, Kabale",data-rich
+aq_g5_43,553,25.67,True,"Katwe 1, Makindye",intermediate
+aq_g5_46,520,30.11,True,"Ggaba, Makindye",intermediate
+aq_g5_48,240,67.74,True,"Kabalagala town, Makindye",data-poor
+aq_g5_49,740,0.54,True,Makindye Kcca division offices,data-rich
+aq_g5_5,727,2.28,True,Pece Gulu,data-rich
+aq_g5_53,536,27.96,True,Kansanga Seed Secondary School,intermediate
+aq_g5_54,660,11.29,True,KCCA Division Rubaga,data-rich
+aq_g5_59,709,4.7,True,"Kikungiri Hill, Kabale Municipality Kabale",data-rich
+aq_g5_71,334,55.11,True,"Kyebando, Kampala",data-poor
+aq_g5_75,721,3.09,True,Faculty of Engineering Technology and Applied Art,data-rich
+aq_g5_79,707,4.97,True,Lapeta Health Centre 3,data-rich
+aq_g5_86,345,53.63,True,Makerere Main Gate Area.,data-poor
+aq_g5_93,713,4.17,True,Gulu university,data-rich

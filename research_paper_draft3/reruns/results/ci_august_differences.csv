@@ -1,0 +1,7 @@
+,MAE_diff,lo,hi,share_of_draws_a_better
+Random Forest + PM2.5 history minus Persistence (last reading),-1.4666012034176372,-1.7564848317525423,-1.160791215366989,1.0
+LightGBM + PM2.5 history minus Persistence (last reading),-1.1487669101114921,-1.5413373010671794,-0.7206544151073143,1.0
+Random Forest + PM2.5 history minus LightGBM + PM2.5 history,-0.3178342933061451,-0.49535983542046946,-0.15796150047314192,1.0
+SVR (tuned) minus Baseline (training mean),-0.8832456454057187,-1.5744266831146976,-0.21982383566031138,0.998
+SVR (tuned) minus Persistence (last reading),3.1545719741093095,1.932289993966848,4.5148782360026685,0.0
+LSTM (weather + time + PM2.5 history) minus Persistence (last reading),4.1396860483729725,3.6645787323806105,4.677415775419943,0.0

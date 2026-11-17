@@ -1,0 +1,14 @@
+model,max_abs_diff,holdout_MAE_new,holdout_MAE_ref
+LightGBM + PM2.5 history,0.0,8.4252,8.4252
+Random Forest + PM2.5 history,0.0,8.5009,8.5009
+SVR (tuned),0.0,9.3409,9.3409
+Random Forest (untuned baseline),0.0,9.6117,9.6117
+Random Forest (tuned),0.0,9.6251,9.6251
+LightGBM (tuned),0.0,9.8169,9.8169
+KNN (tuned),0.9996,9.6177,10.0086
+LSTM (weather + time + PM2.5 history),0.006,10.8856,10.8856
+LSTM (weather + time),0.0,12.2234,12.2234
+Baseline (training mean),0.0,17.6017,17.6017
+Ridge Regression (tuned),0.0001,21.9978,21.9977
+Linear Regression (tuned),0.0001,23.8623,23.8623
+Polynomial Regression (tuned),0.0001,23.8624,23.8624
